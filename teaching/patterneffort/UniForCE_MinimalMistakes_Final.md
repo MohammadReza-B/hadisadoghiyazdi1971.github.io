@@ -5,18 +5,15 @@ permalink: /teaching/studenteffort/patterneffort/UniForCE_MinimalMistakes_Final/
 dir: rtl
 classes: wide rtl-layout
 author_profile: true
-description: "گزارش کامل پیاده‌سازی UniForCE (DeepSeek-derived)، شامل کد، توضیحات خط‌به‌خط، آزمایش‌ها و مقایسه با KMeans."
+description: "گزارش کامل پیاده‌سازی UniForCEو مقایسه با KMeans."
+use_math: true
+mathjax: true
 
 header:
   overlay_image: "/assets/images/background.jpg"
   overlay_filter: 0.3
   overlay_color: "#5e616c"
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-
-toc: true
-toc_label: "فهرست مطالب"
-toc_icon: "list"
-toc_sticky: true
 ---
 
 <div class="english-text">
@@ -44,8 +41,6 @@ toc_sticky: true
 <strong>دانشگاه فردوسی مشهد</strong>
 </a>
 
-# پیاده‌سازی و تحلیل الگوریتم UniForCE — نسخهٔ DeepSeek
-
 **(Unimodal Forest for Clustering and Estimation of k)**
 
 ## فهرست مطالب
@@ -69,12 +64,6 @@ toc_sticky: true
 
 الگوریتم **UniForCE** (Unimodal Forest for Clustering and Estimation of \(k\)) یک روش مبتنی بر شکل چگالی است که هدف آن هم‌زمان خوشه‌بندی و تخمین خودکار تعداد خوشه‌ها است. نسخهٔ DeepSeek که همراه پروندهٔ پروژه ارسال شده، پیاده‌سازی‌ای‌ست بر پایهٔ سه ایدهٔ اصلی:
 
-- Overclustering: تقسیم اولیهٔ فضا به زیرخوشه‌های زیاد برای گرفتن ساختار محلی چگالی.
-- Unimodal pair testing: بررسی تک‌وجهی بودن توزیع ترکیبی هر زوج خوشه (با تصویر روی محور مراکز و KDE / آزمون Dip).
-- ساخت جنگلِ تک‌وجهی: الحاق خوشه‌ها بر اساس آزمون‌ها و استخراج خوشه‌های نهایی (هر درخت یک خوشه).
-
-هدف این گزارش: ارائهٔ نسخهٔ تمیز، مستندسازی کد DeepSeek، توضیح خط‌به‌خط و فراهم کردن دستورالعمل اجرا و تحلیل نتایج به‌صورت قابل تکرار.
-
 ---
 
 ## تعاریف و مبانی ریاضی
@@ -85,9 +74,9 @@ toc_sticky: true
 
 به‌صورت رسمی، اگر \(C \subseteq X\) یک زیرمجموعه از داده‌ها باشد و \(f_C(x)\) چگالی تخمینی نقاط در آن ناحیه باشد، آنگاه \(C\) را **تک‌وجهی** می‌نامیم اگر:
 
-\[
+$$
 f_C(x) \text{ تنها یک نقطهٔ بیشینه (mode) داشته باشد.}
-\]
+$$
 
 ---
 
@@ -95,13 +84,13 @@ f_C(x) \text{ تنها یک نقطهٔ بیشینه (mode) داشته باشد.}
 
 برای دو خوشه \(A\) و \(B\)، ترکیب آن‌ها را بررسی می‌کنیم تا ببینیم آیا چگالی داده‌های \(A \cup B\) هنوز تک‌وجهی است یا خیر:
 
-\[
+$$
 \text{Unimodal}(A,B) =
 \begin{cases}
-\text{True}, & \text{اگر } f\_{A \cup B} \text{ فقط یک قله داشته باشد}, \\[4pt]
+\text{True}, & \text{اگر } f_{A \cup B} \text{ فقط یک قله داشته باشد}, \\[4pt]
 \text{False}, & \text{اگر بیش از یک قله داشته باشد.}
 \end{cases}
-\]
+$$
 
 به زبان ساده:
 
@@ -116,18 +105,18 @@ f_C(x) \text{ تنها یک نقطهٔ بیشینه (mode) داشته باشد.}
 سپس از **آزمون Dip** برای بررسی یکتایی قله‌ها استفاده می‌کنیم.  
 تفسیر نتیجه به صورت زیر است:
 
-\[
+$$
 p =
 \begin{cases}
 \geq \alpha, & \text{تک‌وجهی (قبول فرضیهٔ صفر)} \\[4pt]
 < \alpha, & \text{چندوجهی (رد فرضیهٔ صفر)}
 \end{cases}
-\]
+$$
 
 در اینجا:
 
-- \(p\) مقدار احتمال آزمون Dip است.
-- \(\alpha\) سطح معنی‌داری (مثلاً ۰٫۰۱ یا ۰٫۰۵) می‌باشد.
+- $p$ مقدار احتمال آزمون Dip است.
+- $\alpha$ سطح معنی‌داری (مثلاً ۰٫۰۱ یا ۰٫۰۵) می‌باشد.
 
 ---
 
@@ -340,10 +329,10 @@ class UniForCE:
 ## آزمایش‌ها، نتایج و مقایسه با KMeans
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/patterneffort/uniforcenew/blobs_3_comparison.jpg" alt="blobs_3_comparison" style="width: 50%; height: 50%; object-fit: contain;">
-    <img src="/assets/patterneffort/uniforcenew/blobs_5_comparison.jpg" alt="blobs_5_comparison" style="width: 50%; height: 50%; object-fit: contain;">
-    <img src="/assets/patterneffort/uniforcenew/iris_comparison" alt="iris_comparison" style="width: 50%; height: 50%; object-fit: contain;">
-    <img src="/assets/patterneffort/uniforcenew/moons_comparison" alt="moons_comparison" style="width: 50%; height: 50%; object-fit: contain;">
+    <img src="/assets/patterneffort/uniforcenew/blobs_3_comparison.png" alt="blobs_3_comparison" style="width: 50%; height: 50%; object-fit: contain;">
+    <img src="/assets/patterneffort/uniforcenew/blobs_5_comparison.png" alt="blobs_5_comparison" style="width: 50%; height: 50%; object-fit: contain;">
+    <img src="/assets/patterneffort/uniforcenew/iris_comparison.png" alt="iris_comparison" style="width: 50%; height: 50%; object-fit: contain;">
+    <img src="/assets/patterneffort/uniforcenew/moons_comparison.png" alt="moons_comparison" style="width: 50%; height: 50%; object-fit: contain;">
 </div>
 
 ### مجموعه‌داده‌های پیشنهادی برای آزمایش
@@ -391,10 +380,6 @@ class UniForCE:
 
 ### 📌 مجموعه‌دادهٔ blobs_3
 
-|              برچسب واقعی               |              UniForCE               |              KMeans               |
-| :------------------------------------: | :---------------------------------: | :-------------------------------: |
-| ![True labels](blobs_3_comparison.png) | ![UniForCE](blobs_3_comparison.png) | ![KMeans](blobs_3_comparison.png) |
-
 در این آزمایش، سه خوشهٔ واقعی با پنج خوشهٔ تخمین‌زده‌شده توسط UniForCE مقایسه شده‌اند.  
 الگوریتم با وجود بیش‌خوشه‌بندی، ساختار اصلی را به‌درستی تشخیص داده و مرزها را نسبتاً خوب حفظ کرده است.  
 دلیل ایجاد چند خوشهٔ اضافی، مرحلهٔ **Overclustering** اولیه و دقت محدود در ادغام نهایی خوشه‌ها است.
@@ -403,19 +388,11 @@ class UniForCE:
 
 ### 📌 مجموعه‌دادهٔ blobs_5
 
-|              برچسب واقعی               |              UniForCE               |              KMeans               |
-| :------------------------------------: | :---------------------------------: | :-------------------------------: |
-| ![True labels](blobs_5_comparison.png) | ![UniForCE](blobs_5_comparison.png) | ![KMeans](blobs_5_comparison.png) |
-
 در دادهٔ پنج‌خوشه‌ای، UniForCE با دقت بالایی خوشه‌ها را بازیابی کرده است.  
 تفاوت اندک در ARI (۰.89 در برابر ۰.95) نشان‌دهندهٔ نزدیکی عملکرد به KMeans است،  
 در حالی که UniForCE **تعداد واقعی خوشه‌ها را نمی‌دانست**.
 
 ## 🌸 مجموعه‌دادهٔ _iris_
-
-|        برچسب واقعی        |        UniForCE        |   KMeans (true k)    |
-| :-----------------------: | :--------------------: | :------------------: |
-| ![True labels](22211.jpg) | ![UniForCE](22211.jpg) | ![KMeans](22211.jpg) |
 
 در آزمایش انجام‌شده روی دادهٔ **iris**، الگوریتم UniForCE با مقدار \( k = 2 \) به کار گرفته شده و شاخص شباهت **ARI = 0.558** به‌دست آمده است؛ در حالی‌که الگوریتم KMeans با اطلاع از تعداد واقعی خوشه‌ها \( k = 3 \)، مقدار **ARI = 0.716** را کسب کرده است.
 
