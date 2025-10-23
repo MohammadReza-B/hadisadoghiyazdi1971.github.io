@@ -74,4 +74,4 @@ header:
 <div class="english-text">
 <strong>Circuit Schematic Drawing</strong>
 </div>
-<a href="/teaching/studenteffort/circuiteffort/Circuit_Schematic_Drawing_Project" style="text-decoration:underline; color:green;" target="_blank"><strong> رسم شماتیک مدار</strong></a>
+<a href="/teaching/circuiteffort/Circuit_Schematic_Drawing_Project" style="text-decoration:underline; color:green;" target="_blank"><strong> رسم شماتیک مدار</strong></a>
