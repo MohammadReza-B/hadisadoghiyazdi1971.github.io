@@ -12,7 +12,7 @@ author-profile: true
 # رسم شماتیک مدار 
 
 <div style="display: flex; justify-content: right; gap: 10px;">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/MyPhoto.jpg" alt="IPS1" style="width: 20%; height: 20%; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/MyPhoto.jpg" alt="IPS1" style="width: 20%; height: 20%; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: right; margin-top: 8px;">
@@ -108,7 +108,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; gap: 10px; margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Proteus-Download-1.jpg" alt="IPS1" style="width: 100%; height: 50%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Proteus-Download-1.jpg" alt="IPS1" style="width: 100%; height: 50%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top:8px; margin-bottom:15px ">
@@ -121,7 +121,7 @@ author-profile: true
 
  
 <div style="display: flex; justify-content: center; gap: 10px; margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Proteus-Extract-2.jpg" alt="IPS1" style="width: 100%; height: 650px; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Proteus-Extract-2.jpg" alt="IPS1" style="width: 100%; height: 650px; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -133,7 +133,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; gap: 10px; margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Proteus-Extract-3.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Proteus-Extract-3.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -141,7 +141,7 @@ author-profile: true
 </div>
 
 <div style="display: flex; justify-content: center; gap: 10px; margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Proteus4.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Proteus4.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -152,7 +152,7 @@ author-profile: true
 مراحل نصب رو طبق راهنما جلو رفته و در آخر صبر میکنیم که فرایند نصب در مسیر مورد نظر کامل شود. به دلیل سهولت این مرحله از بعضی قسمت های آن عبور میکنیم. این قسمت ابهام و پیچیدگی خاصی ندارد.
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Proteus-8.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Proteus-8.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -165,7 +165,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Proteus9.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Proteus9.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -176,7 +176,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/UUProteus-10.jpg" alt="IPS1" style="width: 100%; height: 450px; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/UUProteus-10.jpg" alt="IPS1" style="width: 100%; height: 450px; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px ">
@@ -187,7 +187,7 @@ author-profile: true
 با ورود به نرم افزار تصویر زیر را میبینیم که ابتدا ورود به محیط نرم افزار است.
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/ProtesComplted.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/ProtesComplted.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -199,7 +199,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-15_22-35-39.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-15_22-35-39.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -209,7 +209,7 @@ author-profile: true
 پنجره New Project Wizard باز می شود. همان طور که مشاهده می شود باید اسمی روی پروژه خود و مسیری در سیستم برای ذخیره آن قرار دهیم
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-15_22-36-29.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-15_22-36-29.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -219,7 +219,7 @@ author-profile: true
 در پنجره باز شده زیر ، یک قالب برای شروع پروژه شماتیک خود انتخاب میکنیم. مثلا طبق موارد نمایش داده شده می توانیم، نوع قالب بندی صفحه رو بصورت افقی یا Landscape قرار دهیم. بصورت عمودی یا portrait قرار دهیم. یا در آخر یک قالب آماده با تنظیمات نمونه سیستم بسازیم. حالت Sample Design. پروژه را با حالت پیش فرض سیستم یعنی default جلو می بریم.
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-15_22-53-41 (2).jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-15_22-53-41 (2).jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -231,7 +231,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_07-46-34.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_07-46-34.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -242,7 +242,7 @@ author-profile: true
 در مرحله آخر از ما خواسته می شود که مشخص کنیم که  پروژه ما شامل کد برنامه نویسی (Firmware) و یا نمودار منطقی برای میکروکنتلر ها (Flowchart) باشد یا خیر. با حالت پیش فرض یعنی No firmware Project ادامه میدهیم.
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_07-46-28.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_07-46-28.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -252,7 +252,7 @@ author-profile: true
 حالا پروژه ما ساخته شده. دقت شود که در این پروژه فقط میخواهیم که حالت شماتیک مدار را بررسی کنیم نه PCB . 
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_07-46-22.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_07-46-22.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -270,7 +270,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_07-46-18.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_07-46-18.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -283,7 +283,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_09-59-19.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_09-59-19.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -300,7 +300,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_09-59-167.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_09-59-167.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -309,7 +309,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; gap: 10px;margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_15-47-01.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/photo_2025-10-16_15-47-01.jpg" alt="IPS1" style="width: 100%; height: 70%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top: 8px; margin-bottom:15px">
@@ -325,7 +325,7 @@ author-profile: true
 در طول پروژه سعی می شود نکات و اصول مورد نیازی که لازم است هنگام طراحی رعایت شود را ذکر کنیم
 
 <div style="display: flex; justify-content: center; align-items:center;margin-top:40px ">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 132413.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 132413.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 20: Select Tools_
@@ -334,7 +334,7 @@ author-profile: true
 سپس هر کدام رو انتخاب کرده و روی صفحه قرار میدهیم. مانند یک drag کردن ساده.
 
 <div style="display: flex; justify-content: center; align-items:center; margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 135503.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 135503.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 21: Drag Tools To Area_
@@ -344,7 +344,7 @@ author-profile: true
 دقت شود که سیم ها فقط در جهت افقی یا عمودی امتداد می یابند نه مورب.
 
 <div style="display: flex; justify-content: center; align-items:center; margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 142831.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 142831.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 22: Drawing Curcuit_
@@ -361,7 +361,7 @@ author-profile: true
  کام به گام بررسی میکنیم . ابتدا دو بار روی ال ای دی راست کلیک کرده تا مشخصات آن رو ببینیم.
 
  <div style="display: flex; justify-content: center; align-items:center; margin-top:40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 144903.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 144903.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 23: Drawing Curcuit 2_
@@ -372,7 +372,7 @@ author-profile: true
 البته میتوان برای شناسایی ارور های هنگام طراحی به پیام ها درنوار پایین مراجعه کرد
 
  <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 143104.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 143104.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 24: Handling Errors_
@@ -382,7 +382,7 @@ author-profile: true
 
 
  <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 153006.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 153006.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 25: Deleting Elements_
@@ -391,7 +391,7 @@ author-profile: true
 از قسمت جعبع قطعات یک مقاومت 1 کیلو اهمی و یک منبع تغذیه 9 ولتی انتخاب می کنیم و مانند شکل زیر دوباره مدار رو می بندیم.
 
  <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 155410.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 155410.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 26: Replace Elements In Curcuit_
@@ -402,7 +402,7 @@ author-profile: true
 
 
  <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 155430.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 155430.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 27:  Turning On The LED_
@@ -411,7 +411,7 @@ author-profile: true
 حالا اگر جهت دیود در مدار را برعکس کنیم یعنی سیم ها رو به دیگر قطب های آن متصل کنیم. اگر روی دکمه اجرا کلیک کنیم، می بینیم که ال ای دی روشن نمی شود.
 
  <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 161004.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 161004.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 28:  Unable To Turning On The LED_
@@ -428,7 +428,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 161935.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 161935.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 29:  Element's Lables_
@@ -441,7 +441,7 @@ author-profile: true
 حالا اگر دوباره مدار رو راه اندازی کنیم، می بینیم که مقدار روشنایی LED نسبت به حالت قبلی بیشتر شد!
 
 <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 162052.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 162052.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 30:  Element's Lables 2_
@@ -450,7 +450,7 @@ author-profile: true
 در مرحله اخر روی گزینه save project از نوار بالا کلیک کرده تا پروژه ذخیره شود. چون گاهی ممکن است مدار ترسیم ان ساده نبوده و نیازمند دقت و وقت بیشتر است . لذا بهتر است پروژه را در مسیری که از قبل تعیین کردیم، ذخیره کنیم.
 
 <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 165029.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Screenshot 2025-10-17 165029.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 31:  save project_
@@ -465,7 +465,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Capture.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Capture.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 32:  Seven Segment_
@@ -476,7 +476,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Capture2.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Capture2.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 33:  Seven Segment 1_
@@ -486,7 +486,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Capture4.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Capture4.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 34:  Seven Segment 2_
@@ -495,7 +495,7 @@ author-profile: true
 
 حال در گام بعدی 7 خروجی دیکودر را به ترتیب به ورودی های a تا  g سون سگمنت متصل می کنیم. در گام یعد پایه مشترک سون سگمنت را به Vcc وصل می کنیم
 <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Capture5.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Capture5.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 35:  Seven Segment 3_
@@ -514,7 +514,7 @@ SW 4 --> GND
 
 
 <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Capture6.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Capture6.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 36:  Seven Segment 4_
@@ -532,7 +532,7 @@ SW 4 = GND
 
 
 <div style="display: flex; justify-content: center; align-items:center; margin-top: 40px">
-    <img src="./assets/circuiteffort/Circuit_Schematic_Drawing_Project/Capture7.png" style="height:70%; width: 100%;">
+    <img src="/assets/circuiteffort/Circuit_Schematic_Drawing_Project/Capture7.png" style="height:70%; width: 100%;">
 </div>
 <div class="caption" style="text-align:center; margin-top:10px; margin-bottom:15px">
     _figure 37:  Seven Segment 5_
