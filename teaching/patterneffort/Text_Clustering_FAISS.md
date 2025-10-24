@@ -100,7 +100,7 @@ header:
   2.  هر سند به یک بردار عددی تبدیل می‌شود که طول آن برابر با اندازه واژگان است. هر عنصر در این بردار، تعداد تکرار (فرکانس) کلمه متناظر در آن سند را نشان می‌دهد.  
   **محدودیت اصلی:** این روش هیچ درکی از معنای کلمات ندارد. برای مثال، کلمات "خودرو" و "اتومبیل" از نظر این مدل کاملاً متفاوت هستند، در حالی که مترادف هستند. همچنین، ترتیب کلمات نادیده گرفته می‌شود، بنابراین جملات "سگ گربه را تعقیب کرد" و "گربه سگ را تعقیب کرد" دارای نمایش یکسانی خواهند بود.
 
-  <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="/assets/patterneffort/Text_Clustering_FAISS/BoW.png" width="700" height="435" alt="STFT-overview" style="object-fit: contain;">
 </div>
 
