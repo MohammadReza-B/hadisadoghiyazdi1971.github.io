@@ -42,7 +42,7 @@ header:
 </div>
 <a href="/teaching/studenteffort/patterneffort/QP1" style="text-decoration:underline; color:green;" target="_blank"><strong> برنامه‌ریزی درجه دوم</strong></a>
 
-<!--3-->
+<!--4-->
 <div class="english-text">
 <strong>Text Clustering Using FAISS</strong>
 </div>
