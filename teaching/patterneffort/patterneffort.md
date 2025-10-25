@@ -42,31 +42,30 @@ header:
 </div>
 <a href="/teaching/studenteffort/patterneffort/QP1" style="text-decoration:underline; color:green;" target="_blank"><strong> برنامه‌ریزی درجه دوم</strong></a>
 
-<!--3-->
-<!--چرا دوباره ۳؟-->
+<!--4-->
 <div class="english-text">
 <strong>Text Clustering Using FAISS</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/Text_Clustering_FAISS" style="text-decoration:underline; color:green;" target="_blank"><strong> خوشه‌بندی متن با ابزار FAISS</strong></a>
 
-<!--4-->
+<!--5-->
 <div class="english-text">
 <strong>BERT</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/BERT" style="text-decoration:underline; color:green;" target="_blank"><strong> بردار ساختن از کلمات به کمک روش BERT</strong></a>
- <!--5-->
+ <!--6-->
 <div class="english-text">
 <strong>پیاده‌سازی و تحلیل الگوریتم UniForCE</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/UniForCE_MinimalMistakes_Final" style="text-decoration:underline; color:green;" target="_blank"><strong> گزارش کامل پیاده‌سازی UniForCE (DeepSeek-derived)، شامل کد، توضیحات خط‌به‌خط، آزمایش‌ها و مقایسه با KMeans.</strong></a>
 
-<!--6-->
+<!--7-->
 <div class="english-text">
 <strong>Cross Vslidation</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/CrossValidation" style="text-decoration:underline; color:green;" target="_blank"><strong>اعتبارسنجی متقاطع Cross Vslidation </strong></a>
 
-<!--7-->
+<!--8-->
 <div class="english-text">
 <strong>Agglomerative Methods</strong>
 </div>
