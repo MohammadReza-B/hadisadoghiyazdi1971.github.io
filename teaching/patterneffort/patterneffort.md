@@ -65,3 +65,9 @@ header:
 <strong>Cross Vslidation</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/CrossValidation" style="text-decoration:underline; color:green;" target="_blank"><strong>اعتبارسنجی متقاطع Cross Vslidation </strong></a>
+
+<!--7-->
+<div class="english-text">
+<strong>Agglomerative Methods</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/single_linkage_clustring" style="text-decoration:underline; color:green;" target="_blank"><strong>روش های تجمیعی در یادگیری ماشین</strong></a>

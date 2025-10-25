@@ -69,13 +69,21 @@ header:
 
 در مسئلهٔ خوشه‌بندی، یک **خوشهٔ تک‌وجهی** به مجموعه‌ای از نقاط در فضای ویژگی گفته می‌شود که چگالی داده‌ها در آن فقط **یک قله یا بیشینه** دارد.
 
-به‌صورت رسمی، اگر \(C\) زیرمجموعه‌ای از داده‌ها باشد و \(f_C(x)\) چگالی تخمینی نقاط در آن ناحیه را نشان دهد، آنگاه خوشهٔ \(C\) را **تک‌وجهی** می‌نامیم، اگر تابع چگالی \(f_C(x)\) فقط یک نقطهٔ بیشینه داشته باشد.
+به‌صورت رسمی، اگر $\(C\)$ زیرمجموعه‌ای از داده‌ها باشد و \(f_C(x)\) چگالی تخمینی نقاط در آن ناحیه را نشان دهد، آنگاه خوشهٔ \(C\) را **تک‌وجهی** می‌نامیم، اگر تابع چگالی \(f_C(x)\) فقط یک نقطهٔ بیشینه داشته باشد.
 
 ---
 
 ### آزمون تک‌وجهی بودن دو خوشه (Unimodality Test)
 
-برای دو خوشهٔ A و B، ترکیب آن‌ها را بررسی می‌کنیم تا مشخص شود آیا چگالی داده‌های حاصل از ترکیبشان هنوز **تک‌وجهی** است یا نه.
+برای دو خوشهٔ $$A$$ و $$B$$، ترکیب آن‌ها را بررسی می‌کنیم تا مشخص شود آیا چگالی داده‌های حاصل از ترکیبشان هنوز **تک‌وجهی** است یا نه.
+
+$$
+\text{Unimodal}(A,B) = 
+\begin{cases}
+\text{True}, & \text{if } f_{A \cup B} \text{ has exactly one peak}, \\[4pt]
+\text{False}, & \text{otherwise}.
+\end{cases}
+$$
 
 اگر ترکیب دو خوشه فقط یک قله داشته باشد، آنگاه نتیجه می‌گیریم که ترکیب آن‌ها **تک‌وجهی** است و می‌توان دو خوشه را **ادغام کرد**.  
 اما اگر ترکیب آن‌ها بیش از یک قله داشته باشد، چگالی **چندوجهی** است و خوشه‌ها باید **جدا بمانند**.
@@ -100,7 +108,7 @@ header:
 
 ---
 
-### ** خوشه‌بندی اولیه (Overclustering)**
+### خوشه‌بندی اولیه (Overclustering)
 
 در مرحلهٔ نخست الگوریتم، داده‌ها با استفاده از **K-Means** با تعداد زیاد خوشه‌ها (\(k_0\)) تقسیم می‌شوند تا ساختارهای محلی به‌خوبی مشخص شوند.  
 سپس در مراحل بعدی، خوشه‌های نزدیک با آزمون تک‌وجهی ادغام می‌شوند تا خوشه‌های نهایی شکل گیرند.
@@ -313,17 +321,17 @@ class UniForCE:
 
 ## آزمایش‌ها، نتایج و مقایسه با KMeans
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
 
-    <img src="/assets/patterneffort/uniforcenew/blobs_3_comparison.png" alt="blobs_3_comparison" style="width: 50%; height: 50%; object-fit: contain;">
 
-    <img src="/assets/patterneffort/uniforcenew/blobs_5_comparison.png" alt="blobs_5_comparison" style="width: 50%; height: 50%; object-fit: contain;">
+<img src="/assets/patterneffort/uniforcenew/blobs_3_comparison.png" alt="blobs_3_comparison" style="width: 50%; height: 50%; object-fit: contain;">
 
-    <img src="/assets/patterneffort/uniforcenew/iris_comparison.png" alt="iris_comparison" style="width: 50%; height: 50%; object-fit: contain;">
+<img src="/assets/patterneffort/uniforcenew/blobs_5_comparison.png" alt="blobs_5_comparison" style="width: 50%; height: 50%; object-fit: contain;">
 
-    <img src="/assets/patterneffort/uniforcenew/moons_comparison.png" alt="moons_comparison" style="width: 50%; height: 50%; object-fit: contain;">
+<img src="/assets/patterneffort/uniforcenew/iris_comparison.png" alt="iris_comparison" style="width: 50%; height: 50%; object-fit: contain;">
 
-</div>
+<img src="/assets/patterneffort/uniforcenew/moons_comparison.png" alt="moons_comparison" style="width: 50%; height: 50%; object-fit: contain;">
+
+
 
 ### مجموعه‌داده‌های پیشنهادی برای آزمایش
 
