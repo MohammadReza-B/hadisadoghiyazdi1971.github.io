@@ -267,6 +267,30 @@ else:
 
 به زبان ساده، در حالی که بخش MLM به مدل یاد می‌دهد «کلمه‌ی مناسب جمله چیست»، بخش NSP به آن می‌آموزد «جمله‌ی بعدی مرتبط کدام است».
 
+یک نمونه از ورودی‌های مدل هنگام تمرین دیدن برای عملیات پیش پردازش به شکل زیر است:
+
+
+<p dir="rtl" style="font-family:Vazir,Tahoma,sans-serif; line-height:1.9;">
+<span style="font-weight:bold;">[CLS]</span> در | سال | ۱۳۹۹ | پژوهشگران | دانشگاه | <span style="color:green;">تهران</span> | <span style="color:green;">مدل</span> | جدیدی | از | پردازش | <span style="color:green;">زبان</span> | طبیعی | معرفی | کردند | .  
+این | مدل | بر | پایه | معماری | [MASK] | طراحی | شده | و | توانست | در | وظایف | مختلف | مانند | طبقه‌بندی | متن | و | تحلیل | احساسات | عملکرد | چشمگیری | نشان | دهد | .  
+هدف | اصلی | آن | بهبود | [MASK] | مدل‌های | زبانی | در | متون | فارسی | بود | .  
+<span style="font-weight:bold;">[SEP]</span>  
+در | مرحله | دوم | پژوهش | ، | تیم | توسعه | تصمیم | گرفت | مدل | را | بر | روی | پیکره‌ای | بزرگ‌تر | شامل | داده‌های | خبری | و | گفت‌وگویی | [MASK] | دهد | .  
+نتایج | اولیه | نشان | داد | که | دقت | مدل | در | تشخیص | نیت | کاربران | حدود | [MASK] | درصد | افزایش | یافته | است | .  
+با | این | حال | برخی | خطاها | هنوز | در | واژه‌های | [MASK] | و | ترکیبات | [MASK] | باقی | مانده | بود | .  
+برای | رفع | این | مشکل | ، | پژوهشگران | از | روش | یادگیری | انتقالی | و | بهینه‌سازی | [MASK] | استفاده | کردند | تا | عملکرد | مدل | در | داده‌های | واقعی | بهتر | شود | .  
+همچنین | در | فاز | نهایی | ، | از | الگوریتم | [MASK] | برای | کاهش | [MASK] | حافظه | و | افزایش | سرعت | آموزش | بهره | گرفته | شد | .  
+این | رویکرد | سبب | شد | تا | <span style="color:red;">کتاب</span> | نسبت | به | <span style="color:red;">داده</span> | خود | سریع‌تر | و | <span style="color:red;">نرم‌افزار</span> | عمل | کند | .  
+<span style="font-weight:bold;">[SEP]</span>
+</p>
+
+سه توکن قرمز (کتاب, داده, نرم‌افزار) همان‌هایی هستند که اشتباه جایگزین شده‌اند.
+
+سه توکن سبز (تهران, مدل, زبان) همان‌هایی‌اند که بدون تغییر باقی مانده‌اند.
+
+همین طور هم که می‌بینین دنباله‌هایی که با توکن [SEP] از هم جدا شدند دو دنباله پشت سر هم بودند و مدل در ازای این پشت سر هم بودن باید بعد از تحلیل توکن [CLS] باید `IsNext` را پیش بینی کند.
+
+
 #### اتمام مرحله پیش‌آموزش و ورود به تنظیم دقیق (Fine-tuning)
 
   
@@ -379,10 +403,10 @@ jupyter notebook chek_model.ipynb
 ## منابع
 
 1. <a href="https://arxiv.org/abs/1810.04805" target="_blank"><strong>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</strong></a>  
-2. <a href="https://github.com/hooshvare/parsbert" style="text-decoration:underline; color:green;" target="_blank"><strong>ParsBERT</strong></a>  
+2. <a href="https://github.com/hooshvare/parsbert" target="_blank"><strong>ParsBERT</strong></a>  
 3. <a href="https://en.wikipedia.org/wiki/Cortana_/(virtual_assistant/" target="_blank"><strong>Cortana</strong></a>  
 4. <a href="https://medium.com/@atharv6f_47401/wordpiece-tokenization-a-bpe-variant-73cc48865cbf" target="_blank"><strong>WordPiece Tokenization: A BPE Variant</strong></a>
-
+5. <a href="https://arxiv.org/abs/1706.03762" target="_blank"><strong>Attention Is All You Need</strong></a>
 <!--bundle exec jekyll serve --host 0.0.0.0 --port 8085-->
 
 
