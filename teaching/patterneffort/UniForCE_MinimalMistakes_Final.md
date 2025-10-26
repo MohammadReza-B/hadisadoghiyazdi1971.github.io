@@ -24,7 +24,7 @@ header:
 
 ## نویسنده
 
-<strong>مهدیه قاسمی</strong>
+<strong>مهدیه سادات قاسمی</strong>
 
 ## راه‌های ارتباطی
 
@@ -78,7 +78,7 @@ header:
 برای دو خوشهٔ $$A$$ و $$B$$، ترکیب آن‌ها را بررسی می‌کنیم تا مشخص شود آیا چگالی داده‌های حاصل از ترکیبشان هنوز **تک‌وجهی** است یا نه.
 
 $$
-\text{Unimodal}(A,B) = 
+\text{Unimodal}(A,B) =
 \begin{cases}
 \text{True}, & \text{if } f_{A \cup B} \text{ has exactly one peak}, \\[4pt]
 \text{False}, & \text{otherwise}.
@@ -321,8 +321,6 @@ class UniForCE:
 
 ## آزمایش‌ها، نتایج و مقایسه با KMeans
 
-
-
 <img src="/assets/patterneffort/uniforcenew/blobs_3_comparison.png" alt="blobs_3_comparison" style="width: 50%; height: 50%; object-fit: contain;">
 
 <img src="/assets/patterneffort/uniforcenew/blobs_5_comparison.png" alt="blobs_5_comparison" style="width: 50%; height: 50%; object-fit: contain;">
@@ -330,8 +328,6 @@ class UniForCE:
 <img src="/assets/patterneffort/uniforcenew/iris_comparison.png" alt="iris_comparison" style="width: 50%; height: 50%; object-fit: contain;">
 
 <img src="/assets/patterneffort/uniforcenew/moons_comparison.png" alt="moons_comparison" style="width: 50%; height: 50%; object-fit: contain;">
-
-
 
 ### مجموعه‌داده‌های پیشنهادی برای آزمایش
 
