@@ -239,9 +239,9 @@ else:
 
 ### پیش آموزش pre treaning
 
-این عملیات شامل دو وظیفه، مدل زبانی ماسک شده (MLM) و پیش بینی عبارت بعدی (NSP) بود. برای این کار نیاز است از منابع مختلف مثل wikipedia و … کمک گرفت و هر سند به شکل به هم پیوسته در یک فایل txt قرار بگیرد و بین اسناد یک خط فاصله باشد.
+این عملیات شامل دو وظیفه، مدل زبانی ماسک شده (masked language model) و پیش بینی عبارت بعدی (Next Sentence Prediction) بود. برای این کار نیاز است از منابع مختلف مثل wikipedia و … کمک گرفت و هر سند به شکل به هم پیوسته در یک فایل txt قرار بگیرد و بین اسناد یک خط فاصله باشد.
 
-#### مدل زبانی ماسک شده ‫‪model‬‬ ‫‪language‬‬ ‫‪masked‬‬
+#### مدل زبانی ماسک شده (Masked Language Model - MLM)
 
 در این روش هدف این است که مدل بتواند مفهوم و ارتباط بین کلمات جمله را درک کند، نه این‌که صرفاً ترتیب آن‌ها را حفظ کند. برای این کار، درصدی از کلمات جمله به طور تصادفی با نماد خاصی به نام \[MASK\] جایگزین می‌شوند.  
 برای مثال جمله «من امروز به مدرسه رفتم» را در نظر بگیر. اگر کلمه «مدرسه» را پنهان کنیم، مدل باید با توجه به بقیه جمله حدس بزند که در جای خالی چه کلمه‌ای باید باشد. یعنی جمله به شکل «من امروز به \[MASK\] رفتم» در ورودی مدل قرار می‌گیرد و مدل با استفاده از فهمش از ساختار و معنای زبان، کلمه‌ی گم‌شده را پیش‌بینی می‌کند.
@@ -253,7 +253,7 @@ else:
 
 #### پیش‌بینی عبارت بعدی (Next Sentence Prediction - NSP)
 
-‬‬در کنار یادگیری معنی در سطح کلمه، مدل باید بتواند درک کند دو جمله پشت سر هم با هم ارتباط معنایی دارند یا نه.  
+در کنار یادگیری معنی در سطح کلمه، مدل باید بتواند درک کند دو جمله پشت سر هم با هم ارتباط معنایی دارند یا نه.  
 برای این آموزش، به مدل جفت‌جملاتی داده می‌شود. در نیمی از موارد جمله دوم واقعاً ادامه جمله اول است، و در نیمی دیگر جمله‌ای تصادفی از متن دیگر جای آن گذاشته می‌شود. مدل باید تشخیص دهد که آیا جمله دوم در ادامه جمله اول آمده یا خیر.
 
 برای مثال:
@@ -369,8 +369,19 @@ jupyter notebook chek_model.ipynb
 
 و خروجی‌ها (embedding و شباهت‌ها) بررسی می‌شوند.
 
+## نسخه‌های از پیش تمرین داده شده
+در <a href="https://github.com/hooshvare/parsbert" style="text-decoration:underline; color:green;" target="_blank"> این لینک </a> می‌تونین با پروژه <a href="https://link.springer.com/article/10.1007/s11063-021-10528-4" style="text-decoration:underline; color:green;" target="_blank"> parsBERT </a> آشنا بشین. نسخه‌های مختلفی از bert روی دیتاست‌های بزرگی از زبان فارسی تمرین داده شده که می‌تونین از اون‌ها استفاده کنین.
 
+### کامل کردن کلمه گم شده
+مثلا در <a href="https://huggingface.co/HooshvareLab/bert-fa-zwnj-base?maximized=true&text=%D8%B2%D9%86%D8%AF%DA%AF%DB%8C+%DB%8C%DA%A9+%D8%B3%D9%88%D8%A7%D9%84+%D8%A7%D8%B3%D8%AA+%D9%88+%D8%A7%DB%8C%D9%86+%DA%A9%D9%87+%DA%86%DA%AF%D9%88%D9%86%D9%87+%5BMASK%5D+%DA%A9%D9%86%DB%8C%D9%85+%D9%BE%D8%A7%D8%B3%D8%AE+%D8%A7%DB%8C%D9%86+%D8%B3%D9%88%D8%A7%D9%84%21" style="text-decoration:underline; color:green;" target="_blank"> این لینک </a> می‌تونین جملاتی دارای توکن \[MASK\] به مدل بدین و خروجی به شما می‌گه چه کلماتی احتمال دارد به جای کلمه گم شده قرار گیرند.
+## مقاله ترجمه شده
+در صورت علاقه به خواندن اصل مقاله BERT در <a href="/assets/patterneffort/BERT/main.pdf" style="text-decoration:underline; color:green;" target="_blank">این لینک</a> نسخه ترجمه فارسی اون قرار داره که به کمک ChatGPT ترجمه شده.
 ## منابع
+
+1. <a href="https://arxiv.org/abs/1810.04805" target="_blank"><strong>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</strong></a>  
+2. <a href="https://github.com/hooshvare/parsbert" style="text-decoration:underline; color:green;" target="_blank"><strong>ParsBERT</strong></a>  
+3. <a href="https://en.wikipedia.org/wiki/Cortana_/(virtual_assistant/" target="_blank"><strong>Cortana</strong></a>  
+4. <a href="https://medium.com/@atharv6f_47401/wordpiece-tokenization-a-bpe-variant-73cc48865cbf" target="_blank"><strong>WordPiece Tokenization: A BPE Variant</strong></a>
 
 <!--bundle exec jekyll serve --host 0.0.0.0 --port 8085-->
 
