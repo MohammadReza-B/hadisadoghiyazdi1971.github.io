@@ -429,7 +429,7 @@ Silhouette Score
 
 ## منابع
 
-[1] https://www.sciencedirect.com/science/article/pii/S0031320325010180 2. MacQueen, J. (1967). _Some methods for classification and analysis of multivariate observations._
+[1] https://www.sciencedirect.com/science/article/pii/
 
 [2] https://github.com/topics/clustering-algorithms
 
