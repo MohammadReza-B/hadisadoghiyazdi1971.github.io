@@ -50,10 +50,11 @@ header:
 
 <!--5-->
 <div class="english-text">
-<strong>BERT</strong>
+<strong>Cross Vslidation</strong>
 </div>
-<a href="/teaching/studenteffort/patterneffort/BERT" style="text-decoration:underline; color:green;" target="_blank"><strong> بردار ساختن از کلمات به کمک روش BERT</strong></a>
- <!--6-->
+<a href="/teaching/studenteffort/patterneffort/CrossValidation" style="text-decoration:underline; color:green;" target="_blank"><strong>اعتبارسنجی متقاطع Cross Vslidation </strong></a>
+
+<!--6-->
 <div class="english-text">
 <strong>پیاده‌سازی و تحلیل الگوریتم UniForCE</strong>
 </div>
@@ -61,22 +62,20 @@ header:
 
 <!--7-->
 <div class="english-text">
-<strong>Cross Vslidation</strong>
+<strong>BERT</strong>
 </div>
-<a href="/teaching/studenteffort/patterneffort/CrossValidation" style="text-decoration:underline; color:green;" target="_blank"><strong>اعتبارسنجی متقاطع Cross Vslidation </strong></a>
-
+<a href="/teaching/studenteffort/patterneffort/BERT" style="text-decoration:underline; color:green;" target="_blank"><strong> بردار ساختن از کلمات به کمک روش BERT</strong></a>
 
 <!--8-->
+<div class="english-text">
+<strong>DPC-MK</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/DPC-MK" style="text-decoration:underline; color:green;" target="_blank"><strong>پیاده‌سازی و آزمایش الگوریتم DPC-MK</strong></a>
+
+<!--9-->
 <div class="english-text">
 <strong>Agglomerative Methods</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/single_linkage_clustring" style="text-decoration:underline; color:green;" target="_blank"><strong>روش های تجمیعی در یادگیری ماشین</strong></a>
 
-
-
-<!--9-->
-<div class="english-text">
-<strong>DPC-MK</strong>
-</div>
-<a href="/teaching/studenteffort/patterneffort/DPC-MK" style="text-decoration:underline; color:green;" target="_blank"><strong>پیاده‌سازی و آزمایش الگوریتم DPC-MK</strong></a>
 
