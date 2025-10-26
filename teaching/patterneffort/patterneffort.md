@@ -65,6 +65,7 @@ header:
 </div>
 <a href="/teaching/studenteffort/patterneffort/CrossValidation" style="text-decoration:underline; color:green;" target="_blank"><strong>اعتبارسنجی متقاطع Cross Vslidation </strong></a>
 
+
 <!--8-->
 <div class="english-text">
 <strong>Agglomerative Methods</strong>
@@ -78,3 +79,4 @@ header:
 <strong>DPC-MK</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/DPC-MK" style="text-decoration:underline; color:green;" target="_blank"><strong>پیاده‌سازی و آزمایش الگوریتم DPC-MK</strong></a>
+
