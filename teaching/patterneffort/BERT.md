@@ -33,19 +33,14 @@ header:
 
 رشته: مهندسی کامپیوتر گرایش هوش مصنوعی و رباتیک
 
+{% raw %}
 <iframe src="https://www.aparat.com/video/video/embed/videohash/pobvma9/vt/frame"
-
-
         allowFullScreen="true"
-
-
-        width="1027" height="632"
-
-
+        width="1020"
+        height="540"
         style="max-width: 100%; border: none;">
-
-
 </iframe>
+{% endraw %}
 
 ## مدل‌های زبانی
 
