@@ -151,9 +151,9 @@ header:
 
 > <div style="background-color: #fff8b3; padding: 10px; border-radius: 8px;">
 >  می‌توانید جهت آشنایی بیشتر با Sentence Transformerها مقالات زیر را مطالعه کنید:  <br>
-> 1.  <a href="https://sbert.net/" target="_blank">SentenceTransformers Documentation</a>
-> 2.  <a href="https://cafetadris.com/blog/%D9%85%D8%AF%D9%84-%D8%AA%D8%B1%D9%86%D8%B3%D9%81%D9%88%D8%B1%D9%85%D8%B1/" target="_blank"> مدل ترنسفورمر (Transformer Model) چیست؟ </a>
-> 3.  <a href="https://blog.asax.ir/sentence-transformer/" target="_blank">Sentence Transformer چیست؟</a>
+> 1. <a href="https://sbert.net/" target="_blank">SentenceTransformers Documentation</a>  <br>
+> 2. <a href="https://cafetadris.com/blog/%D9%85%D8%AF%D9%84-%D8%AA%D8%B1%D9%86%D8%B3%D9%81%D9%88%D8%B1%D9%85%D8%B1/" target="_blank"> مدل ترنسفورمر (Transformer Model) چیست؟ </a>  <br>
+> 3. <a href="https://blog.asax.ir/sentence-transformer/" target="_blank">Sentence Transformer چیست؟</a>  <br>
 > </div>
 
 
