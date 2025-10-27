@@ -139,6 +139,7 @@ header:
   - **BERT (Bidirectional Encoder Representations from Transformers):**  
    این مدل یک نقطه عطف در NLP بود که با درک دوطرفه زمینه، قادر به تولید نمایش‌های متنی بسیار غنی بود. BERT برای هر کلمه بسته به جمله‌ای که در آن قرار دارد، یک بردار منحصر به فرد تولید می‌کند.
 
+
 > <div style="background-color: #fff8b3; padding: 10px; border-radius: 8px;">
 >  می‌توانید جهت آشنایی بیشتر با BERT مقاله زیر را مطالعه کنید:  <br>
 > <a href="https://hadisadoghiyazdi1971.github.io/teaching/studenteffort/patterneffort/BERT/" target="_blank"> بردار ساختن از کلمات به کمک روش BERT</a>
@@ -147,6 +148,14 @@ header:
 
   - **Sentence Transformers:**  
    این کتابخانه که بر پایه مدل‌هایی مانند BERT ساخته شده، به طور خاص برای تولید یک بردار معنایی باکیفیت برای کل جملات و پاراگراف‌ها تنظیم (Fine-tune) شده است. این ویژگی آن را به ابزاری ایده‌آل برای وظایفی مانند جستجوی معنایی و خوشه‌بندی تبدیل کرده است.
+
+> <div style="background-color: #fff8b3; padding: 10px; border-radius: 8px;">
+>  می‌توانید جهت آشنایی بیشتر با Sentence Transformerها مقالات زیر را مطالعه کنید:  <br>
+> 1.  <a href="https://sbert.net/" target="_blank">SentenceTransformers Documentation</a>
+> 2.  <a href="https://cafetadris.com/blog/%D9%85%D8%AF%D9%84-%D8%AA%D8%B1%D9%86%D8%B3%D9%81%D9%88%D8%B1%D9%85%D8%B1/" target="_blank"> مدل ترنسفورمر (Transformer Model) چیست؟ </a>
+> 3.  <a href="https://blog.asax.ir/sentence-transformer/" target="_blank">Sentence Transformer چیست؟</a>
+> </div>
+
 
 ### نقش Embedding در خوشه‌بندی معنایی
 
