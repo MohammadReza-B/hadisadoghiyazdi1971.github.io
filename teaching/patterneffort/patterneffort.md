@@ -62,3 +62,20 @@ header:
 <a href="/teaching/studenteffort/patterneffort/UniForCE_MinimalMistakes_Final" style="text-decoration:underline; color:green;" target="_blank"><strong> گزارش کامل پیاده‌سازی UniForCE (DeepSeek-derived)، شامل کد، توضیحات خط‌به‌خط، آزمایش‌ها و مقایسه با KMeans.</strong></a>
 
 
+<!--7-->
+<div class="english-text">
+<strong>BERT</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/BERT" style="text-decoration:underline; color:green;" target="_blank"><strong> بردار ساختن از کلمات به کمک روش BERT</strong></a>
+
+<!--8-->
+<div class="english-text">
+<strong>DPC-MK</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/DPC-MK" style="text-decoration:underline; color:green;" target="_blank"><strong>پیاده‌سازی و آزمایش الگوریتم DPC-MK</strong></a>
+
+<!--9-->
+<div class="english-text">
+<strong>Agglomerative Methods</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/single_linkage_clustring" style="text-decoration:underline; color:green;" target="_blank"><strong>روش های تجمیعی در یادگیری ماشین</strong></a>
