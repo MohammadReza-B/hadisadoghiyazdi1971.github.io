@@ -140,7 +140,7 @@ header:
    این مدل یک نقطه عطف در NLP بود که با درک دوطرفه زمینه، قادر به تولید نمایش‌های متنی بسیار غنی بود. BERT برای هر کلمه بسته به جمله‌ای که در آن قرار دارد، یک بردار منحصر به فرد تولید می‌کند.
 
 > <div style="background-color: #fff8b3; padding: 10px; border-radius: 8px;">
->  می‌توانید جهت آشنایی بیشتر با BERT مقاله زیر را مطالعه کنید:
+>  می‌توانید جهت آشنایی بیشتر با BERT مقاله زیر را مطالعه کنید:  
 > <a href="https://hadisadoghiyazdi1971.github.io/teaching/studenteffort/patterneffort/BERT/" target="_blank"> بردار ساختن از کلمات به کمک روش BERT</a>
 > </div>
 
