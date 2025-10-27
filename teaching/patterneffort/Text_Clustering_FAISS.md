@@ -431,7 +431,7 @@ HNSW یک گراف (شبکه‌ای از نقاط و اتصالات) ایجاد 
     <img src="/assets/patterneffort/Text_Clustering_FAISS/HNSW.jpg" alt="HNSW" style="width: 75%; height: 75%; object-fit: contain;">
 </div>
 
-مثال کد"
+مثال کد:
 
 ```python
 import faiss
