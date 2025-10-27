@@ -328,12 +328,21 @@ print(I)
 print("Matching distances:")
 print(D.round(3))
 ```
+
 ```
-# Display results
-print("Search results (indices):")
-print(I)
-print("Matching distances:")
-print(D.round(3))
+Search results (indices):
+[[970 250 429 856]
+ [932  51 483 550]
+ [247 632 175 473]
+ [214 755 856 175]
+ [952 516 582 238]]
+Matching distances:
+[[6.499 6.581 7.206 7.227]
+ [5.984 6.115 6.304 6.336]
+ [6.435 6.523 6.648 6.651]
+ [5.607 6.52  6.762 6.893]
+ [6.434 6.457 6.628 6.723]]
+
 ```
 
 
