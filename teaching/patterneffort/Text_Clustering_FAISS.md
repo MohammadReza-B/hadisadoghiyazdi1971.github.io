@@ -328,6 +328,14 @@ print(I)
 print("Matching distances:")
 print(D.round(3))
 ```
+```
+# Display results
+print("Search results (indices):")
+print(I)
+print("Matching distances:")
+print(D.round(3))
+```
+
 
 این مثال ساده، هسته اصلی عملکرد FAISS را نشان می‌دهد. در کاربردهای واقعی، از شاخص‌های پیچیده‌تری مانند `IndexIVFFlat` یا `IndexHNSW` برای مقیاس‌پذیری استفاده می‌شود.
 
