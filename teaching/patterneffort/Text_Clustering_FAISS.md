@@ -724,6 +724,23 @@ Adjusted Rand Index (ARI): 0.8588
 - **نزدیک به ۰:** خوشه‌ها در حال همپوشانی هستند و مرزهای مشخصی ندارند.
 - **نزدیک به -1:** نقاط احتمالاً در خوشه اشتباهی قرار گرفته‌اند.
 
+$$
+s(i) = \frac{b(i) - a(i)}{\max(a(i), b(i))}
+$$
+
+که در آن:
+
+* **a(i)**: میانگین فاصله از نقطه (i) تا تمام نقاط دیگر در **همان خوشه**.
+* **b(i)**: کمترین میانگین فاصله از نقطه (i) تا نقاط در **هر خوشه دیگر** (نزدیک‌ترین خوشه همسایه).
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 40px;">
+    <img src="/assets/patterneffort/Text_Clustering_FAISS/silhouette_score.jpg" alt="silhouette_score" style="width: 75%; height: 75%; object-fit: contain;">
+</div>
+<p class="wp-caption-text" style="margin-top: 8px; color: #555; align-items: center; text-align: center;">
+        مقایسه‌ی بصری خوشه‌بندی با مراکز مختلف و امتیاز Silhouette آن‌ها
+</p>
+
+
 **تفسیر امتیاز 0.1237:**
 این امتیاز بسیار پایین است. این عدد به ما می‌گوید که خوشه‌های شما **مرزهای بسیار مبهمی دارند**. بسیاری از نقاط داده در مرز بین دو یا چند خوشه قرار دارند و فاصله آن‌ها تا مرکز خوشه خودشان، بسیار کمتر از فاصله‌شان تا مرکز خوشه مجاور نیست.
 
@@ -732,10 +749,35 @@ Adjusted Rand Index (ARI): 0.8588
 ### تحلیل امتیاز ARI (0.8588): تطابق عالی با واقعیت
 
 **Adjusted Rand Index (ARI) چیست؟**
-این معیار، شباهت بین برچسب‌های پیش‌بینی شده توسط الگوریتم خوشه‌بندی و برچسب‌های واقعی (Ground Truth) را می‌سنجد. امتیاز آن بین ۰- تا ۱+ است:
+
+
+**شاخص Adjusted Rand Index - ARI** یک **معیار ارزیابی خوشه‌بندی** است که **شباهت بین دو خوشه‌بندی** را می‌سنجد — معمولاً بین **خوشه‌های پیش‌بینی‌شده** و **برچسب‌های واقعی**.
+
+
+معیار ARI اندازه‌گیری می‌کند که الگوریتم خوشه‌بندی شما چقدر داده‌ها را در مقایسه با برچسب‌های واقعی، به درستی گروه‌بندی کرده است. این کار را بر اساس تعداد جفت‌های نمونه انجام می‌دهد که:
+
+* **در یک خوشه** در هر دو برچسب پیش‌بینی‌شده و واقعی قرار دارند.
+* **در خوشه‌های متفاوت** در هر دو برچسب پیش‌بینی‌شده و واقعی قرار دارند.
+
+در واقع، این معیار **هم‌خوانی بین دو تقسیم‌بندی** را بررسی می‌کند.
+
+
+###  فرمول
+
+$$
+\text{ARI} = \frac{\text{RI} - \text{Expected RI}}{\text{Max RI} - \text{Expected RI}}
+$$
+
+که در آن:
+
+به زبان ساده، شاخص رند (Rand Index - RI) می‌گوید چند درصد از جفت‌های داده‌ها (sample pairs) در هر دو خوشه‌بندی (partitions) (واقعی و پیش‌بینی‌شده) «توافق» دارند: یعنی یا هر دو با هم در یک گروه هستند و یا هر دو از هم جدا هستند. 
+
+این اصلاحیه (adjustment) به ما کمک می‌کند تا امتیازی را که ممکن است صرفاً به دلیل شانس و هم‌زمانی تصادفی (random chance) به دست آمده، نادیده بگیریم و تنها شباهت واقعی را بسنجیم. 
+
 - **نزدیک به ۱:** تطابق تقریباً کامل بین خوشه‌های پیش‌بینی شده و دسته‌بندی واقعی وجود دارد.
 - **نزدیک به ۰:** خوشه‌بندی انجام شده معادل یک دسته‌بندی تصادفی است.
 - **نزدیک به -۱:** خوشه‌بندی کاملاً اشتباه است.
+
 
 **تفسیر امتیاز 0.8588:**
 این یک امتیاز **عالی و بسیار بالا** است! این عدد به ما می‌گوید که الگوریتم K-Means به شکل فوق‌العاده‌ای توانسته است جملات را به خوشه‌های درست (فناوری، آشپزی، سفر، ورزش) تخصیص دهد. به عبارت دیگر، اگرچه مرزها مبهم بودند، اما الگوریتم تقریباً تمام نقاط را در سمت درست مرز قرار داده است.
@@ -1253,3 +1295,6 @@ URL: https://github.com/huggingface/datasets/issues/824
 8. <a href="https://medium.com/@khushivirpariya/agglomerative-clustering-with-graph-557668ed1f2e" target="_blank"><strong>Agglomerative Clustering with Graph</strong></a>  
 9. <a href="https://medium.com/@VectorWorksAcademy/part-2-understanding-and-using-faiss-examples-of-different-index-types-read-and-write-eb9206753853" target="_blank"><strong>Part 2: Understanding and Using FAISS — Exploring FAISS Index Types with Practical Examples for Reading and Writing</strong></a>
 10. <a href="https://www.pinecone.io/learn/series/faiss/hnsw/" target="_blank"><strong>Hierarchical Navigable Small Worlds (HNSW) [Pinecone]</strong></a>
+11. <a href="https://www.geeksforgeeks.org/machine-learning/what-is-silhouette-score/" target="_blank"><strong>
+What is Silhouette Score?
+ [geeksforgeek]</strong></a>
