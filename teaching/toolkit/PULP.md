@@ -212,3 +212,127 @@ for team in teams:
 ```python
 print("\nمقدار تابع هدف:", pulp.value(model.objective))
 ```
+
+
+## آزمایش دوم 
+الان می‌خواهیم مدل را به حالت واقعی و بزرگ‌تر گسترش دهیم —
+یعنی:
+
+تعداد کارها زیاد است (مثلاً 30 تا)
+
+فقط 3 تیم داریم
+
+هر کار زمان اجرای خودش را دارد
+
+هر تیم در هر روز فقط تا ظرفیت مشخص می‌تواند کار کند
+
+مدل باید بیشترین تعداد کار ممکن در طول ۵ روز هفته را انتخاب و تخصیص دهد
+
+```python 
+import pulp
+import random
+
+# -----------------------------
+# 1. داده‌ها (Tasks, Teams, Days)
+# -----------------------------
+num_tasks = 30  # تعداد کارها (می‌توانی زیادتر هم کنی)
+days = ["Mon", "Tue", "Wed", "Thu", "Fri"]
+
+# هر کار ساعت کاری تصادفی بین 1 تا 6 ساعت دارد
+tasks = {f"T{i+1}": {"hours": random.randint(1, 6)} for i in range(num_tasks)}
+
+teams = {
+    "TeamA": {"daily_capacity": 8},
+    "TeamB": {"daily_capacity": 6},
+    "TeamC": {"daily_capacity": 7},
+}
+
+# -----------------------------
+# 2. تعریف مدل
+# -----------------------------
+model = pulp.LpProblem("Large_Task_Assignment", pulp.LpMaximize)
+
+# متغیر دودویی x[team, day, task] = 1 اگر تیم در آن روز آن کار را انجام دهد
+x = pulp.LpVariable.dicts(
+    "assign",
+    ((team, day, task) for team in teams for day in days for task in tasks),
+    cat="Binary"
+)
+
+# -----------------------------
+# 3. تابع هدف: بیشینه‌سازی تعداد کل کارهای انجام‌شده
+# -----------------------------
+model += pulp.lpSum(x[(team, day, task)] for team in teams for day in days for task in tasks), "Maximize_Total_Tasks"
+
+# -----------------------------
+# 4. قید ۱: هر کار فقط یک‌بار در کل هفته انجام شود
+# -----------------------------
+for task in tasks:
+    model += pulp.lpSum(x[(team, day, task)] for team in teams for day in days) <= 1, f"EachTaskOnce_{task}"
+
+# -----------------------------
+# 5. قید ۲: ظرفیت روزانهٔ هر تیم رعایت شود
+# -----------------------------
+for team in teams:
+    for day in days:
+        model += pulp.lpSum(tasks[task]["hours"] * x[(team, day, task)] for task in tasks) <= teams[team]["daily_capacity"], f"Capacity_{team}_{day}"
+
+# -----------------------------
+# 6. حل مدل
+# -----------------------------
+print("در حال حل مدل ...")
+model.solve(pulp.PULP_CBC_CMD(msg=False))
+
+status = pulp.LpStatus[model.status]
+print("وضعیت حل:", status)
+print("مقدار تابع هدف (تعداد کارهای انجام‌شده):", pulp.value(model.objective))
+
+# -----------------------------
+# 7. نمایش نتایج تخصیص
+# -----------------------------
+assignments = []
+for team in teams:
+    for day in days:
+        day_tasks = [task for task in tasks if pulp.value(x[(team, day, task)]) == 1]
+        if day_tasks:
+            total_hours = sum(tasks[t]["hours"] for t in day_tasks)
+            assignments.append((team, day, day_tasks, total_hours))
+
+# مرتب‌سازی خروجی برای زیبایی
+assignments.sort(key=lambda a: (a[0], a[1]))
+
+print("\nنتایج تخصیص:")
+for team, day, day_tasks, total_hours in assignments:
+    print(f"{team} در {day}: {day_tasks} (جمع ساعت = {total_hours})")
+
+# -----------------------------
+# 8. تعداد کارهای انجام‌نشده
+# -----------------------------
+done_tasks = {t for (_, _, tasks_list, _) in assignments for t in tasks_list}
+not_done = [t for t in tasks if t not in done_tasks]
+print(f"\nتعداد کارهای انجام‌شده: {len(done_tasks)} از {len(tasks)}")
+print("کارهای انجام‌نشده:", not_done)
+```
+در حال حل مدل ...
+وضعیت حل: Optimal
+مقدار تابع هدف (تعداد کارهای انجام‌شده): 29.0
+
+نتایج تخصیص:
+TeamA در Fri: ['T6', 'T15'] (جمع ساعت = 8)
+TeamA در Mon: ['T17', 'T23'] (جمع ساعت = 8)
+TeamA در Thu: ['T5', 'T14'] (جمع ساعت = 8)
+TeamA در Tue: ['T10', 'T29'] (جمع ساعت = 8)
+TeamA در Wed: ['T26', 'T28'] (جمع ساعت = 8)
+TeamB در Fri: ['T4', 'T25'] (جمع ساعت = 5)
+TeamB در Mon: ['T30'] (جمع ساعت = 6)
+TeamB در Thu: ['T8'] (جمع ساعت = 6)
+TeamB در Tue: ['T13', 'T16'] (جمع ساعت = 6)
+TeamB در Wed: ['T20', 'T22', 'T27'] (جمع ساعت = 6)
+TeamC در Fri: ['T1', 'T11'] (جمع ساعت = 7)
+TeamC در Mon: ['T2', 'T7'] (جمع ساعت = 7)
+TeamC در Thu: ['T3', 'T9'] (جمع ساعت = 7)
+TeamC در Tue: ['T12', 'T21'] (جمع ساعت = 7)
+TeamC در Wed: ['T19', 'T24'] (جمع ساعت = 7)
+
+تعداد کارهای انجام‌شده: 29 از 30
+کارهای انجام‌نشده: ['T18']
