@@ -3,7 +3,7 @@ layout: persian  # یا single با کلاس rtl-layout
 classes: wide rtl-layout
 dir: rtl
 title: "PULP"
-permalink: /teaching/studenteffort/toolkit/PULP/
+permalink: /teaching/toolkit/PULP/
 author_profile: false
 sidebar:
   nav: "toolkit"
