@@ -93,6 +93,11 @@ $$
 ### چگالی تخمینی و آزمون Dip
 
 برای تعیین تعداد قله‌ها، از روش **تخمین چگالی هسته‌ای (KDE)** برای برآورد تابع چگالی ترکیبی استفاده می‌شود.  
+روش KDE یکی از تکنیک‌های پرکاربرد در آمار برای تخمین چگالی توزیع داده‌هاست و با استفاده از تابع‌های هسته‌ای (Kernel)  
+یک تخمین نرم از توزیع احتمالاتی داده‌ها ارائه می‌دهد.
+
+🔗 [معرفی روش KDE](https://en.wikipedia.org/wiki/Kernel_density_estimation)
+
 سپس از **آزمون Dip** برای بررسی یکتایی قله‌ها استفاده می‌کنیم.
 
 در این آزمون، مقدار احتمال یا همان **p-value** محاسبه می‌شود.  
@@ -103,10 +108,13 @@ $$
 
 به بیان ساده‌تر:
 
-- مقدار بزرگ p → چگالی فقط یک قله دارد (تک‌وجهی).
-- مقدار کوچک p → چگالی چند قله دارد (چندوجهی).
+- مقدار بزرگ p → چگالی فقط یک قله دارد (**تک‌وجهی**).
+- مقدار کوچک p → چگالی چند قله دارد (**چندوجهی**).
 
----
+برای مطالعه و توضیحات بیشتر دربارهٔ تفسیر آزمون **Dip Test**،  
+می‌توانید به لینک زیر مراجعه کنید:
+
+🔗 [توضیحات بیشتر در سایت StackExchange](https://stats.stackexchange.com/questions/156808/interpretation-of-hartigans-dip-test)
 
 ### خوشه‌بندی اولیه (Overclustering)
 
@@ -263,6 +271,8 @@ class UniForCE:
   (به‌صورت تقریبی: ۱۰ ≤ تعداد خوشه‌ها ≤ ۵۰)
 - **نکته:** خوشه‌هایی که اندازهٔ آن‌ها کمتر از یک مقدار آستانهٔ مشخص باشند، حذف می‌شوند.
 
+<img src="/assets/patterneffort/uniforcenew/over.png" alt="over_comparison" style="width: 50%; height: 50%; object-fit: contain;">
+
 ---
 
 ### ۲) محاسبهٔ فاصله‌های امضاشده و انجام تصویرسازی (Projection)
@@ -272,6 +282,8 @@ class UniForCE:
 - سپس تمام نقاط این دو خوشه روی این بردار تصویر (پروجکت) می‌شوند.  
   در این مرحله برای هر نقطه «فاصلهٔ امضاشده» از مرکز خوشه محاسبه می‌گردد.
 - این تصویرسازی باعث می‌شود فضای داده از چند بعد به یک بعد کاهش یابد و بررسی قله‌ها (مدها) در چگالی بسیار ساده‌تر انجام شود.
+
+<img src="/assets/patterneffort/uniforcenew/test.png" alt="test_comparison" style="width: 50%; height: 50%; object-fit: contain;">
 
 ---
 
@@ -292,6 +304,8 @@ class UniForCE:
 - هر زمان که ترکیب دو خوشه در آزمون تک‌وجهی قابل ادغام تشخیص داده شود  
   و اتصال جدیدی در گراف ایجاد نکند، یک یال بین آن دو خوشه اضافه می‌شود.
 - در پایان، مؤلفه‌های همبند حاصل از این گراف، همان **خوشه‌های نهایی داده‌ها** را تشکیل می‌دهند.
+
+<img src="/assets/patterneffort/uniforcenew/cluster.png" alt="cluster_comparison" style="width: 50%; height: 50%; object-fit: contain;">
 
 ---
 
@@ -429,8 +443,17 @@ Silhouette Score
 
 ## منابع
 
-[1] https://www.sciencedirect.com/science/article/pii/
+1. **M. M. Hosseinzadeh, F. Mirjalili, M. S. Ghaemi, and A. Harifi**,  
+   _"UniForCE: The Unimodality Forest method for Clustering and Estimation of the number of clusters"_,  
+   published in **Information Sciences**, Elsevier, 2024.  
+   🔗 <a href="https://www.sciencedirect.com/science/article/pii/" target ="_blank">ScienceDirect: UniForCE Article</a>
+   
+2. **GitHub Community**,  
+   _"Clustering Algorithms — open-source implementations and benchmarks"_,  
+   2024.  
+   🔗 [Clustering Algorithms on GitHub](https://github.com/topics/clustering-algorithms)
 
-[2] https://github.com/topics/clustering-algorithms
-
-[3] https://arxiv.org/html/2312.11323v1
+3. **M. M. Hosseinzadeh et al.**,  
+   _"UniForCE: The Unimodality Forest method for Clustering and Estimation of the number of clusters"_,  
+   Preprint available on **arXiv (2023)**.  
+   🔗 [UniForCE on arXiv](https://arxiv.org/html/2312.11323v1)
