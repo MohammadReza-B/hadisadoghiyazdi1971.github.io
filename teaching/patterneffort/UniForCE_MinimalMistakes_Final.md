@@ -335,13 +335,13 @@ class UniForCE:
 
 ## آزمایش‌ها، نتایج و مقایسه با KMeans
 
-<img src="/assets/patterneffort/uniforcenew/blobs_3_comparison.png" alt="blobs_3_comparison" style="width: 50%; height: 50%; object-fit: contain;">
+<img src="/assets/patterneffort/uniforcenew/blobs_3_comparison.png" alt="blobs_3_comparison" style="width: 100%; height: 50%; object-fit: contain;">
 
-<img src="/assets/patterneffort/uniforcenew/blobs_5_comparison.png" alt="blobs_5_comparison" style="width: 50%; height: 50%; object-fit: contain;">
+<img src="/assets/patterneffort/uniforcenew/blobs_5_comparison.png" alt="blobs_5_comparison" style="width: 100%; height: 50%; object-fit: contain;">
 
-<img src="/assets/patterneffort/uniforcenew/iris_comparison.png" alt="iris_comparison" style="width: 50%; height: 50%; object-fit: contain;">
+<img src="/assets/patterneffort/uniforcenew/iris_comparison.png" alt="iris_comparison" style="width: 100%; height: 50%; object-fit: contain;">
 
-<img src="/assets/patterneffort/uniforcenew/moons_comparison.png" alt="moons_comparison" style="width: 50%; height: 50%; object-fit: contain;">
+<img src="/assets/patterneffort/uniforcenew/moons_comparison.png" alt="moons_comparison" style="width: 100%; height: 50%; object-fit: contain;">
 
 ### مجموعه‌داده‌های پیشنهادی برای آزمایش
 
