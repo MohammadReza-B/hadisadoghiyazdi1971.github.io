@@ -29,7 +29,7 @@ header:
 ## راه‌های ارتباطی
 
 <p align="center">
-  <a href="https://github.com/mahdiehgh79">
+  <a href="https://github.com/mahdiehgh79"  target="_blank">
     <img src="https://img.shields.io/badge/GitHub- mahdieh ghasemi -181717?logo=github&logoColor=white&style=flat-square" />
   </a>
 </p>
