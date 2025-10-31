@@ -30,7 +30,7 @@ header:
 
 <p align="center">
   <a href="https://github.com/mahdiehgh79">
-    <img src="https://img.shields.io/badge/GitHub-YourUsername-181717?logo=github&logoColor=white&style=flat-square" />
+    <img src="https://img.shields.io/badge/GitHub- mahdieh ghasemi -181717?logo=github&logoColor=white&style=flat-square" />
   </a>
 </p>
 
@@ -96,7 +96,7 @@ $$
 روش KDE یکی از تکنیک‌های پرکاربرد در آمار برای تخمین چگالی توزیع داده‌هاست و با استفاده از تابع‌های هسته‌ای (Kernel)  
 یک تخمین نرم از توزیع احتمالاتی داده‌ها ارائه می‌دهد.
 
-🔗 [معرفی روش KDE](https://en.wikipedia.org/wiki/Kernel_density_estimation)
+🔗 <a href="https://en.wikipedia.org/wiki/Kernel_density_estimation" target ="_blank">KDE</a>
 
 سپس از **آزمون Dip** برای بررسی یکتایی قله‌ها استفاده می‌کنیم.
 
@@ -114,7 +114,7 @@ $$
 برای مطالعه و توضیحات بیشتر دربارهٔ تفسیر آزمون **Dip Test**،  
 می‌توانید به لینک زیر مراجعه کنید:
 
-🔗 [توضیحات بیشتر در سایت StackExchange](https://stats.stackexchange.com/questions/156808/interpretation-of-hartigans-dip-test)
+🔗 <a href="https://stats.stackexchange.com/questions/156808/interpretation-of-hartigans-dip-test" target ="_blank">More Information about Dip Test</a>
 
 ### خوشه‌بندی اولیه (Overclustering)
 
@@ -123,7 +123,7 @@ $$
 
 ---
 
-### ** برآورد تعداد خوشه‌ها (k)**
+### برآورد تعداد خوشه‌ها (k)
 
 تعداد نهایی خوشه‌ها برابر است با تعداد مؤلفه‌های همبند در گراف نهایی **جنگل تک‌وجهی (Unimodality Forest)**:
 
@@ -443,17 +443,17 @@ Silhouette Score
 
 ## منابع
 
-1. **M. M. Hosseinzadeh, F. Mirjalili, M. S. Ghaemi, and A. Harifi**,  
+1. **M. M. Hosseinzadeh et al.**,  
    _"UniForCE: The Unimodality Forest method for Clustering and Estimation of the number of clusters"_,  
-   published in **Information Sciences**, Elsevier, 2024.  
-   🔗 <a href="https://www.sciencedirect.com/science/article/pii/" target ="_blank">ScienceDirect: UniForCE Article</a>
-   
+   Preprint available on **arXiv (2023)**.  
+   🔗 <a href="https://arxiv.org/html/2312.11323v1" target ="_blank">UniForCE on arXiv</a>
+
 2. **GitHub Community**,  
    _"Clustering Algorithms — open-source implementations and benchmarks"_,  
    2024.  
-   🔗 [Clustering Algorithms on GitHub](https://github.com/topics/clustering-algorithms)
+   🔗 <a href="https://github.com/topics/clustering-algorithms" target ="_blank">Clustering Algorithms on GitHub</a>
 
-3. **M. M. Hosseinzadeh et al.**,  
+3. **M. M. Hosseinzadeh, F. Mirjalili, M. S. Ghaemi, and A. Harifi**,  
    _"UniForCE: The Unimodality Forest method for Clustering and Estimation of the number of clusters"_,  
-   Preprint available on **arXiv (2023)**.  
-   🔗 [UniForCE on arXiv](https://arxiv.org/html/2312.11323v1)
+   published in **Information Sciences**, Elsevier, 2024.  
+   🔗 <a href="https://www.sciencedirect.com/science/article/pii/" target ="_blank">ScienceDirect: UniForCE Article</a>
