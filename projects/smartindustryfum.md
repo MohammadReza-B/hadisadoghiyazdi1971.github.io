@@ -24,12 +24,13 @@ Smart AssIstant for industry-university communication at Ferdowsi University of 
   <div class="projects-grid">
     <div class="project-card">
       <!-- <a href="/repair-demo/index.html">-->
-      <a href="https://hadisadoghiyazdi.loca.lt/">
+      <!-- <a href="https://hadisadoghiyazdi.loca.lt/"> -->
+       <a href="/projects/smartindustrysaifum/select">
         <img src="{{ '/assets/Projectsimages/smartindustryfum/Input_saifum.jpg' | relative_url }}" 
              alt="saifumrun" 
              class="project-image">
         <div class="project-content">
-          <h3 class="project-title">  سوالات خود را از سایفوم بپرسید بدون وی پی ان  </h3>
+          <h3 class="project-title">  سوالات خود را از سایفوم بپرسید   </h3>
         </div>
       </a>
     </div>
