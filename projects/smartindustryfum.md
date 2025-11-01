@@ -53,6 +53,16 @@ Smart AssIstant for industry-university communication at Ferdowsi University of 
         </div>
       </a>
     </div>
+    <div class="project-card">
+      <a href="/projects/smartindustrysaifum/saifumReport">
+        <img src="{{ '/assets/Projectsimages/smartindustryfum/Reportsaifum.jpg' | relative_url }}" 
+             alt="Reportsaifum" 
+             class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">گزارش کار سایفوم</h3>
+        </div>
+      </a>
+    </div>
     
   </div> <!-- project grid-->
 
