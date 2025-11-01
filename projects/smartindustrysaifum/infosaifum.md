@@ -13,14 +13,14 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
-# سایفوم (SAIFUM): دستیار هوشمند ارتباط با صنعت دانشگاه فردوسی مشهد
+# سایفوم (SAIFUM): دستیار هوشمند ارتباط با دانشگاه فردوسی مشهد
 
 ## معرفی سایفوم
 
-**سایفوم** مخفف "دستیار هوشمند ارتباط با صنعت دانشگاه فردوسی مشهد" می‌باشد که نمایانگر پلتفرم هوشمند برای تسهیل ارتباط بین دانشگاه و صنعت است.
+**سایفوم** مخفف "دستیار هوشمند ارتباط با دانشگاه فردوسی مشهد" می‌باشد که نمایانگر پلتفرم هوشمند برای تسهیل ارتباط بین دانشگاه و صنعت است.
 
 **نام کامل:**  
-Smart Assistant for Industry-University Communication at Ferdowsi University of Mashhad
+Smart AssIstant for university communication at Ferdowsi University of Mashhad
 
 ## دسترسی سریع به مقررات و آیین‌نامه‌ها
 

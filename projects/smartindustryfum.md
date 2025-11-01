@@ -11,9 +11,9 @@ header:
   overlay_color: "#5e616c"
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
-دستیارهوشمند ارتباط با صنعت دانشگاه فردوسی مشهد را بطور مخفف **سایفوم**  می نامیم
+دستیارهوشمند ارتباط  دانشگاه فردوسی مشهد را بطور مخفف **سایفوم**  می نامیم
 
-Smart Assistant for Industry-University Communication at Ferdowsi University of Mashhad
+Smart AssIstant for industry-university communication at Ferdowsi University of Mashhad
 
 
 <div class="container">
@@ -49,7 +49,7 @@ Smart Assistant for Industry-University Communication at Ferdowsi University of 
              alt="lawsaifum" 
              class="project-image">
         <div class="project-content">
-          <h3 class="project-title">مقررات ارتباط با صنعت دانشگاه فردوسی مشهد</h3>
+          <h3 class="project-title">مقررات دانشگاه فردوسی مشهد</h3>
         </div>
       </a>
     </div>

@@ -17,7 +17,7 @@ header:
 
 دستیارهوشمند ارتباط با صنعت دانشگاه فردوسی مشهد را بطور مخفف **سایفوم**  می نامیم
 
-Smart Assistant for Industry-University Communication at Ferdowsi University of Mashhad
+Smart AssIstant for university communication at Ferdowsi University of Mashhad
 
 شامل: 
 
