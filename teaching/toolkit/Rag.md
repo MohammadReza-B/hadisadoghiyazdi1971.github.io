@@ -36,7 +36,7 @@ RAG این مشکل را با دو مرحله اصلی حل می‌کند:
     *   از مدل خواسته می‌شود تا پاسخی تولید کند که **هم بر اساس دانش از پیش آموخته‌شده‌ی خودش و هم بر اساس اسناد ارائه‌شده** باشد.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Toolkitimages/RAG/RAGDeveloperGuide.jpg" alt="RAG1" style="width: 50%; height: 50%; object-fit: contain;">
+    <img src="/assets/Toolkitimages/RAG/RAGDeveloperGuide.jpg" alt="RAG1" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
   ساختار ساده بازیابی تقویت شده
@@ -57,7 +57,7 @@ RAG این مشکل را با دو مرحله اصلی حل می‌کند:
 *   خلاصه‌سازی اسناد تخصصی
 *   دستیارهای هوشمند بر اساس داده‌های داخلی سازمان
   
-  ### در آموزش 
+### در آموزش 
   
 
 این مقاله یک مرور جامع و سیستماتیک از کاربرد فناوری RAG در آموزش ارائه می‌دهد. نوآوری اصلی آن در ایجاد یک نقشه راه است که کاربردهای عملی، مبانی فنی و چالش‌های این حوزه را دسته‌بندی می‌کند. در واقع، این بررسی نشان می‌دهد چگونه RAG با رفع مشکلات مدل‌های زبان بزرگ (مانند توهم و دانش قدیمی)، می‌تواند دقت و کارایی برنامه‌های هوش مصنوعی آموزشی را به شدت افزایش دهد.
@@ -94,7 +94,7 @@ Li, Z., Wang, Z., Wang, W., Hung, K., Xie, H., & Wang, F.L. (2025). [Retrieval-a
 ##فلوگرام  RAG 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Toolkitimages/RAG/workflowRAG.jpg" alt="RAG1" style="width: 50%; height: 50%; object-fit: contain;">
+    <img src="/assets/Toolkitimages/RAG/workflowRAG.jpg" alt="RAG1" style="width: 90%; height: 90%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
   فلوگرام ساده بازیابی تقویت شده
