@@ -123,6 +123,20 @@ Li, Z., Wang, Z., Wang, W., Hung, K., Xie, H., & Wang, F.L. (2025). [Retrieval-a
   تقسیم بندی برای RAG
 </div>
 
+**یک نمونه قسمت بندی متن بدون همپوشانی و فقط بر اساس تعداد حرف**
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/Toolkitimages/RAG/chunking_example.jpg" alt="RAG1" style="width: 90%; height: 90%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+<a href="https://www.multimodal.dev/post/how-to-chunk-documents-for-rag" style="text-decoration:none; color:inherit;" target="_blank">
+      <strong>  تقسیم بندی متن ناهمپوشان بر اساس تعداد حرف هر 25 حرف یک بخش
+</strong> </a>
+
+</div>
+
+
+
 
 ## FAISS چیست؟ یک راهنمای کامل
 
