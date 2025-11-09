@@ -89,6 +89,8 @@ Li, Z., Wang, Z., Wang, W., Hung, K., Xie, H., & Wang, F.L. (2025). [Retrieval-a
 
 [1] Mo, F., Gao, Y., Wu, Z., Liu, X., Chen, P., Li, Z., Wang, Z., Li, X., Jiang, M., & Nie, J.-Y. (2026). Leveraging historical information to boost retrieval-augmented generation in conversations. *Information Processing & Management*, *63*(2, Part B), 104449.
 
+## اجرای سیستم RAG نمونه
+
 
 
 ## FAISS چیست؟ یک راهنمای کامل
