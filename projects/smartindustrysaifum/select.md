@@ -18,3 +18,4 @@ header:
 
 <a href="http://localhost:7000/" style="text-decoration:none; color:green;" target="_blank">
       <strong>Industrial Assistant</strong>      
+      
