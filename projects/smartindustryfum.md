@@ -11,9 +11,9 @@ header:
   overlay_color: "#5e616c"
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
-دستیارهوشمند ارتباط با صنعت دانشگاه فردوسی مشهد را بطور مخفف **سایفوم**  می نامیم
+دستیارهوشمند ارتباط  دانشگاه فردوسی مشهد را بطور مخفف **سایفوم**  می نامیم
 
-Smart Assistant for Industry-University Communication at Ferdowsi University of Mashhad
+Smart AssIstant for industry-university communication at Ferdowsi University of Mashhad
 
 
 <div class="container">
@@ -24,12 +24,13 @@ Smart Assistant for Industry-University Communication at Ferdowsi University of 
   <div class="projects-grid">
     <div class="project-card">
       <!-- <a href="/repair-demo/index.html">-->
-      <a href="https://hadisadoghiyazdi.loca.lt/">
+      <!-- <a href="https://hadisadoghiyazdi.loca.lt/"> -->
+       <a href="/projects/smartindustrysaifum/select">
         <img src="{{ '/assets/Projectsimages/smartindustryfum/Input_saifum.jpg' | relative_url }}" 
              alt="saifumrun" 
              class="project-image">
         <div class="project-content">
-          <h3 class="project-title">  سوالات خود را از سایفوم بپرسید بدون وی پی ان  </h3>
+          <h3 class="project-title">  سوالات خود را از سایفوم بپرسید   </h3>
         </div>
       </a>
     </div>
@@ -49,7 +50,17 @@ Smart Assistant for Industry-University Communication at Ferdowsi University of 
              alt="lawsaifum" 
              class="project-image">
         <div class="project-content">
-          <h3 class="project-title">مقررات ارتباط با صنعت دانشگاه فردوسی مشهد</h3>
+          <h3 class="project-title">مقررات دانشگاه فردوسی مشهد</h3>
+        </div>
+      </a>
+    </div>
+    <div class="project-card">
+      <a href="/projects/smartindustrysaifum/saifumReport">
+        <img src="{{ '/assets/Projectsimages/smartindustryfum/Reportsaifum.jpg' | relative_url }}" 
+             alt="Reportsaifum" 
+             class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">گزارش کار سایفوم</h3>
         </div>
       </a>
     </div>

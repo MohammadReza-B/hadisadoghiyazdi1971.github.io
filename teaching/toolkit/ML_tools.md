@@ -70,3 +70,9 @@ header:
 <strong>What Is Principal Component Analysis (PCA)?</strong>
 </div>
 <a href="/teaching/toolkit/pca" style="text-decoration:underline; color:green;" target="_blank"><strong>کاهش ویژگی به مولفه اصلی چیست؟ </strong></a>
+
+<!--10-->
+<div class="english-text">
+<strong>PULP</strong>
+</div>
+<a href="/teaching/toolkit/PULP" style="text-decoration:underline; color:green;" target="_blank"><strong> ابزار بهینه سازی</strong></a>

@@ -15,9 +15,9 @@ header:
 
 # سایفوم
 
-دستیارهوشمند ارتباط با صنعت دانشگاه فردوسی مشهد را بطور مخفف **سایفوم**  می نامیم
+دستیارهوشمند ارتباط با دانشگاه فردوسی مشهد را بطور مخفف **سایفوم**  می نامیم
 
-Smart Assistant for Industry-University Communication at Ferdowsi University of Mashhad
+Smart AssIstant for university communication at Ferdowsi University of Mashhad
 
 شامل: 
 
@@ -26,6 +26,10 @@ Smart Assistant for Industry-University Communication at Ferdowsi University of 
 - دستورالعمل اجرایی فرصت مطالعاتی اعضای هیأت علمی در جامعه و صنعت
 - آیین‌نامه دوره کارآموزی بلندمدت دانشگاه فردوسی مشهد
 - دستورالعمل اجرایی نحوه هزینه‌کرد بالاسری طرح‌های برون دانشگاهی توسط دانشکده‌ها/واحدهای پژوهشی
+- چارچوب کلان پژوهش
+- راهنمای عملی دانشجوی کارشناسی و کاردانی
+- فرآیند پژوهش و عالی‌ترین مدارج
+
 
 
 برای کسب اطلاعات از موارد زیر کلیک کنید 
@@ -62,3 +66,20 @@ Smart Assistant for Industry-University Communication at Ferdowsi University of 
 <a href="/projects/smartindustrysaifum/balasary" style="text-decoration:underline; color:green;" target="_blank"><strong>  هزینه‌کرد بالاسری طرح‌های برون دانشگاهی</strong></a>
 
 
+<!--6-->
+<div class="english-text">
+<strong>Macro research framework</strong>
+</div>
+<a href="/projects/smartindustrysaifum/ResearchGlobalview" style="text-decoration:underline; color:green;" target="_blank"><strong> چارچوب کلان پژوهش</strong></a>
+
+<!--7-->
+<div class="english-text">
+<strong>Practical guide for undergraduate and associate students</strong>
+</div>
+<a href="/projects/smartindustrysaifum/Practicalguide" style="text-decoration:underline; color:green;" target="_blank"><strong>  راهنمای عملی دانشجوی کارشناسی و کاردانی</strong></a>
+
+<!--8-->
+<div class="english-text">
+<strong>The research process and the highest degrees</strong>
+</div>
+<a href="/projects/smartindustrysaifum/ResearchProcess" style="text-decoration:underline; color:green;" target="_blank"><strong> فرآیند پژوهش و عالی‌ترین مدارج </strong></a>

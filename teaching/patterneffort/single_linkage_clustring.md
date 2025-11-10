@@ -75,7 +75,7 @@ $$
 به بیان دیگر، دندروگرام به ما نشان می‌دهد که چه نقاطی، در چه مراحلی و با چه میزان شباهتی با یکدیگر ادغام شده‌اند. در قسمت پایین، درخت داده‌های منفرد قرار دارند و با بالا رفتن از درخت، خوشه‌های بزرگ‌تر حاصل از ادغام‌های پی‌در‌پی نمایش داده می‌شوند.
 دندروگرام ماتریس تفاوت برای داده‌های بالا به شکل زیر خواهد بود:
 
-<img src="/assets/patterneffort/single_linkage_clustring/img-00.png" alt="Dendrogram">
+<img src="/assets/patterneffort/linkage/img-00.png" alt="Dendrogram">
 
 ## الگوریتم‌های تجمعی بر پایه تئوری ماتریس – متد اتصال مجرد (Single Link Method)
 ---
@@ -86,7 +86,7 @@ $$ d(C_i, C_j) = min[d(x_k, x_l)], x_k \in C_i, x_l \in C_j $$
 
 این روش تمایل دارد خوشه‌هایی باریک و دراز تولید کند که در آن‌ها عناصر مجاورِ درون یک خوشه، فاصله‌ای اندک دارند، اما عناصر واقع در دو انتهای یک خوشه ممکن است فاصله‌ای بسیار بیشتر از دو عنصر متعلق به خوشه‌های دیگر از یکدیگر داشته باشند. برای برخی از داده ها، این ویژگی می‌تواند به ایجاد مشکلاتی در تعریف کلاس‌هایی که بتوانند داده را به شکلی درست تقسیم بندی کند، بینجامد. با این حال، این روش در اخترشناسی برای تحلیل خوشه‌های کهکشانی - که اغلب ممکن است شامل رشته‌های درازی از ماده باشند - پرطرفدار است. در این حوزه کاربردی، این الگوریتم با نام الگوریتم دوستانِ دوستان (friends-of-friends) نیز شناخته می‌شود.
 
-<img src="/assets/patterneffort/single_linkage_clustring/img-01.jpg" alt="Dendrogram">
+<img src="/assets/patterneffort/linkage/img-01.jpg" alt="Dendrogram">
 
 ### متد اتصال مجرد – مثال
 ---
@@ -178,7 +178,7 @@ $$
 
 دندروگرام این داده‌ها به شکل زیر خواهد بود:
 
-<img src="/assets/patterneffort/single_linkage_clustring/img-02.jpg" alt="Dendrogram">
+<img src="/assets/patterneffort/linkage/img-02.jpg" alt="Dendrogram">
 
 الگوریتم تجمعی پیشین در روش اتصال مجرد (single-link) نشان می‌دهد که برای اتصال دو گروه مجزا، تنها وجود یک پیوند کافی است. در این روش، فاصله‌ی میان دو گروه برابر است با فاصله‌ی نزدیک‌ترین اعضای آن‌ها. به همین دلیل، این روش را **روش نزدیک‌ترین همسایگان** نیز می‌نامند.
 
@@ -482,7 +482,7 @@ dendrogram(Z)
 
 <i>خروجی:</i>
 
-<img src="/assets/patterneffort/single_linkage_clustring/img-03.png" alt="Dendrogram">
+<img src="/assets/patterneffort/linkage/img-03.png" alt="Dendrogram">
 
 ```python
 R = inconsistent(Z, d=2)
@@ -513,7 +513,7 @@ print(W)
  [1.84535455 0.86216774 5.         1.52745578]]
 ```
 
-<img src="/assets/patterneffort/single_linkage_clustring/img-04.png" alt="Inconsistancy">
+<img src="/assets/patterneffort/linkage/img-04.png" alt="Inconsistancy">
 
 
 در نهایت با استفاده از `fcluster`، میتوانیم داده‌ها را در دسته‌های (خوشه‌ها)، دسته‌بندی کنیم:
