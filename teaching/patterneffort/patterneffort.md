@@ -79,3 +79,12 @@ header:
 <a href="/teaching/studenteffort/patterneffort/single_linkage_clustring" style="text-decoration:underline; color:green;" target="_blank"><strong>روش های تجمیعی در یادگیری ماشین</strong></a>
 
 
+
+
+
+<!--10-->
+<div class="english-text">
+<strong>Analysis of Variance of Cross-Validation Estimators of the
+Generalization Error</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/Analysis_of_Variance_of_Cross_Validation_Estimators_of_the_Generalization_Error/" style="text-decoration:underline; color:green;" target="_blank"><strong>اعتبارسنجی متقاطع Cross Vslidation </strong></a>

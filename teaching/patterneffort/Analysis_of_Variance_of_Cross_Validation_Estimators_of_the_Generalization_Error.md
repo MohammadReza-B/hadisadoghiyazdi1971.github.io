@@ -3,7 +3,7 @@ layout: persian  # یا single با کلاس rtl-layout
 classes: wide rtl-layout
 dir: rtl
 title: "تحلیل واریانس برآوردگرهای اعتبارسنجی متقابل خطای تعمیم "
-permalink: /teaching/studenteffort/patterneffort/CrossValidation/
+permalink: /teaching/studenteffort/patterneffort/Analysis_of_Variance_of_Cross_Validation_Estimators_of_the_Generalization_Error/
 author_profile: true
 sidebar:
   nav: "patterneffort"
