@@ -75,3 +75,16 @@ header:
 <strong>Circuit Schematic Drawing</strong>
 </div>
 <a href="/teaching/circuiteffort/Circuit_Schematic_Drawing_Project" style="text-decoration:underline; color:green;" target="_blank"><strong> رسم شماتیک مدار</strong></a>
+
+<!--9-->
+<div class="english-text">
+<strong>DC motor (Farsi)</strong>
+</div>
+<a href="/teaching/circuiteffort/DC_Motor_fa_fixed_toc_DC_Motor" style="text-decoration:underline; color:green;" target="_blank"><strong> موتور DC (به زبان فارسی)</strong></a>
+
+
+<!--10-->
+<div class="english-text">
+<strong>DC Motor (Latin)</strong>
+</div>
+<a href="/teaching/circuiteffort/DC_Motor_en_fixed_DC_Motor" style="text-decoration:underline; color:green;" target="_blank"><strong> موتور ِژ به انگلیسی</strong></a>
