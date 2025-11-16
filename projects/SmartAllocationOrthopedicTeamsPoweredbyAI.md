@@ -111,11 +111,16 @@ header:
       <strong>HTML</strong>
     </a>/Excel هوشمند 
 * گزارشات هوشمند ارایه توسط مدیر گروه
-* دستورالعمل های هوشمند به هر تیم
+* <a href="LLM_Ortho_Report.html" style="text-decoration:none; color:green;" target="_blank">
+      <strong> دستورالعمل های هوشمند به هر تیم</strong>
 * زمان‌بندی هفتگی
 * نمودارهای بارکاری
 * جدول موارد تخصیص نیافته
 * دانلود Excel
+
+
+
+
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
    <img src="/assets/Projectsimages/SmartAllocationOrthopedicTeamsPoweredbyAI/output_scheduling_weekly_filter.jpg
@@ -126,6 +131,17 @@ header:
 
 🗓️ زمان‌بندی هفتگی - فیلتر بر اساس روز
 
+</div>
+
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+   <img src="/assets/Projectsimages/SmartAllocationOrthopedicTeamsPoweredbyAI/warning.jpg
+
+" alt="stu1" style="width: 95%; height: 95%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+
+هشدارها
 </div>
 
 
