@@ -61,10 +61,13 @@ header:
 ### لایه ۱ – داده‌ها 
 
 * دیتابیس بیماران 
-* مشخصات تخصصی تیم‌ها و گروه‌ها
+*<a href="OrthopedicTeamsResourceAllocationDashboard.html" style="text-decoration:none; color:green;" target="_blank">
+      <strong> مشخصات تخصصی تیم‌ها و گروه‌ها</strong>
 * اطلاعات مهارت‌های جراحی
 * داده‌های فوریت موارد کاری
 * ظرفیت‌های هفتگی تیم‌ها
+
+
 
 ### لایه ۲ – مدل‌سازی پزشکی هوشمند  
 
