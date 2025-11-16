@@ -1,932 +1,0 @@
-
-    <!DOCTYPE html>
-    <html dir="rtl" lang="fa">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>گزارش بهینه‌سازی تخصیص وظایف ارتوپدی</title>
-        <style>
-            body {
-                font-family: Tahoma, Arial, sans-serif;
-                margin: 20px;
-                background-color: #f5f5f5;
-            }
-            .container {
-                max-width: 1400px;
-                margin: 0 auto;
-                background: white;
-                padding: 30px;
-                border-radius: 10px;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            }
-            h1 {
-                color: #2c3e50;
-                border-bottom: 3px solid #3498db;
-                padding-bottom: 10px;
-            }
-            h2 {
-                color: #34495e;
-                margin-top: 30px;
-                border-right: 4px solid #3498db;
-                padding-right: 10px;
-            }
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin: 20px 0;
-                font-size: 14px;
-            }
-            th, td {
-                border: 1px solid #ddd;
-                padding: 12px;
-                text-align: right;
-            }
-            th {
-                background-color: #3498db;
-                color: white;
-                font-weight: bold;
-            }
-            tr:nth-child(even) {
-                background-color: #f9f9f9;
-            }
-            tr:hover {
-                background-color: #f0f0f0;
-            }
-            .emergency {
-                background-color: #ffcccc !important;
-            }
-            .urgent {
-                background-color: #ffe0b3 !important;
-            }
-            .overload-high {
-                background-color: #ffcccc !important;
-            }
-            .overload-medium {
-                background-color: #ffe0b3 !important;
-            }
-            .underload {
-                background-color: #ccffcc !important;
-            }
-            .alert {
-                padding: 15px;
-                margin: 15px 0;
-                border-radius: 5px;
-            }
-            .alert-danger {
-                background-color: #f8d7da;
-                border: 1px solid #f5c6cb;
-                color: #721c24;
-            }
-            .alert-warning {
-                background-color: #fff3cd;
-                border: 1px solid #ffeaa7;
-                color: #856404;
-            }
-            .alert-success {
-                background-color: #d4edda;
-                border: 1px solid #c3e6cb;
-                color: #155724;
-            }
-            .stats {
-                display: flex;
-                justify-content: space-around;
-                margin: 20px 0;
-                flex-wrap: wrap;
-            }
-            .stat-card {
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                color: white;
-                padding: 20px;
-                border-radius: 10px;
-                text-align: center;
-                min-width: 200px;
-                margin: 10px;
-            }
-            .stat-card h3 {
-                margin: 0;
-                font-size: 36px;
-            }
-            .stat-card p {
-                margin: 5px 0 0 0;
-                opacity: 0.9;
-            }
-            @media print {
-                .container {
-                    box-shadow: none;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1>🏥 گزارش جامع بهینه‌سازی تخصیص وظایف ارتوپدی</h1>
-            <p style="color: #7f8c8d;">تاریخ: 2025/11/15 - 21:46</p>
-    
-            <div class="stats">
-                <div class="stat-card">
-                    <h3>134</h3>
-                    <p>موارد تخصیص یافته</p>
-                </div>
-                <div class="stat-card">
-                    <h3>0</h3>
-                    <p>موارد تخصیص نیافته</p>
-                </div>
-                <div class="stat-card">
-                    <h3>774</h3>
-                    <p>مجموع بار کاری (ساعت)</p>
-                </div>
-                <div class="stat-card">
-                    <h3>7</h3>
-                    <p>تیم‌های فعال</p>
-                </div>
-            </div>
-    <h2>💡 پیشنهادات و هشدارها</h2><div class="alert alert-danger">🚨 G10_T2_Rehab_Ancillary: بار کاری 175.0٪ - نیاز به افزایش ظرفیت یا کاهش موارد</div><div class="alert alert-danger">🚨 G03_T1_Deformity_Elective: بار کاری 175.5٪ - نیاز به افزایش ظرفیت یا کاهش موارد</div><div class="alert alert-danger">🚨 G10_T1_Inpatient_Care: بار کاری 184.6٪ - نیاز به افزایش ظرفیت یا کاهش موارد</div><div class="alert alert-danger">🚨 G09_T2_Bone_Loss_Recon: بار کاری 181.0٪ - نیاز به افزایش ظرفیت یا کاهش موارد</div><div class="alert alert-danger">🚨 G08_T1_Surgical_Oncology: بار کاری 144.4٪ - نیاز به افزایش ظرفیت یا کاهش موارد</div><div class="alert alert-danger">🚨 G02_T1_OR_Call: بار کاری 180.0٪ - نیاز به افزایش ظرفیت یا کاهش موارد</div><div class="alert alert-danger">🚨 G08_T2_MDM_Support: بار کاری 162.5٪ - نیاز به افزایش ظرفیت یا کاهش موارد</div><h2>📊 تحلیل بار کاری تیم‌ها</h2><table><tr><th>شناسه تیم</th><th>تخصص</th><th>بار گذشته</th><th>بار جدید</th><th>ظرفیت</th><th>نسبت بار</th></tr><tr class="overload-high">
-                <td>G10_T2_Rehab_Ancillary</td>
-                <td>بازتوانی، فیزیوتراپی و خدمات دارویی</td>
-                <td>90</td>
-                <td>120</td>
-                <td>120</td>
-                <td><strong>175.00%</strong></td>
-            </tr><tr class="overload-high">
-                <td>G03_T1_Deformity_Elective</td>
-                <td>جراحی‌های الکتیو دیسک، لامینکتومی و دفرمیتی</td>
-                <td>85</td>
-                <td>108</td>
-                <td>110</td>
-                <td><strong>175.45%</strong></td>
-            </tr><tr class="overload-high">
-                <td>G10_T1_Inpatient_Care</td>
-                <td>مراقبت‌های داخلی و مدیریت بالینی بیماران بستری</td>
-                <td>110</td>
-                <td>130</td>
-                <td>130</td>
-                <td><strong>184.62%</strong></td>
-            </tr><tr class="overload-high">
-                <td>G09_T2_Bone_Loss_Recon</td>
-                <td>بازسازی‌های بزرگ برای کمبود استخوان و آلوگرافت</td>
-                <td>85</td>
-                <td>96</td>
-                <td>100</td>
-                <td><strong>181.00%</strong></td>
-            </tr><tr class="overload-high">
-                <td>G08_T1_Surgical_Oncology</td>
-                <td>جراحی‌های نجات اندام (Limb Salvage) و بیوپسی</td>
-                <td>40</td>
-                <td>90</td>
-                <td>90</td>
-                <td><strong>144.44%</strong></td>
-            </tr><tr class="overload-high">
-                <td>G02_T1_OR_Call</td>
-                <td>پوشش دهی جراحی‌های اورژانس (On-Call OR)</td>
-                <td>120</td>
-                <td>150</td>
-                <td>150</td>
-                <td><strong>180.00%</strong></td>
-            </tr><tr class="overload-high">
-                <td>G08_T2_MDM_Support</td>
-                <td>جلسات چندتخصصی (MDT)، رادیوتراپی و پیگیری</td>
-                <td>50</td>
-                <td>80</td>
-                <td>80</td>
-                <td><strong>162.50%</strong></td>
-            </tr></table><h2>📋 خلاصه تخصیص موارد کاری</h2><table><tr><th>شناسه مورد</th><th>نوع عمل</th><th>تخصص مورد نیاز</th><th>فوریت</th><th>بار کاری</th><th>تیم تخصیص یافته</th></tr><tr class="urgent">
-                <td>2ba3ae7114bcb6ef...</td>
-                <td>فیوژن (Fusion) (L1-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr class="urgent">
-                <td>cd4aede52c9a5dd8...</td>
-                <td>فیوژن (Fusion) (L5/S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>5370fccb05185269...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T1_Inpatient_Care</td>
-            </tr><tr class="urgent">
-                <td>2d8784a664d7e45a...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G09_T2_Bone_Loss_Recon</td>
-            </tr><tr class="urgent">
-                <td>e9c94a22bf6d4ef0...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5/S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr class="urgent">
-                <td>ca74474cb544da7b...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T1_Inpatient_Care</td>
-            </tr><tr class="urgent">
-                <td>e9b48e3d542d6828...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T1_Inpatient_Care</td>
-            </tr><tr class="urgent">
-                <td>df16fefeed3cdb77...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T1_Inpatient_Care</td>
-            </tr><tr class="urgent">
-                <td>5e9bef1001eb7723...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="">
-                <td>d195cbf1210b7a00...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G09_T2_Bone_Loss_Recon</td>
-            </tr><tr class="urgent">
-                <td>b7af432a2b8611a1...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="">
-                <td>220d10d0c225715e...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>a44d371308858533...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="">
-                <td>aff5e0eb4b7b7922...</td>
-                <td>لامینکتومی/دکمپرشن</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>4</td>
-                <td>G10_T1_Inpatient_Care</td>
-            </tr><tr class="">
-                <td>210b32f749f5d50e...</td>
-                <td>لامینکتومی/دکمپرشن</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>29b64787b9559c65...</td>
-                <td>لامینکتومی/دکمپرشن</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>4</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="">
-                <td>358f57bf734d7967...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="">
-                <td>72faa41d30ca8478...</td>
-                <td>فیوژن (Fusion) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="">
-                <td>059907037c107f86...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G10_T1_Inpatient_Care</td>
-            </tr><tr class="">
-                <td>6ef4357d616e8a12...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G09_T2_Bone_Loss_Recon</td>
-            </tr><tr class="urgent">
-                <td>24a3f8105baf5b33...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G09_T2_Bone_Loss_Recon</td>
-            </tr><tr class="urgent">
-                <td>8f1c8d0e7a3e0316...</td>
-                <td>لامینکتومی/دکمپرشن</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>4</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="">
-                <td>d938434fe7f3cd37...</td>
-                <td>فیوژن (Fusion) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr class="">
-                <td>0c08acbd4e60bf93...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>dfcda0b8cba7b202...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G09_T2_Bone_Loss_Recon</td>
-            </tr><tr class="urgent">
-                <td>da0c7f24d4eda598...</td>
-                <td>فیوژن (Fusion) (L1-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G09_T2_Bone_Loss_Recon</td>
-            </tr><tr class="urgent">
-                <td>87fc06462f337e8a...</td>
-                <td>فیوژن (Fusion) (L5/S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>2e1300a5f00ab689...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T1_Inpatient_Care</td>
-            </tr><tr class="urgent">
-                <td>95c6bf436d109178...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>2</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="urgent">
-                <td>2c9d60c51f39a261...</td>
-                <td>فیوژن (Fusion) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr class="urgent">
-                <td>6959f14a7e5bfcb9...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G08_T2_MDM_Support</td>
-            </tr><tr class="urgent">
-                <td>d4d8c12390b9e733...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr class="urgent">
-                <td>27c4cdbceef54332...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr class="urgent">
-                <td>9379c2d881782172...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="urgent">
-                <td>1328499a6c80f244...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>2</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="urgent">
-                <td>9aa4ffea541d9c04...</td>
-                <td>فیوژن (Fusion) (L5/S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G08_T2_MDM_Support</td>
-            </tr><tr class="urgent">
-                <td>3ecbfb49a3d2afb1...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>83722218ff33b9e4...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G08_T2_MDM_Support</td>
-            </tr><tr class="urgent">
-                <td>87a3545d78c21a0c...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>6ece3751ad5c8a20...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr class="urgent">
-                <td>2c634f067769a7fc...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T1_Inpatient_Care</td>
-            </tr><tr class="urgent">
-                <td>fd42fa5849030258...</td>
-                <td>فیوژن (Fusion) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>31b8a1dfb6889a27...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5/S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G08_T2_MDM_Support</td>
-            </tr><tr class="urgent">
-                <td>da4c4c1cf1ae69a7...</td>
-                <td>فیوژن (Fusion) (L5/S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>b1cf5c0360e1aa04...</td>
-                <td>فیوژن (Fusion) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>b3b1401b71212963...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>ab4b860a4a6a2d4e...</td>
-                <td>فیوژن (Fusion) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr class="urgent">
-                <td>d287fe60dd62cc49...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>5f3a4c1579185ab2...</td>
-                <td>فیوژن (Fusion) (L5/S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>a7bfa7e0499da989...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>e7daec13a3092f72...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5/S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>dc383ea052bd773a...</td>
-                <td>فیوژن (Fusion) (L5/S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>247919e02afca040...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>324d39b84b08f4d3...</td>
-                <td>فیوژن (Fusion) (L5/S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G08_T2_MDM_Support</td>
-            </tr><tr class="urgent">
-                <td>07c3e8c8c718edbc...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>2357bc492c6a8cd0...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>4ecb15ca43e783f1...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>78f428d129d7f060...</td>
-                <td>فیوژن (Fusion) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G08_T2_MDM_Support</td>
-            </tr><tr class="urgent">
-                <td>85f8694931e37c55...</td>
-                <td>فیوژن (Fusion) (L5/S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr class="urgent">
-                <td>21d20e03d33c4559...</td>
-                <td>فیوژن (Fusion) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="urgent">
-                <td>b409c5639146960b...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L1TOS1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr class="urgent">
-                <td>99b01ff20ee91f80...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L1-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T1_Inpatient_Care</td>
-            </tr><tr class="urgent">
-                <td>3a66dde5650f4939...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>2</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="urgent">
-                <td>7724e0de7a648ebd...</td>
-                <td>فیوژن (Fusion) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>e7356e68e4d77f4d...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>f8669c322c3a0a11...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G09_T2_Bone_Loss_Recon</td>
-            </tr><tr class="urgent">
-                <td>f27d07e43fc725fd...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="">
-                <td>97db9ebaac867b11...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>4a316e0f7ac044fe...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G09_T2_Bone_Loss_Recon</td>
-            </tr><tr class="">
-                <td>b55aed6344b35a17...</td>
-                <td>لامینکتومی/دکمپرشن</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>4</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="urgent">
-                <td>5b52d4da67246d39...</td>
-                <td>لامینکتومی/دکمپرشن</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>4</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="urgent">
-                <td>01ffde3549fe09c1...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>2</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="urgent">
-                <td>2d76c0daa7830bf5...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="">
-                <td>1dbb38f733bf2179...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G09_T2_Bone_Loss_Recon</td>
-            </tr><tr class="">
-                <td>e1f8b301ab83ae98...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>f12cbb9294e61444...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>5030179fe3659887...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="">
-                <td>c267422aab0e5459...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="">
-                <td>0c909ac163bbe778...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G10_T1_Inpatient_Care</td>
-            </tr><tr class="">
-                <td>0fd9cec6af735841...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G09_T2_Bone_Loss_Recon</td>
-            </tr><tr class="urgent">
-                <td>05efcd445dcc48bd...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T1_Inpatient_Care</td>
-            </tr><tr class="urgent">
-                <td>cb170e066c4ce3ef...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="">
-                <td>413bd63defd82bcd...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>6</td>
-                <td>G08_T1_Surgical_Oncology</td>
-            </tr><tr class="urgent">
-                <td>72cf846565fb348f...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G08_T2_MDM_Support</td>
-            </tr><tr class="urgent">
-                <td>681593c663da7556...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>7f8be88da07f13b4...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T1_Inpatient_Care</td>
-            </tr><tr class="">
-                <td>148064ac32bca500...</td>
-                <td>بدون توصیه جراحی مشخص</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>Elective (3)</td>
-                <td>2</td>
-                <td>G08_T2_MDM_Support</td>
-            </tr><tr class="urgent">
-                <td>6e7c87e979add2e0...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G08_T2_MDM_Support</td>
-            </tr><tr class="urgent">
-                <td>3e046f5f51bf2289...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G09_T2_Bone_Loss_Recon</td>
-            </tr><tr class="urgent">
-                <td>46552022a4dc98ca...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L1-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr class="urgent">
-                <td>292638749b4c03e6...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5/S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G09_T2_Bone_Loss_Recon</td>
-            </tr><tr class="urgent">
-                <td>19bfdee84db7aa43...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr class="urgent">
-                <td>27089d2891364e7e...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>80fe6154a660f769...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>478be5220010d096...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G09_T2_Bone_Loss_Recon</td>
-            </tr><tr class="urgent">
-                <td>f3a2a92a42a98272...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G02_T1_OR_Call</td>
-            </tr><tr class="urgent">
-                <td>ab0f9730d24293e7...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T1_Inpatient_Care</td>
-            </tr><tr class="urgent">
-                <td>ae8df7ea27792813...</td>
-                <td>فیوژن (Fusion) (L5-S1)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr class="urgent">
-                <td>9610988de50952f5...</td>
-                <td>فیوژن (Fusion)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G03_T1_Deformity_Elective</td>
-            </tr><tr class="urgent">
-                <td>14b2b2784117c085...</td>
-                <td>فیوژن بین مهره‌ای (TLIF/PLIF)</td>
-                <td>ستون فقرات (Spine)</td>
-                <td>URGENT (2)</td>
-                <td>6</td>
-                <td>G10_T2_Rehab_Ancillary</td>
-            </tr><tr><td colspan='6' style='text-align:center;'><em>... و 34 مورد دیگر (برای مشاهده کامل از فایل اکسل استفاده کنید)</em></td></tr></table><h2>🗓️ خلاصه زمانبندی هفتگی</h2><table><tr><th>روز هفته</th><th>تعداد موارد</th></tr><tr><td>شنبه</td><td>22</td></tr><tr><td>یکشنبه</td><td>21</td></tr><tr><td>دوشنبه</td><td>20</td></tr><tr><td>سه‌شنبه</td><td>20</td></tr><tr><td>چهارشنبه</td><td>18</td></tr><tr><td>پنجشنبه</td><td>17</td></tr><tr><td>جمعه</td><td>16</td></tr></table>
-        <h2>🤖 گزارش هوشمند LLM (دلایل و شرح عملیات)</h2>
-        <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; background: #f9f9f9;">
-            
-        <!DOCTYPE html>
-        <html dir="rtl" lang="fa">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>گزارش هوشمند تخصیص وظایف ارتوپدی - LLM</title>
-            <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
-            <style>
-                body { font-family: 'Vazirmatn', Tahoma, Arial, sans-serif; margin: 0; padding: 20px; background: linear-gradient(to bottom, #f0f8ff, #e6f3ff); color: #333; line-height: 1.6; }
-                .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
-                h1 { color: #2c3e50; text-align: center; border-bottom: 4px solid #3498db; padding-bottom: 15px; }
-                h2 { color: #34495e; margin-top: 25px; padding-right: 10px; border-right: 5px solid #3498db; }
-                .team-card { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 20px; border-radius: 10px; margin: 15px 0; }
-                .operation { background: #f8f9fa; border-left: 4px solid #28a745; padding: 15px; margin: 10px 0; border-radius: 5px; }
-                .emergency { border-left-color: #dc3545 !important; background: #fff5f5; }
-                ul { list-style-type: disc; padding-right: 20px; }
-                strong { color: #e74c3c; }
-                .alert { padding: 12px; margin: 10px 0; border-radius: 5px; }
-                .alert-warning { background: #fff3cd; border: 1px solid #ffeaa7; color: #856404; }
-                @media print { body { background: white; } .container { box-shadow: none; } }
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <h1>🤖 گزارش هوشمند تخصیص وظایف (LLM)</h1>
-                <p style="text-align: center; color: #7f8c8d; font-style: italic;">تولیدشده با Gemini AI - 2025/11/15 - 21:42</p>
-                <div><h2>گزارش جامع تخصیص وظایف و زمان‌بندی هفتگی تیم‌های ستون فقرات</h2><br><br>#<h2>مقدمه</h2><br><br>این گزارش به منظور ارائه یک نمای کلی ساختاریافته از تخصیص وظایف هفتگی به تیم‌های جراحی و مراقبتی ستون فقرات تهیه شده است. هدف اصلی بهینه‌سازی بار کاری، تضمین انطباق تخصص‌ها با نیازهای هر مورد، و مدیریت فوریت‌ها است. در مجموع، <strong>۸۴ مورد کاری</strong> طی این هفته تخصیص یافته که شامل ترکیبی از عمل‌های جراحی (فیوژن، لامینکتومی/دکمپرشن) و موارد نیازمند ارزیابی و مدیریت غیرجراحی است. تخصیص‌ها بر اساس فوریت موارد (اکثراً موارد URGENT)، ظرفیت‌های اعلام شده تیم‌ها، و تطابق با تخصص اصلی هر گروه صورت پذیرفته است.<br><br>---<br><br>#<h2>جزئیات تخصیص به تفکیک تیم</h2><br><br>##<h2>عزیز سرتیم نامشخص و اعضای محترم تیم G10_T2_Rehab_Ancillary:</h2><br><br><strong>دلایل کلی تخصیص:</strong><br>- <strong>تمرکز گروه:</strong> بازتوانی، فیزیوتراپی و خدمات دارویی. این تیم با توجه به ماهیت عمل‌های فیوژن و نیاز به مراقبت‌های پس از عمل و بازتوانی، موارد زیادی را در تخصص خود پوشش می‌دهد.<br>- <strong>ظرفیت هفتگی تیم:</strong> ۱۲۰ ساعت<br>- <strong>بار کاری گذشته:</strong> ۹۰ ساعت<br>- <strong>بار کاری جدید تخصیص یافته:</strong> ۱۲۰ ساعت<br>- <strong>نسبت کل بار کاری (گذشته + جدید به ظرفیت):</strong> ۱۷۵.۰۰%<br>این تخصیص بر اساس فوریت موارد، تطابق تخصصی با تمرکز تیم و ظرفیت موجود انجام شده است.<br><br><strong>جزئیات زمان‌بندی:</strong><br><br><strong>شنبه:</strong><br>- <strong>مورد کاری:</strong> d938434fe7f3cd37e556da261ebf1340 - فیوژن (Fusion) (L5-S1) (Elective (3))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5-S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 5b38f737b2236dc9f3c92271b53d320f - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش ترانس‌فورامینال یا پوستریور لومبار (TLIF/PLIF) با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> ae8df7ea2779281397dee77ffa441e86 - فیوژن (Fusion) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5-S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>یکشنبه:</strong><br>- <strong>مورد کاری:</strong> 14b2b2784117c085d9ec08147ce3be1a - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش ترانس‌فورامینال یا پوستریور لومبار (TLIF/PLIF) با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 61d5c38859fc2955464a293024aac81c - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش ترانس‌فورامینال یا پوستریور لومبار (TLIF/PLIF) در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> b409c5639146960b326f1ec749aa5f7d - فیوژن بین مهره‌ای (TLIF/PLIF) (L1TOS1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در محدوده L1 تا S1 ستون فقرات.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>دوشنبه:</strong><br>- <strong>مورد کاری:</strong> 19bfdee84db7aa4395da0edcee7816ce - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش ترانس‌فورامینال یا پوستریور لومبار (TLIF/PLIF) در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 6ece3751ad5c8a20e521f89cf93c8c80 - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش ترانس‌فورامینال یا پوستریور لومبار (TLIF/PLIF) با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> d4d8c12390b9e733e70d732097ab1613 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش ترانس‌فورامینال یا پوستریور لومبار (TLIF/PLIF) در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>سه‌شنبه:</strong><br>- <strong>مورد کاری:</strong> 27c4cdbceef54332c80740cd12d5dd0e - بدون توصیه جراحی مشخص (URGENT (2))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی با فوریت بالا.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 85f8694931e37c55e93152fc201c29e9 - فیوژن (Fusion) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5/S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> dff250d49ca47cd1456adf24cd466ee8 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>چهارشنبه:</strong><br>- <strong>مورد کاری:</strong> 2ba3ae7114bcb6ef64f60a4ae2324ef6 - فیوژن (Fusion) (L1-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن گسترده ستون فقرات در ناحیه کمری از L1 تا S1 با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی دقیق، بیهوشی عمومی).<br>    - دسترسی جراحی (برش وسیع‌تر و آماده‌سازی محل عمل).<br>    - انجام فیوژن در چندین سطح (برداشتن دیسک‌ها، جاگذاری گرافت‌ها و ایمپلنت‌ها).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل فشرده و بازتوانی طولانی‌تر.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 8bc755a59dde4d854c4f92fc5e449dce - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> e9c94a22bf6d4ef074c2a028b5874064 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>پنجشنبه:</strong><br>- <strong>مورد کاری:</strong> 2c9d60c51f39a2615d24bce8b41a9a7c - فیوژن (Fusion) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5-S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 93556289001ec8f70f11514a367c453c - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> f73757c47a9c923b25716c1aca9bf90c - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>جمعه:</strong><br>- <strong>مورد کاری:</strong> 46552022a4dc98ca95e79fb2e6018dd0 - فیوژن بین مهره‌ای (TLIF/PLIF) (L1-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در محدوده L1 تا S1 ستون فقرات.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> ab4b860a4a6a2d4eedcc718bda72b9cc - فیوژن (Fusion) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5-S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br>##<h2>عزیز سرتیم نامشخص و اعضای محترم تیم G03_T1_Deformity_Elective:</h2><br><br><strong>دلایل کلی تخصیص:</strong><br>- <strong>تمرکز گروه:</strong> جراحی‌های الکتیو دیسک، لامینکتومی و دفرمیتی. این تیم تخصص بالایی در مدیریت موارد دفرمیتی و جراحی‌های انتخابی ستون فقرات دارد.<br>- <strong>ظرفیت هفتگی تیم:</strong> ۱۱۰ ساعت<br>- <strong>بار کاری گذشته:</strong> ۸۵ ساعت<br>- <strong>بار کاری جدید تخصیص یافته:</strong> ۱۰۸ ساعت<br>- <strong>نسبت کل بار کاری (گذشته + جدید به ظرفیت):</strong> ۱۷۵.۴۵%<br>این تخصیص بر اساس فوریت موارد، تطابق تخصصی با تمرکز تیم و ظرفیت موجود انجام شده است.<br><br><strong>جزئیات زمان‌بندی:</strong><br><br><strong>شنبه:</strong><br>- <strong>مورد کاری:</strong> 210b32f749f5d50e207126cb62aad55c - لامینکتومی/دکمپرشن (Elective (3))<br>  - <strong>شرح عملیات:</strong> عمل دکمپرشن ستون فقرات برای کاهش فشار بر روی اعصاب در یک مورد انتخابی.<br>  - <strong>روال انجام:</strong><br>    - ارزیابی پیش‌جراحی و آماده‌سازی.<br>    - بیهوشی عمومی و پوزیشن‌دهی.<br>    - ایجاد دسترسی به ستون فقرات و انجام لامینکتومی/برداشتن فشار.<br>    - بستن زخم و انتقال به ریکاوری.<br>    - مدیریت درد و مراقبت‌های پس از عمل.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 681593c663da75563e77f9f7d9ed3a54 - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> cd4aede52c9a5dd800934289d65cf810 - فیوژن (Fusion) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5/S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>یکشنبه:</strong><br>- <strong>مورد کاری:</strong> 07c3e8c8c718edbc7c0b148609b9365e - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 773e2bf154b5e8d04d5d78df4750e0ab - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> dc383ea052bd773ad5f8f0801a505528 - فیوژن (Fusion) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5/S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>دوشنبه:</strong><br>- <strong>مورد کاری:</strong> 27089d2891364e7e211c9eefaacdb683 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 80fe6154a660f769f0677f72ac1809e6 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> e7daec13a3092f725fac3c284eee1a80 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>سه‌شنبه:</strong><br>- <strong>مورد کاری:</strong> 3ecbfb49a3d2afb191b6fecff91db5d5 - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 87a3545d78c21a0c6f9f8df344adc2ce - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> f12cbb9294e61444865b4ff25a51715e - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>چهارشنبه:</strong><br>- <strong>مورد کاری:</strong> 4ecb15ca43e783f1e9a6d6105453a896 - بدون توصیه جراحی مشخص (URGENT (2))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی با فوریت بالا.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 9610988de50952f547bd75bc6c32b3af - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>پنجشنبه:</strong><br>- <strong>مورد کاری:</strong> 5030179fe3659887990d0c66278e5736 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> a7bfa7e0499da98993e79cfb7d2e418f - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>جمعه:</strong><br>- <strong>مورد کاری:</strong> 51cd0b1e91cebe3708f2895b8d51506e - فیوژن بین مهره‌ای (TLIF/PLIF) (L4-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در محدوده L4 تا S1 ستون فقرات.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> ad4835276e1d3421dba962aebb613a3c - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br>##<h2>عزیز سرتیم نامشخص و اعضای محترم تیم G10_T1_Inpatient_Care:</h2><br><br><strong>دلایل کلی تخصیص:</strong><br>- <strong>تمرکز گروه:</strong> مراقبت‌های داخلی و مدیریت بالینی بیماران بستری. این تیم مسئولیت مدیریت کلی بیماران بستری، به ویژه موارد پیچیده را بر عهده دارد.<br>- <strong>ظرفیت هفتگی تیم:</strong> ۱۳۰ ساعت<br>- <strong>بار کاری گذشته:</strong> ۱۱۰ ساعت<br>- <strong>بار کاری جدید تخصیص یافته:</strong> ۱۳۰ ساعت<br>- <strong>نسبت کل بار کاری (گذشته + جدید به ظرفیت):</strong> ۱۸۴.۶۲%<br>این تخصیص بر اساس فوریت موارد، تطابق تخصصی با تمرکز تیم و ظرفیت موجود انجام شده است.<br><br><strong>جزئیات زمان‌بندی:</strong><br><br><strong>شنبه:</strong><br>- <strong>مورد کاری:</strong> 059907037c107f86ff1bff75aa705f31 - فیوژن (Fusion) (Elective (3))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 2c634f067769a7fc7620ff0b8c1ca7f6 - بدون توصیه جراحی مشخص (URGENT (2))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی با فوریت بالا.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 99b01ff20ee91f809a424992fdab81b5 - فیوژن بین مهره‌ای (TLIF/PLIF) (L1-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در محدوده L1 تا S1 ستون فقرات.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> e9b48e3d542d6828826f8b6c96c1abad - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>یکشنبه:</strong><br>- <strong>مورد کاری:</strong> 0c909ac163bbe7785cab214d6d67bf6e - فیوژن (Fusion) (Elective (3))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 2e1300a5f00ab6893d6b2119ca25bf11 - بدون توصیه جراحی مشخص (URGENT (2))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی با فوریت بالا.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> ab0f9730d24293e757d07a25b53c3c98 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>دوشنبه:</strong><br>- <strong>مورد کاری:</strong> aff5e0eb4b7b79222196953177b1201c - لامینکتومی/دکمپرشن (Elective (3))<br>  - <strong>شرح عملیات:</strong> عمل دکمپرشن ستون فقرات برای کاهش فشار بر روی اعصاب در یک مورد انتخابی.<br>  - <strong>روال انجام:</strong><br>    - ارزیابی پیش‌جراحی و آماده‌سازی.<br>    - بیهوشی عمومی و پوزیشن‌دهی.<br>    - ایجاد دسترسی به ستون فقرات و انجام لامینکتومی/برداشتن فشار.<br>    - بستن زخم و انتقال به ریکاوری.<br>    - مدیریت درد و مراقبت‌های پس از عمل.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 5370fccb05185269f72ae4058098f97b - بدون توصیه جراحی مشخص (URGENT (2))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی با فوریت بالا.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> adbc1cf5bf21fd44d08803d92e2f6cee - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>سه‌شنبه:</strong><br>- <strong>مورد کاری:</strong> 016a2336159039fd52b79c7570ae4bd2 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 662067606c9aeca912c9500eca4ea312 - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> ca74474cb544da7b82f163532b127ca7 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>چهارشنبه:</strong><br>- <strong>مورد کاری:</strong> 05efcd445dcc48bd95421343cd2afe03 - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 71d2214c02fe61623e5889e5c7616ebd - فیوژن بین مهره‌ای (TLIF/PLIF) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> dae5e95147ef9f68b274982536c39039 - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>پنجشنبه:</strong><br>- <strong>مورد کاری:</strong> 10b8b3327ee64a157d8cd0284ce3243b - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 7c27f100a46f2cd155a787b72ed2879e - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> df16fefeed3cdb77f04eab14745778dd - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>جمعه:</strong><br>- <strong>مورد کاری:</strong> 293769562df37d33dd0184ca678d01a1 - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 7f8be88da07f13b4a74a42e4f7f4222c - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> e63febb49d06a3dcfcb4d09e7749d4be - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br>##<h2>عزیز سرتیم نامشخص و اعضای محترم تیم G09_T2_Bone_Loss_Recon:</h2><br><br><strong>دلایل کلی تخصیص:</strong><br>- <strong>تمرکز گروه:</strong> بازسازی‌های بزرگ برای کمبود استخوان و آلوگرافت. این تیم در موارد پیچیده با نیاز به بازسازی استخوان و استفاده از گرافت‌های استخوانی تخصص دارد.<br>- <strong>ظرفیت هفتگی تیم:</strong> ۱۰۰ ساعت<br>- <strong>بار کاری گذشته:</strong> ۸۵ ساعت<br>- <strong>بار کاری جدید تخصیص یافته:</strong> ۹۶ ساعت<br>- <strong>نسبت کل بار کاری (گذشته + جدید به ظرفیت):</strong> ۱۸۱.۰۰%<br>این تخصیص بر اساس فوریت موارد، تطابق تخصصی با تمرکز تیم و ظرفیت موجود انجام شده است.<br><br><strong>جزئیات زمان‌بندی:</strong><br><br><strong>شنبه:</strong><br>- <strong>مورد کاری:</strong> 0fd9cec6af735841fc5a734a18c3bda9 - فیوژن (Fusion) (Elective (3))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 292638749b4c03e6cfb864ebec1e0634 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> dfcda0b8cba7b202cccfb5523dad9743 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>یکشنبه:</strong><br>- <strong>مورد کاری:</strong> 1dbb38f733bf2179af9dc08bce45623b - فیوژن (Fusion) (Elective (3))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 2d8784a664d7e45a9711284eed2e5c74 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> f8669c322c3a0a11fc8cc545946bec19 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>دوشنبه:</strong><br>- <strong>مورد کاری:</strong> 6ef4357d616e8a12217cecc392d3fde7 - فیوژن (Fusion) (Elective (3))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 3e046f5f51bf2289b212231b258d5fba - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>سه‌شنبه:</strong><br>- <strong>مورد کاری:</strong> d195cbf1210b7a003b66b2892eb592b6 - فیوژن (Fusion) (Elective (3))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 478be5220010d096dde935e2dcdda740 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>چهارشنبه:</strong><br>- <strong>مورد کاری:</strong> 01d3c2be577443063f6dd7896d8164c9 - فیوژن بین مهره‌ای (TLIF/PLIF) (L1-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در محدوده L1 تا S1 ستون فقرات.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 4a316e0f7ac044fe3489ed8130ae9f04 - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>پنجشنبه:</strong><br>- <strong>مورد کاری:</strong> 0a00e72e4b2f2c9a5fe013ea6625fbdf - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 90160f7a51512ca9ab889bdb7950144b - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>جمعه:</strong><br>- <strong>مورد کاری:</strong> 24a3f8105baf5b336d80c5666fd7a1fd - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> da0c7f24d4eda598c4d3cdd1eb08e80f - فیوژن (Fusion) (L1-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن گسترده ستون فقرات در ناحیه کمری از L1 تا S1 با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی دقیق، بیهوشی عمومی).<br>    - دسترسی جراحی (برش وسیع‌تر و آماده‌سازی محل عمل).<br>    - انجام فیوژن در چندین سطح (برداشتن دیسک‌ها، جاگذاری گرافت‌ها و ایمپلنت‌ها).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل فشرده و بازتوانی طولانی‌تر.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br>##<h2>عزیز سرتیم نامشخص و اعضای محترم تیم G08_T1_Surgical_Oncology:</h2><br><br><strong>دلایل کلی تخصیص:</strong><br>- <strong>تمرکز گروه:</strong> جراحی‌های نجات اندام (Limb Salvage) و بیوپسی. این تیم به دلیل تخصص در جراحی‌های انکولوژی و موارد پیچیده، به خصوص برای ستون فقرات، موارد فوریت‌دار را پوشش می‌دهد.<br>- <strong>ظرفیت هفتگی تیم:</strong> ۹۰ ساعت<br>- <strong>بار کاری گذشته:</strong> ۴۰ ساعت<br>- <strong>بار کاری جدید تخصیص یافته:</strong> ۹۰ ساعت<br>- <strong>نسبت کل بار کاری (گذشته + جدید به ظرفیت):</strong> ۱۴۴.۴۴%<br>این تخصیص بر اساس فوریت موارد، تطابق تخصصی با تمرکز تیم و ظرفیت موجود انجام شده است.<br><br><strong>جزئیات زمان‌بندی:</strong><br><br><strong>شنبه:</strong><br>- <strong>مورد کاری:</strong> 413bd63defd82bcdbb88d863c69875b5 - فیوژن (Fusion) (Elective (3))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 3630222ae14e05c1697c3e3640c145ed - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 9379c2d88178217214598576755b8b61 - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>یکشنبه:</strong><br>- <strong>مورد کاری:</strong> 72faa41d30ca847844b3b11458f20ed3 - فیوژن (Fusion) (L5-S1) (Elective (3))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5-S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 3a66dde5650f49390680e676a0683d6d - بدون توصیه جراحی مشخص (URGENT (2))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی با فوریت بالا.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 95c6bf436d109178080a3c7f026d3ee8 - بدون توصیه جراحی مشخص (URGENT (2))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی با فوریت بالا.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>دوشنبه:</strong><br>- <strong>مورد کاری:</strong> b55aed6344b35a17da02b81510d76404 - لامینکتومی/دکمپرشن (Elective (3))<br>  - <strong>شرح عملیات:</strong> عمل دکمپرشن ستون فقرات برای کاهش فشار بر روی اعصاب در یک مورد انتخابی.<br>  - <strong>روال انجام:</strong><br>    - ارزیابی پیش‌جراحی و آماده‌سازی.<br>    - بیهوشی عمومی و پوزیشن‌دهی.<br>    - ایجاد دسترسی به ستون فقرات و انجام لامینکتومی/برداشتن فشار.<br>    - بستن زخم و انتقال به ریکاوری.<br>    - مدیریت درد و مراقبت‌های پس از عمل.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 51579fa23d1df2439753322b6a93a916 - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> a44d371308858533f03d9d55db0165a3 - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>سه‌شنبه:</strong><br>- <strong>مورد کاری:</strong> 01ffde3549fe09c1ddc6e13b9fbc4253 - بدون توصیه جراحی مشخص (URGENT (2))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی با فوریت بالا.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 5b52d4da67246d3915167e38894a697a - لامینکتومی/دکمپرشن (URGENT (2))<br>  - <strong>شرح عملیات:</strong> عمل دکمپرشن ستون فقرات برای کاهش فشار بر روی اعصاب در یک مورد فوریت‌دار.<br>  - <strong>روال انجام:</strong><br>    - ارزیابی پیش‌جراحی و آماده‌سازی.<br>    - بیهوشی عمومی و پوزیشن‌دهی.<br>    - ایجاد دسترسی به ستون فقرات و انجام لامینکتومی/برداشتن فشار.<br>    - بستن زخم و انتقال به ریکاوری.<br>    - مدیریت درد و مراقبت‌های پس از عمل.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> ab2405198d1d76ce6100de1f24b7a193 - فیوژن (Fusion) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5-S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>چهارشنبه:</strong><br>- <strong>مورد کاری:</strong> 1328499a6c80f24470519ee66645c209 - بدون توصیه جراحی مشخص (URGENT (2))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی با فوریت بالا.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 5e9bef1001eb772387bcac0069db062f - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> d472171ed34a842ed8a2dc8a465c5e6a - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>پنجشنبه:</strong><br>- <strong>مورد کاری:</strong> 21d20e03d33c4559567bfbfacab304db - فیوژن (Fusion) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5-S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 8e8c850adb6ea94220f2a1768da1d145 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>جمعه:</strong><br>- <strong>مورد کاری:</strong> 29b64787b9559c65e8501b69cecee81c - لامینکتومی/دکمپرشن (URGENT (2))<br>  - <strong>شرح عملیات:</strong> عمل دکمپرشن ستون فقرات برای کاهش فشار بر روی اعصاب در یک مورد فوریت‌دار.<br>  - <strong>روال انجام:</strong><br>    - ارزیابی پیش‌جراحی و آماده‌سازی.<br>    - بیهوشی عمومی و پوزیشن‌دهی.<br>    - ایجاد دسترسی به ستون فقرات و انجام لامینکتومی/برداشتن فشار.<br>    - بستن زخم و انتقال به ریکاوری.<br>    - مدیریت درد و مراقبت‌های پس از عمل.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 8f1c8d0e7a3e0316669114ef1e8bdeed - لامینکتومی/دکمپرشن (URGENT (2))<br>  - <strong>شرح عملیات:</strong> عمل دکمپرشن ستون فقرات برای کاهش فشار بر روی اعصاب در یک مورد فوریت‌دار.<br>  - <strong>روال انجام:</strong><br>    - ارزیابی پیش‌جراحی و آماده‌سازی.<br>    - بیهوشی عمومی و پوزیشن‌دهی.<br>    - ایجاد دسترسی به ستون فقرات و انجام لامینکتومی/برداشتن فشار.<br>    - بستن زخم و انتقال به ریکاوری.<br>    - مدیریت درد و مراقبت‌های پس از عمل.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br>##<h2>عزیز سرتیم نامشخص و اعضای محترم تیم G02_T1_OR_Call:</h2><br><br><strong>دلایل کلی تخصیص:</strong><br>- <strong>تمرکز گروه:</strong> پوشش دهی جراحی‌های اورژانس (On-Call OR). این تیم به طور خاص برای رسیدگی به موارد اورژانسی و حیاتی طراحی شده است.<br>- <strong>ظرفیت هفتگی تیم:</strong> ۱۵۰ ساعت<br>- <strong>بار کاری گذشته:</strong> ۱۲۰ ساعت<br>- <strong>بار کاری جدید تخصیص یافته:</strong> ۱۵۰ ساعت<br>- <strong>نسبت کل بار کاری (گذشته + جدید به ظرفیت):</strong> ۱۸۰.۰۰%<br>این تخصیص بر اساس فوریت موارد، تطابق تخصصی با تمرکز تیم و ظرفیت موجود انجام شده است.<br><br><strong>جزئیات زمان‌بندی:</strong><br><br><strong>شنبه:</strong><br>- <strong>مورد کاری:</strong> 0c08acbd4e60bf9372f7db898e9a65c5 - فیوژن (Fusion) (Elective (3))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 247919e02afca040fc084606c001c33a - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> b1cf5c0360e1aa04b9ab75c0fb42306a - فیوژن (Fusion) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5-S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> e7356e68e4d77f4d60aa1444d0658b6a - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>یکشنبه:</strong><br>- <strong>مورد کاری:</strong> 220d10d0c225715eb9fb49b7daa43bf7 - بدون توصیه جراحی مشخص (Elective (3))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 258663ee25736abc202ab581a2c3db60 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> b3b1401b712129636d6e5422b598e8a7 - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> f27d07e43fc725fdb5792555db50635f - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>دوشنبه:</strong><br>- <strong>مورد کاری:</strong> 358f57bf734d7967ed15718471c7b653 - فیوژن (Fusion) (Elective (3))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 2d76c0daa7830bf5701ab75713b13099 - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> b7af432a2b8611a1d7bd3978d83d43a9 - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> f3a2a92a42a98272c122c405cc5f0247 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>سه‌شنبه:</strong><br>- <strong>مورد کاری:</strong> 97db9ebaac867b110dd7624ef94b7228 - فیوژن (Fusion) (Elective (3))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 5f3a4c1579185ab27807badf81bf31d2 - فیوژن (Fusion) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5/S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> cb170e066c4ce3ef57aaa774a528e098 - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> fd42fa5849030258d851d731f7b5fddc - فیوژن (Fusion) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5-S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>چهارشنبه:</strong><br>- <strong>مورد کاری:</strong> c267422aab0e5459845265573d5a0bf5 - بدون توصیه جراحی مشخص (Elective (3))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 7724e0de7a648ebd42ecc06ef4da5ea2 - فیوژن (Fusion) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5-S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> d287fe60dd62cc49ea186593e15a03cf - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>پنجشنبه:</strong><br>- <strong>مورد کاری:</strong> e1f8b301ab83ae98e677313249a40ec9 - فیوژن (Fusion) (Elective (3))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 87fc06462f337e8a31973abd8a292dde - فیوژن (Fusion) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5/S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> da4c4c1cf1ae69a73663cd50c6be52b4 - فیوژن (Fusion) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5/S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>جمعه:</strong><br>- <strong>مورد کاری:</strong> 2357bc492c6a8cd04a3957d42675349c - فیوژن (Fusion) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 9c8e21f66cde7b2c6cb87694576dd56a - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> dab4f0e05f6f0fb299b3c7c71a0916f1 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br>##<h2>عزیز سرتیم نامشخص و اعضای محترم تیم G08_T2_MDM_Support:</h2><br><br><strong>دلایل کلی تخصیص:</strong><br>- <strong>تمرکز گروه:</strong> جلسات چندتخصصی (MDT)، رادیوتراپی و پیگیری. این تیم در موارد پیچیده و نیازمند بررسی چندتخصصی و برنامه‌ریزی جامع درمانی نقش کلیدی دارد.<br>- <strong>ظرفیت هفتگی تیم:</strong> ۸۰ ساعت<br>- <strong>بار کاری گذشته:</strong> ۵۰ ساعت<br>- <strong>بار کاری جدید تخصیص یافته:</strong> ۸۰ ساعت<br>- <strong>نسبت کل بار کاری (گذشته + جدید به ظرفیت):</strong> ۱۶۲.۵۰%<br>این تخصیص بر اساس فوریت موارد، تطابق تخصصی با تمرکز تیم و ظرفیت موجود انجام شده است.<br><br><strong>جزئیات زمان‌بندی:</strong><br><br><strong>شنبه:</strong><br>- <strong>مورد کاری:</strong> 148064ac32bca500976c201b9d954fda - بدون توصیه جراحی مشخص (Elective (3))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 6959f14a7e5bfcb92a7df388cc0a46a7 - بدون توصیه جراحی مشخص (URGENT (2))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی با فوریت بالا.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>یکشنبه:</strong><br>- <strong>مورد کاری:</strong> 00a52a46ce8cca37f37b3b0b25ecac43 - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 6e7c87e979add2e01edebe73ad2c1461 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>دوشنبه:</strong><br>- <strong>مورد کاری:</strong> 191132f557700aad764cafdfa1c39c0f - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 72cf846565fb348fa858fb075d1e099b - فیوژن بین مهره‌ای (TLIF/PLIF) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF با هدف تثبیت و رفع فشار از اعصاب.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>سه‌شنبه:</strong><br>- <strong>مورد کاری:</strong> 1f873f139c8a7bbd21f71b8722d6999d - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 78f428d129d7f06019c772fb80623970 - فیوژن (Fusion) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها و کاهش درد.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5-S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>چهارشنبه:</strong><br>- <strong>مورد کاری:</strong> 21f25cda83a312952e9cd7bcf8e8e75a - فیوژن بین مهره‌ای (TLIF/PLIF) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 83722218ff33b9e41ae1f508f05ea240 - بدون توصیه جراحی مشخص (URGENT (2))<br>  - <strong>شرح عملیات:</strong> مورد نیازمند ارزیابی بیشتر یا مدیریت غیرجراحی با فوریت بالا.<br>  - <strong>روال انجام:</strong><br>    - بررسی کامل پرونده و مشاوره با بیمار.<br>    - ارزیابی تخصصی تکمیلی (تصویربرداری، آزمایشات).<br>    - بحث در جلسه چندتخصصی (MDT) برای تعیین بهترین رویکرد.<br>    - تدوین برنامه درمانی (غیرجراحی یا جراحی آتی).<br>    - پیگیری و ارزیابی پاسخ به درمان.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>پنجشنبه:</strong><br>- <strong>مورد کاری:</strong> 31b8a1dfb6889a27a4e7c6a9ab8f44f5 - فیوژن بین مهره‌ای (TLIF/PLIF) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> 9aa4ffea541d9c04083da131222442e8 - فیوژن (Fusion) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5/S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br><strong>جمعه:</strong><br>- <strong>مورد کاری:</strong> 324d39b84b08f4d3203baad99263223d - فیوژن (Fusion) (L5/S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن ستون فقرات در ناحیه کمری-خاجی با هدف تثبیت مهره‌ها.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی قبل از عمل (ارزیابی بیمار، بیهوشی عمومی).<br>    - دسترسی جراحی (برش و آماده‌سازی محل عمل در L5/S1).<br>    - انجام فیوژن (برداشتن دیسک، جاگذاری گرافت و ایمپلنت).<br>    - بستن محل جراحی و ریکاوری اولیه.<br>    - مراقبت‌های پس از عمل و شروع بازتوانی.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br>- <strong>مورد کاری:</strong> dfd2318c7202dbe82cc693a84058ce3e - فیوژن بین مهره‌ای (TLIF/PLIF) (L5-S1) (URGENT (2))<br>  - <strong>شرح عملیات:</strong> فیوژن بین مهره‌ای به روش TLIF/PLIF در ناحیه کمری-خاجی.<br>  - <strong>روال انجام:</strong><br>    - آماده‌سازی پیش‌جراحی (تصویربرداری و برنامه‌ریزی).<br>    - بیهوشی عمومی و آماده‌سازی میدان جراحی.<br>    - دسترسی خلفی، برداشتن دیسک و قرار دادن cage حاوی گرافت استخوانی.<br>    - تثبیت با پیچ و میله و بستن لایه‌ای زخم.<br>    - انتقال به ریکاوری و شروع پروتکل مدیریت درد.<br>  - <strong>زمان تخمینی:</strong> ۶ ساعت<br><br>---<br><br>#<h2>نتیجه‌گیری و پیشنهادات</h2><br><br>این برنامه زمان‌بندی هفتگی نشان‌دهنده بار کاری قابل توجهی برای تمامی تیم‌های تخصصی ستون فقرات است. اکثر موارد تخصیص یافته دارای سطح فوریت "URGENT (2)" هستند که نشانگر نیاز به رسیدگی سریع و مؤثر است.<br><br><strong>نکات کلیدی:</strong><br>- <strong>بار کاری بالا:</strong> تمامی تیم‌ها، با وجود ظرفیت‌های مشخص، نسبت بار کاری کل (گذشته + جدید) بالایی را نشان می‌دهند که در محدوده ۱۴۴.۴۴% تا ۱۸۴.۶۲% متغیر است. این امر نشان می‌دهد که تیم‌ها فراتر از ظرفیت اسمی خود عمل می‌کنند که ممکن است منجر به فرسودگی شغلی یا تأخیر در موارد غیراورژانسی شود.<br>- <strong>تطابق تخصصی:</strong> تخصیص‌ها به خوبی با حوزه تمرکز هر تیم مطابقت دارند، که کارایی و کیفیت مراقبت را تضمین می‌کند.<br>- <strong>مدیریت فوریت‌ها:</strong> تأکید بر موارد URGENT در تخصیص، اولویت‌بندی صحیح را نشان می‌دهد.<br><br><strong>پیشنهادات:</strong><br>1.  <strong>بازنگری ظرفیت تیم‌ها:</strong> با توجه به نسبت بالای بار کاری، پیشنهاد می‌شود یک بازنگری جامع در مورد ظرفیت‌های اعلام شده تیم‌ها (CapacityHours) و نیازهای واقعی انجام شود.<br>2.  <strong>مدیریت ریسک فرسودگی:</strong> تیم‌های با بار کاری مداوم بالا ممکن است در معرض خطر فرسودگی شغلی قرار گیرند. تدابیری مانند اضافه کردن منابع، یا بازتوزیع برخی از وظایف کم‌فوریت‌تر می‌تواند مفید باشد.<br>3.  <strong>بهبود رصد پیشرفت:</strong> مکانیزم‌های قوی‌تری برای رصد پیشرفت موارد و اطمینان از انجام آن‌ها در زمان‌های تخمینی می‌تواند به مدیریت بهتر زمان کمک کند.<br>4.  <strong>برگزاری جلسات هماهنگی:</strong> برگزاری منظم جلسات هماهنگی بین سرتیم‌ها برای بررسی چالش‌ها و ارائه راه‌حل‌های مشترک توصیه می‌شود.<br><br>از همکاری و تلاش مستمر تمامی تیم‌های محترم سپاسگزاریم. لطفاً هرگونه بازخورد یا نیاز به هماهنگی بیشتر را با مدیریت مربوطه در میان بگذارید.<br><br>با احترام،<br>[نام شما/بخش مدیریت]<br>[تاریخ]</div>
-            </div>
-        </body>
-        </html>
-        
-        </div>
-        
-        </div>
-    </body>
-    </html>
-    
