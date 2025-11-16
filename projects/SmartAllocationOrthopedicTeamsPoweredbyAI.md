@@ -26,6 +26,9 @@ header:
       <strong>  unidata   </strong>
     </a> می باشد 
 
+در صورت اجرای پروژه در بیمارستان از دیتاست <a href="https://iranultrasound.com/pacs/" style="text-decoration:none; color:green;" target="_blank">
+      <strong>  PACS   </strong>
+    </a>  می توان استفاده کرد. 
 
 
 
