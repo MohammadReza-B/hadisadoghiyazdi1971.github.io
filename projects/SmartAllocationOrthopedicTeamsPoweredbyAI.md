@@ -22,8 +22,11 @@ header:
 " style="text-decoration:none; color:green;" target="_blank">
       <strong>  kaggle   </strong>
     </a> می باشد 
+این دیتا برگرفته از   <a href="https://unidata.pro/datasets/spine-mri-image-dicom/?utm_source=kaggle-td&utm_medium=referral&utm_campaign=spine-segmentation-dataset" style="text-decoration:none; color:green;" target="_blank">
+      <strong>  unidata   </strong>
+    </a> می باشد 
 
- 
+
 
 
 
