@@ -90,7 +90,7 @@ header:
      * فوریت پزشکی
      * بار کاری قبلی
      * محدودیت‌های 
-     * هر کیس فقط یک بار تخصیص
+     * هر کیس- مریض- فقط یک بار تخصیص
      * بار مجموع تیم ≤ ظرفیت
 
 2.  **مرحله دوم Rebalancing** 
@@ -135,9 +135,7 @@ header:
 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-   <img src="/assets/Projectsimages/SmartAllocationOrthopedicTeamsPoweredbyAI/warning.jpg
-
-" alt="stu1" style="width: 95%; height: 95%; object-fit: contain;">
+   <img src="/assets/Projectsimages/SmartAllocationOrthopedicTeamsPoweredbyAI/warning.jpg" alt="stu1" style="width: 95%; height: 95%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 
@@ -159,7 +157,7 @@ header:
 
 این پروژه یک **سیستم علمی–پزشکی–مهندسی** کامل است که می‌تواند در مقیاس واقعی بیمارستانی پیاده شود و مزیت‌های بزرگی در زمان، هزینه و تعادل بار متخصصان ایجاد کند.
 
----
+
 
 # **داشبورد نمایش نتایج**
 
@@ -170,6 +168,14 @@ header:
 * فیلتر روز و تیم
 * دانلود HTML/Excle lul,gd معمولی و هوشمند
 * نمایش موارد تخصیص نیافته
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+   <img src="/assets/Projectsimages/SmartAllocationOrthopedicTeamsPoweredbyAI/statisticalReport.jpg" alt="stu1" style="width: 95%; height: 95%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+
+نمونه ای از گزارشات
+</div>
 
 
 # **هوش مصنوعی در پروژه**
