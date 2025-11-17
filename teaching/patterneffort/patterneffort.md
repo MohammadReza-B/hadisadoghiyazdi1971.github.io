@@ -92,12 +92,12 @@ header:
 
 <!--10-->
 <div class="english-text">
+<strong>ImageCluster</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/ImageCluster" style="text-decoration:underline; color:green;" target="_blank"><strong>خوشه بندی تصاویر</strong></a>
+<!--11-->
+<div class="english-text">
 <strong>Analysis of Variance of Cross-Validation Estimators of the
 Generalization Error</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/Analysis_of_Variance_of_Cross_Validation_Estimators_of_the_Generalization_Error" style="text-decoration:underline; color:green;" target="_blank"><strong>تحلیل تخمینگرهای واریانس اعتبارسنجی متقابل برای خطای تعمیم </strong></a>
-<!--11-->
-<div class="english-text">
-<strong>ImageCluster</strong>
-</div>
-<a href="/teaching/studenteffort/patterneffort/ImageCluster" style="text-decoration:underline; color:green;" target="_blank"><strong>خوشه بندی تصاویر</strong></a>
