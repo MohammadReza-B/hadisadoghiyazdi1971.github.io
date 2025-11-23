@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گزارش تحلیل ستون فقرات</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .report-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .report-header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .report-header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .content-section {
+            padding: 25px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .medical-image {
+            max-width: 100%;
+            max-height: 400px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .metadata-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .metadata-item {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-right: 3px solid #0d6efd;
+        }
+
+        .metadata-item .label {
+            font-weight: bold;
+            color: #495057;
+            font-size: 0.9rem;
+        }
+
+        .metadata-item .value {
+            color: #212529;
+            font-size: 1rem;
+        }
+
+        .analysis-section {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            max-height: 600px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            /* فاصله بین دو باکس تحلیل */
+        }
+
+        /* استایل خاص برای باکس انگلیسی */
+        .analysis-section.english {
+            direction: ltr;
+            /* چپ‌چین کردن محتوا */
+            text-align: left;
+        }
+
+        .analysis-section h5 {
+            margin-bottom: 15px;
+            color: #0d6efd;
+        }
+
+        .badge-high {
+            background-color: #dc3545;
+        }
+
+        .badge-medium {
+            background-color: #fd7e14;
+        }
+
+        .badge-low {
+            background-color: #198754;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="report-container">
+        <header class="report-header">
+            <h1><i class="bi bi-activity"></i> گزارش جامع تحلیل MRI ستون فقرات</h1>
+        </header>
+
+        <div class="content-section">
+            <div class="image-container">
+                <h5><i class="bi bi-image-fill"></i> تصویر پزشکی</h5>
+                <img id="medicalImage" class="medical-image" src="IM000001.jpg" alt="تصویر MRI بیمار">
+            </div>
+
+            <div class="metadata-grid">
+                <div class="metadata-item">
+                    <div class="label"><i class="bi bi-person-badge"></i> شناسه بیمار</div>
+                    <div class="value" id="patientId">2ba3ae7114bcb6ef64f60a4ae2324ef6</div>
+                </div>
+                <div class="metadata-item">
+                    <div class="label"><i class="bi bi-stethoscope"></i> تخصص</div>
+                    <div class="value" id="specialty">جراح ارتوپدی ستون فقرات</div>
+                </div>
+                <div class="metadata-item">
+                    <div class="label"><i class="bi bi-exclamation-triangle"></i> فوریت</div>
+                    <div class="value"><span id="urgency" class="badge badge-high">بالا (High)</span></div>
+                </div>
+                <div class="metadata-item">
+                    <div class="label"><i class="bi bi-speedometer2"></i> میزان کار</div>
+                    <div class="value"><span id="workload" class="badge badge-high">بالا (High)</span></div>
+                </div>
+                <div class="metadata-item">
+                    <div class="label"><i class="bi bi-gear"></i> رویه پیشنهادی</div>
+                    <div class="value" id="procedureType">فیوژن (Fusion) (L1-S1)</div>
+                </div>
+                <div class="metadata-item">
+                    <div class="label"><i class="bi bi-cpu"></i> مدل تحلیل</div>
+                    <div class="value" id="modelUsed">gemini-1.5-flash</div>
+                </div>
+                <div class="metadata-item">
+                    <div class="label"><i class="bi bi-calendar-event"></i> تاریخ تحلیل</div>
+                    <div class="value" id="timestamp">2025-11-15 11:50:56</div>
+                </div>
+            </div>
+
+            <!-- باکس تحلیل انگلیسی -->
+            <div class="analysis-section english">
+                <h5><i class="bi bi-file-text-fill"></i> متن تحلیل (انگلیسی)</h5>
+                <div id="analysisTextEnglish"></div>
+            </div>
+
+            <!-- باکس تحلیل فارسی -->
+            <div class="analysis-section">
+                <h5><i class="bi bi-translate"></i> ترجمه تحلیل (فارسی)</h5>
+                <div id="analysisTextFarsi"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // داده‌های بیمار که مستقیماً در کد قرار داده شده‌اند
+        const patientData = {
+            "image_path": "IM000001.jpg",
+            "analysis": "**Comprehensive Spine MRI Report**\n\n**Patient ID:** N/A\n**Date of Study:** N/A (Image provided)\n**Interpreting Physician:** Expert Orthopedic Spine Surgeon\n\n**1. Image Technical Specifications:**\n*   **Image plane:** Coronal\n*   **Weighting:** T2-weighted. CSF and fluid-filled structures (e.g., bladder) are bright, indicative of T2 weighting.\n*   **Anatomical level being examined:** Lumbar spine (L1-S1), sacrum, and superior aspects of the pelvis, including adjacent soft tissues and abdominal contents.\n\n**2. Systematic Anatomical Review:**\n\n**Vertebrae:**\n*   **Spinal alignment and curvature:** The lumbar spine appears in normal coronal alignment. No obvious scoliotic curve or lateral listhesis is present. Sagittal alignment (lordosis, kyphosis) cannot be assessed from this view.\n*   **Vertebral body height and shape:** Vertebral body heights are well-maintained throughout the lumbar spine. No obvious compression fractures, destructive lesions, or overt deformities are identified. The signal intensity within the vertebral bodies appears uniform.\n*   **Presence of osteophytes, erosions, or bone lesions:** No significant osteophytes are clearly visualized in this coronal plane. No overt erosions or focal bone lesions are identified.\n*   **Evaluation of vertebral body, pedicles, lamina, and processes:** These structures appear structurally intact and symmetric in the coronal plane, without evidence of gross abnormalities.\n\n**Intervertebral Discs:**\n*   **Disc height:** Disc heights are generally well-preserved, with subtle loss noted at L4-L5 and L5-S1.\n*   **Disc signal (degeneration based on Pfirrmann grading):** The signal intensity of the intervertebral discs is generally maintained but shows mild reduction (desiccation) at L4-L5 and L5-S1, consistent with mild to moderate degenerative changes. Pfirrmann grading cannot be reliably performed on this single coronal image alone.\n*   **Presence of bulging, protrusion, extrusion, or sequestration:** No significant lateral disc bulging, protrusion, extrusion, or sequestration is identified in the coronal plane. Full characterization of disc herniation type and extent requires sagittal and axial sequences.\n*   **Involvement of posterior longitudinal ligament:** Not assessable on this coronal view.\n\n**Spinal Canal and Contents:**\n*   **Spinal canal diameter (stenotic or normal):** The central spinal canal appears patent in the coronal plane. No overt central canal stenosis is identified. Assessment of lateral recess and foraminal stenosis requires axial imaging.\n*   **Spinal cord and conus medullaris status:** The conus medullaris terminates at a normal anatomical level, approximately L1-L2. The spinal cord and the nerve roots within the thecal sac demonstrate normal signal characteristics.\n*   **Cord signal characteristics:** Normal. No evidence of intrinsic cord signal abnormality, syrinx, or mass.\n*   **Epidural space:** Appears unremarkable.\n\n**Neural Foramina:**\n*   **Patent or narrowed:** The neural foramina appear patent in the coronal view without obvious severe narrowing.\n*   **Nerve root compression:** No overt nerve root compression is identified in this single coronal view.\n*   **Presence of foraminal stenosis:** Cannot be definitively excluded or graded without dedicated axial imaging.\n\n**Posterior Elements:**\n*   **Facet joints (with or without arthritis):** The facet joints are partially visualized. No severe degenerative arthropathy or significant facet effusion is clearly identified, though subtle degenerative changes cannot be entirely excluded without axial views.\n*   **Ligaments:** The spinal ligaments are not specifically assessable for pathology on this single coronal sequence.\n*   **Paraspinal muscles:** The paraspinal musculature (e.g., psoas, erector spinae) appears symmetrical and of normal signal intensity, without gross atrophy or fatty infiltration.\n\n**3. Pathological Findings:**\n*   **Disc and vertebral degeneration:** Mild degenerative disc disease at L4-L5 and L5-S1, characterized by disc desiccation and subtle height loss. No significant endplate changes (Modic changes) are identifiable.\n*   **Spondylolisthesis:** No evidence of spondylolisthesis in the coronal plane.\n*   **Canal stenosis:** No severe central canal stenosis. Lateral recess and foraminal stenosis cannot be reliably excluded.\n*   **Disc herniation:** No large disc herniation or significant lateral displacement of disc material is observed.\n*   **Infection:** No MRI evidence of diskitis, osteomyelitis, or epidural abscess.\n*   **Masses or space-occupying lesions:** No intra-spinal or paraspinal masses or space-occupying lesions are identified.\n*   **Fractures:** No acute or chronic vertebral compression fractures or other bony disruptions are seen.\n*   **Inflammatory changes:** No significant inflammatory changes (e.g., bone marrow edema) are present.\n\n**4. Clinical Conclusion:**\n*   **Primary diagnoses:** Mild degenerative disc disease affecting the L4-L5 and L5-S1 levels.\n*   **Involved level/levels:** L4-L5 and L5-S1.\n*   **Severity of lesions:** Mild to moderate disc degeneration. No severe neurological compromise (e.g., severe canal stenosis, myelopathy, or significant nerve root compression) is apparent based on this limited single coronal view.\n*   **Correlation with patient symptoms:** The identified mild degenerative changes at L4-L5 and L5-S1 could correlate with axial low back pain. However, specific radicular symptoms or neurological deficits would require further targeted imaging (axial and sagittal views) to assess potential nerve root impingement not fully characterized here.\n\n**5. Treatment Recommendations:**\n**Disclaimer:** This report is based on a single coronal T2-weighted MRI image. A complete spine MRI protocol including sagittal T1, T2, STIR, and axial T2 images at each symptomatic level is essential for a definitive and comprehensive assessment and precise treatment planning. The following recommendations are made with the understanding of these imaging limitations.\n\n*   **Conservative treatment options:** Given the mild nature of the findings on this image, conservative management remains the cornerstone of treatment:\n    *   **Physical Therapy:** Tailored exercise program focusing on core stabilization, lumbar strengthening, flexibility, and ergonomic education.\n    *   **Pharmacotherapy:** Non-steroidal anti-inflammatory drugs (NSAIDs), muscle relaxants, or neuropathic pain medications as indicated for symptom control.\n    *   **Activity Modification:** Avoidance of provocative activities, but emphasis on maintaining an active lifestyle.\n    *   **Pain Management:** If symptoms are persistent and localized, consider targeted injections (e.g., epidural steroid injections for suspected radiculopathy or facet joint injections for facetogenic pain), although the precise targets are not clearly delineated on this single view.\n*   **Surgical indications:** Based *solely* on the provided coronal T2-weighted image, there are no immediate or absolute surgical indications. Surgery would typically be considered for:\n    *   Progressive neurological deficit (e.g., motor weakness, cauda equina syndrome).\n    *   Intractable radicular pain or neurogenic claudication refractory to a prolonged course of conservative treatment (typically 6-12 weeks).\n    *   Documented significant spinal canal stenosis or nerve root compression on comprehensive imaging that correlates with clinical symptoms.\n    *   Spinal instability.\n*   **Suggested surgical approach (decompression, fusion, etc.):** Not indicated at this time. Should surgery become necessary in the future (contingent on complete imaging and clinical correlation), the approach would depend on the specific pathology:\n    *   **Decompression:** For significant central or foraminal stenosis or disc herniation causing nerve root compression (e.g., microdiscectomy, laminectomy, foraminotomy).\n    *   **Fusion:** For instability, severe degenerative disc disease with intractable pain, or failed decompression, especially if there is significant spondylolisthesis (not seen here).\n*   **Prognosis:** The prognosis for mild degenerative disc disease with conservative management is generally favorable. Outcomes are highly dependent on patient compliance with therapy, overall health, and the ultimate correlation of imaging findings with clinical symptoms. Further imaging and clinical evaluation are crucial for a more definitive prognosis.",
+            "analysis_farsi": "**گزارش جامع ام‌آر‌آی ستون فقرات**\n\n**شناسه بیمار:** نامشخص\n**تاریخ مطالعه:** نامشخص (تصویر ارائه شده)\n**پزشک تفسیرکننده:** جراح متخصص ستون فقرات\n\n**1. مشخصات فنی تصویر:**\n*   **سطح تصویربرداری:** کورونال (تاجی)\n*   **وزن‌دهی:** T2-weighted. مایع مغزی-نخاعی (CSF) و ساختارهای پر از مایع (مانند مثانه) روشن هستند که نشان‌دهنده وزن‌دهی T2 است.\n*   **سطح آناتومیک تحت بررسی:** ستون فقرات کمری (L1-S1)، ساکروم و بخش‌های فوقانی لگن، شامل بافت‌های نرم مجاور و محتویات شکمی.\n\n**2. بررسی سیستماتیک آناتومیک:**\n\n**مهره‌ها:**\n*   **تراز و انحنای ستون فقرات:** ستون فقرات کمری در راستای طبیعی کورونال به نظر می‌رسد. هیچ انحراف جانبی (اسکولیوز) یا جابجایی جانبی آشکاری وجود ندارد. ارزیابی راستای ساجیتال (لوردوز، کیفوز) از این نما امکان‌پذیر نیست.\n*   **ارتفاع و شکل بدنه مهره:** ارتفاع بدنه مهره‌ها در سرتاسر ستون فقرات کمری حفظ شده است. هیچ شکستگی فشاری، ضایعه تخریبی یا تغییر شکل آشکاری شناسایی نشده است. شدت سیگنال درون بدنه مهره‌ها یکنواخت به نظر می‌رسد.\n*   **وجود استئوفیت (خار استخوانی)، فرسایش یا ضایعات استخوانی:** هیچ استئوفیت قابل توجهی به وضوح در این نمای کورونال دیده نمی‌شود. هیچ فرسایش یا ضایعه استخوانی کانونی آشکاری شناسایی نشده است.\n*   **ارزیابی بدنه مهره، پدیکل، لامینا و زوائد:** این ساختارها در نمای کورونال از نظر ساختاری سالم و متقارن به نظر می‌رسند و بدون شواهدی از ناهنجاری‌های gross هستند.\n\n**دیسک‌های بین مهره‌ای:**\n*   **ارتفاع دیسک:** ارتفاع دیسک‌ها به طور کلی حفظ شده است، با کاهش جزئی در سطوح L4-L5 و L5-S1.\n*   **سیگنال دیسک (دژنراسیون بر اساس درجه‌بندی Pfirrmann):** شدت سیگنال دیسک‌های بین مهره‌ای به طور کلی حفظ شده است اما کاهش خفیفی (خشک شدن) در سطوح L4-L5 و L5-S1 نشان می‌دهد که با تغییرات دژنراتیو خفیف تا متوسط سازگار است. درجه‌بندی Pfirrmann را نمی‌توان تنها بر اساس این تصویر منفرد کورونال به طور قابل اعتمادی انجام داد.\n*   **وجود بیرون‌زدگی (بولژ)، پروتروژن، اکسترژن یا سکستریشن:** هیچ بیرون‌زدگی جانبی قابل توجه دیسک، پروتروژن، اکسترژن یا سکستریشن در نمای کورونال شناسایی نشده است. توصیف کامل نوع و وسعت فتق دیسک به تصاویر ساجیتال و آکسیال نیاز دارد.\n*   **درگیری رباط طولی خلفی:** در این نمای کورونال قابل ارزیابی نیست.\n\n**کانال ستون فقرات و محتویات آن:**\n*   **قطر کانال ستون فقرات (تنوتیک یا طبیعی):** کانال مرکزی ستون فقرات در نمای کورونال باز (پتنت) به نظر می‌رسد. هیچ تنگی آشکاری در کانال مرکزی شناسایی نشده است. ارزیابی تنگی رسیس (حفره) جانبی و فورامن به تصویربرداری آکسیال نیاز دارد.\n*   **وضعیت نخاع و مخروط انتهایی (کانوس مدولاریس):** مخروط انتهایی در سطح آناتومیک طبیعی، تقریباً در L1-L2، پایان می‌یابد. نخاع و ریشه‌های عصبی درون کیسه تیکال (thecal sac) ویژگی‌های سیگنال طبیعی را نشان می‌دهند.\n*   **ویژگی‌های سیگنال نخاع:** طبیعی. هیچ شواهدی از ناهنجاری ذاتی سیگنال نخاع، سیرینکس یا توده وجود ندارد.\n*   **فضای اپیدورال:** بدون نکته خاص به نظر می‌رسد.\n\n**سوراخ‌های بین مهره‌ای (نورال فورامن):**\n*   **باز یا تنگ:** سوراخ‌های بین مهره‌ای در نمای کورونال باز به نظر می‌رسند و بدون تنگی شدید آشکار هستند.\n*   **فشردگی ریشه عصب:** هیچ فشردگی آشکار ریشه عصب در این نمای منفرد کورونال شناسایی نشده است.\n*   **وجود تنگی سوراخ بین مهره‌ای:** بدون تصویربرداری آکسیال اختصاصی، نمی‌توان به طور قطعی آن را رد کرد یا درجه‌بندی نمود.\n\n**عناصر خلفی:**\n*   **مفاصل فاست (با یا بدون آرتریت):** مفاصل فاست به صورت جزئی قابل مشاهده هستند. هیچ آرتروپاتی دژنراتیو شدید یا افیوژن (تجمع مایع) قابل توجهی در مفاصل فاست به وضوح شناسایی نشده است، اگرچه نمی‌توان تغییرات دژنراتیو جزئی را به طور کامل بدون نماهای آکسیال رد کرد.\n*   **رباط‌ها:** رباط‌های ستون فقرات به طور خاص برای پاتولوژی بر روی این تصویر منفرد کورونال قابل ارزیابی نیستند.\n*   **ماهیچه‌های پارااسپاینال:** ماهیچه‌های پارااسپاینال (مانند پسواس، ارکتور اسپاین) متقارن و با شدت سیگنال طبیعی به نظر می‌رسند و بدون آتروفی gross یا نفوذ چربی هستند.\n\n**3. یافته‌های پاتولوژیک:**\n*   **دژنراسیون دیسک و مهره:** بیماری دژنراتیو خفیف دیسک در سطوح L4-L5 و L5-S1، که با خشک شدن دیسک و کاهش جزئی ارتفاع مشخص می‌شود. هیچ تغییر قابل شناسایی در صفحه انتهایی (تغییرات مودیک) دیده نمی‌شود.\n*   **اسپوندیلولیستزی (سرخوردگی مهره):** هیچ شواهدی از اسپوندیلولیستزی در نمای کورونال وجود ندارد.\n*   **تنگی کانال:** هیچ تنگی شدید کانال مرکزی وجود ندارد. تنگی رسیس جانبی و سوراخ بین مهره‌ای را نمی‌توان به طور قابل اعتمادی رد کرد.\n*   **فتق دیسک:** هیچ فتق دیسک بزرگ یا جابجایی جانبی قابل توجهی از مواد دیسک مشاهده نشده است.\n*   **عفونت:** هیچ شواهدی از ام‌آر‌آی برای دیسکایت، استئومیلیت یا آبسه اپیدورال وجود ندارد.\n*   **توده‌ها یا ضایعات اشغال‌کننده فضا:** هیچ توده داخل ستون فقرات یا پارااسپاینال یا ضایعه اشغال‌کننده فضایی شناسایی نشده است.\n*   **شکستگی‌ها:** هیچ شکستگی فشاری حاد یا مزمن مهره یا اختلال استخوانی دیگری دیده نمی‌شود.\n*   **تغییرات التهابی:** هیچ تغییر التهابی قابل توجهی (مانند ادم مغز استخوان) وجود ندارد.\n\n**4. نتیجه‌گیری بالینی:**\n*   **تشخیص‌های اولیه:** بیماری دژنراتیو خفیف دیسک در سطوح L4-L5 و L5-S1.\n*   **سطح/سطوح درگیر:** L4-L5 و L5-S1.\n*   **شدت ضایعات:** دژنراسیون خفیف تا متوسط دیسک. هیچ اختلال عصبی شدیدی (مانند تنگی شدید کانال، میلوپاتی یا فشردگی قابل توجه ریشه عصب) بر اساس این نمای محدود کورونال مشهود نیست.\n*   **همبستگی با علائم بیمار:** تغییرات دژنراتیو خفیف شناسایی شده در سطوح L4-L5 و L5-S1 می‌تواند با کمردرد محوری (آکسیال) مرتبط باشد. با این حال، برای ارزیابی احتمالی تحت فشار بودن ریشه عصب که به طور کامل مشخص نشده است، علائم رادیکولار (ریشه‌ای) یا نقایص عصبی خاص نیاز به تصویربرداری هدفمند بیشتر (نماهای آکسیال و ساجیتال) دارد.\n\n**5. توصیه‌های درمانی:**\n**سلب مسئولیت:** این گزارش بر اساس یک تصویر منفرد ام‌آر‌آی کورونال T2-weighted است. یک پروتکل کامل ام‌آر‌آی ستون فقرات شامل تصاویر ساجیتال T1, T2, STIR و تصاویر آکسیال T2 در هر سطح علامت‌دار، برای ارزیابی قطعی و جامع و برنامه‌ریزی دقیق درمانی ضروری است. توصیه‌های زیر با در نظر گرفتن این محدودیت‌های تصویربرداری ارائه می‌شوند.\n\n*   **گزینه‌های درمان محافظه‌کارانه:** با توجه به ماهیت خفیف یافته‌ها در این تصویر، مدیریت محافظه‌کارانه سنگ بنای درمان باقی می‌ماند:\n    *   **فیزیوتراپی:** برنامه ورزشی سفارشی متمرکز بر تثبیت مرکزی (core stabilization)، تقویت کمر، انعطاف‌پذیری و آموزش ارگونومی.\n    *   **دارودرمانی:** داروهای ضدالتهاب غیراستروئیدی (NSAIDs)، شل‌کننده‌های عضلانی یا داروهای درد نوروپاتیک بنا بر نشانه برای کنترل علائم.\n    *   **تغییر فعالیت:** پرهیز از فعالیت‌های تحریک‌کننده، اما با تأکید بر حفظ سبک زندگی فعال.\n    *   **مدیریت درد:** اگر علائم مداوم و موضعی هستند، تزریقات هدفمند (مانند تزریق استروئید اپیدورال برای رادیکولوپاتی مشکوک یا تزریق مفاصل فاست برای درد فاستوژنیک) را در نظر بگیرید، اگرچه اهداف دقیق بر روی این نمای منفرد به وضوح ترسیم نشده‌اند.\n*   **اندیکاسیون‌های جراحی:** صرفاً بر اساس تصویر کورونال T2-weighted ارائه شده، هیچ اندیکاسیون فوری یا مطلقی برای جراحی وجود ندارد. جراحی معمولاً برای موارد زیر در نظر گرفته می‌شود:\n    *   نقص عصبی پیشرونده (مانند ضعف حرکتی، سندرم کauda equina).\n    *   درد رادیکولار مقاوم یا لنگش عصبی (neurogenic claudication) که به دوره طولانی‌مدت درمان محافظه‌کارانه (معمولاً ۱۲-۶ هفته) پاسخ نمی‌دهد.\n    *   شواهد تصویربرداری جامع از تنگی قابل توجه کانال ستون فقرات یا فشردگی ریشه عصب که با علائم بالینی همخوانی دارد.\n    *   ناپایداری ستون فقرات.\n*   **روش جراحی پیشنهادی (رفع فشار، فیوژن و غیره):** در حال حاضر اندیکاسیون ندارد. اگر در آینده جراحی ضروری شود (مشروط به تصویربرداری کامل و همبستگی بالینی)، روش بستگی به پاتولوژی خاص خواهد داشت:\n    *   **رفع فشار (دکامپرشن):** برای تنگی قابل توجه کانال مرکزی یا سوراخ بین مهره‌ای یا فتق دیسک که باعث فشردگی ریشه عصب می‌شود (مانند میکرودیسککتومی، لامینکتومی، فورامینوتومی).\n    *   **فیوژن (جوش دادن مهره):** برای ناپایداری، بیماری دژنراتیو شدید دیسک با درد مقاوم، یا شکست در عمل رفع فشار، به ویژه اگر اسپوندیلولیستزی قابل توجهی وجود داشته باشد (کهدیده نشده است).\n*   **پیش‌آگهی:** پیش‌آگهی برای بیماری دژنراتیو خفیف دیسک با مدیریت محافظه‌کارانه عموماً مطلوب است. نتایج به شدت وابسته به پایبندی بیمار به درمان، سلامت کلی و همبستگی نهایی یافته‌های تصویربرداری با علائم بالینی است. تصویربرداری و ارزیابی بالینی بیشتر برای پیش‌آگهی قطعی‌تر بسیار مهم هستند.",
+            "timestamp": "2025-11-15T11:50:56.481463",
+            "model_used": "gemini-1.5-flash",
+            "Specialty": "جراح ارتوپدی ستون فقرات",
+            "Urgency": "بالا (High)",
+            "Workload": "بالا (High)",
+            "ProcedureType": "فیوژن (Fusion) (L1-S1)"
+        };
+
+        // تابعی برای پر کردن صفحه با داده‌های بیمار
+        function populateReport() {
+            document.getElementById('patientId').textContent = "2ba3ae7114bcb6ef64f60a4ae2324ef6";
+            document.getElementById('specialty').textContent = patientData.Specialty;
+            document.getElementById('procedureType').textContent = patientData.ProcedureType;
+            document.getElementById('modelUsed').textContent = patientData.model_used;
+
+            // پر کردن باکس انگلیسی
+            document.getElementById('analysisTextEnglish').textContent = patientData.analysis;
+
+            // پر کردن باکس فارسی
+            document.getElementById('analysisTextFarsi').textContent = patientData.analysis_farsi;
+
+            // فرمت‌بندی تاریخ
+            const date = new Date(patientData.timestamp);
+            document.getElementById('timestamp').textContent = date.toLocaleString('fa-IR');
+
+            // تنظیم رنگ بج‌ها بر اساس فوریت و میزان کار
+            const urgencyBadge = document.getElementById('urgency');
+            urgencyBadge.textContent = patientData.Urgency;
+            urgencyBadge.className = 'badge'; // ریست کردن کلاس‌ها
+            if (patientData.Urgency.includes('High')) urgencyBadge.classList.add('badge-high');
+            else if (patientData.Urgency.includes('Medium')) urgencyBadge.classList.add('badge-medium');
+            else urgencyBadge.classList.add('badge-low');
+
+            const workloadBadge = document.getElementById('workload');
+            workloadBadge.textContent = patientData.Workload;
+            workloadBadge.className = 'badge'; // ریست کردن کلاس‌ها
+            if (patientData.Workload.includes('High')) workloadBadge.classList.add('badge-high');
+            else if (patientData.Workload.includes('Medium')) workloadBadge.classList.add('badge-medium');
+            else workloadBadge.classList.add('badge-low');
+        }
+
+        // اجرای تابع پس از بارگذاری کامل صفحه
+        document.addEventListener('DOMContentLoaded', populateReport);
+    </script>
+</body>
+
+</html>
