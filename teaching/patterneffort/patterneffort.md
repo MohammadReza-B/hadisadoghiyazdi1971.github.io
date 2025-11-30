@@ -101,3 +101,9 @@ header:
 Generalization Error</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/Analysis_of_Variance_of_Cross_Validation_Estimators_of_the_Generalization_Error" style="text-decoration:underline; color:green;" target="_blank"><strong>تحلیل تخمینگرهای واریانس اعتبارسنجی متقابل برای خطای تعمیم </strong></a>
+
+<!--12-->
+<div class="english-text">
+<strong>Transformer Loss Function</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/Transformer-LossFunc" style="text-decoration:underline; color:green;" target="_blank"><strong>ترنسفورمر و نقش توابع ضرر در یادگیری</strong></a>
