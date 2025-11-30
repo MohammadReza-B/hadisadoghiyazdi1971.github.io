@@ -84,8 +84,8 @@ Attention(Q, K, V) = softmax\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 که در آن:
 - \(Q\): Query  
 - \(K\): Key  
-- \(V\): Value  
-- \(d_k\): ابعاد بردار کلیدها  
+- $\(V\)$: Value  
+- $\(d_k\)$: ابعاد بردار کلیدها  
 
 #### 4. **Feed-Forward Networks**
 - شبکه‌های کاملاً متصل (Fully Connected) که پس از Attention قرار می‌گیرند.
