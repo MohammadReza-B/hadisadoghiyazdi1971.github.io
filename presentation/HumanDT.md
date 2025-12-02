@@ -44,6 +44,14 @@ HDTها به عنوان **نمایش‌های دیجیتال پیوسته و د�
 * عوامل سبک زندگی
 
 
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/Presentationimages/DT/MainDigitalTwin.jpg" alt="RAG1" style="width: 30%; height: 30%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+اجزا و ارتباطات درون دوقلوی دیجیتال
+</div>
+
+
 
 ### 🏛️ چارچوب مفهومی و طبقه‌بندی HDTها
 
