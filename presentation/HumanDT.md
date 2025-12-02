@@ -4,7 +4,7 @@ classes: wide rtl-layout
 dir: rtl
 title: "دوقلوی دیجیتال انسان"
 permalink: /presentation/HumanDT/
-author_profile: false
+author_profile: true
 sidebar:
   nav: "presentaton"
 header:
@@ -14,12 +14,9 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
-هادی صدوقی یزدی: استاد گروه کامپیوتر دانشگاه فردوسی مشهد، مشاور تخصصی در یادگیری ماشین و سیستم‌های داده
-مدیر آزمایشگاه تشخیص الگو
-عضو SCIIP - قطب علمی محاسبات نرم و پردازش اطلاعات هوشمند
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/DT/PhysicalvirtualproductscombinedcreateDigitalTwin.jpg" alt="RAG1" style="width: 30%; height: 30%; object-fit: contain;">
+    <img src="/assets/Presentationimages/DT/PhysicalvirtualproductscombinedcreateDigitalTwin.jpg" alt="RAG1" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 دوقلوهای دیجیتال در تولید، دوقلوهای مجازی و فیزیکی برای تولید پیشرفته
@@ -45,7 +42,7 @@ HDTها به عنوان **نمایش‌های دیجیتال پیوسته و د�
 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/DT/MainDigitalTwin.jpg" alt="RAG1" style="width: 30%; height: 30%; object-fit: contain;">
+    <img src="/assets/Presentationimages/DT/MainDigitalTwin.jpg" alt="RAG1" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 اجزا و ارتباطات درون دوقلوی دیجیتال
