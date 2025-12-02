@@ -28,7 +28,7 @@ header:
     </a>
   </div>
 
-    <!-- پpresent 1۱ -->
+    <!-- پpresent 2۱ -->
   <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
     <a href="/presentation/datalake1/" style="text-decoration: none; color: inherit;">
       <img src="/assets/Presentationimages/DataLake/PowerSectorDataLake.jpg" 
@@ -43,7 +43,7 @@ header:
     </a>
   </div>
 
-  <!-- پروژه present 2-->
+  <!-- پروژه present 3-->
   <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
     <a href="/presentation/prison/" style="text-decoration: none; color: inherit;">
       <img src="/assets/Presentationimages/prison/prison_1.JPG" 
@@ -58,7 +58,7 @@ header:
     </a>
   </div>
 
-  <!-- present ۳ -->
+  <!-- present 4-->
   <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
     <a href="/presentation/RAG_Industry/" style="text-decoration: none; color: inherit;">
       <img src="/assets/Presentationimages/RAG/FUMAIIndustryAssistant1.jpg" 
@@ -74,8 +74,21 @@ header:
   </div>
 
 
-  <!-- پروژه 4 -->
-  
+  <!-- پروژه 5 -->
+  <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
+    <a href="/presentation/RAG_Industry/" style="text-decoration: none; color: inherit;">
+      <img src="/assets/Presentationimages/DT/DT1.jpg" 
+           alt="Presentation3" 
+           class="project-image"
+           style="width: 100%; height: 200px; object-fit: cover; display: block;">
+      <div class="project-content" style="padding: 10px;">
+        <h3 class="project-title" style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">
+         دوقلوهای دیجیتالی انسان
+        </h3>
+      </div>
+    </a>
+  </div>
+
 
 <!-- پروژه 5 -->
   
