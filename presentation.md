@@ -76,7 +76,7 @@ header:
 
   <!-- پروژه 5 -->
   <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-    <a href="/presentation/RAG_Industry/" style="text-decoration: none; color: inherit;">
+    <a href="/presentation/HumanDT/" style="text-decoration: none; color: inherit;">
       <img src="/assets/Presentationimages/DT/DT1.jpg" 
            alt="Presentation3" 
            class="project-image"
