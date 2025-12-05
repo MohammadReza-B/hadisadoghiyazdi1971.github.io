@@ -3,7 +3,7 @@ layout: persian # یا single با کلاس rtl-layout
 classes: wide rtl-layout
 dir: rtl
 title: "خوشه بندی تصاویر"
-permalink: /teaching/studenteffort/patterneffort/image_clustering/
+permalink: /teaching/studenteffort/patterneffort/ImageCluster/
 author_profile: true
 
 header:
