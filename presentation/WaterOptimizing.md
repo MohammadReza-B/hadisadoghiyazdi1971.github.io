@@ -42,10 +42,10 @@ header:
 هدف این پژوهش، طراحی و پیاده‌سازی یک سامانه بهینه‌سازی برای مدیریت پروژه‌های آبی است که تصمیم‌گیری را بر پایه داده‌های عملیاتی بلادرنگ و مشخصات فنی پروژه قرار می‌دهد. چارچوب پیشنهادی، که در شکل زیر نمایش داده شده است، به گونه‌ای طراحی شده است که داده‌های خام ورودی را به یک برنامه اجرایی بهینه تبدیل می‌کند.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/RAG/FUMAIIndustryAssistant1.jpg" alt="RAG1" style="width: 30%; height: 30%; object-fit: contain;">
+    <img src="/assets/Presentationimages/WaterOptimizing/fig1.jpg" alt="RAG1" style="width: 30%; height: 30%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
-  دستیار هوشمند ارتباط با صنعت دانشگاه فردوسی مشهد
+چارچوب کلی سامانه مدیریت هوشمند پروژه‌های آبی
 </div>
 
 ### ورودی‌های سامانه
