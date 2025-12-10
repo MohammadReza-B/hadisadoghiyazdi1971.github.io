@@ -238,7 +238,7 @@ header:
 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/WaterOptimizing/5.jpg" alt="RAG1" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/WaterOptimizing/5.jpg" alt="RAG1" style="width: 50%; height: 50%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 
@@ -273,18 +273,18 @@ header:
 در ادامه با تاکید بیشتر بر بهینه سازی در صنعت آب با مثالهای دیگر ادامه می دهیم:
 
 
-### ورودی‌های سامانه
+## ورودی‌های سامانه مد نظر
 
 موتور بهینه‌سازی سامانه، تصمیمات خود را بر اساس سه دسته از داده‌های ورودی اتخاذ می‌کند:
 
-#### منابع موجود
+### منابع موجود
 این دسته شامل کلیه منابع در دسترس برای اجرای پروژه است که به شرح زیر می‌باشند:
 - **نیروی انسانی:** تعداد، تخصص‌ها، سطح مهارت و زمان‌های در دسترس پرسنل.
 - **ماشین‌آلات و تجهیزات:** انواع ماشین‌آلات (حفاری، بتن‌ریزی، حمل‌ونقل و غیره)، تعداد، ظرفیت، مشخصات فنی و برنامه زمانی در دسترس بودن هر دستگاه.
 - **مواد و مصالح:** انواع مصالح مورد نیاز (سیمان، میلگرد، لوله و غیره)، مقادیر موجود در انبار و نرخ تأمین.
 - **بودجه:** اعتبارات مالی تخصیص یافته و جریان نقدینگی پروژه.
 
-#### قیدها و محدودیت‌ها
+### قیدها و محدودیت‌ها
 این بخش شامل تمام شرایط فنی، قراردادی و محیطی است که فرآیند بهینه‌سازی باید آن‌ها را رعایت کند:
 - **محدودیت‌های تکنولوژیکی:** توالی اجباری فعالیت‌ها (وابستگی‌های FS, SS, FF, SF)، مدت زمان حداقلی یا حداکثری فعالیت‌ها.
 پیوست جهت توضیح بیشتر 
@@ -292,7 +292,7 @@ header:
 - **محدودیت‌های زمانی:** تاریخ شروع اجباری، مهلت‌های قطعی (ددلاین) برای پروژه یا فعالیت‌های کلیدی.
 - **محدودیت‌های زیست‌محیطی و ایمنی:** دوره‌های مجاز برای انجام فعالیت‌های پرسر و صدا یا پرخطر، استانداردهای ایمنی کار با تجهیزات.
 
-#### درخواست‌ها و نیازهای پروژه
+### درخواست‌ها و نیازهای پروژه
 این بخش، اهداف و خواسته‌های ذی‌نفعان پروژه را مشخص می‌کند و به عنوان اهداف تابع بهینه‌سازی عمل می‌نماید:
 - **فهرست فعالیت‌ها:** شناسه، شرح و مدت زمان برآوردی هر فعالیت.
 - **اهداف اصلی:** تعیین اولویت پروژه بین «کمینه‌سازی زمان کل اجرا» یا «کمینه‌سازی هزینه کل» یا ترکیبی از هر دو به صورت چندهobjective.
@@ -926,7 +926,7 @@ $$
 }
 ```
 
-### توصیه‌های اجرایی
+### توصیه‌های اجرایی هوشمند
 
 ```json
 {
@@ -971,89 +971,6 @@ $$
 
 هدف منحصر بفرد این پروژه ارتباط بین کاربر و داده های دیتابیس های سنتی مثل SQL ( که در اینجا بصورت json آمده است ) بنحوی است که ارتباطی آسان و با زبان طبیعی انسان باشد به این دلیل این بخش از پروپوزال به ارایه این کار اختصاص دارد. ارایه پرامپت مناسب از جمله بخشهای این ماژول می باشد که اشاره ای به آن می شود:
 
-### پرامپت ارتباط با مدل‌های زبانی بزرگ
-
-```python
-SYSTEM_PROMPT = """
-You are an expert optimization and project management AI assistant for water resource projects. Your role is to analyze project data, provide intelligent recommendations, and generate comprehensive reports based on mathematical optimization models.
-	
-CRITICAL GUIDELINES:
-1. Always maintain JSON structure integrity
-2. Provide both Persian and English explanations where needed
-3. Focus on practical, executable recommendations
-4. Consider real-world constraints and limitations
-5. Prioritize solutions that balance time, cost, and quality
-6. Include risk assessment and mitigation strategies
-7. Provide quantitative analysis with clear justifications
-	
-EXPERTISE DOMAINS:
-- Mixed Integer Linear Programming (MILP)
-- Resource allocation and scheduling
-- Water resource project management
-- Cost optimization and risk analysis
-- Construction project planning
-- Resource constraint management
-	
-RESPONSE STRUCTURE:
-- Start with executive summary
-- Provide detailed technical analysis
-- Include actionable recommendations
-- End with implementation roadmap
-"""
-```
-
-### پرامپت تحلیل داده‌های پروژه
-
-```python
-PROJECT_ANALYSIS_PROMPT = """
-Analyze the following water resource project data and provide comprehensive optimization recommendations:
-
-PROJECT_DATA:
-{project_data_json}
-
-RESOURCE_DATA:
-{resource_data_json}
-
-CONSTRAINTS_DATA:
-{constraints_data_json}
-
-ANALYSIS_REQUIREMENTS:
-1. **Schedule Optimization**: Identify critical path and potential accelerations
-2. **Resource Allocation**: Optimal distribution of human resources and equipment
-3. **Cost Analysis**: Breakdown and optimization opportunities
-4. **Risk Assessment**: Identify and mitigate project risks
-5. **Constraint Management**: Handle technological and environmental constraints
-6. **Performance Metrics**: Calculate key performance indicators
-
-OUTPUT_FORMAT:
-{
-"executive_summary": {
-	"overview": "string",
-	"key_findings": ["list"],
-	"main_recommendations": ["list"]
-},
-"technical_analysis": {
-	"schedule_analysis": {},
-	"resource_analysis": {}, 
-	"cost_analysis": {},
-	"risk_analysis": {}
-},
-"optimization_recommendations": {
-	"immediate_actions": [],
-	"strategic_changes": [],
-	"contingency_plans": []
-},
-"implementation_roadmap": {
-	"phases": [],
-	"timeline": {},
-	"success_metrics": {}
-}
-}
-
-Provide responses in structured JSON format with Persian explanations where appropriate for local context.
-"""
-```
-
 ### ملاحظات و بهترین‌روش‌های ارتباط با LLM
 
 #### امنیت و حریم خصوصی داده‌ها
@@ -1083,146 +1000,6 @@ Provide responses in structured JSON format with Persian explanations where appr
 - **کش‌سازی پاسخ‌ها:** ذخیره پاسخ‌های تکراری برای بهبود عملکرد
 - **آپدیت مدل:** بهره‌گیری از آخرین نسخه‌های مدل برای دقت بهتر
 
-### نمونه خروجی مدل زبانی بزرگ
-
-```json
-{
-"executive_summary": {
-	"overview": "تحلیل پروژه‌های آبی نشان‌دهنده امکان کاهش ۱۸ درصدی زمان و ۱۲ درصدی هزینه با بهینه‌سازی تخصیص منابع است",
-	"key_findings": [
-	"فعالیت A2 در مسیر بحرانی قرار دارد و نیاز به توجه ویژه دارد",
-	"بهبود ۲۵ درصدی در بهره‌وری ماشین‌آلات با تغییر توالی فعالیت‌ها ممکن است",
-	"کمبود مهارت تخصصی در حوزه بتن‌ریزی شناسایی شد"
-	],
-	"main_recommendations": [
-	"اجرای طرح تخصیص موازی برای فعالیت‌های غیروابسته",
-	"آموزش فوری ۳ نیرو در مهارت بتن‌ریزی پیشرفته",
-	"استفاده از سیستم نوبت‌بندی هوشمند برای ماشین‌آلات"
-	]
-},
-"technical_analysis": {
-	"schedule_analysis": {
-		"critical_path": ["A1", "A2", "A5", "A8"],
-		"total_duration": 145,
-		"optimization_potential": 26,
-		"bottleneck_activities": ["A2", "A5"]
-	},
-	"resource_analysis": {
-		"human_resource_utilization": 0.78,
-		"equipment_utilization": 0.72,
-		"skill_gaps": {
-			"concrete_specialists": -3,
-			"heavy_equipment_operators": -2
-		},
-		"optimization_opportunities": [
-		"آموزش چندمهارتی: بهبود ۱۵ درصدی بهره‌وری",
-		"زمان‌بندی بهینه تجهیزات: بهبود ۲۰ درصدی استفاده"
-		]
-	},
-	"cost_analysis": {
-		"total_estimated_cost": 1245000000,
-		"cost_breakdown": {
-			"human_resources": "۳۶ درصد",
-			"equipment": "۳۲ درصد", 
-			"materials": "۲۸ درصد",
-			"other": "۴ درصد"
-		},
-		"cost_saving_opportunities": [
-		"خرید عمده مصالح: صرفه‌جویی ۸ درصدی",
-		"بهینه‌سازی اجاره تجهیزات: صرفه‌جویی ۱۲ درصدی",
-		"کاهش اضافه‌کاری: صرفه‌جویی ۵ درصدی"
-		]
-	},
-	"risk_analysis": {
-		"high_risks": [
-		{
-			"risk": "تاخیر در تحویل مصالح",
-			"probability": 0.7,
-			"impact": "HIGH",
-			"mitigation": "انعقاد قرارداد با دو تامین‌کننده"
-		}
-		],
-		"medium_risks": [
-		{
-			"risk": "خرابی تجهیزات",
-			"probability": 0.4,
-			"impact": "HIGH",
-			"mitigation": "قرارداد پشتیبان اجاره"
-		}
-		]
-	}
-},
-"optimization_recommendations": {
-	"immediate_actions": [
-	"بازنگری توالی فعالیت‌های A3 و A4 برای اجرای موازی",
-	"تخصیص نیروهای چندمهارته به فعالیت‌های غیرحساس",
-	"برنامه‌ریزی خرید گروهی مصالح برای سه پروژه"
-	],
-	"strategic_changes": [
-	"استقرار سیستم مدیریت منابع سازمانی",
-	"ایجاد بانک اطلاعاتی مهارت‌های پرسنل",
-	"پیاده‌سازی سیستم پایش بلادرنگ پیشرفت پروژه"
-	],
-	"contingency_plans": [
-	"طرح جایگزینی نیرو برای موارد اضطراری",
-	"قراردادهای پشتیبان با تامین‌کنندگان مصالح",
-	"برنامه نگهداری پیشگیرانه ماشین‌آلات"
-	]
-},
-"implementation_roadmap": {
-	"phases": [
-	{
-		"phase": "فاز فوری (هفته ۱-۲)",
-		"activities": [
-		"بازتخصیص منابع بر اساس تحلیل جدید",
-		"مذاکره با تامین‌کنندگان برای خرید گروهی",
-		"شروع برنامه آموزش مهارت‌ها"
-		]
-	},
-	{
-		"phase": "فاز کوتاه‌مدت (ماه ۱-۳)", 
-		"activities": [
-		"استقرار سیستم پایش پیشرفت",
-		"اجرای کامل طرح تخصیص بهینه",
-		"ارزیابی نتایج و تنظیم طرح"
-		]
-	}
-	],
-	"timeline": {
-		"expected_benefits_timeline": {
-			"immediate": "۲-۴ هفته: کاهش ۸ درصدی هزینه",
-			"short_term": "۱-۳ ماه: کاهش ۱۵ درصدی زمان", 
-			"medium_term": "۳-۶ ماه: بهبود ۲۲ درصدی بهره‌وری کلی"
-		}
-	},
-	"success_metrics": {
-		"kpis": [
-		"کاهش زمان تکمیل پروژه: هدف ۱۸ درصد",
-		"بهبود بهره‌وری هزینه: هدف ۱۲ درصد",
-		"افزایش استفاده از منابع: هدف ۲۰ درصد",
-		"کاهش ریسک: هدف پوشش ۹۰ درصد ریسک‌های بالا"
-		]
-	}
-},
-"technical_notes": {
-	"model_assumptions": [
-	"توابع هزینه خطی برای سادگی فرض شده‌اند",
-	"دسترسی به منابع قطعی در نظر گرفته شده است",
-	"عوامل آب و هوایی و محیطی به عنوان محدودیت در نظر گرفته شده‌اند"
-	],
-	"limitations": [
-	"تحلیل بر اساس کیفیت و کامل بودن داده‌های ارائه شده",
-	"عوامل خارجی مانند تغییرات بازار به طور کامل مدل نشده‌اند",
-	"تغییرپذیری عامل انسانی به صورت جزئی در نظر گرفته شده است"
-	],
-	"next_steps": [
-	"تصحیح تحلیل با داده‌های عملکرد تاریخی واقعی",
-	"پیاده‌سازی پایش بلادرنگ برای تنظیمات پویا",
-	"انجام تحلیل حساسیت برای پارامترهای کلیدی"
-	]
-}
-}
-```
 
 ## هدف کلی
 
@@ -1268,28 +1045,16 @@ Provide responses in structured JSON format with Persian explanations where appr
 
 پروژه مدیریت هوشمند پروژه‌های آبی در قالب یک سامانه یکپارچه نرم‌افزاری ارائه می‌گردد که از چهار لایه اصلی تشکیل شده است:
 
-```latex
-\begin{figure}[h]
-\centering
-\begin{tikzpicture}[node distance=2.5cm]
-	% Nodes
-	\node (layer1) [rectangle, rounded corners, minimum width=10cm, minimum height=1.2cm, text centered, draw=black, fill=blue!20] {\rl{لایه ارائه: داشبورد مدیریتی آنلاین}};
-	\node (layer2) [rectangle, rounded corners, minimum width=10cm, minimum height=1.2cm, text centered, draw=black, fill=green!20, below of=layer1] {\rl{لایه منطق کسب‌وکار: موتور بهینه‌سازی هوشمند}};
-	\node (layer3) [rectangle, rounded corners, minimum width=10cm, minimum height=1.2cm, text centered, draw=black, fill=yellow!20, below of=layer2] {\rl{لایه داده: مدیریت یکپارچه اطلاعات}};
-	\node (layer4) [rectangle, rounded corners, minimum width=10cm, minimum height=1.2cm, text centered, draw=black, fill=red!20, below of=layer3] {\rl{لایه یکپارچه‌سازی: واسط‌های سرویس}};
-	
-	% Simple vertical arrows
-	\draw [thick,<->,>=stealth] (layer1) -- (layer2);
-	\draw [thick,<->,>=stealth] (layer2) -- (layer3);
-	\draw [thick,<->,>=stealth] (layer3) -- (layer4);
-	
-	% Simple feedback arrow
-	\draw [thick,->,>=stealth] (layer4.east) to[out=0,in=0] node[pos=0.5,right] {\rl{بازخورد}} (layer1.east);
-\end{tikzpicture}
-\caption{\rl{معماری چهارلایه سامانه مدیریت هوشمند پروژه‌های آبی}}
-\label{fig:system-architecture}
-\end{figure>
-```
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/Presentationimages/WaterOptimizing/architecture.jpg" alt="RAG1" style="width: 50%; height: 50%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+
+معماری لایه ای سیستم نرم افزاری 
+
+</div>
+
 
 ### نرم‌افزار تخصیص و مدیریت هوشمند پروژه‌ها
 
@@ -1502,11 +1267,20 @@ Provide responses in structured JSON format with Persian explanations where appr
 ### نمونه نقشه تعاملی پروژه‌های آبی
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/RAG/FUMAIIndustryAssistant1.jpg" alt="GIS Map" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/Presentationimages/WaterOptimizing/map.jpg" alt="RAG1" style="width: 50%; height: 50%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
-  یک فریم از نقشه تعاملی
+
+نقشه تعاملی پروژ های آبی خراسان رضوی 
+
 </div>
+
+نمونه از خروجی برنامه روی نقشه را می توان اینجا مشاهده کرد 
+<div style="flex:1; min-width:260px; text-align:justify;" dir="auto">
+  <a href="khorasan_water_projects_map.html" style="text-decoration:none; color:green;" target="_blank">
+      <strong>کلیک کنید</strong>
+    </a>
+
 
 ### داده‌های مکانی نمونه برای استان خراسان رضوی
 
