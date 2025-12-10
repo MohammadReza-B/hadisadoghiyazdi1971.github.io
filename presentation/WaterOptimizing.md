@@ -1275,11 +1275,12 @@ $$
 
 </div>
 
+
 نمونه از خروجی برنامه روی نقشه را می توان اینجا مشاهده کرد 
-<div style="flex:1; min-width:260px; text-align:justify;" dir="auto">
+
   <a href="khorasan_water_projects_map.html" style="text-decoration:none; color:green;" target="_blank">
       <strong>کلیک کنید</strong>
-    </a>
+  </a>
 
 
 ### داده‌های مکانی نمونه برای استان خراسان رضوی
@@ -1365,7 +1366,9 @@ $$
 
 
 ## پیوست ها
+
 ### محدودیت‌های تکنولوژیکی
+
 "محدودیت‌های تکنولوژیکی: توالی اجباری فعالیت‌ها (وابستگی‌های FS, SS, FF, SF)، مدت زمان حداقلی یا حداکثری فعالیت‌ها"
 
 به این معنی است که:
