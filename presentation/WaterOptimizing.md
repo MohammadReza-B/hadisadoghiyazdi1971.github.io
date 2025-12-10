@@ -4,7 +4,7 @@ classes: wide rtl-layout
 dir: rtl
 title: "مدیریت هوشمند پروژه‌های آبی: بهینه‌سازی زمان، هزینه، ماشین‌آلات و نیروی انسانی با هوش مصنوعی"
 permalink: /presentation/WaterOptimizing/
-author_profile: false
+author_profile: true
 sidebar:
   nav: "presentaton"
 header:
