@@ -554,81 +554,122 @@ $$
 
 **محدودیت‌های زمانی:**
 
+مدت زمان فعالیت:
 $$
-\begin{align}
-&\text{1. مدت زمان فعالیت:} & end_a &= start_a + d_a & \forall a \in A \\
-&\text{2. پنجره زمانی:} & ES_a &\leq start_a \leq LS_a & \forall a \in A \\
-&\text{3. وابستگی‌های زمانی:} & start_{a'} &\geq end_a + lag_{a,a'} & \forall a \in A, a' \in succ_a
-\end{align}
+end_a = start_a + d_a \quad \forall a \in A
+$$
+
+پنجره زمانی:
+$$
+ES_a \leq start_a \leq LS_a \quad \forall a \in A
+$$
+
+وابستگی‌های زمانی:
+$$
+start_{a'} \geq end_a + lag_{a,a'} \quad \forall a \in A, a' \in succ_a
 $$
 
 **محدودیت‌های تخصیص منابع انسانی:**
 
+نیازمندی مهارت:
 $$
-\begin{align}
-&\text{4. نیازمندی مهارت:} & \sum_{r \in R_s} y_{a,r,t} &\geq req_{a,s} \cdot x_{a,t} & \forall a \in A, s \in S, t \in T \\
-&\text{5. ظرفیت نیروی انسانی:} & \sum_{a \in A} y_{a,r,t} &\leq avail_{r,t} & \forall r \in R, t \in T \\
-&\text{6. عدم تجاوز از مهارت:} & y_{a,r,t} &\leq skill_{r,s} & \forall a \in A, r \in R, s \in S, t \in T
-\end{align}
+\sum_{r \in R_s} y_{a,r,t} \geq req_{a,s} \cdot x_{a,t} \quad \forall a \in A, s \in S, t \in T
+$$
+
+ظرفیت نیروی انسانی:
+$$
+\sum_{a \in A} y_{a,r,t} \leq avail_{r,t} \quad \forall r \in R, t \in T
+$$
+
+عدم تجاوز از مهارت:
+$$
+y_{a,r,t} \leq skill_{r,s} \quad \forall a \in A, r \in R, s \in S, t \in T
 $$
 
 **محدودیت‌های تخصیص ماشین‌آلات:**
 
+نیازمندی تجهیزات:
 $$
-\begin{align}
-&\text{7. نیازمندی تجهیزات:} & \sum_{e \in E} z_{a,e,t} &\geq req_{a,e} \cdot x_{a,t} & \forall a \in A, t \in T \\
-&\text{8. ظرفیت ماشین‌آلات:} & \sum_{a \in A} z_{a,e,t} &\leq avail_{e,t} \cdot cap_e & \forall e \in E, t \in T
-\end{align}
+\sum_{e \in E} z_{a,e,t} \geq req_{a,e} \cdot x_{a,t} \quad \forall a \in A, t \in T
+$$
+
+ظرفیت ماشین‌آلات:
+$$
+\sum_{a \in A} z_{a,e,t} \leq avail_{e,t} \cdot cap_e \quad \forall e \in E, t \in T
 $$
 
 **محدودیت‌های مواد و مصالح:**
 
+موجودی مواد:
 $$
-\begin{align}
-&\text{9. موجودی مواد:} & \sum_{a \in A} w_{a,m,t} &\leq stock_{m,t} & \forall m \in M, t \in T \\
-&\text{10. نیازمندی مواد:} & \sum_{t \in T} w_{a,m,t} &\geq req_{a,m} & \forall a \in A, m \in M
-\end{align}
+\sum_{a \in A} w_{a,m,t} \leq stock_{m,t} \quad \forall m \in M, t \in T
+$$
+
+نیازمندی مواد:
+$$
+\sum_{t \in T} w_{a,m,t} \geq req_{a,m} \quad \forall a \in A, m \in M
 $$
 
 **محدودیت‌های یکپارچگی:**
 
+فعالیت در حال اجرا:
 $$
-\begin{align}
-&\text{11. فعالیت در حال اجرا:} & \sum_{t \in T} x_{a,t} &= d_a & \forall a \in A \\
-&\text{12. تداوم اجرای فعالیت:} & x_{a,t} &\geq x_{a,t-1} - (1 - \sum_{r \in R} y_{a,r,t}) & \forall a \in A, t \in T \setminus \{1\} \\
-&\text{13. عدم تداخل منابع:} & \sum_{a \in A} y_{a,r,t} &\leq 1 & \forall r \in R, t \in T \\
-& & \sum_{a \in A} z_{a,e,t} &\leq 1 & \forall e \in E, t \in T
-\end{align}
+\sum_{t \in T} x_{a,t} = d_a \quad \forall a \in A
+$$
+
+تداوم اجرای فعالیت:
+$$
+x_{a,t} \geq x_{a,t-1} - (1 - \sum_{r \in R} y_{a,r,t}) \quad \forall a \in A, t \in T \setminus \{1\}
+$$
+
+عدم تداخل منابع:
+$$
+\sum_{a \in A} y_{a,r,t} \leq 1 \quad \forall r \in R, t \in T
+$$
+$$
+\sum_{a \in A} z_{a,e,t} \leq 1 \quad \forall e \in E, t \in T
 $$
 
 **محدودیت‌های پروژه:**
 
+تکمیل پروژه:
 $$
-\begin{align}
-&\text{14. تکمیل پروژه:} & \sum_{a \in A_p} \sum_{t \in T} x_{a,t} &= \sum_{a \in A_p} d_a & \forall p \in P \\
-&\text{15. محدودیت بودجه:} & totalCost &\leq budget_{total}
-\end{align}
+\sum_{a \in A_p} \sum_{t \in T} x_{a,t} = \sum_{a \in A_p} d_a \quad \forall p \in P
+$$
+
+محدودیت بودجه:
+$$
+totalCost \leq budget_{total}
 $$
 
 **محدودیت‌های منطقی و دوگانگی:**
 
+رابطه بین متغیرها:
 $$
-\begin{align}
-&\text{16. رابطه بین متغیرها:} & y_{a,r,t} &\leq x_{a,t} & \forall a \in A, r \in R, t \in T \\
-& & z_{a,e,t} &\leq x_{a,t} & \forall a \in A, e \in E, t \in T \\
-& & w_{a,m,t} &\leq M \cdot x_{a,t} & \forall a \in A, m \in M, t \in T
-\end{align}
+y_{a,r,t} \leq x_{a,t} \quad \forall a \in A, r \in R, t \in T
+$$
+$$
+z_{a,e,t} \leq x_{a,t} \quad \forall a \in A, e \in E, t \in T
+$$
+$$
+w_{a,m,t} \leq M \cdot x_{a,t} \quad \forall a \in A, m \in M, t \in T
 $$
 
 **محدودیت‌های دامنه متغیرها:**
 
+متغیرهای باینری:
 $$
-\begin{align}
-&\text{17. متغیرهای باینری:} & x_{a,t}, y_{a,r,t}, z_{a,e,t} &\in \{0,1\} \\
-&\text{18. متغیرهای غیرمنفی:} & start_a, end_a, projectDelay_p, totalCost &\geq 0 \\
-& & w_{a,m,t} &\geq 0
-\end{align}
+x_{a,t}, y_{a,r,t}, z_{a,e,t} \in \{0,1\}
 $$
+
+متغیرهای غیرمنفی:
+$$
+start_a, end_a, projectDelay_p, totalCost \geq 0
+$$
+$$
+w_{a,m,t} \geq 0
+$$
+
 
 ### شرح مدل
 
