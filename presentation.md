@@ -107,7 +107,23 @@ header:
   </div>
 
 
-<!-- پروژه 6 -->
+<!-- پروژه 7 -->
+
+<div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
+    <a href="/presentation/waterRAG/" style="text-decoration: none; color: inherit;">
+      <img src="/assets/Presentationimages/WaterOptimizing/water.png" 
+           alt="Presentation3" 
+           class="project-image"
+           style="width: 100%; height: 200px; object-fit: cover; display: block;">
+      <div class="project-content" style="padding: 10px;">
+        <h3 class="project-title" style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">
+
+تحلیل و پاسخگویی هوشمند شرکت آب منطقه ای خراسان رضوی
+        </h3>
+      </div>
+    </a>
+  </div>
+
    
   <!-- پروژه 7 -->
   
