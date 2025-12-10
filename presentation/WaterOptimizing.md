@@ -1278,10 +1278,9 @@ $$
 
 نمونه از خروجی برنامه روی نقشه را می توان اینجا مشاهده کرد 
 
-  <a href="khorasan_water_projects_map.html" style="text-decoration:none; color:green;" target="_blank">
+  <a href="https://hadisadoghiyazdi1971.github.io/presentation/khorasan_water_projects_map.html" style="text-decoration:none; color:green;" target="_blank">
       <strong>کلیک کنید</strong>
   </a>
-
 
 ### داده‌های مکانی نمونه برای استان خراسان رضوی
 
