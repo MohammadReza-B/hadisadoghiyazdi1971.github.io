@@ -236,9 +236,10 @@ header:
 در ادامه با تاکید بیشتر بر بهینه سازی در صنعت آب با مثالهای دیگر ادامه می دهیم:
 
 
-# مطالعه موردی: بهینه‌سازی فرآیند تصفیه آب با هوش مصنوعی
+## مطالعه موردی: بهینه‌سازی فرآیند تصفیه آب با هوش مصنوعی
 
-https://www.gihub.org/infrastructure-technology-use-cases/case-studies/ai-for-process-optimisation-for-water-treatment
+**آدرس**: [ تصفیه آب با هوش مصنوعی](https://www.gihub.org/infrastructure-technology-use-cases/case-studies/ai-for-process-optimisation-for-water-treatment
+)
 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
