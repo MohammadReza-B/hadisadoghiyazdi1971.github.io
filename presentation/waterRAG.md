@@ -231,15 +231,23 @@ LLM: [تولید پاسخ بر اساس اسناد واقعی]
       </strong>
     </a>
 
+#### تصویر نرم افزار
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/Presentationimages/WaterOptimizing/RAG_Water_appearance.jpg" alt="RAG10" style="width: 70%; height: 70%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
 
 
-### جزییات تحلیلی 
+#### جزییات تحلیلی 
 در پیوست برخی جزییات بازیابی اطلاعات ارایه شده است برای  رتبه بندی برخی از کارهای مولف در جریان پیاده سازی مد نظر بوده است. نمونه های نزدیک [3],[4] را ملاحظه کنید و دیگر نکات را در لینک زیر کارهای اخیر خواهید یافت. 
 <a href="https://scholar.google.com/citations?user=wEBTP4oAAAAJ&hl=en" style="text-decoration:none; color:green;" target="_blank">
       <strong>
       کلیک کنید
       </strong>
     </a>
+
+#### چند سوال از پارسا
+
 
 
 ## مراجع
