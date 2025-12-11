@@ -232,6 +232,7 @@ LLM: [تولید پاسخ بر اساس اسناد واقعی]
     </a>
 
 #### تصویر نرم افزار
+
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="/assets/Presentationimages/WaterOptimizing/RAG_Water_appearance.jpg" alt="RAG10" style="width: 70%; height: 70%; object-fit: contain;">
 </div>
@@ -239,7 +240,9 @@ LLM: [تولید پاسخ بر اساس اسناد واقعی]
 
 
 #### جزییات تحلیلی 
+
 در پیوست برخی جزییات بازیابی اطلاعات ارایه شده است برای  رتبه بندی برخی از کارهای مولف در جریان پیاده سازی مد نظر بوده است. نمونه های نزدیک [3],[4] را ملاحظه کنید و دیگر نکات را در لینک زیر کارهای اخیر خواهید یافت. 
+
 <a href="https://scholar.google.com/citations?user=wEBTP4oAAAAJ&hl=en" style="text-decoration:none; color:green;" target="_blank">
       <strong>
       کلیک کنید
@@ -248,9 +251,15 @@ LLM: [تولید پاسخ بر اساس اسناد واقعی]
 
 #### چند سوال از پارسا
 
+<a href="https://hadisadoghiyazdi1971.github.io/presentation/result" style="text-decoration:none; color:green;" target="_blank">
+      <strong>
+      کلیک کنید
+      </strong>
+    </a>
 
 
 ## مراجع
+
 [1] **Lewis, P., Perez, E., Piktus, A., et al.** (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.* Advances in Neural Information Processing Systems (NeurIPS).  
 [2] **Gao, L., et al.** (2023). *Retrieval-Augmented Generation for Large Language Models: A Survey.* arXiv preprint.
 [3] S. Keshvari, F. Saeedi, H. Sadoghi Yazdi, and F. Ensan, "A Self-Distilled Learning to Rank Model for Ad Hoc Retrieval," ACM Transactions on Information Systems, vol. 42, no. 6, pp. 1-28, 2024. doi: https://doi.org/10.1145/3681784
@@ -260,6 +269,7 @@ LLM: [تولید پاسخ بر اساس اسناد واقعی]
 
 
 ## پیوست ها
+
 ### مدل‌های زبان بزرگ و RAG: تعاریف و مفاهیم پایه در حوزه آب
 
 مدل‌های زبان بزرگ (Large Language Models یا LLMs) نوعی از شبکه‌های عصبی عمیق هستند که با استفاده از معماری Transformer و آموزش بر روی حجم عظیمی از داده‌های متنی، توانایی درک و تولید زبان طبیعی را در سطح بسیار بالایی کسب کرده‌اند. مدل‌هایی مانند GPT-4، Claude، Llama و Gemini نمونه‌هایی از این نسل جدید LLMها هستند که در سال‌های اخیر توجه زیادی را به خود جلب کرده‌اند. این مدل‌ها می‌توانند طیف گسترده‌ای از وظایف زبانی را انجام دهند، از جمله پاسخ به سؤالات، ترجمه، خلاصه‌سازی متون، تولید گزارش و تحلیل داده‌ها.
