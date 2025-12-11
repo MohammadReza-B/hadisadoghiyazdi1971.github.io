@@ -225,6 +225,14 @@ LLM: [تولید پاسخ بر اساس اسناد واقعی]
    └─ پرسش + منابع → LLM (Gemini) → پاسخ توضیحی
 ```
 
+#### آیین نامه مورد استفاده
+
+<a href="https://hadisadoghiyazdi1971.github.io/presentation/water1" style="text-decoration:none; color:green;" target="_blank">
+      <strong>
+      کلیک کنید
+      </strong>
+    </a>
+
 
 
 ### جزییات تحلیلی 
