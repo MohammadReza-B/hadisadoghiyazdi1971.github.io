@@ -237,7 +237,8 @@ LLM: [تولید پاسخ بر اساس اسناد واقعی]
     <img src="/assets/Presentationimages/WaterOptimizing/RAG_Water_appearance.jpg" alt="RAG10" style="width: 70%; height: 70%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
-
+تصویر نرم افزار اولیه
+</div>
 
 #### جزییات تحلیلی 
 
