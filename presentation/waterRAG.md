@@ -386,15 +386,6 @@ $$ \text{Score}(D, Q) = \sum_{i=1}^{n} \text{IDF}(q_i) \cdot \sum_{j \in \text{f
 
 ## مراجع
 
-<div class="ltr-content" markdown="1">
-
-[1] **Lewis, P., Perez, E., Piktus, A., et al.** (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.* Advances in Neural Information Processing Systems (NeurIPS).  
-[2] **Gao, L., et al.** (2023). *Retrieval-Augmented Generation for Large Language Models: A Survey.* arXiv preprint.
-[3] S. Keshvari, F. Saeedi, H. Sadoghi Yazdi, and F. Ensan, "A Self-Distilled Learning to Rank Model for Ad Hoc Retrieval," ACM Transactions on Information Systems, vol. 42, no. 6, pp. 1-28, 2024. doi: https://doi.org/10.1145/3681784
-[4] S. Keshvari, F. Ensan, and H. Sadoghi Yazdi, "ListMAP: Listwise learning to rank as maximum a posteriori estimation," Information Processing and Management, vol. 59, Art. 102962, 2022. doi: https://doi.org/10.1016/j.ipm.2022.102962
-
-</div>
-
 <div style="text-align: left !important; direction: ltr !important; unicode-bidi: bidi-override !important;">
     <div style="text-align: left; direction: ltr; font-family: monospace; line-height: 1.6;">
         <p><strong>[1] Lewis, P., Perez, E., Piktus, A., et al.</strong> (2020). <em>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.</em> Advances in Neural Information Processing Systems (NeurIPS).</p>
