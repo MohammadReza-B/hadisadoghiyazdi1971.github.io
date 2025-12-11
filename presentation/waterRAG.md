@@ -121,7 +121,7 @@ LLM: [تولید پاسخ بر اساس اسناد واقعی]
 
 ### حوزه حقوقی و قراردادها: Harvey AI
 
-<a href="https://arxiv.org/pdf/2303.17564" style="text-decoration:none; color:green;" target="_blank">
+<a href="https://www.harvey.ai/" style="text-decoration:none; color:green;" target="_blank">
       <strong>
       نام شرکت: Harvey AI (استفاده توسط شرکت‌های حقوقی بزرگی مانند Allen & Overy)
       </strong>
