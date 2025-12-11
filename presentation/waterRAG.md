@@ -259,16 +259,7 @@ LLM: [تولید پاسخ بر اساس اسناد واقعی]
     </a>
 
 
-## مراجع
 
-<div class="ltr-content" markdown="1">
-
-[1] **Lewis, P., Perez, E., Piktus, A., et al.** (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.* Advances in Neural Information Processing Systems (NeurIPS).  
-[2] **Gao, L., et al.** (2023). *Retrieval-Augmented Generation for Large Language Models: A Survey.* arXiv preprint.
-[3] S. Keshvari, F. Saeedi, H. Sadoghi Yazdi, and F. Ensan, "A Self-Distilled Learning to Rank Model for Ad Hoc Retrieval," ACM Transactions on Information Systems, vol. 42, no. 6, pp. 1-28, 2024. doi: https://doi.org/10.1145/3681784
-[4] S. Keshvari, F. Ensan, and H. Sadoghi Yazdi, "ListMAP: Listwise learning to rank as maximum a posteriori estimation," Information Processing and Management, vol. 59, Art. 102962, 2022. doi: https://doi.org/10.1016/j.ipm.2022.102962
-
-</div>
 
 
 
@@ -390,3 +381,16 @@ $$ \text{Score}(D, Q) = \sum_{i=1}^{n} \text{IDF}(q_i) \cdot \sum_{j \in \text{f
 - **دقت واژگانی (Lexical Precision):** BM25 در یافتن اسنادی که شامل **کلمات کلیدی دقیق** پرسش هستند، بی‌نظیر است. این ویژگی برای پرسش‌هایی که شامل اسامی اختصاصی، کدها یا اصطلاحات فنی دقیق هستند، ضروری است.
 - **مکمل جستجوی معنایی:** جستجوی معنایی (مبتنی بر Embedding) در درک مفهوم و پارافریز قوی است اما ممکن است در تطبیق دقیق کلمات کلیدی ضعیف عمل کند. ترکیب نتایج این دو (مثلاً با الگوریتم **Reciprocal Rank Fusion - RRF**)، یک سیستم بازیابی جامع و قوی ایجاد می‌کند که هم پوشش معنایی و هم دقت واژگانی را پوشش می‌دهد.
 
+
+
+
+## مراجع
+
+<div class="ltr-content" markdown="1">
+
+[1] **Lewis, P., Perez, E., Piktus, A., et al.** (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.* Advances in Neural Information Processing Systems (NeurIPS).  
+[2] **Gao, L., et al.** (2023). *Retrieval-Augmented Generation for Large Language Models: A Survey.* arXiv preprint.
+[3] S. Keshvari, F. Saeedi, H. Sadoghi Yazdi, and F. Ensan, "A Self-Distilled Learning to Rank Model for Ad Hoc Retrieval," ACM Transactions on Information Systems, vol. 42, no. 6, pp. 1-28, 2024. doi: https://doi.org/10.1145/3681784
+[4] S. Keshvari, F. Ensan, and H. Sadoghi Yazdi, "ListMAP: Listwise learning to rank as maximum a posteriori estimation," Information Processing and Management, vol. 59, Art. 102962, 2022. doi: https://doi.org/10.1016/j.ipm.2022.102962
+
+</div>
