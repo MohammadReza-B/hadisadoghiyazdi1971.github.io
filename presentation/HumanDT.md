@@ -36,9 +36,7 @@ header:
 ب- برخی شعارگونه است همچون 
 
 <a href="https://www.tabnak.ir/fa/news/1256666/%D8%A7%D8%AE%D8%AA%D8%B1%D8%A7%D8%B9-%D9%86%D8%AE%D8%B3%D8%AA%DB%8C%D9%86-%D8%AF%D9%88%D9%82%D9%84%D9%88%DB%8C-%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84-%D8%A7%D9%86%D8%B3%D8%A7%D9%86%DB%8C" style="text-decoration:none; color:green;" target="_blank">
-      <strong>بررسی پتانسیل دوقلوهای دیجیتال انسان برای شکستن مرزها در تعاملات اجتماعی و ارتباطات
-
-دوقلوهای دیجیتال انسانی پتانسیل‌های امیدوارکننده مختلفی برای ایجاد روابط اجتماعی جدید، غلبه بر محدودیت‌های زمان و مکان و حتی غلبه بر مفهوم مرگ در ارتباطات بین‌فردی نشان داده‌اند. جالب‌تر اینکه با کمک چنین سیستم پیچیده‌ای، می‌توان با یک شخصیت تاریخی، یک عزیز گمشده یا حتی با خود در گذشته یا آینده گفت‌وگو کرد.
+      <strong>بررسی پتانسیل دوقلوهای دیجیتال انسان برای شکستن مرزها در تعاملات اجتماعی و ارتباطات دوقلوهای دیجیتال انسانی پتانسیل‌های امیدوارکننده مختلفی برای ایجاد روابط اجتماعی جدید، غلبه بر محدودیت‌های زمان و مکان و حتی غلبه بر مفهوم مرگ در ارتباطات بین‌فردی نشان داده‌اند. جالب‌تر اینکه با کمک چنین سیستم پیچیده‌ای، می‌توان با یک شخصیت تاریخی، یک عزیز گمشده یا حتی با خود در گذشته یا آینده گفت‌وگو کرد.
 </strong>
     </a>
 
@@ -53,7 +51,7 @@ header:
 د-بدنبال ساخت رفتار انسان هستند- این گروه می گویند مدتهاست تکنولوژی generative AIکار خود را شروع کرده و ما با یک نسخه انسانی که تشخیص آن گاه غیرممکن می نماید شروع کردیم آنها LLM , VLM, MLM, (به پیوست مراجعه کنید ) هستند
 در این دسته ارتقا از چنین موجوداتی که گروه را مدل می کنند به مدل سازی افراد  را HDT می گویند
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/WaterOptimizing/LLM_HDT.jpg" alt="HDT1" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/DT/LLM_HDT.jpg" alt="HDT1" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 
@@ -73,7 +71,7 @@ header:
 ما در حال زندگی در انقلاب داده در زمینه زیست پزشکی هستیم و تحقیقات علمی با سرعتی بی‌سابقه در حال پیشرفت برای بهبود طب مدرن است. یکی از جنبه‌های کلیدی چنین طبّی، شخصی‌سازی درمان‌ها برای هر بیمار است، که با تحلیل تغییرات خاصی که منجر به بیماری شده و همچنین ویژگی‌های منحصر به فردی که فرد با آن‌ها متولد شده، انجام می‌شود. ما امروزه دارای توالی‌یابی سریع و کامل ژنوم و ابرکامپیوترهایی برای تحلیل داده‌ها هستیم که ابزارها و تکنیک‌های جدیدی را به دست می‌دهند و دانشی را فراهم می‌کنند که قبلاً در دسترس نبود. 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/WaterOptimizing/dt_patient.jpg" alt="HDT2" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/DT/dt_patient.jpg" alt="HDT2" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 
