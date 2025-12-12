@@ -26,6 +26,24 @@ header:
 ارائه قابلیت "What-If" برای پیش‌بینی پیامدهای تصمیمات مدیریتی
 سیستم از معماری ماژولار با یکپارچه‌سازی Gemini LLM برای تحلیل پیشرفته و Flask برای سرویس‌دهی وب استفاده می‌کند و داده‌ها را به صورت real-time به کاربران نمایش می‌دهد.
 
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/Presentationimages/DT/exe_out1.jpg" alt="RAG1" style="width: 80%; height: 80%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+نمای 1 از نرم افزار
+</div>
+
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/Presentationimages/DT/exe_out2.jpg" alt="RAG1" style="width: 80%; height: 80%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+خروجی نرم افزار
+نظر AI 
+</div>
+
+**این نرم افزار بجای موجودیت انسانی از  LLM بهره برده و مدل ریاضی و خروجی آن نیز توسط  LLM ارایه شده است**
+
 ### صورت مسئله
 
 در سیستم‌های آموزشی مدرن، مدیران و مشاوران با چالش‌های متعددی روبرو هستند:
