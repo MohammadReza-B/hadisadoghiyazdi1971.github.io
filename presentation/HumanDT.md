@@ -69,7 +69,7 @@ header:
 ه-کاربرد در سلامت انسان: این گروه چنین شعاری دارند ما در حال زندگی در انقلاب داده در زمینه زیست پزشکی هستیم و تحقیقات علمی با سرعتی بی‌سابقه در حال پیشرفت برای بهبود طب مدرن است. یکی از جنبه‌های کلیدی چنین طبّی، شخصی‌سازی درمان‌ها برای هر بیمار است، که با تحلیل تغییرات خاصی که منجر به بیماری شده و همچنین ویژگی‌های منحصر به فردی که فرد با آن‌ها متولد شده، انجام می‌شود. ما امروزه دارای توالی‌یابی سریع و کامل ژنوم و ابرکامپیوترهایی برای تحلیل داده‌ها هستیم که ابزارها و تکنیک‌های جدیدی را به دست می‌دهند و دانشی را فراهم می‌کنند که قبلاً در دسترس نبود. 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/DT/dt_patient.jpg" alt="HDT2" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/DT/dt_patient.jpg" alt="HDT2" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 
