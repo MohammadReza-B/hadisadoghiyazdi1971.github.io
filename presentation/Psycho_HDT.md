@@ -71,4 +71,11 @@ Visual Analytics: نمایش داده‌ها با Chart.js
 این سیستم یک پلتفرم قدرتمند برای تحلیل و بهینه‌سازی محیط‌های آموزشی فراهم می‌کند که می‌تواند به طور قابل توجهی کیفیت تصمیم‌گیری در سیستم‌های آموزشی را بهبود بخشد.
 
 
+### طرز اجرای این کار چطور بوده است
+
+<a href="https://hadisadoghiyazdi1971.github.io/presentation/Exe_Psycho_HDT" style="text-decoration:none; color:green;" target="_blank">
+      <strong>
+برای دیدن رویه اجرایی کلیک کنید
+      </strong>
+    </a>
 

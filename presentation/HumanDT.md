@@ -286,7 +286,7 @@ HDT به دلیل نیاز به پردازش پیوسته، پیش‌بینی ل
 
 <a href="https://hadisadoghiyazdi1971.github.io/presentation/Psycho_HDT" style="text-decoration:none; color:green;" target="_blank">
       <strong>
-      کلیک کنید
+برای نتیجه یک دو قلوی دیجیتال انسانی در حیطه تربیتی کلیک کنید
       </strong>
     </a>
 
