@@ -56,9 +56,14 @@ header:
     <img src="/assets/Presentationimages/WaterOptimizing/LLM_HDT.jpg" alt="HDT1" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
-حرکت از کاربران مصنوعی که همان مولدهای هوش مصنوعی مثل مدلهای زبانی بزرگ (پیوست را ببینید) هستند که جمع را مدل کرده اند به سمت مدل سازی فردی یا  دو قلوی انسانی 
-</div>
 
+<a href="https://www.nngroup.com/articles/digital-twins/" style="text-decoration:none; color:green;" target="_blank">
+      <strong>
+حرکت از کاربران مصنوعی که همان مولدهای هوش مصنوعی مثل مدلهای زبانی بزرگ (پیوست را ببینید) هستند که جمع را مدل کرده اند به سمت مدل سازی فردی یا  دو قلوی انسانی 
+ </strong>
+    </a>
+
+</div>
 
 
 
