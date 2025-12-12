@@ -51,6 +51,14 @@ header:
 
 
 د-بدنبال ساخت رفتار انسان هستند- این گروه می گویند مدتهاست تکنولوژی generative AIکار خود را شروع کرده و ما با یک نسخه انسانی که تشخیص آن گاه غیرممکن می نماید شروع کردیم آنها LLM , VLM, MLM, (به پیوست مراجعه کنید ) هستند
+در این دسته ارتقا از چنین موجوداتی که گروه را مدل می کنند به مدل سازی افراد  را HDT می گویند
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/Presentationimages/WaterOptimizing/LLM_HDT.jpg" alt="HDT1" style="width: 80%; height: 80%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+حرکت از کاربران مصنوعی که همان مولدهای هوش مصنوعی مثل مدلهای زبانی بزرگ (پیوست را ببینید) هستند که جمع را مدل کرده اند به سمت مدل سازی فردی یا  دو قلوی انسانی 
+</div>
+
 
 
 
