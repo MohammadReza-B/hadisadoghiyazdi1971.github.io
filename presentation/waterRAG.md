@@ -386,7 +386,7 @@ $$ \text{Score}(D, Q) = \sum_{i=1}^{n} \text{IDF}(q_i) \cdot \sum_{j \in \text{f
 
 ## مراجع
 
-<div style="text-align: left !important; direction: ltr !important; unicode-bidi: bidi-override !important;">
+  <div style="text-align: left !important; direction: ltr !important; unicode-bidi: bidi-override !important;">
     <div style="text-align: left; direction: ltr; font-family: monospace; line-height: 1.6;">
         <p><strong>[1] Lewis, P., Perez, E., Piktus, A., et al.</strong> (2020). <em>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.</em> Advances in Neural Information Processing Systems (NeurIPS).</p>
         <p><strong>[2] Gao, L., et al.</strong> (2023). <em>Retrieval-Augmented Generation for Large Language Models: A Survey.</em> arXiv preprint.</p>

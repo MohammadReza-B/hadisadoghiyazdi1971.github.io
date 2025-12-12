@@ -282,6 +282,13 @@ HDT به دلیل نیاز به پردازش پیوسته، پیش‌بینی ل
 
 4-شروع برنامه نویسی با چت جی پی تی-دیپ سیک-کلود ای آی -جمینای-گراک-کرسرو ...
 
+### یک مثال ببینیم 
+
+<a href="https://hadisadoghiyazdi1971.github.io/presentation/Psycho_HDT" style="text-decoration:none; color:green;" target="_blank">
+      <strong>
+      کلیک کنید
+      </strong>
+    </a>
 
 ## پیوست ها
 
