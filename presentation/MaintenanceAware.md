@@ -88,3 +88,9 @@ header:
 <div class="caption" style="text-align: center; margin-top: 8px;">
  دکلهای فشار قوی  اخذ شده </div>
 
+نمونه از خروجی برنامه روی نقشه را می توان اینجا مشاهده کرد 
+
+  <a href="https://hadisadoghiyazdi1971.github.io/presentation/extended_power_towers_map.html" style="text-decoration:none; color:green;" target="_blank">
+      <strong>کلیک کنید</strong>
+  </a>
+
