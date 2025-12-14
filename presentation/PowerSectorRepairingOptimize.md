@@ -145,6 +145,12 @@ header:
 
 
 
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/tractian-second.webp" alt="RAG2" style="width: 80%; height: 80%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+<a href="https://getdemos.softwarefinder.com/cmms/tractian/?utm_campaign=SF%20%7C%20CMMS%20%7C%20Upkeep%2C%20hippo%2C%20Limble%20%7C%20Broad&utm_term=tractian%20cost&utm_source=adwords&utm_medium=ppc&hsa_grp=190382426353&hsa_mt=b&hsa_tgt=kwd-2271185182737&hsa_kw=tractian%20cost&hsa_ad=784712434701&hsa_acc=5864849258&hsa_cam=21928685476&hsa_ver=3&hsa_src=g&hsa_net=adwords&gad_source=1&gad_campaignid=21928685476&gbraid=0AAAAAC2KnnghvvVO1C9G8FuBQWjAB-7GB&gclid=CjwKCAiA3fnJBhAgEiwAyqmY5YUZRYAOBAphYQnyDVfUYUFV0mfgsLnSxqFTh8iB7gxN8TTyplFuVhoCplkQAvD_BwE" style="text-decoration:none; color:green;" target="_blank"><strong>Tractian</strong></a>
+</div>
 
 
 
