@@ -204,14 +204,14 @@ $$
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
     <!-- ستون اول -->
     <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-        <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shahrestani.jpg" alt="امور نگهداشت پیشگیرانه شبکه های فشار ضعیف برق منطقه غرب مشهد" style="width: 100%; height: auto; object-fit: contain;">
+        <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shahrestani.jpg" alt="امور نگهداشت پیشگیرانه شبکه های فشار ضعیف برق منطقه غرب مشهد" style="width: 80%; height: 80%; object-fit: contain;">
         <div class="caption" style="text-align: center; margin-top: 8px;">
             امور نگهداشت پیشگیرانه شبکه های فشار ضعیف برق منطقه غرب مشهد
         </div>
     </div>
     <!-- ستون دوم -->
     <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-        <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/hafteTir.jpg" alt="شرکت توزیع برق شهرستان مشهد ساختمان شماره 3" style="width: 100%; height: auto; object-fit: contain;">
+        <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/hafteTir.jpg" alt="شرکت توزیع برق شهرستان مشهد ساختمان شماره 3" style="width: 50%; height: 50%; object-fit: contain;">
         <div class="caption" style="text-align: center; margin-top: 8px;">
             شرکت توزیع برق شهرستان مشهد ساختمان شماره 3
         </div>
