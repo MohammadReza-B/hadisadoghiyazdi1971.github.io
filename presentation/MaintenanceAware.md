@@ -94,3 +94,9 @@ header:
       <strong>کلیک کنید</strong>
   </a>
 
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/ElectricityPylone.jpg" alt="powerline1" style="width: 80%; height: 80%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+ دکلهای فشار قوی  قله زو </div>
+
