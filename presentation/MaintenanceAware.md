@@ -20,8 +20,8 @@ header:
 
 این سیستم دایما خودش را پایش می کند و با ابزار مختلف از وضعیت خود با خبر می شود سپس توسط ابزار هوشمند برای دوقلوی دیجیتالی که از خود بوجود اورده به آگاهی دادن برای تعمیرات پیش بینانه اقدام می کند. 
 
-<a href="https://www.aurecongroup.com/projects/national-grid-uk" style="text-decoration:none; color:inherit;" target="_blank"><strong>پلتفرم یکپارچه نگهداری و تعمیرات پیش‌بینانه (Predictive Maintenance)</strong></a>   برای دارایی‌های شبکه توزیع برق با استفاده از هوش مصنوعی، اینترنت اشیاء (IoT) و فناوری دوقلوی دیجیتال (Digital Twin) این پروژه یک گام فراتر از نگهداری و تعمیرات سنتی است. به جای تعمیرات بر اساس یک برنامه زمانی ثابت (مثلاً هر ۶ ماه یکبار)، این سیستم بر اساس وضعیت واقعی و لحظه‌ای تجهیزات، زمان و نوع نیاز به تعمیر را پیش‌بینی می‌کند. این 
-<a href="https://www.aurecongroup.com/-/media/files/downloads-library/thought-leadership/aurecon-our-digital-futures-your-digital-decisions-report.pdf" style="text-decoration:none; color:inherit;" target="_blank"><strong>گزارش</strong></a>   را هم ببینید. 
+<a href="https://www.aurecongroup.com/projects/national-grid-uk" style="text-decoration:none; color:green;" target="_blank"><strong>پلتفرم یکپارچه نگهداری و تعمیرات پیش‌بینانه (Predictive Maintenance)</strong></a>   برای دارایی‌های شبکه توزیع برق با استفاده از هوش مصنوعی، اینترنت اشیاء (IoT) و فناوری دوقلوی دیجیتال (Digital Twin) این پروژه یک گام فراتر از نگهداری و تعمیرات سنتی است. به جای تعمیرات بر اساس یک برنامه زمانی ثابت (مثلاً هر ۶ ماه یکبار)، این سیستم بر اساس وضعیت واقعی و لحظه‌ای تجهیزات، زمان و نوع نیاز به تعمیر را پیش‌بینی می‌کند. این 
+<a href="https://www.aurecongroup.com/-/media/files/downloads-library/thought-leadership/aurecon-our-digital-futures-your-digital-decisions-report.pdf" style="text-decoration:none; color:green;" target="_blank"><strong>گزارش</strong></a>   را هم ببینید. 
 
 چنانچه دوقلوی دیجیتالی برای منظور تعمیر و نگه داری مشابه دوقلوی  دیجیتال شبکه برق ایران داشته باشیم طبعا پیش بینی و حتی مکانیز "چی می شد اگر" نیز مقدور می شد. 
 
@@ -41,7 +41,7 @@ header:
 ### لایه پردازش و مدل‌سازی (Processing & Modeling Layer - Digital Twin):
 **ایجاد دوقلوی دیجیتال**: ساخت یک نسخه مجازی و پویا از کل شبکه توزیع (یا بخشی از آن). این مدل دیجیتال، تمام داده‌های دریافتی از سنسورها و پهپادها را در خود منعکس می‌کند. برای توضیح بیشتر این متن را مطالعه کنید 
 
-<a href="https://hadisadoghiyazdi1971.github.io/presentation/HumanDT/" style="text-decoration:none; color:inherit;" target="_blank"><strong>کلیک کنید</strong></a>
+<a href="https://hadisadoghiyazdi1971.github.io/presentation/HumanDT/" style="text-decoration:none; color:black;" target="_blank"><strong>کلیک کنید</strong></a>
 
 **شبیه‌سازی**: با استفاده از این دوقلوی دیجیتال، مدیران شبکه می‌توان سناریوهای مختلف را شبیه‌سازی کنند. برای مثال: "اگر یک طوفان شدید در منطقه X رخ دهد، کدام بخش از شبکه آسیب‌پذیرترین خواهد بود؟" یا "اثر خروج یک ترانسفورماتور مشخص بر شبکه چیست؟".
 ### لایه تحلیل و هوش مصنوعی (AI & Analytics Layer):
