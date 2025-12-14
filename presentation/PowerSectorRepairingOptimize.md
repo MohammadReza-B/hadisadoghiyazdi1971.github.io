@@ -65,7 +65,7 @@ header:
 *   **ارائه یک رابط کاربری قابل فهم و تعاملی** برای افزایش اعتماد و تسهیل تصمیم‌گیری توسط مدیران.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/conceptual_overview.JPG" alt="RAG1" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/conceptual_overview.JPG" alt="RAG1" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;color: black;">
     یک مرور مفهومی از سیستم تصمیم‌گیری خودکار، که چالش‌های عملیاتی اولیه را به عنوان ورودی و بهبودهای کلیدی عملکرد را به عنوان خروجی نشان می‌دهد
