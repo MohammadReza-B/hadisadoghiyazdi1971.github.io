@@ -35,7 +35,7 @@ header:
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/diagram_hor1.svg" alt="present1" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
-<div class="caption" style="text-align: center; margin-top: 8px;">
+<div class="caption" style="text-align: center; margin-top: 8px;color: black;">
  محاسبه مسیرهای بهینه حرکتی ،تخصیص خودکار کارها و منابع،  کمینه‌سازی زمان کل پروژه،  حداکثرسازی بهره‌وری نیروی انسانی،  کاهش زمان توقف تجهیزات
 
 </div>
@@ -67,7 +67,7 @@ header:
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/conceptual_overview.JPG" alt="RAG1" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
-<div class="caption" style="text-align: center; margin-top: 8px;">
+<div class="caption" style="text-align: center; margin-top: 8px;color: black;">
     یک مرور مفهومی از سیستم تصمیم‌گیری خودکار، که چالش‌های عملیاتی اولیه را به عنوان ورودی و بهبودهای کلیدی عملکرد را به عنوان خروجی نشان می‌دهد
 </div>
 
