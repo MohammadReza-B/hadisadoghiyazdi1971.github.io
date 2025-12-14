@@ -143,8 +143,6 @@ header:
 </div>
 
 
-
-
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/tractian-second.webp" alt="RAG2" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
