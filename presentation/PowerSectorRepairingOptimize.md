@@ -136,7 +136,7 @@ header:
 نرم‌افزار مدیریت کار با اپلیکیشن موبایل به شما امکان می‌دهد تا به راحتی پیشرفت کارگران سیار را ردیابی کنید، کارها را به سرعت به آن‌ها اختصاص دهید و به راحتی با آن‌ها ارتباط برقرار کنید. همچنین به کارگران در مسیر اجازه می‌دهد تا اطلاعات مشتری را به سرعت دسترسی پیدا کنند، کارهای روزانه خود را مشاهده کنند و هرگونه اسناد را به صورت دیجیتال تکمیل کنند. این کار نه تنها کارایی را افزایش می‌دهد، بلکه عملیات را ساده‌سازی می‌کند و برای کارکنان شما در مسیر و مشتریان شما یک تغییردهنده بازی است.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/bigchange.jpg" alt="RAG2" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/bigchange.jpg" alt="RAG2" style="width: 50%; height: 50%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 <a href="https://www.bigchange.com/features/job-scheduling" style="text-decoration:none; color:green;" target="_blank"><strong>BigChange</strong></a>
@@ -144,7 +144,7 @@ header:
 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/tractian-second.webp" alt="RAG2" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/tractian-second.webp" alt="RAG2" style="width: 50%; height: 50%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 <a href="https://getdemos.softwarefinder.com/cmms/tractian/?utm_campaign=SF%20%7C%20CMMS%20%7C%20Upkeep%2C%20hippo%2C%20Limble%20%7C%20Broad&utm_term=tractian%20cost&utm_source=adwords&utm_medium=ppc&hsa_grp=190382426353&hsa_mt=b&hsa_tgt=kwd-2271185182737&hsa_kw=tractian%20cost&hsa_ad=784712434701&hsa_acc=5864849258&hsa_cam=21928685476&hsa_ver=3&hsa_src=g&hsa_net=adwords&gad_source=1&gad_campaignid=21928685476&gbraid=0AAAAAC2KnnghvvVO1C9G8FuBQWjAB-7GB&gclid=CjwKCAiA3fnJBhAgEiwAyqmY5YUZRYAOBAphYQnyDVfUYUFV0mfgsLnSxqFTh8iB7gxN8TTyplFuVhoCplkQAvD_BwE" style="text-decoration:none; color:green;" target="_blank"><strong>Tractian</strong></a>
