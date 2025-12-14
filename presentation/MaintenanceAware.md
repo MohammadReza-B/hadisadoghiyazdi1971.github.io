@@ -41,7 +41,7 @@ header:
 ### لایه پردازش و مدل‌سازی (Processing & Modeling Layer - Digital Twin):
 **ایجاد دوقلوی دیجیتال**: ساخت یک نسخه مجازی و پویا از کل شبکه توزیع (یا بخشی از آن). این مدل دیجیتال، تمام داده‌های دریافتی از سنسورها و پهپادها را در خود منعکس می‌کند. برای توضیح بیشتر این متن را مطالعه کنید 
 
-<a href="https://hadisadoghiyazdi1971.github.io/presentation/HumanDT/" style="text-decoration:none; color:black;" target="_blank"><strong>کلیک کنید</strong></a>
+<a href="https://hadisadoghiyazdi1971.github.io/presentation/HumanDT/" style="text-decoration:none; color:yellow;" target="_blank"><strong>کلیک کنید</strong></a>
 
 **شبیه‌سازی**: با استفاده از این دوقلوی دیجیتال، مدیران شبکه می‌توان سناریوهای مختلف را شبیه‌سازی کنند. برای مثال: "اگر یک طوفان شدید در منطقه X رخ دهد، کدام بخش از شبکه آسیب‌پذیرترین خواهد بود؟" یا "اثر خروج یک ترانسفورماتور مشخص بر شبکه چیست؟".
 ### لایه تحلیل و هوش مصنوعی (AI & Analytics Layer):
