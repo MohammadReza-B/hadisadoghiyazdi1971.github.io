@@ -87,4 +87,10 @@ header:
 <div class="english-text">
 <strong>DC Motor (Latin)</strong>
 </div>
-<a href="/teaching/circuiteffort/DC_Motor_en_fixed_DC_Motor" style="text-decoration:underline; color:green;" target="_blank"><strong> موتور ِژ به انگلیسی</strong></a>
+<a href="/teaching/circuiteffort/DC_Motor_en_fixed_DC_Motor" style="text-decoration:underline; color:green;" target="_blank"><strong> موتورDC به انگلیسی</strong></a>
+
+<!--10-->
+<div class="english-text">
+<strong>DC Motor (Latin)</strong>
+</div>
+<a href="/teaching/circuiteffort/stepper_motor" style="text-decoration:underline; color:green;" target="_blank"><strong> موتور پله ای</strong></a>
