@@ -186,7 +186,7 @@ $$\min \sum_{i \in G} \sum_{j \in J} \sum_{d \in D} \left( w_{geo} \cdot d_{ij}^
 
 **قیود سخت:**
 1. **قیود مهارتی:** $\forall j \in J, \exists i \in G: \text{skills}_j \subseteq \text{skills}_i \implies x_{ij}^d = 0$
-2. **قیود پنجره زمانی:** $\forall j \in J: \text{time_window}_j \cap d = \emptyset \implies x_{ij}^d = 0$
+2. **قیود پنجره زمانی:** $\forall j \in J: {time_window}_j \cap d = \emptyset \implies x_{ij}^d = 0$
 3. **قیود ظرفیت:** $\sum_{j \in J} t_j \cdot x_{ij}^d \leq C_i \quad \forall i \in G, d \in D$
 4. **انحصار:** $\sum_{i \in G} \sum_{d \in D} x_{ij}^d = 1 \quad \forall j \in J$
 
@@ -270,17 +270,24 @@ where:
 $$\forall j \in J: \text{requires}_j \subseteq \text{skills}_i \implies x_{ij}^d = 0$$
 
 **قیود زمانی:**
-$$\text{only_saturday}_j \implies d = 6$$
-$$\text{finish_by_monday}_j \implies d \in \{6, 7, 1\}$$
+$${only saturday}_j \implies d = 6$$
+$${finish_by_monday}_j \implies d \in \{6, 7, 1\}$$
 
 **قیود ظرفیت:**
-$$C_i = \text{members_count}_i \times \text{daily_capacity_hours}_i$$
+$$
+C_i = {members count}_i \times {daily capacity hours}_i
+$$
 
 ### 4.3 ماژول بهینه‌سازی
 **الگوریتم حریصانه چندمعیاره:**
 
 **الگوریتم:**
-1. مرتب‌سازی کارها بر اساس: $\text{priority} \times 1000 + \text{deadline_score}$
+1. مرتب‌سازی کارها بر اساس: 
+
+$$ 
+{priority} \times 1000 + {deadline score}
+$$
+
 2. برای هر کار، تولید کاندیدها با رعایت قیود سخت
 3. محاسبه تابع هزینه برای هر کاندید
 4. انتخاب کاندید با کمترین هزینه
@@ -290,35 +297,6 @@ $$C_i = \text{members_count}_i \times \text{daily_capacity_hours}_i$$
 - پیچیدگی زمانی: $O(n \cdot m \cdot d \cdot k)$
   where $k$ تعداد کاندیدهای معتبر برای هر کار
 - پیچیدگی فضایی: $O(n + m + d)$
-
-## 5. نتایج و ارزیابی
-
-### 5.1 معیارهای عملکرد
-- کاهش 45% در مسافت کل حرکتی
-- بهبود 38% در توزیع بار کاری
-- کاهش 52% در زمان برنامه‌ریزی
-- افزایش 67% در رضایت کاربران
-
-### 5.2 مقایسه با روش‌های مرجع
-| معیار | روش فعلی | سیستم هوشمند | بهبود |
-|-------|-----------|----------------|--------|
-| مسافت کل (km) | 1247 | 685 | 45% |
-| زمان برنامه‌ریزی (دقیقه) | 45 | 21 | 52% |
-| عدم توازن بار | 0.87 | 0.34 | 61% |
-| تأخیرها | 23 | 8 | 65% |
-
-## 6. آینده‌نگری و توسعه
-
-### 6.1 الگوریتم‌های پیشرفته
-- پیاده‌سازی الگوریتم ژنتیک برای بهینه‌سازی سراسری
-- استفاده از یادگیری تقویتی برای تنظیم پارامترهای $w_{geo}, w_{prio}, w_{bal}, w_{delay}$
-- مدل‌سازی مسئله به عنوان مسئله فروشنده دوره‌گرد چند-مسیره (mTSP)
-
-### 6.2 قابلیت‌های پیشنهادی
-- پیش‌بینی تقاضا با استفاده از شبکه‌های عصبی
-- بهینه‌سازی پویا با در نظر گرفتن شرایط اضطراری
-- تحلیل حساسیت پارامترهای سیستم
-```
 
 
 
