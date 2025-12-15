@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نمایش نقشه - برنامه ریزی</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        #map { height: 100vh; }
+        .sidebar { 
+            height: 100vh; 
+            overflow-y: auto; 
+            background: #f8f9fa;
+        }
+        .job-marker { cursor: pointer; }
+        .route-path { stroke: #007bff; stroke-width: 4; opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 sidebar p-3">
+                <h4 class="text-center mb-4">
+                    <i class="fas fa-map-marked-alt"></i>
+                    نمایش نقشه
+                </h4>
+                <div id="routeDetails">
+                    <div class="text-center text-muted">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        در حال بارگذاری...
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 p-0">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // دریافت پارامترهای URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const groupId = urlParams.get('group');
+        const day = urlParams.get('day');
+    const lat = urlParams.get('lat');
+    const lon = urlParams.get('lon');
+    const jobId = urlParams.get('job');
+
+        let map;
+        let markers = [];
+        let routePolyline = null;
+
+        // بارگذاری داده‌ها از سرور
+        async function loadMapData() {
+            try {
+                let url = '/api/map-data?';
+                if (groupId && day) {
+                    url += `group=${groupId}&day=${day}`;
+                } else if (lat && lon) {
+                    url += `lat=${lat}&lon=${lon}`;
+                    if (jobId) url += `&job=${jobId}`;
+                }
+
+                const response = await fetch(url);
+                const data = await response.json();
+
+                if (data.error) {
+                    document.getElementById('routeDetails').innerHTML = 
+                        `<div class="alert alert-danger">${data.error}</div>`;
+                    return;
+                }
+
+                displayMap(data);
+                updateRouteDetails(data);
+            } catch (error) {
+                console.error('Error loading map data:', error);
+                document.getElementById('routeDetails').innerHTML = 
+                    `<div class="alert alert-danger">خطا در بارگذاری داده‌ها</div>`;
+            }
+        }
+
+        // نمایش نقشه
+        function displayMap(data) {
+            // تعیین مرکز نقشه (مرکز دقیق مشهد)
+            const mashhadCenter = [36.29872222222222, 59.60872222222223];
+            let center = mashhadCenter.slice();
+            let zoom = 14;
+
+            if (data.type === 'single_location' && data.job) {
+                center = [parseFloat(data.job.lat), parseFloat(data.job.lon)];
+                zoom = 15;
+            } else if (data.type === 'group_day' && data.group) {
+                center = [parseFloat(data.group.base_lat), parseFloat(data.group.base_lon)];
+            }
+
+            // ایجاد نقشه
+            map = L.map('map').setView(center, zoom);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // اضافه کردن مارکرها
+            if (data.type === 'group_day') {
+                // مرکز تعمیرات (استفاده از مقدار گروه، یا fallback)
+                const baseLat = parseFloat(data.group.base_lat) || 36.317054;
+                const baseLon = parseFloat(data.group.base_lon) || 59.473879;
+                const groupMarker = L.marker([baseLat, baseLon])
+                    .addTo(map)
+                    .bindPopup(`
+                        <strong>🏠 پایگاه ${data.group.label || data.group.id}</strong><br>
+                        ${data.group.members_count} نفر<br>
+                        روز: ${data.day}
+                    `)
+                    .openPopup();
+                markers.push(groupMarker);
+
+                // اضافه کردن کارها
+                if (data.jobs && data.jobs.length > 0) {
+                    data.jobs.forEach((job, index) => {
+                        const jobMarker = L.marker([parseFloat(job.lat), parseFloat(job.lon)])
+                            .addTo(map)
+                            .bindPopup(`
+                                <strong>🔧 کار ${job.id}</strong><br>
+                                ${job.address || 'بدون آدرس'}<br>
+                                ساعت شروع: ${formatHour(job.start_time)}
+                            `);
+                        markers.push(jobMarker);
+                    });
+
+                    // مسیر واقعی بین نقاط با رنگ متفاوت و نمایش فاصله هر بخش
+                    let points = [[baseLat, baseLon], ...data.jobs.map(job => [parseFloat(job.lat), parseFloat(job.lon)])];
+                    let colors = ['#007bff', '#28a745', '#dc3545', '#ffc107', '#6f42c1', '#fd7e14'];
+                    for (let i = 0; i < points.length - 1; i++) {
+                        let start = points[i];
+                        let end = points[i+1];
+                        // درخواست به OSRM برای مسیر واقعی
+                        fetch(`https://router.project-osrm.org/route/v1/driving/${start[1]},${start[0]};${end[1]},${end[0]}?overview=full&geometries=geojson`)
+                            .then(res => res.json())
+                            .then(routeData => {
+                                if (routeData.routes && routeData.routes.length > 0) {
+                                    let route = routeData.routes[0];
+                                    let color = colors[i % colors.length];
+                                    let poly = L.geoJSON(route.geometry, {
+                                        style: { color: color, weight: 5, opacity: 0.8 }
+                                    }).addTo(map);
+                                    // نمایش فاصله روی مسیر
+                                    let midIdx = Math.floor(route.geometry.coordinates.length / 2);
+                                    let midCoord = route.geometry.coordinates[midIdx];
+                                    let dist = (route.distance / 1000).toFixed(2);
+                                    L.marker([midCoord[1], midCoord[0]], {
+                                        icon: L.divIcon({
+                                            className: 'distance-label',
+                                            html: `<div style="background: ${color}; color: #fff; padding:2px 6px; border-radius:8px; font-size:13px;">${dist} km</div>`
+                                        })
+                                    }).addTo(map);
+                                }
+                            });
+                    }
+                }
+            } else if (data.type === 'single_location' && data.job) {
+                // نمایش یک موقعیت
+                const jobMarker = L.marker([parseFloat(data.job.lat), parseFloat(data.job.lon)])
+                    .addTo(map)
+                    .bindPopup(`
+                        <strong>📍 ${data.job.id}</strong><br>
+                        ${data.job.address || 'موقعیت جغرافیایی'}
+                    `)
+                    .openPopup();
+                
+                markers.push(jobMarker);
+            }
+        }
+
+        // به‌روزرسانی جزئیات مسیر
+        function updateRouteDetails(data) {
+            let detailsHTML = '';
+
+            if (data.type === 'group_day') {
+                detailsHTML = `
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h6 class="mb-0">${data.group.label || data.group.id}</h6>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>روز:</strong> ${data.day}</p>
+                            <p><strong>تعداد اعضا:</strong> ${data.group.members_count} نفر</p>
+                            <p><strong>موقعیت پایگاه:</strong><br>
+                            ${data.group.base_lat.toFixed(4)}, ${data.group.base_lon.toFixed(4)}</p>
+                            <hr>
+                            <h6>کارهای این روز (${data.jobs ? data.jobs.length : 0})</h6>
+                `;
+
+                if (data.jobs && data.jobs.length > 0) {
+                    let totalDist = 0;
+                    data.jobs.forEach(job => {
+                        const jd = job.distance_km ? parseFloat(job.distance_km) : 0;
+                        totalDist += jd;
+                        detailsHTML += `
+                            <div class="border rounded p-2 mb-2">
+                                <strong>${job.id}</strong><br>
+                                <small class="text-muted">${job.address || 'بدون آدرس'}</small><br>
+                                <small>ساعت: ${formatHour(job.start_time)}</small>
+                                ${jd ? `<br><small>فاصله از نقطه قبل: ${jd.toFixed(2)} km</small>` : ''}
+                            </div>
+                        `;
+                    });
+                    if (totalDist > 0) {
+                        detailsHTML += `<div class="mt-2"><strong>مجموع فاصله مسیر:</strong> ${totalDist.toFixed(2)} km</div>`;
+                    }
+                } else {
+                    detailsHTML += `<p class="text-muted">هیچ کاری برای این روز وجود ندارد</p>`;
+                }
+
+                detailsHTML += `</div></div>`;
+            } else if (data.type === 'single_location' && data.job) {
+                detailsHTML = `
+                    <div class="card">
+                        <div class="card-header bg-success text-white">
+                            <h6 class="mb-0">${data.job.id}</h6>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>موقعیت:</strong><br>
+                            ${data.job.lat.toFixed(6)}, ${data.job.lon.toFixed(6)}</p>
+                            ${data.job.address ? `<p><strong>آدرس:</strong><br>${data.job.address}</p>` : ''}
+                            <button class="btn btn-outline-primary btn-sm w-100" onclick="openInGoogleMaps(${data.job.lat}, ${data.job.lon})">
+                                <i class="fas fa-external-link-alt"></i> باز کردن در Google Maps
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }
+
+            document.getElementById('routeDetails').innerHTML = detailsHTML;
+        }
+
+        // فرمت ساعت
+        function formatHour(h) {
+            if (h === null || h === undefined) return "---";
+            const hh = Math.floor(h);
+            const mm = Math.round((h - hh) * 60);
+            return `${String(hh).padStart(2,"0")}:${String(mm).padStart(2,"0")}`;
+        }
+
+        // باز کردن در Google Maps
+        function openInGoogleMaps(lat, lon) {
+            window.open(`https://www.google.com/maps?q=${lat},${lon}`, '_blank');
+        }
+
+        // بارگذاری اولیه
+        document.addEventListener('DOMContentLoaded', loadMapData);
+    </script>
+</body>
+</html>
