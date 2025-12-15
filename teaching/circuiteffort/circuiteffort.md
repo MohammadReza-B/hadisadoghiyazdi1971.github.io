@@ -91,6 +91,6 @@ header:
 
 <!--10-->
 <div class="english-text">
-<strong>DC Motor (Latin)</strong>
+<strong>stepper Motor (Latin)</strong>
 </div>
 <a href="/teaching/circuiteffort/stepper_motor" style="text-decoration:underline; color:green;" target="_blank"><strong> موتور پله ای</strong></a>

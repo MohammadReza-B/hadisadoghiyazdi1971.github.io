@@ -3,7 +3,7 @@ layout: persian
 classes: wide rtl-layout
 dir: rtl
 title: "موتورهای‌پله‌ای"
-permalink: /teaching/studenteffort/circuiteffort/stepper_motor/
+permalink: /teaching/circuiteffort/stepper_motor/
 author_profile: true
 
 header:
