@@ -174,10 +174,11 @@ WorkTypes = { {عادی}, {اضطراری}, {محدودیت زمانی} }
 - $D = \{1, 2, 3, 4, 5, 6, 7\}$: روزهای هفته
 
 **متغیرهای تصمیم‌گیری:**
-$$x_{ij}^d = \begin{cases} 
-1 & \text{اگر کار } j \text{ به گروه } i \text{ در روز } d \text{ تخصیص یابد} \\
-0 & \text{در غیر این صورت}
-\end{cases}$$
+
+& {اگر کار } j { به گروه } i { در روز } d { تخصیص یابد}
+x_{ij}^d = 1 
+در غیر این صورت
+0 
 
 **تابع هدف:**
 $$\min \sum_{i \in G} \sum_{j \in J} \sum_{d \in D} \left( w_{geo} \cdot d_{ij}^d + w_{prio} \cdot p_j + w_{bal} \cdot \sigma_i^d + w_{delay} \cdot \delta_j^d \right) \cdot x_{ij}^d$$
