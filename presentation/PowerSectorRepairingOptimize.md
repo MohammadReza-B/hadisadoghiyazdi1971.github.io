@@ -296,10 +296,10 @@ $$
 با توجه به تجزیه و تحلیل صورت گرفته از فرآیند تخصیص و برنامه ریزی کارها در امور نگهداشت منطقه غرب شرکت توزیع برق مشهد، لازم است مسئولین گروهها یا سرپرست های تیم های مربوطه، وضعیت هر تیم اعم از وضعیت پرسنل و وضعیت خودرو و ماشین آلات را ثبت کنند. برای این منظور استفاده از پنجره شکل زیر پیشنهاد میشود. 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-3.jpg" alt="RAG5" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-4.jpg" alt="RAG5" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
-    تعیین ترتیب انجام کارهای هر روز توسط سرپرست تیم در CMMS.
+پنجره ثبت وضعیت روزانه تیمهای گروه تعمیرات شبکه هوایی و وضعیت روزانه ماشین آلات.
 </div>
 
 
