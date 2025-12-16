@@ -393,7 +393,7 @@ $$
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
     <!-- شکل 7 -->
     <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-        <img src="shakl-7.png" alt="مشاهده بخشی از فیلدهای دستورکارهای ارجاع شده به گروه که از طریق CMMS دریافت میشود. (این شکل ادامه دارد...)" style="width: 80%; height: 80%; object-fit: contain;">
+        <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-7.png" alt="مشاهده بخشی از فیلدهای دستورکارهای ارجاع شده به گروه که از طریق CMMS دریافت میشود. (این شکل ادامه دارد...)" style="width: 80%; height: 80%; object-fit: contain;">
         <div class="caption" style="text-align: center; margin-top: 8px;">
             مشاهده بخشی از فیلدهای دستورکارهای ارجاع شده به گروه که از طریق CMMS دریافت میشود. (این شکل ادامه دارد...)
         </div>
@@ -404,9 +404,9 @@ $$
     <!-- شکل 8 -->
     <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
         <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-            <img src="shakl-8-part1.png" alt="بخش ۱" style="width: 100%;">
-            <img src="shakl-8-part2.png" alt="بخش ۲" style="width: 100%;">
-            <img src="shakl-8-part3.png" alt="بخش ۳" style="width: 100%;">
+            <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-8-part1.png" alt="بخش ۱" style="width: 100%;">
+            <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-8-part2.png" alt="بخش ۲" style="width: 100%;">
+            <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-8-part3.png" alt="بخش ۳" style="width: 100%;">
         </div>
         <div class="caption" style="text-align: center; margin-top: 8px;">
             پنجره مشاهده اطلاعات کامل دستور کارها و ثبت نظر سرپرست گروه در مورد نیازمندیها و بازه زمانی انجام دستورکار.
@@ -417,7 +417,7 @@ $$
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
     <!-- شکل 9 -->
     <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-        <img src="shakl-9.png" alt="بخش گروههای همکار در پنجره مشاهده اطلاعات کامل دستور کارها و ثبت نظر سرپرست گروه در مورد نیازمندیها و بازه زمانی انجام دستورکار." style="width: 70%;">
+        <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-9.png" alt="بخش گروههای همکار در پنجره مشاهده اطلاعات کامل دستور کارها و ثبت نظر سرپرست گروه در مورد نیازمندیها و بازه زمانی انجام دستورکار." style="width: 70%;">
         <div class="caption" style="text-align: center; margin-top: 8px;">
             بخش گروههای همکار در پنجره مشاهده اطلاعات کامل دستور کارها و ثبت نظر سرپرست گروه در مورد نیازمندیها و بازه زمانی انجام دستورکار.
         </div>
@@ -451,7 +451,7 @@ $$
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
     <!-- شکل 10 -->
     <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-        <img src="shakl-10.png" alt="گزارش تصویری از تخصیص و برنامه ریزی کارها توسط سامانه." style="width: 90%;">
+        <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-10.png" alt="گزارش تصویری از تخصیص و برنامه ریزی کارها توسط سامانه." style="width: 90%;">
         <div class="caption" style="text-align: center; margin-top: 8px;">
             گزارش تصویری از تخصیص و برنامه ریزی کارها توسط سامانه.
         </div>
@@ -461,7 +461,7 @@ $$
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
     <!-- شکل 11 -->
     <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-        <img src="shakl-11.png" alt="فیلتر کردن و نمایش برنامه فقط یک تیم از گروه در گزارش تصویری." style="width: 70%;">
+        <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-11.png" alt="فیلتر کردن و نمایش برنامه فقط یک تیم از گروه در گزارش تصویری." style="width: 70%;">
         <div class="caption" style="text-align: center; margin-top: 8px;">
             فیلتر کردن و نمایش برنامه فقط یک تیم از گروه در گزارش تصویری.
         </div>
@@ -471,7 +471,7 @@ $$
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
     <!-- شکل 12 -->
     <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-        <img src="shakl-12.png" alt="نمایش کارهای کارهای چند تیمی با دایره زرد و نمایش کارهایی که با تاخیر برنامه ریزی شده اند با دایره سبز." style="width: 90%;">
+        <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-12.png" alt="نمایش کارهای کارهای چند تیمی با دایره زرد و نمایش کارهایی که با تاخیر برنامه ریزی شده اند با دایره سبز." style="width: 90%;">
         <div class="caption" style="text-align: center; margin-top: 8px;">
             نمایش کارهای کارهای چند تیمی با دایره زرد و نمایش کارهایی که با تاخیر برنامه ریزی شده اند با دایره سبز.
         </div>
@@ -481,7 +481,7 @@ $$
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
     <!-- شکل 13 -->
     <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-        <img src="shakl-13.png" alt="دیدن جزئیات بیشتر در مورد یک کار برنامه ریزی شده با کلیک روی آن کار مثل ساعت رسیدن تیم به محل کار و ساعت پایان کار توسط تیم و میزان تاخیر و تعجیل در برنامه ریزی." style="width: 90%;">
+        <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-13.png" alt="دیدن جزئیات بیشتر در مورد یک کار برنامه ریزی شده با کلیک روی آن کار مثل ساعت رسیدن تیم به محل کار و ساعت پایان کار توسط تیم و میزان تاخیر و تعجیل در برنامه ریزی." style="width: 90%;">
         <div class="caption" style="text-align: center; margin-top: 8px;">
             دیدن جزئیات بیشتر در مورد یک کار برنامه ریزی شده با کلیک روی آن کار مثل ساعت رسیدن تیم به محل کار و ساعت پایان کار توسط تیم و میزان تاخیر و تعجیل در برنامه ریزی.
         </div>
