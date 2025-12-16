@@ -260,7 +260,7 @@ $$
 نقاط مختلف شبکه توزیع که نیاز به سرویس یا تعمیر دارند با اولویتهای مختلف در کارتابل پلنر مشخص شده اند. پلنر از میان این مجموعه کارهای تعمیراتی، بر اساس معیارهای مختلفی چون اولویت کار و نزدیکی کارها به یکدیگر و با توجه به ظرفیت اعلامی رئیس اداره نگهداشت، تعدادی کار را تا روز چهارشنبه انتخاب کرده و به کارتابل رئیس اداره نگهداشت ارسال میکند تا در هفته پیش رو به انجام برسد. اصطلاحا به کارهای انتخاب شده ی پلنر، کارهای زمانبندی شده برای هفته پیش رو گفته میشود که به اختصار کارهای زمانبندی شده خوانده میشود. کارهای زمانبندی شده پلنر شامل کارهای اضطراری که در هفته آتی پیش می آید نیست. هر کار زمانبندی شده، با توجه به نوع تخصص مورد نیاز آن، به کارتابل مسئول امور نگهداشت ارسال میشود و مسئول امور نگهداشت، توسط پنجره شکل زیر در CMMS، انجام هر کار زمانبندی شده را به سرپرست یک یا چند گروه تعمیراتی مختلف ارسال میکند و ملاحظاتی هم برای انجام آنها قید میکند که باید توسط مسئول گروههای مربوطه مورد توجه قرار گیرد. به عنوان مثال، مسئول امور نگهداشت ممکن است قید زمان خاصی را برای انجام یک کار ذکر کند. مثلا، اگر مشترکی، با تماسهای مکرر، انجام یک کار را پیگیری میکند، ممکن است مسئول امور نگهداشت انجام زودتر کار را در روز اول هفته از مسئول گروه درخواست کند.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-1.jpg" alt="RAG3" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-1.png" alt="RAG3" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
     ارجاع انجام هر کار زمانبندی شده از مسئول امور نگهداشت به سرپرست یک گروه تعمیراتی در CMMS.
@@ -269,14 +269,14 @@ $$
 گروه های تعمیراتی شامل گروه روشنایی معابر، گروه تعمیرات شبکه هوایی، گروه تعمیرات شبکه زمینی، گروه تابلو هستند. هرگروه، شامل چند تیم اجرایی است و هر تیم اجرایی متشکل از حداقل دو نفر است. سرپرست هر گروه، باید کارهای زمانبندی شده که توسط مسئول امور نگهداشت به گروه ارجاع شده را قبل از شروع هفته با استفاده از پنجره شکل\ref{fig:shakl2} در CMMS به تیمهای مختلف خود تخصیص داده و به کارتابل تیمها ارسال کند. منظور از تخصیص کار به تیمها، تعیین روز انجام کارها توسط تیمهای مختلف تحت مدیریت یک گروه در هفته پیش رو است. نهایتا تعیین ترتیب انجام کارهای هر روز توسط سرپرست تیم و مطابق با پنجره شکل زیر در CMMS انجام میشود. پس از پایان انجام یک کار توسط تیم، مواردی چون ساعت شروع و پایان کار در سامانه CMMS ثبت میشود.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-2.jpg" alt="RAG4" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-2.png" alt="RAG4" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
     تخصیص کار به یک تیم توسط مسئول گروه مربوطه در CMMS.
 </div>
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-3.jpg" alt="RAG5" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-3.png" alt="RAG5" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
     تعیین ترتیب انجام کارهای هر روز توسط سرپرست تیم در CMMS.
@@ -296,7 +296,7 @@ $$
 با توجه به تجزیه و تحلیل صورت گرفته از فرآیند تخصیص و برنامه ریزی کارها در امور نگهداشت منطقه غرب شرکت توزیع برق مشهد، لازم است مسئولین گروهها یا سرپرست های تیم های مربوطه، وضعیت هر تیم اعم از وضعیت پرسنل و وضعیت خودرو و ماشین آلات را ثبت کنند. برای این منظور استفاده از پنجره شکل زیر پیشنهاد میشود. 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-4.jpg" alt="RAG5" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-4.png" alt="RAG5" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 پنجره ثبت وضعیت روزانه تیمهای گروه تعمیرات شبکه هوایی و وضعیت روزانه ماشین آلات.
@@ -307,7 +307,7 @@ $$
 همانطور که ملاحظه میشود در بالای این پنجره، گزینه تاریخ وجود دارد تا مطابق با پنجره شکل، امکان تغییر روز و سپس، تنظیم وضعیت تیمهای گروه در آن تاریخ فراهم شود.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-5.jpg" alt="RAG5" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-5.png" alt="RAG5" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 تنظیم تاریخ در پنجره تنظیم وضعیت تیمهای گروه تعمیرات شبکه هوایی و وضعیت روزانه ماشین آلات.
@@ -316,7 +316,7 @@ $$
  در بخش ابزارهای مشترک کل گروهها، جرثقیل و بالابر قرار داده شده است که تعداد آنها قابل تنظیم است. بدیهی است اگر مثلا فقط یک جرثقیل وجود داشته باشد امکان انجام همزمان دو کارِ نیازمند به جرثقیل، وجود ندارد و نباید دو کارِ نیازمند به جرثقیل، در یک زمان واحد برنامه ریزی گردد. در این پنجره، وضعیت گروه تعمیرات هوایی نشان داده شده است. این گروه شامل سه تیم است. هر تیم میتواند ابزارهای اختصاصی خودش را داشته باشد. از جمله ابزارهای اختصاصی تیم میتوان به وانت اشاره کرد. از آنجا که احتمال خراب شدن و از سرویس خارج شدن ابزارهای اختصاصی وجود دارد باید مطابق با شکل، امکان غیرفعال کردن هر ابزار اختصاصی به کمک یک دکمه رادیویی وجود داشته باشد. هر تیم تعدادی عضو دارد. ظرفیت انسانی، یعنی تعداد اعضا و نوع یا تخصص اعضای تیم یکسان نیست و باید قبلا ثبت شود. این موضوع از این جهت اهمیت دارد که سامانه بتواند کار سنگین تر یا تخصصی تر را به تیمی با ظرفیت انسانی بالاتر تخصیص دهد. به علاوه، ممکن است یکی از اعضای تیم، مرخصی باشد. لذا، باید امکان غیرفعال کردن آن عضو در آن روز وجود داشته باشد. این موضوع از این جهت اهمیت دارد که سامانه، کار را به تیمی که برخی از اعضای آن در مرخصی هستند تخصیص ندهد یا لااقل، کارهای سنگین را به برخی از اعضای آن در مرخصی هستند تخصیص ندهد. به عنوان مثال، مسئول گروه هوایی میتواند مانند شکل، عضوی از تیم1 را که در مرخصی است غیرفعال کند و وانت تیم2 که از سرویس خارج شده است را غیرفعال کند. حال سامانه میتواند با توجه به شرایط جدید تیمها، کارها را تخصیص دهد. در ضمن، سرپرست گروه باید بتواند به طور موقت، عضوی از تیمی را به تیم دیگری که برخی از اعضای آن در مرخصی هستند منتقل کند تا امکان فعالیت آن تیم نیز فراهم شود و سامانه بتواند برای آن تیم نیز کاری
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-6.jpg" alt="RAG5" style="width: 80%; height: 80%; object-fit: contain;">
+    <img src="/assets/Presentationimages/PowerSectorRepairingOptimize/shakl-6.png" alt="RAG5" style="width: 80%; height: 80%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 غیر فعال کردن عضوی از تیم1 که در مرخصی است و غیر فعال کردن وانت تیم2 که خراب شده است.
