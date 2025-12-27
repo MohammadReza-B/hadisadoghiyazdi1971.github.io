@@ -43,7 +43,7 @@ $$
 این تابع نمایانگر تغییر ولتاژ (یا جریان) در طول زمان است و رفتار تناوبی دارد.  
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/Pic1.png" alt="سیگنال سینوسی" style="width: 60%; height: 60%; object-fit: contain;">  
+    <img src="/assets/circuiteffort/Phasor_Pictures/Pic1.png" alt="سیگنال سینوسی" style="width: 60%; height: 60%; object-fit: contain;">  
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 نمایش یک موج سینوسی با دامنه و فاز مشخص
