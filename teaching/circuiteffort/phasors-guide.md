@@ -365,7 +365,7 @@ $$
 اگر دو موج را در زمان $ t = 30^\circ $ نگه داریم، دیاگرام فازور مربوطه مانند شکل زیر خواهد شد:
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/phase-lead-and-lag-concept.png.webp" alt="تقدم موج" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/phase-lead-and-lag-concept.png.webp" alt="تقدم موج" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 
 بار دیگر مشاهده می‌شود که فازور جریان نسبت به فازور ولتاژ تاخیر دارد، زیرا دو شکل موج فرکانس یکسانی دارند.
