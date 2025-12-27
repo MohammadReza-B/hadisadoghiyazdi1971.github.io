@@ -128,7 +128,7 @@ x(t) = X_m \cos(\omega t + \phi)
 $$
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/Pic2.png" alt="انواع فاز ها" style="width: 55%; height: 55%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/Pic2.png" alt="انواع فاز ها" style="width: 55%; height: 55%; object-fit: contain;">
 </div>
 
 اگر این سیگنال فرکانس زاویه‌ای ثابت $ \omega $ داشته باشد، می‌توان آن را به یک عدد مختلط با دامنه و زاویه مشخص تبدیل کرد.  
@@ -168,7 +168,7 @@ $$
 به طور قراردادی فرض می‌شود که چرخش بردار در جهت خلاف عقربه‌های ساعت، فاز بردار را افزایش می‌دهد. گفته می‌شود که این چرخش، یک «چرخش مثبت» (Positive Rotation) است. به همین ترتیب، چرخش بردار در جهت عقربه‌های ساعت را «چرخش منفی» (Negative Rotation) می‌نامند. در شکل زیر دیاگرام فازور و نمایش لحظه‌ای آن، نشان داده شده است:
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/Phasor-Diagram.gif" alt="دیاگرام فازور" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/Phasor-Diagram.gif" alt="دیاگرام فازور" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 
 ---
@@ -311,7 +311,7 @@ $$
 طول این بردار اندازه‌ی فازور و جهت آن زاویه‌ی فاز را نشان می‌دهد.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/Phasor-Diagram-of-a-Sinusoidal-Waveform.png.webp" alt="نمایش فازور در صفحه مختلط" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/Phasor-Diagram-of-a-Sinusoidal-Waveform.png.webp" alt="نمایش فازور در صفحه مختلط" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 <div class="caption" style="text-align: center; margin-top: 8px;">
 نمایش فازور در صفحه مختلط — طول بردار نشان‌دهنده دامنه و زاویه آن بیانگر فاز سیگنال است.
@@ -336,7 +336,7 @@ $$
 فرض کنید اختلاف فاز دو شکل موج سینوسی به صورت زیر باشد:
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/Phase-Difference-of-a-Sinusoidal-Waveform.png.webp" alt="اختلاف فاز موج سینوسی" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/Phase-Difference-of-a-Sinusoidal-Waveform.png.webp" alt="اختلاف فاز موج سینوسی" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 
 عبارت عمومی ریاضی برای تعریف این دو کمیت سینوسی به صورت زیر نوشته می‌شود:
@@ -353,7 +353,7 @@ $$
 این دو موج سینوسی در شکل زیر نشان داده شده‌اند:
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/Phasor-Diagram-of-a-Sinusoidal-Waveform-1.png.webp" alt="اختلاف دو موج سینوسی نسبت به هم" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/Phasor-Diagram-of-a-Sinusoidal-Waveform-1.png.webp" alt="اختلاف دو موج سینوسی نسبت به هم" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 
 دیاگرام فازور نشان داده شده مربوط به زمان صفر $ (t = 0) $ روی محور افقی است.  
@@ -381,7 +381,7 @@ $$
 اگر دو موج هم‌فاز نباشند (یعنی بردارهای آنها جهت یا نقاط شروع متفاوتی داشته باشد)، باید هنگام جمع دو فازور زاویه بین آن دو را در نظر گرفت. فازور نتیجه یا بردار برآیند، با استفاده از «قانون متوازی‌الاضلاع» محاسبه می‌شود. شکل زیر، دو شکل موج AC را نشان می‌دهد:
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/Phasor-Addition-of-two-Phasors.png.webp" alt="جمع فازور" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/Phasor-Addition-of-two-Phasors.png.webp" alt="جمع فازور" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 
 در این شکل دو فازور یکی $ V_1 $ با اندازهٔ ماکزیمم ۲۰ ولت و دیگری $ V_2 $ با اندازهٔ ماکزیمم ۳۰ ولت نشان داده شده است.  
@@ -394,13 +394,13 @@ $$
 شکل زیر، دیاگرام برآیند دو فازور و نمایش لحظه‌ای برآیند را نشان می‌دهد:
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/Sum-of-Phasors.gif" alt="بردار برآیند" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/Sum-of-Phasors.gif" alt="بردار برآیند" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 
 # تفریق برداری دو فازور
 تفریق دو فازور بسیار شبیه به روش متوازی الاضلاع است با این تفاوت که اختلاف دو بردار، قطر دیگر متوازی‌الاضلاع به دست آمده از دو بردار $V_1$ و $V_2$  است که در شکل زیر نشان داده شده است:
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/Vector-Subtraction-of-two-Phasors.png.webp" alt="تفریق فازور" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/Vector-Subtraction-of-two-Phasors.png.webp" alt="تفریق فازور" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 
 ---
@@ -559,7 +559,7 @@ $$
 سه بردار با رنگ‌های قرمز، زرد و آبی را برای نشان دادن فاز هر یک از بردارها در نظر می‌گیریم. بردار قرمز رنگ به عنوان فاز مرجع فرض می‌شود. مانند فازورهای تک فاز اشاره شده در بالا، فازور سه فاز نیز چرخشی در جهت خلاف عقربه‌های ساعت نسبت به نقطه مبدأ دارد که با نماد $\omega$ با واحد رادیان بر ثانیه نشان داده می‌شود. فازورها برای یک سیستم متصل متعادل ستاره یا مثلث به صورت زیر نشان داده می‌شود:
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/Three-phase-Phasor-Diagram.png.webp" alt="دیاگرام سه فاز" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/Three-phase-Phasor-Diagram.png.webp" alt="دیاگرام سه فاز" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 
 ولتاژ این سه فاز همگی مقداری برابر دارند، اما زاویهٔ فاز آن‌ها متفاوت است.  
@@ -785,7 +785,7 @@ $$
 زاویه‌ی فاز بین ولتاژ و جریان همان زاویه‌ی مثلث توان است.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/Pic3.png" alt="مثلث توان در مدارهای AC" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/Pic3.png" alt="مثلث توان در مدارهای AC" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 
 ---
@@ -816,7 +816,7 @@ with schemdraw.Drawing() as d:
     elm.Line().left()
 ```
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/output1.png" alt="مدار RC" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/output1.png" alt="مدار RC" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 
 اول $\omega$ و $V_a$ را پیدا میکنیم:
@@ -843,7 +843,7 @@ with schemdraw.Drawing() as d:
     elm.Line().left()
 ```
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/output2.png" alt="مدار فازور RC" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/output2.png" alt="مدار فازور RC" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 
 ### تعریف عدد موهومی
@@ -913,7 +913,7 @@ with schemdraw.Drawing() as d:
     elm.Line().left()
 ```
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/output3.png" alt="مدار RL" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/output3.png" alt="مدار RL" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 
 ## گام اول: یافتن ω و \(V_A\)
@@ -948,7 +948,7 @@ with schemdraw.Drawing() as d:
     elm.Line().left()
 ```
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/Phasor_Pictures/output4.png" alt="مدار فازور RL" style="width: 60%; height: 60%; object-fit: contain;">
+    <img src="/assets/circuiteffort/Phasor_Pictures/output4.png" alt="مدار فازور RL" style="width: 60%; height: 60%; object-fit: contain;">
 </div>
 
 # محاسبه جریان \( I \) در مدار R-L
