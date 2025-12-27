@@ -100,3 +100,4 @@ header:
 <strong>فازور </strong>
 </div>
 <a href="/teaching/circuiteffort/phasors-guide" style="text-decoration:underline; color:green;" target="_blank"><strong> فازور </strong></a>
+
