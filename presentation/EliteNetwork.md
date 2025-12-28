@@ -21,7 +21,7 @@ header:
 %%{init: {
   'theme': 'base',
   'themeVariables': {
-    'fontFamily': 'Vazir, sans-serif'
+    'fontFamily': 'Shabnam, sans-serif'
   }
 }}%%
 graph LR
@@ -34,7 +34,7 @@ graph LR
 
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables':{'fontFamily':'Vazir, sans-serif'}}}%%
+%%{init: {'theme':'base', 'themeVariables':{'fontFamily':'Tanha, sans-serif'}}}%%
 flowchart LR
     P["مسئله: پراکندگی دانش و داده‌های غیرقابل اتکا"] --> S["سامانه سنا: جمع‌آوری داده، مدل‌سازی، تحلیل شبکه"]
     S --> V["ارزش: لایه ایمنی شناکتی، کاهش ریسک، شفافیت، تاب‌آوری"]
