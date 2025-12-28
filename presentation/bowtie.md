@@ -113,6 +113,47 @@ flowchart LR
     style H fill:#ffff99,stroke:#333,stroke-width:2px
 ```
 
+## هوش مصنوعی و ارتقا بوتای نشت گاز 
+
+```mermaid
+flowchart LR
+    T1["Fire Pump Failure<br><sub>خرابی پمپ آتش‌نشانی</sub>"] --> PB4["Standby Fire Pump<br>پمپ رزرو"] & PB5["HAZOP &amp; HAZID<br>Checklists"]
+    PB4 --> TE["🔥 TOP EVENT 🔥<br><b>Failure of Fire Water Delivery</b><br>عدم تأمین دبی و فشار آب اطفای حریق"] & TE
+    T2["Excessive Pressure Loss<br><sub>افت فشار بیش از حد</sub>"] --> PB2["Hydraulic Calculations<br>Flow &amp; Pressure"]
+    PB2 --> TE
+    T3["Sprinkler Nozzle Blockage<br><sub>انسداد نازل‌ها</sub>"] --> PB3["Inspection &amp; Testing<br>ITM Program"]
+    PB3 --> TE
+    T4["Hydraulic Design Error<br><sub>خطای طراحی هیدرولیکی</sub>"] --> PB1["Code-based Design<br>NFPA / API"]
+    PB1 --> TE
+    T5["Insufficient Water Supply<br><sub>کمبود منبع آب</sub>"] --> PB4
+    PB5 --> TE
+    TE --> MB1["Fire Detection &amp; Alarm<br>سیستم اعلام حریق"] & MB3["Foam / CO₂ System<br>سیستم اطفای کمکی"] & MB2["Emergency Response Team<br>تیم واکنش اضطراری"] & MB4["Process Isolation<br>ایزولاسیون فرایند"]
+    MB1 --> C1["Fire Escalation<br>گسترش آتش"]
+    MB3 --> C2["Explosion<br>انفجار"]
+    MB2 --> C3["Loss of Life<br>تلفات جانی"] & C5["Production Loss<br>زیان اقتصادی"]
+    MB4 --> C4["Major Equipment Damage<br>خسارت شدید تجهیزات"]
+
+    style T1 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style T2 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style T3 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style T4 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style T5 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style PB1 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style PB2 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style PB3 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style PB4 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style PB5 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style TE fill:#b11226,stroke:#000,stroke-width:3px,color:#ffffff
+    style MB1 fill:#fff3cd,stroke:#c77700,stroke-width:2px
+    style MB2 fill:#fff3cd,stroke:#c77700,stroke-width:2px
+    style MB3 fill:#fff3cd,stroke:#c77700,stroke-width:2px
+    style MB4 fill:#fff3cd,stroke:#c77700,stroke-width:2px
+    style C1 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+    style C2 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+    style C3 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+    style C4 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+    style C5 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+```
 
 ## برخی اصطلاحات در بوتای
 
