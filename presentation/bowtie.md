@@ -67,19 +67,17 @@ T1["<b>Corrosion</b><br>خوردگی"] --> B1(("B1"))
 | **فشار بیش از حد (Overpressure)** | B2 نصب و کالیبراسیون شیر اطمینان | PSV / Pressure Relief Valve     |
 | **ضربه خارجی (External Impact)**  | Bh نصب حفاظ فیزیکی و علائم هشدار | Physical Protection / Signage   |
 
-> **نکته تحلیل What-if:** اگر "شیر اطمینان" عمل نکند (Failure of Barrier)، تهدید "فشار بیش از حد" مستقیماً به "نشت گاز" تبدیل می‌شود.
 
----
 
 ### ۳. سمت راست: پیامدها و اقدامات کاهنده (Consequences & Mitigation)
 
 *هدف: کاهش خسارت پس از وقوع نشت (Recovery)*
 
-| پیامد (Consequence)                 | مانع کاهنده (Recovery Measure)  | کلمات کلیدی فنی            |
-| ----------------------------------- | ------------------------------- | -------------------------- |
-| **آتش‌سوزی/انفجار (Fire/Explosion)** | سیستم تشخیص شعله و گاز          | F&G System / Gas Detection |
-| **مسمومیت (Toxic Exposure)**        | استفاده از تجهیزات تنفسی و ماسک | PPE / Breathing Apparatus  |
-| **آسیب به تجهیزات (Asset Damage)**  | سیستم قطع اضطراری جریان گاز     | ESD / Emergency Shutdown   |
+| پیامد (Consequence)                 | مانع کاهنده (Recovery Measure)     | کلمات کلیدی فنی            |
+| ----------------------------------- | ---------------------------------- | -------------------------- |
+| **آتش‌سوزی/انفجار (Fire/Explosion)** | B3 سیستم تشخیص شعله و گاز          | F&G System / Gas Detection |
+| **مسمومیت (Toxic Exposure)**        | B4 استفاده از تجهیزات تنفسی و ماسک | PPE / Breathing Apparatus  |
+| **آسیب به تجهیزات (Asset Damage)**  | Bx سیستم قطع اضطراری جریان گاز     | ESD / Emergency Shutdown   |
 
 ---
 ### اشاره ای به هوش مصنوعی در بوتای 
@@ -91,31 +89,28 @@ T1["<b>Corrosion</b><br>خوردگی"] --> B1(("B1"))
 
 
 ```mermaid
-graph LR
-    %% تهدیدها و عوامل تشدید کننده
-    T1[<b>Corrosion</b><br/>خوردگی] --- EF1((!))
-    EF1 -.->|Lack of Maintenance| B1
-    B1[<b>Wall Thickness Check</b><br/>تست ضخامت] --> TE
+flowchart LR
+    C1["<b>Corrosion</b><br>خوردگی"] --> PB1["<b>Coating &amp; Cathodic Protection</b><br>پوشش و حفاظت کاتدی"] & AI_PB3["<b>AI Suggested:</b><br>Online Corrosion Monitoring<br>پایش خوردگی آنلاین"]
+    PB1 --> TE(("🔥 <b>Top Event</b><br>Gas Leak<br>نشت گاز"))
+    AI_PB3 --> TE
+    C2["<b>Overpressure</b><br>فشار بیش از حد"] --> PB2["<b>Pressure Relief Valve</b><br>شیر اطمینان"]
+    PB2 --> TE
+    TE --> MB1["<b>Gas Detection System</b><br>سیستم تشخیص گاز"] & MB2["<b>Emergency Shutdown (ESD)</b><br>قطع اضطراری"]
+    MB1 --> CO2["<b>Toxic Exposure</b><br>مسمومیت"]
+    MB2 --> CO1["<b>Explosion</b><br>انفجار"]
+    H["<b>Hazard</b><br>Pressurized Gas<br>گاز تحت فشار"] --- TE
 
-    T2[<b>Overpressure</b><br/>فشار بیش از حد] --> B2[<b>Pressure Relief Valve</b><br/>شیر اطمینان]
-    B2 --> TE
-
-    %% مرکز
-    TE((<b>Top Event:<br/>Gas Leak</b><br/>نشت گاز))
-
-    %% پیامدها و لایه‌های حفاظتی
-    TE --> B3[<b>F&G Detection</b><br/>سیستم اعلام نشت]
-    B3 --> C1[<b>Fire/Explosion</b><br/>انفجار]
-
-    TE --> B4[<b>Emergency Shutdown</b><br/>قطع اضطراری]
-    B4 --> C2[<b>Environmental Damage</b><br/>خسارت محیطی]
-
-    %% استایل دهی حرفه‌ای
-    style TE fill:#ff4d4d,stroke:#333,stroke-width:4px,color:#fff
-    style B1,B2 fill:#fff,stroke:#000,stroke-width:2px
-    style B3,B4 fill:#fff,stroke:#000,stroke-width:2px
-    style T1,T2 fill:#99ccff,stroke:#333
-    style C1,C2 fill:#ff9999,stroke:#333
+    style C1 fill:#99ccff,stroke:#333
+    style C2 fill:#99ccff,stroke:#333
+    style PB1 fill:#cce5cc,stroke:#333
+    style PB2 fill:#cce5cc,stroke:#333
+    style AI_PB3 fill:#d9ccff,stroke:#5b3cc4,stroke-dasharray:5 5
+    style TE fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
+    style MB1 fill:#ffe6cc,stroke:#333
+    style MB2 fill:#ffe6cc,stroke:#333
+    style CO1 fill:#ff9999,stroke:#333
+    style CO2 fill:#ff9999,stroke:#333
+    style H fill:#ffff99,stroke:#333,stroke-width:2px
 ```
 
 
