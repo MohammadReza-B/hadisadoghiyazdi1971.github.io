@@ -32,6 +32,27 @@ graph LR
     style V fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
 ```
 
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables':{'fontFamily':'Vazir, sans-serif'}}}%%
+flowchart LR
+    P["مسئله: پراکندگی دانش و داده‌های غیرقابل اتکا"] --> S["سامانه سنا: جمع‌آوری داده، مدل‌سازی، تحلیل شبکه"]
+    S --> V["ارزش: لایه ایمنی شناکتی، کاهش ریسک، شفافیت، تاب‌آوری"]
+    style P fill:#99ccff,stroke:#333
+    style S fill:#cce5cc,stroke:#333
+    style V fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
+```
+
+```mermaid
+flowchart LR
+    direction LR
+    P["مسئله: پراکندگی دانش و داده‌های غیرقابل اتکا"] --> S["سامانه سنا: جمع‌آوری داده، مدل‌سازی، تحلیل شبکه"]
+    S --> V["ارزش: لایه ایمنی شناکتی، کاهش ریسک، شفافیت، تاب‌آوری"]
+    style P fill:#99ccff,stroke:#333
+    style S fill:#cce5cc,stroke:#333
+    style V fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
+```
+
 ## هدف مطالعه و دامنه کاربرد  
 
 این سند به ارائه یک تحلیل بوتای مبتنی بر رویکرد مطالعه خطر و قابلیت بهره‌برداری برای طرح «سنا» می‌پردازد. سامانه «سنا» یک سیستم اجتماعی–فنی  و دانش‌محور است که با بهره‌گیری از هوش مصنوعی  به شناسایی، رتبه‌بندی و شبکه‌سازی نخبگان علمی و فناورانه کشور می‌پردازد.
