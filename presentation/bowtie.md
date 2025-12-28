@@ -5,6 +5,7 @@ dir: rtl
 title: "روش پاپیونی (Bow-Tie) در مدیریت ریسک"
 permalink: /presentation/Bowtie/
 author_profile: true
+mermaid: true
 sidebar:
   nav: "presentaton"
 header:

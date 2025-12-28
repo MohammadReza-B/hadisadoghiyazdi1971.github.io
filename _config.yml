@@ -366,3 +366,10 @@ defaults:
       related: true
       sidebar:
         nav: "main"
+
+
+
+# _config.yml
+mermaid:
+  enabled: true
+  
