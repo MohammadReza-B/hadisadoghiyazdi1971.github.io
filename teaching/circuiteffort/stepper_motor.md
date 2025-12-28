@@ -101,7 +101,7 @@ mahyar.kafaei2022@gmail.com  </a>
 با کنترل زاویه هر پله، می‌توانیم دقت و نرمی چرخش روتورِ موتور را کنترل کنیم. در موتور پله‌ای، سه مُد یا حالت تحریک وجود دارد که در شکل زیر نشان داده شده‌اند.
 <br></br>
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/stepper_pictures/modes.webp" style="width: 60%; height: 60%; object-fit: contain;">  
+    <img src="/assets/circuiteffort/stepper_pictures/modes.webp" style="width: 60%; height: 60%; object-fit: contain;">  
 </div>
 <br></br>
 
@@ -129,7 +129,7 @@ mahyar.kafaei2022@gmail.com  </a>
 
 <br></br>
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/stepper_pictures/full.webp" style="width: 60%; height: 60%; object-fit: contain;">  
+    <img src="/assets/circuiteffort/stepper_pictures/full.webp" style="width: 60%; height: 60%; object-fit: contain;">  
 </div>
 <br></br>
 
@@ -168,7 +168,7 @@ mahyar.kafaei2022@gmail.com  </a>
 
 <br></br>
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/stepper_pictures/half.webp" style="width: 60%; height: 60%; object-fit: contain;">  
+    <img src="/assets/circuiteffort/stepper_pictures/half.webp" style="width: 60%; height: 60%; object-fit: contain;">  
 </div>
 <br></br>
 
@@ -225,7 +225,7 @@ $$
 رزونانس: در برخی فرکانس‌ها، لرزش و از دست دادن گام رخ می‌دهد.
 <br></br>
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/stepper_pictures/first.jpg" style="width: 60%; height: 60%; object-fit: contain;">  
+    <img src="/assets/circuiteffort/stepper_pictures/first.jpg" style="width: 60%; height: 60%; object-fit: contain;">  
 </div>
 <br></br>
 
@@ -269,7 +269,7 @@ $$
 
 <br></br>
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/stepper_pictures/change.jpg" style="width: 60%; height: 60%; object-fit: contain;">  
+    <img src="/assets/circuiteffort/stepper_pictures/change.jpg" style="width: 60%; height: 60%; object-fit: contain;">  
 </div>
 
 ####  مغناطیسی دائمی
@@ -284,7 +284,7 @@ $$
 
 <br></br>
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/stepper_pictures/ever.jpg" style="width: 60%; height: 60%; object-fit: contain;">  
+    <img src="/assets/circuiteffort/stepper_pictures/ever.jpg" style="width: 60%; height: 60%; object-fit: contain;">  
 </div>
 
 #### هیبریدی
@@ -299,7 +299,7 @@ $$
 
 <br></br>
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/stepper_pictures/hybrid.jpg" style="width: 60%; height: 60%; object-fit: contain;">  
+    <img src="/assets/circuiteffort/stepper_pictures/hybrid.jpg" style="width: 60%; height: 60%; object-fit: contain;">  
 </div>
 
 #### تک قطبی
@@ -334,14 +334,14 @@ $$
 تفاوت اصلی بین موتورهای پله‌ای تک‌قطبی و دوقطبی این است که عملکرد موتور تک‌قطبی با یک پلاریته است، در حالی که موتور دوقطبی در هر دو ولتاژ مثبت و منفی کار می‌کند. یک تفاوت دیگر بین موتورهای پله‌ای تک‌قطبی و دوقطبی در این است که در موتورهای پله‌ای تک‌قطبی، یک سیم جدا برای هر یک از سیم‌پیچی‌ها مورد نیاز است تا جریان از یک سمت به یک انتهای دیگر سیم‌پیچ منتقل شود.
 <br></br>
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/stepper_pictures/one.webp" style="width: 60%; height: 60%; object-fit: contain;">  
+    <img src="/assets/circuiteffort/stepper_pictures/one.webp" style="width: 60%; height: 60%; object-fit: contain;">  
 </div>
 <br></br>
 به عبارت دیگر، در موتور پله‌ای تک‌قطبی دو سیم‌پیچی برای هر فاز وجود دارد. دو سیم‌پیچی هر قطب ممکن است سیم‌های مشترکی داشته باشند و از میان آن‌ها انشعاب گرفته شود. موتور تک‌قطبی عملکرد ساده‌ای دارد، زیرا در آن نیازی به معکوس کردن جریان با یک مدار درایور خارجی نیست. شکل زیر، سیم‌بندی این نوع موتور را نشان می‌دهد.
 به دلیل وجود سیم اضافه در میانه سیم‌پیچ‌ها، موتور پله‌ای تک‌قطبی نصف مقدار شار مغناطیسی خود را برای شارش جریان کاهش یافته تولید می‌کند. بنابراین، موتور پله‌ای دوقطبی گشتاور بیشتری نسبت به یک موتور پله‌ای تک‌قطبی تولید می‌کند.
 <br></br>
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="./assets/circuiteffort/stepper_pictures/two.webp" style="width: 60%; height: 60%; object-fit: contain;">  
+    <img src="/assets/circuiteffort/stepper_pictures/two.webp" style="width: 60%; height: 60%; object-fit: contain;">  
 </div>
 <br></br>
 
