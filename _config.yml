@@ -170,6 +170,11 @@ footer:
       # url:
   since: "2013"
 
+after_footer_scripts:
+  - https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.js
+  - /assets/js/mermaid.js
+
+  
 markdown: kramdown
 mathjax: true
 mathjax_autoDirection: true
@@ -369,7 +374,3 @@ defaults:
 
 
 
-# _config.yml
-mermaid:
-  enabled: true
-  
