@@ -18,6 +18,8 @@ header:
 
 ```mermaid
 graph LR
+    style graph font-family: "Vazir", sans-serif
+    style node font-family: "Vazir", sans-serif
     P["مسئله: پراکندگی دانش و داده‌های غیرقابل اتکا"] --> S["سامانه سنا: جمع‌آوری داده، مدل‌سازی، تحلیل شبکه"]
     S --> V["ارزش: لایه ایمنی شناختی، کاهش ریسک، شفافیت، تاب‌آوری"]
     style P fill:#99ccff,stroke:#333
