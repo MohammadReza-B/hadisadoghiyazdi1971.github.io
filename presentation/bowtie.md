@@ -306,3 +306,187 @@ flowchart LR
 ## نتیجه‌گیری
 
 روش پاپیونی یک ابزار قدرتمند، بصری و کارآمد برای مدیریت ریسک در سازمان‌هاست. با ارائه یک نمای یکپارچه از خطرات، کنترل‌ها و پیامدها، این روش به مدیران و کارکنان کمک می‌کند تا ریسک‌ها را بهتر درک کرده و اقدامات مؤثری برای پیشگیری و کاهش اثرات آن‌ها اتخاذ کنند. برای اجرای موفق این روش، استفاده از نرم‌افزارهای تخصصی، به‌روزرسانی دوره‌ای نمودارها و استفاده از آن به عنوان ابزاری برای آموزش کارکنان، توصیه می‌شود.
+
+
+
+```mermaid
+flowchart LR
+    T1["Fire Pump Failure<br><sub>خرابی پمپ آتش‌نشانی</sub>"] --> PB4["Standby Fire Pump<br>پمپ رزرو"] & PB5["HAZOP &amp; HAZID<br>Checklists"]
+    PB4 --> TE["🔥 TOP EVENT 🔥<br><b>Failure of Fire Water Delivery</b><br>عدم تأمین دبی و فشار آب اطفای حریق"] & TE
+    T2["Excessive Pressure Loss<br><sub>افت فشار بیش از حد</sub>"] --> PB2["Hydraulic Calculations<br>Flow &amp; Pressure"]
+    PB2 --> TE
+    T3["Sprinkler Nozzle Blockage<br><sub>انسداد نازل‌ها</sub>"] --> PB3["Inspection &amp; Testing<br>ITM Program"]
+    PB3 --> TE
+    T4["Hydraulic Design Error<br><sub>خطای طراحی هیدرولیکی</sub>"] --> PB1["Code-based Design<br>NFPA / API"]
+    PB1 --> TE
+    T5["Insufficient Water Supply<br><sub>کمبود منبع آب</sub>"] --> PB4
+    PB5 --> TE
+    TE --> MB1["Fire Detection &amp; Alarm<br>سیستم اعلام حریق"] & MB3["Foam / CO₂ System<br>سیستم اطفای کمکی"] & MB2["Emergency Response Team<br>تیم واکنش اضطراری"] & MB4["Process Isolation<br>ایزولاسیون فرایند"]
+    MB1 --> C1["Fire Escalation<br>گسترش آتش"]
+    MB3 --> C2["Explosion<br>انفجار"]
+    MB2 --> C3["Loss of Life<br>تلفات جانی"] & C5["Production Loss<br>زیان اقتصادی"]
+    MB4 --> C4["Major Equipment Damage<br>خسارت شدید تجهیزات"]
+
+    style T1 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style T2 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style T3 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style T4 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style T5 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style PB1 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style PB2 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style PB3 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style PB4 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style PB5 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style TE fill:#b11226,stroke:#000,stroke-width:3px,color:#ffffff
+    style MB1 fill:#fff3cd,stroke:#c77700,stroke-width:2px
+    style MB2 fill:#fff3cd,stroke:#c77700,stroke-width:2px
+    style MB3 fill:#fff3cd,stroke:#c77700,stroke-width:2px
+    style MB4 fill:#fff3cd,stroke:#c77700,stroke-width:2px
+    style C1 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+    style C2 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+    style C3 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+    style C4 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+    style C5 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+```
+
+🎨 منطق رنگ‌بندی (HSE-oriented)
+
+🔵 Threats / Causes → آبی (ریسک بالقوه)
+
+🟢 Preventive Barriers → سبز (کنترل پیشگیرانه)
+
+🔴 Top Event → قرمز تیره (Loss of Control)
+
+🟡 Mitigative Barriers → نارنجی/زرد (کاهش پیامد)
+
+🔥 Consequences → قرمز روشن (Severity)
+
+
+خیلی خوب، بر اساس محتوای کامل فایل شما (HSE / HAZOP / Fire & Explosion / Pump–Sprinkler system) در ادامه **یک Bow-Tie دقیق، چندلایه و کاملاً HAZOP-محور** ارائه می‌کنم که:
+
+* مفاهیم **Hazard Operability Study (HAZOP)** را حفظ می‌کند
+* برای **سیستم اطفای حریق (Fire Water & Sprinkler System)** معتبر است
+* همه اجزا: **Threat – Top Event – Consequence – Barriers – Escalation** را دارد
+* خروجی **کاملاً اجرایی با Mermaid** است
+* اصطلاحات کلیدی **فارسی + English** آورده شده
+* از دیدگاه **HSE Engineering** و **Process Safety** نوشته شده
+
+---
+
+## 📌 عنوان Bow-Tie
+
+**تحلیل Bow-Tie مبتنی بر HAZOP برای سیستم آب آتش‌نشانی و اطفای حریق در واحد فرایندی**
+*(HAZOP-based Bow-Tie Analysis for Fire Water & Sprinkler System in Process Units)*
+
+---
+
+## 🧠 تعریف رویداد محوری (Top Event)
+
+**عدم تأمین آب با دبی و فشار طراحی در سیستم اسپرینکلر هنگام وقوع حریق**
+*(Failure to deliver required flow and pressure to sprinklers during fire event)*
+
+---
+
+## 🧩 نمودار Bow-Tie با Mermaid (چندلایه و حرفه‌ای)
+
+```mermaid
+flowchart LR
+    %% LEFT SIDE - THREATS
+    T1["خرابی پمپ آتش‌نشانی<br/>(Fire Pump Failure)"]
+    T2["افت فشار بیش از طراحی<br/>(Excessive Pressure Loss)"]
+    T3["انسداد یا خرابی نازل‌ها<br/>(Sprinkler Nozzle Blockage)"]
+    T4["خطای طراحی هیدرولیکی<br/>(Hydraulic Design Error)"]
+    T5["عدم دسترسی به منبع آب<br/>(Insufficient Water Supply)"]
+
+    %% PREVENTIVE BARRIERS
+    PB1["طراحی بر اساس NFPA / API<br/>(Code-based Design)"]
+    PB2["محاسبات دقیق دبی و فشار<br/>(Hydraulic Calculations)"]
+    PB3["تست و بازرسی دوره‌ای<br/>(Inspection & Testing)"]
+    PB4["پمپ رزرو (Standby Pump)"]
+    PB5["چک‌لیست‌های HAZOP & HAZID"]
+
+    %% TOP EVENT
+    TE["❗ رویداد محوری (Top Event)<br/>عدم تأمین آب اطفای حریق"]
+
+    %% MITIGATIVE BARRIERS
+    MB1["سیستم هشدار حریق<br/>(Fire Alarm System)"]
+    MB2["اپراتور واکنش اضطراری<br/>(Emergency Response Team)"]
+    MB3["سیستم‌های خاموش‌کننده کمکی<br/>(Foam / CO₂ Systems)"]
+    MB4["ایزولاسیون فرایند<br/>(Process Isolation)"]
+
+    %% CONSEQUENCES
+    C1["گسترش آتش در واحد<br/>(Fire Escalation)"]
+    C2["انفجار (Explosion)"]
+    C3["تلفات جانی<br/>(Loss of Life)"]
+    C4["خسارت شدید تجهیزات<br/>(Major Equipment Damage)"]
+    C5["توقف تولید و زیان اقتصادی<br/>(Production Loss)"]
+
+    %% CONNECTIONS
+    T1 --> PB1 --> TE
+    T2 --> PB2 --> TE
+    T3 --> PB3 --> TE
+    T4 --> PB2 --> TE
+    T5 --> PB4 --> TE
+    T1 --> PB5 --> TE
+
+    TE --> MB1 --> C1
+    TE --> MB2 --> C3
+    TE --> MB3 --> C2
+    TE --> MB4 --> C4
+    TE --> MB2 --> C5
+```
+
+---
+
+## 🧪 تفسیر HAZOP محور (فارسی + English)
+
+در چارچوب **HAZOP (Hazard and Operability Study)**، این Bow-Tie نشان می‌دهد که **انحراف (Deviation)** در پارامترهای کلیدی فرایندی نظیر:
+
+* **Flow (دبی)**
+* **Pressure (فشار)**
+* **Availability (دسترس‌پذیری)**
+
+می‌تواند منجر به **رویداد محوری (Top Event)** شود.
+این انحراف‌ها معمولاً با **Guide Words** مانند:
+
+* **No / Less / More / As well as / Reverse**
+
+شناسایی شده و سپس علل (Causes)، پیامدها (Consequences) و **لایه‌های حفاظتی (Protection Layers)** برای آن‌ها تعریف می‌شود.
+
+---
+
+## 🔐 لایه‌های ایمنی (Layers of Protection – LOP)
+
+| لایه                          | توضیح                                                              |
+| ----------------------------- | ------------------------------------------------------------------ |
+| **پیشگیرانه (Preventive)**    | طراحی صحیح پمپ (52 PSIG، 1500 GPM)، نازل نیم‌اینچ، محاسبات افت فشار |
+| **کنترلی (Control)**          | تست‌های دوره‌ای، مانیتورینگ فشار                                     |
+| **کاهنده پیامد (Mitigative)** | تیم واکنش اضطراری، فوم، ایزولاسیون                                 |
+| **مدیریتی (Administrative)**  | HAZOP، Checklists، Permit to Work                                  |
+
+---
+
+## 📌 ارتباط مستقیم با Fire & Explosion Index (F&EI)
+
+این Bow-Tie مکمل تحلیل‌های کمی مانند:
+
+* **Fire & Explosion Index (F&EI)**
+* **Dow Chemical Index**
+
+است و کمک می‌کند تا **سناریوهای پرریسک (Severe / Heavy Hazard)** که شاخص بالاتر از 159 دارند، به‌صورت **علّی–پیامدی** مدیریت شوند.
+
+---
+
+## ✅ جمع‌بندی نهایی
+
+این Bow-Tie مبتنی بر HAZOP نشان می‌دهد که حتی با وجود طراحی صحیح سیستم اسپرینکلر، شکست در هر یک از **اجزای فنی، عملیاتی یا مدیریتی** می‌تواند منجر به ناتوانی در مهار آتش شود. استفاده هم‌زمان از **محاسبات مهندسی، چک‌لیست‌های HAZOP، شاخص‌های F&EI و لایه‌های حفاظتی مستقل** تنها راه دستیابی به یک **Hazard Operability System** ایمن، مقاوم و قابل اتکا است.
+
+---
+
+اگر بخواهید، در گام بعدی می‌توانم:
+
+* همین Bow-Tie را **برای مقاله Q1** فرمال‌سازی کنم
+* نسخه **LaTeX + TikZ** رسم کنم
+* یا آن را به **HAZOP Worksheet جدولی** تبدیل کنم
+
+
