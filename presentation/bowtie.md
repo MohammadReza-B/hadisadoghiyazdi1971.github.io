@@ -23,7 +23,7 @@ header:
 
 کد انرا به mermaid برای ساده شدن کار می بینید 
 
-```mermaid
+```python
 flowchart LR
     T1["<b>Corrosion</b><br>خوردگی"] --> B1(("B1"))
     B1 --> TE(("<b>Top Event:<br>Gas Leak</b><br>نشت گاز"))
