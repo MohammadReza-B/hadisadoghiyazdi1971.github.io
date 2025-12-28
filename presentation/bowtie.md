@@ -391,52 +391,45 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    %% LEFT SIDE - THREATS
-    T1["خرابی پمپ آتش‌نشانی<br/>(Fire Pump Failure)"]
-    T2["افت فشار بیش از طراحی<br/>(Excessive Pressure Loss)"]
-    T3["انسداد یا خرابی نازل‌ها<br/>(Sprinkler Nozzle Blockage)"]
-    T4["خطای طراحی هیدرولیکی<br/>(Hydraulic Design Error)"]
-    T5["عدم دسترسی به منبع آب<br/>(Insufficient Water Supply)"]
+    T1["Fire Pump Failure<br><sub>خرابی پمپ آتش‌نشانی</sub>"] --> PB4["Standby Fire Pump<br>پمپ رزرو"] & PB5["HAZOP &amp; HAZID<br>Checklists"]
+    PB4 --> TE["🔥 TOP EVENT 🔥<br><b>Failure of Fire Water Delivery</b><br>عدم تأمین دبی و فشار آب اطفای حریق"] & TE
+    T2["Excessive Pressure Loss<br><sub>افت فشار بیش از حد</sub>"] --> PB2["Hydraulic Calculations<br>Flow &amp; Pressure"]
+    PB2 --> TE
+    T3["Sprinkler Nozzle Blockage<br><sub>انسداد نازل‌ها</sub>"] --> PB3["Inspection &amp; Testing<br>ITM Program"]
+    PB3 --> TE
+    T4["Hydraulic Design Error<br><sub>خطای طراحی هیدرولیکی</sub>"] --> PB1["Code-based Design<br>NFPA / API"]
+    PB1 --> TE
+    T5["Insufficient Water Supply<br><sub>کمبود منبع آب</sub>"] --> PB4
+    PB5 --> TE
+    TE --> MB1["Fire Detection &amp; Alarm<br>سیستم اعلام حریق"] & MB3["Foam / CO₂ System<br>سیستم اطفای کمکی"] & MB2["Emergency Response Team<br>تیم واکنش اضطراری"] & MB4["Process Isolation<br>ایزولاسیون فرایند"]
+    MB1 --> C1["Fire Escalation<br>گسترش آتش"]
+    MB3 --> C2["Explosion<br>انفجار"]
+    MB2 --> C3["Loss of Life<br>تلفات جانی"] & C5["Production Loss<br>زیان اقتصادی"]
+    MB4 --> C4["Major Equipment Damage<br>خسارت شدید تجهیزات"]
 
-    %% PREVENTIVE BARRIERS
-    PB1["طراحی بر اساس NFPA / API<br/>(Code-based Design)"]
-    PB2["محاسبات دقیق دبی و فشار<br/>(Hydraulic Calculations)"]
-    PB3["تست و بازرسی دوره‌ای<br/>(Inspection & Testing)"]
-    PB4["پمپ رزرو (Standby Pump)"]
-    PB5["چک‌لیست‌های HAZOP & HAZID"]
-
-    %% TOP EVENT
-    TE["❗ رویداد محوری (Top Event)<br/>عدم تأمین آب اطفای حریق"]
-
-    %% MITIGATIVE BARRIERS
-    MB1["سیستم هشدار حریق<br/>(Fire Alarm System)"]
-    MB2["اپراتور واکنش اضطراری<br/>(Emergency Response Team)"]
-    MB3["سیستم‌های خاموش‌کننده کمکی<br/>(Foam / CO₂ Systems)"]
-    MB4["ایزولاسیون فرایند<br/>(Process Isolation)"]
-
-    %% CONSEQUENCES
-    C1["گسترش آتش در واحد<br/>(Fire Escalation)"]
-    C2["انفجار (Explosion)"]
-    C3["تلفات جانی<br/>(Loss of Life)"]
-    C4["خسارت شدید تجهیزات<br/>(Major Equipment Damage)"]
-    C5["توقف تولید و زیان اقتصادی<br/>(Production Loss)"]
-
-    %% CONNECTIONS
-    T1 --> PB1 --> TE
-    T2 --> PB2 --> TE
-    T3 --> PB3 --> TE
-    T4 --> PB2 --> TE
-    T5 --> PB4 --> TE
-    T1 --> PB5 --> TE
-
-    TE --> MB1 --> C1
-    TE --> MB2 --> C3
-    TE --> MB3 --> C2
-    TE --> MB4 --> C4
-    TE --> MB2 --> C5
+    style T1 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style T2 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style T3 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style T4 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style T5 fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style PB1 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style PB2 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style PB3 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style PB4 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style PB5 fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style TE fill:#b11226,stroke:#000,stroke-width:3px,color:#ffffff
+    style MB1 fill:#fff3cd,stroke:#c77700,stroke-width:2px
+    style MB2 fill:#fff3cd,stroke:#c77700,stroke-width:2px
+    style MB3 fill:#fff3cd,stroke:#c77700,stroke-width:2px
+    style MB4 fill:#fff3cd,stroke:#c77700,stroke-width:2px
+    style C1 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+    style C2 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+    style C3 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+    style C4 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+    style C5 fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
 ```
 
----
+
 
 ## 🧪 تفسیر HAZOP محور (فارسی + English)
 
@@ -490,3 +483,88 @@ flowchart LR
 * یا آن را به **HAZOP Worksheet جدولی** تبدیل کنم
 
 
+## هوش مصنوعی در مسیله اطفای حریف فوق چه کرده است
+
+
+```mermaid
+flowchart LR
+ subgraph THREATS["تهدیدها (Threats & Causes)"]
+    direction TB
+        T1["Pump Failure<br>خرابی پمپ آتش‌نشانی"]
+        T2["Hydraulic Imbalance / Drop<br>افت فشار/عدم تعادل هیدرولیکی"]
+        T3["Clogged Nozzles/Heads<br>انسداد نازل‌ها"]
+        T4["Incorrect Sprinkler Type/Placement<br>انتخاب/نصب نامناسب نازل"]
+        T5["Water Supply Interruption<br>قطع یا کمبود منبع آب"]
+        T6["Control Valve Mis-operation<br>عملکرد نادرست شیرهای کنترلی"]
+        T7["Mechanical/Corrosion Damage<br>آسیب مکانیکی یا خوردگی لوله‌ها"]
+        T8["Human Error in Design/Installation<br>خطای انسانی طراحی/نصب"]
+  end
+ subgraph ESCALATION["عوامل تشدید (Escalation Factors)"]
+        E1["Inadequate Maintenance<br>نگهداری نامناسب"]
+        E2["Inaccurate Hydraulic Models<br>مدلسازی هیدرولیکی نادرست"]
+        E3["System Freeze in Cold Conditions<br>یخ‌زدگی سیستم"]
+        E4["Wrong Flow Switch Calibration<br>کالیبراسیون اشتباه سنسورها"]
+  end
+ subgraph PREVENTIVE["موانع پیشگیرانه"]
+    direction TB
+        PB1["Standards-Based Design<br>طراحی طبق NFPA13"]
+        PB2["Accurate Hydraulic Calculation<br>محاسبات دقیق هیدرولیکی"]
+        PB3["Redundant Pump Units<br>پمپ‌های پشتیبان"]
+        PB4["Proper Installation &amp; Layout<br>نصب و چیدمان درست"]
+        PB5["Routine Inspection &amp; Testing<br>بازرسی و تست دوره‌ای"]
+        PB6["Quality Flow Switch &amp; Sensor Selection<br>انتخاب صحیح حسگرها"]
+  end
+ subgraph MITIGATION["موانع کاهنده پیامد"]
+    direction TB
+        MB1["Early Fire Detection<br>اعلام و تشخیص زودهنگام"]
+        MB2["Fire Department Response<br>واکنش آتش‌نشانی"]
+        MB3["Secondary Suppression Systems<br>سیستم‌های کمکی (فوم/گاز)"]
+        MB4["Automated Zoning &amp; Isolation<br>بخش‌بندی و ایزولاسیون خودکار"]
+        MB5["Emergency Shutdown Procedures<br>رویه‌های توقف اضطراری"]
+  end
+ subgraph CONSEQUENCES["پیامدها (Consequences)"]
+    direction TB
+        C1["Uncontrolled Fire Spread<br>گسترش کنترل‌نشده حریق"]
+        C2["Explosion Risk Increase<br>افزایش احتمال انفجار"]
+        C3["Structural Collapse<br>ریزش سازه"]
+        C4["Severe Injuries/Fatalities<br>صدمات/تلفات جانی"]
+        C5["Production &amp; Economic Loss<br>زیان اقتصادی و توقف تولید"]
+  end
+    T1 --> PB3
+    PB3 --> TE["🔥 TOP EVENT<br><b>Failure to Deliver Required Water Flow/Pressure<br>عدم تأمین دبی و فشار آب طراحی شده هنگام حریق</b>"]
+    T2 ==> PB2
+    PB2 --> TE
+    T3 --> PB5
+    T4 ==> PB4
+    PB4 --> TE
+    T5 ==> PB1
+    PB1 --> TE
+    T6 --> PB6
+    PB6 --> TE
+    T7 ==> PB5
+    PB5 --> TE
+    T8 --> PB1
+    E1 --> PB5
+    E2 --> PB2
+    E3 ==> PB3
+    E4 --> PB6
+    TE --> MB1 & MB3 & MB2 & MB4 & MB5
+    MB1 --> C1
+    MB3 --> C2
+    MB2 --> C4
+    MB4 --> C3
+    MB5 --> C5
+
+    style TE fill:#b11226,stroke:#000,stroke-width:4px,color:#fff
+    style THREATS fill:#d6e9ff,stroke:#1f4fd8,stroke-width:1.5px
+    style ESCALATION fill:#f3e5ab,stroke:#c87e0d,stroke-dasharray: 5 5
+    style PREVENTIVE fill:#dff5e1,stroke:#2b8a3e,stroke-width:2px
+    style MITIGATION fill:#fff3cd,stroke:#c77700,stroke-width:2px
+    style CONSEQUENCES fill:#ffd6d6,stroke:#c92a2a,stroke-width:2px
+    linkStyle 5 stroke:#FF6D00,fill:none
+    linkStyle 7 stroke:#00C853,fill:none
+    linkStyle 11 stroke:#FFCDD2,fill:none
+    linkStyle 15 stroke:#D50000,fill:none
+    linkStyle 16 stroke:#AA00FF,fill:none
+    linkStyle 17 stroke:#2962FF,fill:none
+```
