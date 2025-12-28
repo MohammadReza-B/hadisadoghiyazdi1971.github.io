@@ -2,7 +2,7 @@
 layout: persian  # یا single با کلاس rtl-layout
 classes: wide rtl-layout
 dir: rtl
-title: "روش پاپیونی (Bow-Tie) در مدیریت ریسک"
+title: "چارچوبی ایمن و داده‌محور برای شناسایی و حکمرانی نخبگان در اکوسیستم نوآوری"
 permalink: /presentation/EliteNetwork/
 author_profile: true
 sidebar:
