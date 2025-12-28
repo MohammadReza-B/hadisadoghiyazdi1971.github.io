@@ -215,3 +215,26 @@ style CO2 fill:#ff9999,stroke:#333
 style CO3 fill:#ff9999,stroke:#333
 style CO4 fill:#ff9999,stroke:#333
 ```
+
+
+## آزمون‌های سیستم
+در این بخش به نتایج  طرح "سنا"  اشاره می شود. سعی شده از خصوصیات برنامه شبیه به سایت  expertise finder باشد، با این تفاوت که امکان ارتباط محاوره ای فراهم می کند و با الگوریتم های هوش مصنوعی مناسب به استخراج فیلدها می پردازد و از بین اطلاعات کارهای علمی و (فناوری ) افرادیکه می توانند در پروژه در گیر باشند را معرفی می کند. این نرمافزار شامل یک پنل ساده است که متن خود را می توانید وارد کنید در شکل زیر ملاحظه می شود که موضوع سوال1:
+
+ **"می خواهیم نوعی رنگ بسازیم که مبتنی بر  مکانیسم فوتوسوئیچینگ رنگ‌های پایه سیانین است دقت شود که  محاسباتی پایداری نوری لحاظ شود بعلاوه تحریک سریع رنگ در آن لحاظ شود. "**
+
+ <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/Presentationimages/EliteNetwork/fig1_exe.jpg" alt="elite1" style="width: 70%; height: 70%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+صفحه اصلی چت بات: صفحه پرس و جو ساده و منوهای فعال با قابلیت درک متن و ارجاعات گراف پایه
+</div>
+
+
+**سوال 2: "در خصوص بکارگیری هوش مصنوعی در سیستم های قدرت و شرکت توانیر بدنبال یک مشاور هستیم. ایشان باید توانایی بالایی در زمینه نیروگاهها ، اسکادا سنوسرهای PMU, RTU و بکارگیری هوش مصنوعی در صنعت برق داشته باشند."**
+
+ <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/Presentationimages/EliteNetwork/fig2_exe.jpg" alt="elite2" style="width: 70%; height: 70%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+متخصصین مورد توجه "سنا" در پاسخ به سوال 2
+</div>
