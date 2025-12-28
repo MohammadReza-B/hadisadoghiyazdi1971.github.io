@@ -21,7 +21,8 @@ header:
 %%{init: {
   'theme': 'base',
   'themeVariables': {
-    'fontFamily': 'Shabnam, sans-serif'
+    'fontFamily': 'Vazirmatn, Shabnam, Tahoma, sans-serif',
+    'fontSize': '16px'
   }
 }}%%
 graph LR
