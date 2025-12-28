@@ -35,7 +35,18 @@ graph LR
 
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables':{'fontFamily':'Tanha, sans-serif'}}}%%
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'fontFamily': 'Vazir, Tanha, Shabnam, Segoe UI, Tahoma, sans-serif',
+    'primaryColor': '#99ccff',
+    'primaryTextColor': '#000',
+    'primaryBorderColor': '#333',
+    'lineColor': '#333',
+    'secondaryColor': '#cce5cc',
+    'tertiaryColor': '#ff4d4d'
+  }
+}}%%
 flowchart LR
     P["مسئله: پراکندگی دانش و داده‌های غیرقابل اتکا"] --> S["سامانه سنا: جمع‌آوری داده، مدل‌سازی، تحلیل شبکه"]
     S --> V["ارزش: لایه ایمنی شناکتی، کاهش ریسک، شفافیت، تاب‌آوری"]
@@ -54,15 +65,6 @@ flowchart LR
     style V fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
 ```
 
-```mermaid
-%%{init: {'themeVariables':{'fontFamily':'inherit'}}}%%
-flowchart LR
-    P["مسئله: پراکندگی دانش و داده‌های غیرقابل اتکا"] --> S["سامانه سنا: جمع‌آوری داده، مدل‌سازی، تحلیل شبکه"]
-    S --> V["ارزش: لایه ایمنی شناکتی، کاهش ریسک، شفافیت، تاب‌آوری"]
-    style P fill:#99ccff,stroke:#333
-    style S fill:#cce5cc,stroke:#333
-    style V fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
-```
 
 ## هدف مطالعه و دامنه کاربرد  
 
