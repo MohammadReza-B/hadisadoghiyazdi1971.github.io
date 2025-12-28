@@ -125,7 +125,7 @@ header:
   </div>
 
    
-   <!-- پروژه 7 -->
+   <!-- پروژه 8 -->
 
 <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
     <a href="/presentation/PowerSectorRepairingOptimize/" style="text-decoration: none; color: inherit;">
@@ -141,7 +141,7 @@ header:
     </a>
   </div>
   
-  <!-- پروژه 7 -->
+  <!-- پروژه 9 -->
   <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
     <a href="/presentation/Bowtie/" style="text-decoration: none; color: inherit;">
       <img src="/assets/Presentationimages/Bowtie/mainBowtie.jpg" 
@@ -156,7 +156,22 @@ header:
     </a>
   </div>
 
-  <!-- پروژه 8 -->
+ <!-- 10  پروژه  -->
+  <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
+    <a href="/presentation/EliteNetwork/" style="text-decoration: none; color: inherit;">
+      <img src="/assets/Presentationimages/EliteNetwork/mainEliteNetwork.jpg" 
+           alt="Presentation3" 
+           class="project-image"
+           style="width: 100%; height: 200px; object-fit: cover; display: block;">
+      <div class="project-content" style="padding: 10px;">
+        <h3 class="project-title" style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">
+سامانه هوشمند کشف و نگاشت شبکه نخبگان 
+        </h3>
+      </div>
+    </a>
+  </div>
+
+  <!-- 111 -->
   
 
   <!-- پروژه 9 -->
