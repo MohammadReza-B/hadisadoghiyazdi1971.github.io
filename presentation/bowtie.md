@@ -28,8 +28,9 @@ flowchart LR
 T1["<b>Corrosion</b><br>خوردگی"] --> B1(("B1"))
     B1 --> TE(("<b>Top Event<br>Gas Leak</b><br>نشت گاز"))
     T2["<b>Overpressure</b><br>فشار بیش از حد"] --> B2(("B2"))
+    H["<b>Hazard</b><br>Pressurized Gas<br>گاز تحت فشار"] --> Bh(("Bh"))
     B2 --> TE
-    H["<b>Hazard</b><br>Pressurized Gas<br>گاز تحت فشار"] --> TE
+    Bh --> TE
     TE --> B3(("B3")) & B4(("B4"))
     B3 --> C1["<b>Explosion</b><br>انفجار"]
     B4 --> C2["<b>Toxic Exposure</b><br>مسمومیت"]
@@ -60,11 +61,11 @@ T1["<b>Corrosion</b><br>خوردگی"] --> B1(("B1"))
 
 *هدف: جلوگیری از وقوع نشت (Prevention)*
 
-| تهدید (Threat)                    | مانع پیشگیرانه (Barrier)      | کلمات کلیدی فنی                 |
-| --------------------------------- | ----------------------------- | ------------------------------- |
-| **خوردگی (Corrosion)**            | بازرسی فنی و ضخامت‌سنجی دوره‌ای | RBI / Wall Thickness Inspection |
-| **فشار بیش از حد (Overpressure)** | نصب و کالیبراسیون شیر اطمینان | PSV / Pressure Relief Valve     |
-| **ضربه خارجی (External Impact)**  | نصب حفاظ فیزیکی و علائم هشدار | Physical Protection / Signage   |
+| تهدید (Threat)                    | مانع پیشگیرانه (Barrier)         | کلمات کلیدی فنی                 |
+| --------------------------------- | -------------------------------- | ------------------------------- |
+| **خوردگی (Corrosion)**            | B1 بازرسی فنی و ضخامت‌سنجی دوره‌ای | RBI / Wall Thickness Inspection |
+| **فشار بیش از حد (Overpressure)** | B2 نصب و کالیبراسیون شیر اطمینان | PSV / Pressure Relief Valve     |
+| **ضربه خارجی (External Impact)**  | Bh نصب حفاظ فیزیکی و علائم هشدار | Physical Protection / Signage   |
 
 > **نکته تحلیل What-if:** اگر "شیر اطمینان" عمل نکند (Failure of Barrier)، تهدید "فشار بیش از حد" مستقیماً به "نشت گاز" تبدیل می‌شود.
 
@@ -89,8 +90,33 @@ T1["<b>Corrosion</b><br>خوردگی"] --> B1(("B1"))
 * **پاسخ هوش مصنوعی:** "با توجه به نمودار، مانع کاهنده برای پیامد **Explosion** از بین رفته است. بنابراین ریسک تبدیل شدن نشت ساده به یک انفجار مهیب (Major Accident) به شدت افزایش می‌یابد و سیستم باید بر روی مانع دوم یعنی **ESD** متمرکز شود."
 
 
+```mermaid
+graph LR
+    %% تهدیدها و عوامل تشدید کننده
+    T1[<b>Corrosion</b><br/>خوردگی] --- EF1((!))
+    EF1 -.->|Lack of Maintenance| B1
+    B1[<b>Wall Thickness Check</b><br/>تست ضخامت] --> TE
 
+    T2[<b>Overpressure</b><br/>فشار بیش از حد] --> B2[<b>Pressure Relief Valve</b><br/>شیر اطمینان]
+    B2 --> TE
 
+    %% مرکز
+    TE((<b>Top Event:<br/>Gas Leak</b><br/>نشت گاز))
+
+    %% پیامدها و لایه‌های حفاظتی
+    TE --> B3[<b>F&G Detection</b><br/>سیستم اعلام نشت]
+    B3 --> C1[<b>Fire/Explosion</b><br/>انفجار]
+
+    TE --> B4[<b>Emergency Shutdown</b><br/>قطع اضطراری]
+    B4 --> C2[<b>Environmental Damage</b><br/>خسارت محیطی]
+
+    %% استایل دهی حرفه‌ای
+    style TE fill:#ff4d4d,stroke:#333,stroke-width:4px,color:#fff
+    style B1,B2 fill:#fff,stroke:#000,stroke-width:2px
+    style B3,B4 fill:#fff,stroke:#000,stroke-width:2px
+    style T1,T2 fill:#99ccff,stroke:#333
+    style C1,C2 fill:#ff9999,stroke:#333
+```
 
 
 ## برخی اصطلاحات در بوتای
