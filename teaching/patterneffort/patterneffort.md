@@ -113,3 +113,8 @@ Generalization Error</strong>
 <strong> RAG project: Tourist Assistant</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/TOURIST_ASSISTANT" style="text-decoration:underline; color:green;" target="_blank"><strong>آموزش پیاده سازی پروژه RAG برای راهنمایی گردشگران</strong></a>
+<!--14-->
+<div class="english-text">
+<strong> Unsupervised Text Classification </strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/unsupervised_text_classification" style="text-decoration:underline; color:green;" target="_blank"><strong> طقبه بندی متن ها بدون لیبل با مدل های زبانی</strong></a>
