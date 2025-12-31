@@ -5,7 +5,7 @@ title: "AI-based Bowtie with RAG engine"
 permalink: /projects/AIBasedBowtieRAG/
 author_profile: true
 sidebar:
-  nav: "presentaton"
+  nav: "projects"
 header:
   overlay_image: "/assets/images/background.jpg"
   overlay_filter: 0.3

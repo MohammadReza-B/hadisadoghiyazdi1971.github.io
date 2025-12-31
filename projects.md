@@ -199,7 +199,7 @@ header:
   <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
     <a href="/projects/AIBasedBowtieRAG/" style="text-decoration: none; color: inherit;">
       <img src="/assets/Projectsimages/AI_Bowtie_RAG/mainBowtie.jpg" 
-           alt="SmartAllocationOrthopedicTeamsPoweredbyAI1" 
+           alt="AIBasedBowtieRAG" 
            class="project-image"
            style="width: 100%; height: 200px; object-fit: cover; display: block;">
       <div class="project-content" style="padding: 10px;">
