@@ -579,3 +579,136 @@ The combination of the systematic risk management framework with Digital Twin te
 
 This integrated approach represents a significant advancement in managing the multifaceted risks of modern electricity distribution operations.
 
+
+
+# 
+
+```mermaid
+flowchart LR
+    subgraph Hazard
+        H["<b>Project Failure</b><br>Energy Supply Chain Disruption<br>Financial Losses"]
+    end
+
+    subgraph Threats
+        T1["<b>Budget Shortages</b>"]
+        T2["<b>Sanctions & Import Restrictions</b>"]
+        T3["<b>Poor Contractor Selection</b>"]
+        T4["<b>Unfavorable Payment Ratios</b>"]
+        T5["<b>Currency Fluctuations</b>"]
+        T6["<b>Physical Obstacles</b>"]
+        T7["<b>Equipment Delays</b>"]
+        T8["<b>Regulatory Changes</b>"]
+    end
+
+    subgraph Preventive_Barriers
+        B1["<b>PMBOK Framework</b>"]
+        B2["<b>RBS Implementation</b>"]
+        B3["<b>P-I Matrix Assessment</b>"]
+        B4["<b>Strategic Risk Planning</b>"]
+    end
+
+    subgraph Top_Event
+        TE[("<b>Top Event</b><br>Power Distribution Failure")]
+    end
+
+    subgraph Mitigative_Barriers
+        M1["<b>Risk Prioritization</b>"]
+        M2["<b>Appropriate Responses</b>"]
+        M3["<b>Continuous Monitoring</b>"]
+    end
+
+    subgraph Consequences
+        C1["<b>Project Delays</b>"]
+        C2["<b>Cost Overruns</b>"]
+        C3["<b>Reduced Quality</b>"]
+        C4["<b>Grid Disruption</b>"]
+        C5["<b>Resource Waste</b>"]
+    end
+
+    subgraph Digital_Twin_AI
+        DT["<b>Digital Twin & AI</b>"]
+        DT1["<b>Real-time Monitoring</b>"]
+        DT2["<b>Predictive Analytics</b>"]
+        AI1["<b>Adaptive Risk Allocation</b>"]
+        AI2["<b>Smart Contract Adjustments</b>"]
+        AI3["<b>Automated Crisis Response</b>"]
+    end
+
+    H -- Threat Path --> TE
+    
+    T1 --> B1
+    T2 --> B2
+    T3 --> B3
+    T4 --> B4
+    T5 --> B1
+    T6 --> B2
+    T7 --> B3
+    T8 --> B4
+    
+    B1 --> TE
+    B2 --> TE
+    B3 --> TE
+    B4 --> TE
+    
+    TE --> M1
+    TE --> M2
+    TE --> M3
+    
+    M1 --> C1
+    M1 --> C2
+    M2 --> C3
+    M3 --> C4
+    M3 --> C5
+    
+    DT -. Support .-> B1
+    DT -. Support .-> B2
+    DT -. Support .-> M1
+    DT -. Support .-> M2
+    DT -. Support .-> M3
+
+    style H fill:#ffff99,stroke:#333,stroke-width:2px
+    style T1 fill:#99ccff,stroke:#333
+    style T2 fill:#99ccff,stroke:#333
+    style T3 fill:#99ccff,stroke:#333
+    style T4 fill:#99ccff,stroke:#333
+    style T5 fill:#99ccff,stroke:#333
+    style T6 fill:#99ccff,stroke:#333
+    style T7 fill:#99ccff,stroke:#333
+    style T8 fill:#99ccff,stroke:#333
+    style B1 fill:#90ee90,stroke:#333
+    style B2 fill:#90ee90,stroke:#333
+    style B3 fill:#90ee90,stroke:#333
+    style B4 fill:#90ee90,stroke:#333
+    style TE fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
+    style M1 fill:#ffa64d,stroke:#333
+    style M2 fill:#ffa64d,stroke:#333
+    style M3 fill:#ffa64d,stroke:#333
+    style C1 fill:#ff9999,stroke:#333
+    style C2 fill:#ff9999,stroke:#333
+    style C3 fill:#ff9999,stroke:#333
+    style C4 fill:#ff9999,stroke:#333
+    style C5 fill:#ff9999,stroke:#333
+    style DT fill:#dda0dd,stroke:#333,stroke-dasharray: 5 5
+
+    linkStyle 0 stroke:#ff4d4d,stroke-width:3px
+    linkStyle 1 stroke:#4169E1,stroke-width:2px
+    linkStyle 2 stroke:#4169E1,stroke-width:2px
+    linkStyle 3 stroke:#4169E1,stroke-width:2px
+    linkStyle 4 stroke:#4169E1,stroke-width:2px
+    linkStyle 5 stroke:#4169E1,stroke-width:2px
+    linkStyle 6 stroke:#4169E1,stroke-width:2px
+    linkStyle 7 stroke:#4169E1,stroke-width:2px
+    linkStyle 8 stroke:#228B22,stroke-width:2px
+    linkStyle 9 stroke:#228B22,stroke-width:2px
+    linkStyle 10 stroke:#228B22,stroke-width:2px
+    linkStyle 11 stroke:#228B22,stroke-width:2px
+    linkStyle 12 stroke:#FF8C00,stroke-width:2px
+    linkStyle 13 stroke:#FF8C00,stroke-width:2px
+    linkStyle 14 stroke:#FF8C00,stroke-width:2px
+    linkStyle 15 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
+    linkStyle 16 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
+    linkStyle 17 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
+    linkStyle 18 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
+    linkStyle 19 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
+    ```
+    
