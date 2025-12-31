@@ -581,7 +581,27 @@ This integrated approach represents a significant advancement in managing the mu
 
 
 
-# 
+# AI-Driven Bowtie Analysis: A Case Study in Power Infrastructure Risk Management
+
+@article{Kolahan2015,
+  author    = {Farhad Kolahan and Ebrahim Rezainik and Marzieh Hassani Dooghabadi and Hamid Ramazanpour and Amir Reza Tajaddod},
+  title     = {Identification and Prioritization of Risk Factors in Power Industry Development Projects (Case Study: Transmission and Sub-transmission Department of Khorasan Regional Electric Company)},
+  journal   = {Specialized Journal of Industrial Engineering},
+  year      = {2015},
+  volume    = {49},
+  number    = {1},
+  pages     = {107--116},
+  note      = {In Persian, English abstract available},
+  month     = {Spring--Summer},
+  issn      = {Not specified in text},
+  keywords  = {Risk Management, Power Industry, Transmission Projects, Risk Prioritization, PMBOK, RBS},
+  abstract  = {This research applies PMBOK standards to identify and prioritize risks in power transmission projects, finding budget shortages, sanctions, and inappropriate stakeholder selection as highest-priority risks through RBS categorization and P-I matrix analysis.}
+}
+
+The comprehensive risk management model developed for power industry development projects encompasses a systematic approach to identifying, analyzing, and mitigating various risk categories that threaten project success and operational continuity. The model addresses critical threats including budget shortages, import restrictions and sanctions, inappropriate selection of project parties, unfavorable payment ratios in contracts, currency fluctuations, physical obstacles in project paths, equipment supply delays, and regulatory changes. These threats collectively contribute to the primary hazard of project failure and significant financial losses, which represents the central concern of the risk management framework.
+
+
+
 
 ```mermaid
 flowchart LR
@@ -711,4 +731,8 @@ flowchart LR
     linkStyle 18 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
     linkStyle 19 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
     ```
-    
+This figure presents a comprehensive BowTie diagram illustrating the risk management framework for power industry development projects, specifically focusing on transmission and super distribution sectors. The diagram identifies the primary hazard of project failure and financial losses, with eight key threat categories including budget shortages, sanctions, poor contractor selection, unfavorable payment ratios, currency fluctuations, physical obstacles, equipment delays, and regulatory changes. The framework incorporates preventive barriers based on PMBOK standards, RBS implementation, P-I matrix assessment, and strategic planning, alongside mitigative measures such as risk prioritization, appropriate responses, and continuous monitoring. The integration of Digital Twin and AI technologies provides real-time monitoring, predictive analytics, and automated decision support, transforming traditional risk management into a proactive, data-driven process. The diagram effectively visualizes the complex interplay between risk factors and their potential consequences, including project delays, cost overruns, reduced quality, grid disruption, and resource waste.
+
+
+
+
