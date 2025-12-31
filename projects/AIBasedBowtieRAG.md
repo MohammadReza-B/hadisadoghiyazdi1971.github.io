@@ -387,3 +387,195 @@ Furthermore, the AI component enhances stakeholder collaboration by generating s
 However, the implementation of such an intelligent layer presents both opportunities and challenges. While it significantly reduces the time required for risk analysis and improves consistency, it also raises questions about model transparency, data privacy, and the potential for algorithmic bias. The effectiveness of the AI system ultimately depends on the quality and comprehensiveness of the training data, as well as the ongoing validation and refinement by domain experts.
 Looking forward, the integration of AI with traditional risk management frameworks like Bowtie analysis represents the next frontier in process safety management. As the technology continues to evolve, we can expect even more sophisticated capabilities, including real-time risk monitoring, automated scenario generation, and dynamic risk response optimization. This evolution promises to make advanced risk management tools more accessible and effective for organizations of all sizes, ultimately contributing to safer and more successful BOT project implementations.
 
+
+
+
+
+## Case Study: Risk Management in Lorestan Province Power Distribution Company
+
+This research demonstrates the application of the proposed AI-driven Bowtie framework to a real-world case study involving the Lorestan Province Power Distribution Company in Iran. The study by \cite{Mir2020} presents a comprehensive qualitative investigation into risk management practices within this critical infrastructure provider. Using semi-structured interviews and focus groups with 15 company experts, the research developed a six-stage risk management model encompassing: (1) risk management planning, (2) risk identification, (3) qualitative risk analysis, (4) quantitative risk analysis, (5) risk response planning and implementation, and (6) continuous risk monitoring. The research particularly highlights the diverse risks facing power distribution companies, including technical failures, procurement challenges, planning uncertainties, and operational hazards across the entire value chain from raw material supply to post-sales services.
+The AI-enhanced Bowtie analysis of this case study successfully extracted and structured the risk entities from the textual documentation, generating a coherent visualization that maps the identified hazards (such as project failure and financial losses) to their corresponding preventive barriers (including risk allocation frameworks and contractual agreements) and mitigative controls (such as crisis management programs and insurance coverage). The framework demonstrated particular effectiveness in processing the Persian-language technical documentation and establishing logical relationships between political, economic, and operational threats specific to the Iranian power distribution context. This case validation confirms the proposed system's capability to handle complex, domain-specific risk management literature and transform unstructured textual analysis into structured Bowtie diagrams suitable for decision support and risk communication.
+	
+Our system give following Bow-tie from \cite{Mir2020} 
+@article{Mir2020,
+	author    = {Ali Mir and Mohammad Reza Jafari and Ebrahim Sharifipour and Shams al-Din Kamalvand},
+	title     = {Designing a Risk Management Model for Lorestan Province Power Distribution Company},
+	journal   = {Journal of New Research Approaches in Management and Accounting},
+	year      = {2020},
+	volume    = {7},
+	number    = {19},
+	pages     = {104--121},
+	note      = {In Persian},
+	issn      = {2588-4573}
+}
+
+```mermaid
+flowchart LR
+    subgraph Hazard
+        H["<b>Project Failure</b><br>Financial Loss & Service Disruption"]
+    end
+
+    subgraph Threats
+        T1["<b>Political Risks</b><br>Regulatory Changes"]
+        T2["<b>Economic Risks</b><br>Inflation, Market Volatility"]
+        T3["<b>Execution Risks</b><br>Construction Delays"]
+        T4["<b>Operational Risks</b><br>Technical Issues"]
+    end
+
+    subgraph Preventive_Barriers
+        B1["<b>Risk Allocation Models</b><br>Stakeholder Frameworks"]
+        B2["<b>Contractual Agreements</b><br>Take-or-pay"]
+        B3["<b>Insurance Coverage</b><br>MIGA"]
+        B4["<b>Risk Assessment</b><br>Comprehensive Planning"]
+    end
+
+    subgraph Top_Event
+        TE[("<b>Top Event</b><br>Power Distribution Failure")]
+    end
+
+    subgraph Mitigative_Barriers
+        M1["<b>Crisis Management</b>"]
+        M2["<b>Contract Modifications</b><br>Tariff Adjustments"]
+        M3["<b>Government Support</b>"]
+    end
+
+    subgraph Consequences
+        C1["<b>Financial Losses</b>"]
+        C2["<b>Reputation Damage</b>"]
+        C3["<b>Service Disruption</b>"]
+        C4["<b>Project Delay</b>"]
+    end
+
+    subgraph Digital_Twin_AI
+        DT["<b>Digital Twin & AI</b>"]
+        DT1["<b>Real-time Monitoring</b>"]
+        DT2["<b>Predictive Analytics</b>"]
+        AI1["<b>Adaptive Risk Allocation</b>"]
+        AI2["<b>Smart Decision Support</b>"]
+    end
+
+    H -- Threat Path --> TE
+    
+    T1 --> B1
+    T2 --> B2
+    T3 --> B3
+    T4 --> B4
+    
+    B1 --> TE
+    B2 --> TE
+    B3 --> TE
+    B4 --> TE
+    
+    TE --> M1
+    TE --> M2
+    TE --> M3
+    
+    M1 --> C1
+    M1 --> C2
+    M2 --> C3
+    M3 --> C4
+    
+    DT -. Support .-> B1
+    DT -. Support .-> B2
+    DT -. Support .-> M1
+    DT -. Support .-> M2
+
+    style H fill:#ffff99,stroke:#333,stroke-width:2px
+    style T1 fill:#99ccff,stroke:#333
+    style T2 fill:#99ccff,stroke:#333
+    style T3 fill:#99ccff,stroke:#333
+    style T4 fill:#99ccff,stroke:#333
+    style B1 fill:#90ee90,stroke:#333
+    style B2 fill:#90ee90,stroke:#333
+    style B3 fill:#90ee90,stroke:#333
+    style B4 fill:#90ee90,stroke:#333
+    style TE fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
+    style M1 fill:#ffa64d,stroke:#333
+    style M2 fill:#ffa64d,stroke:#333
+    style M3 fill:#ffa64d,stroke:#333
+    style C1 fill:#ff9999,stroke:#333
+    style C2 fill:#ff9999,stroke:#333
+    style C3 fill:#ff9999,stroke:#333
+    style C4 fill:#ff9999,stroke:#333
+    style DT fill:#dda0dd,stroke:#333,stroke-dasharray: 5 5
+
+    linkStyle 0 stroke:#ff4d4d,stroke-width:3px
+    linkStyle 1 stroke:#4169E1,stroke-width:2px
+    linkStyle 2 stroke:#4169E1,stroke-width:2px
+    linkStyle 3 stroke:#4169E1,stroke-width:2px
+    linkStyle 4 stroke:#228B22,stroke-width:2px
+    linkStyle 5 stroke:#228B22,stroke-width:2px
+    linkStyle 6 stroke:#228B22,stroke-width:2px
+    linkStyle 7 stroke:#228B22,stroke-width:2px
+    linkStyle 8 stroke:#FF8C00,stroke-width:2px
+    linkStyle 9 stroke:#FF8C00,stroke-width:2px
+    linkStyle 10 stroke:#FF8C00,stroke-width:2px
+    linkStyle 11 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
+    linkStyle 12 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
+    linkStyle 13 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
+```
+
+# Risk Management Framework and Digital Twin Integration
+
+## Risk Management Framework
+
+The Lorestan electricity distribution company's risk management model provides a systematic approach to identifying, analyzing, and mitigating risks across multiple categories. Key components include:
+
+### **Risk Categories Addressed:**
+- **Political Risks:** Regulatory changes, policy instability
+- **Economic Uncertainties:** Inflation, market volatility
+- **Execution Challenges:** Construction delays, technical problems
+- **Operational Risks:** Implementation-phase disruptions
+
+### **Core Framework Structure:**
+- **Central Hazard:** Project failure and significant financial losses
+- **Preventive Barriers:**
+  - Risk allocation models among stakeholders
+  - Take-or-pay financial security agreements
+  - MIGA insurance for political risks
+  - Comprehensive risk assessment processes
+- **Mitigative Measures:** (if prevention fails)
+  - Crisis management programs
+  - Contract modification mechanisms (including tariff adjustments)
+  - Government support systems
+- **Potential Consequences:** Financial losses, reputational damage, service disruptions, project delays/cancellation
+
+### **Multi-Layered Approach:**
+The model operates across five organizational dimensions:
+1. **Physical/Technical:** Infrastructure and equipment
+2. **Control Systems:** Instrumentation and safety mechanisms
+3. **Human Factors:** Organizational and team dynamics
+4. **Digital Components:** Cyber systems and data management
+5. **Governance:** Management structures and decision processes
+
+## Digital Twin Technology Integration
+
+The Digital Twin layer represents a significant advancement, creating a virtual replica of physical electrical infrastructure with real-time monitoring capabilities.
+
+### **Core Capabilities:**
+- **Continuous Monitoring:** Real-time operational data collection from distribution equipment and control systems
+- **Predictive Analytics:** Forecasting equipment degradation and system vulnerabilities
+- **Scenario Simulation:** Testing "what-if" scenarios for crisis management planning
+  - Example scenarios: 30% inflation impacts, regulatory change consequences, critical equipment failure cascades
+
+### **AI-Enhanced Functionality:**
+- **Adaptive Risk Allocation:** Real-time optimization based on changing conditions
+- **Intelligent Recommendations:** Automated suggestions for tariff adjustments and contract modifications
+- **Operational Decision-Making:** Automated crisis response capabilities
+
+### **Transformative Benefits:**
+- **Proactive Approach:** Shifts from reactive to data-driven risk management
+- **Continuous Learning:** System improves predictive accuracy over time
+- **Enhanced Resilience:** Creates dynamic adaptation to complex, evolving risk landscapes
+- **Reduced Response Times:** Automated systems improve mitigation effectiveness
+
+## Integrated Ecosystem
+
+The combination of the systematic risk management framework with Digital Twin technology creates a comprehensive ecosystem where:
+- **Preventive measures** are continuously optimized
+- **Mitigation strategies** are tested and refined virtually before implementation
+- **Organizational resilience** is enhanced through data-driven decision making
+- **Operational continuity** is maintained despite complex, rapidly changing risk environments
+
+This integrated approach represents a significant advancement in managing the multifaceted risks of modern electricity distribution operations.
+
