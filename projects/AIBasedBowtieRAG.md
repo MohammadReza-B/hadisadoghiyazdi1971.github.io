@@ -604,6 +604,7 @@ The comprehensive risk management model developed for power industry development
 
 
 ```mermaid
+
 flowchart LR
     subgraph Hazard
         H["<b>Project Failure</b><br>Energy Supply Chain Disruption<br>Financial Losses"]
@@ -731,6 +732,7 @@ flowchart LR
     linkStyle 18 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
     linkStyle 19 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
     ```
+
 This figure presents a comprehensive BowTie diagram illustrating the risk management framework for power industry development projects, specifically focusing on transmission and super distribution sectors. The diagram identifies the primary hazard of project failure and financial losses, with eight key threat categories including budget shortages, sanctions, poor contractor selection, unfavorable payment ratios, currency fluctuations, physical obstacles, equipment delays, and regulatory changes. The framework incorporates preventive barriers based on PMBOK standards, RBS implementation, P-I matrix assessment, and strategic planning, alongside mitigative measures such as risk prioritization, appropriate responses, and continuous monitoring. The integration of Digital Twin and AI technologies provides real-time monitoring, predictive analytics, and automated decision support, transforming traditional risk management into a proactive, data-driven process. The diagram effectively visualizes the complex interplay between risk factors and their potential consequences, including project delays, cost overruns, reduced quality, grid disruption, and resource waste.
 
 
