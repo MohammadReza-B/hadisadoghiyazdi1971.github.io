@@ -2,7 +2,7 @@
 layout: single  # یا single با کلاس rtl-layout
 classes: wide 
 title: "AI-based Bowtie with RAG engine"
-permalink: /presentation/AI_Bowtie_RAG/
+permalink: /projects/AIBasedBowtieRAG/
 author_profile: true
 sidebar:
   nav: "presentaton"
