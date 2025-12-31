@@ -268,6 +268,113 @@ flowchart LR
     linkStyle 42 stroke:#20B2AA,stroke-width:2px
     linkStyle 43 stroke:#20B2AA,stroke-width:2px
 ```
+
+
+Interestingly, for display it briefly, we use my AI-Based Bow-tie and this is the result:
+
+```mermaid
+flowchart LR
+    subgraph Hazard
+        H["<b>Project Failure</b><br>Financial Loss & Operational Disruption"]
+    end
+
+    subgraph Threats
+        T1["<b>Political</b><br>Regulatory Changes"]
+        T2["<b>Economic</b><br>Inflation, Market Risks"]
+        T3["<b>Execution</b><br>Construction Delays"]
+        T4["<b>Operational</b><br>Technical Issues"]
+    end
+
+    subgraph Preventive_Barriers
+        B1["<b>Risk Allocation</b><br>Stakeholder Models"]
+        B2["<b>Contractual</b><br>Take-or-pay Agreements"]
+        B3["<b>Insurance</b><br>MIGA Coverage"]
+        B4["<b>Risk Assessment</b><br>Planning & Governance"]
+    end
+
+    subgraph Top_Event
+        TE[("<b>Top Event</b><br>BOT Project Failure")]
+    end
+
+    subgraph Mitigative_Barriers
+        M1["<b>Crisis Management</b>"]
+        M2["<b>Insurance Support</b>"]
+        M3["<b>Contract Amendments</b><br>Tariff Adjustments"]
+    end
+
+    subgraph Consequences
+        C1["<b>Financial Losses</b>"]
+        C2["<b>Reputation Damage</b>"]
+        C3["<b>Service Disruption</b>"]
+    end
+
+    subgraph AI_Support
+        AI["<b>AI Intelligence Layer</b><br>Risk Mitigation & Prediction"]
+    end
+
+    H -- Threat Path --> TE
+    
+    T1 --> B1
+    T2 --> B2
+    T3 --> B3
+    T4 --> B4
+    
+    B1 --> TE
+    B2 --> TE
+    B3 --> TE
+    B4 --> TE
+    
+    TE --> M1
+    TE --> M2
+    TE --> M3
+    
+    M1 --> C1
+    M1 --> C2
+    M2 --> C3
+    M3 --> C1
+    
+    AI -. Support .-> B1
+    AI -. Support .-> B2
+    AI -. Support .-> M1
+    AI -. Support .-> M2
+
+    style H fill:#ffff99,stroke:#333,stroke-width:2px
+    style T1 fill:#99ccff,stroke:#333
+    style T2 fill:#99ccff,stroke:#333
+    style T3 fill:#99ccff,stroke:#333
+    style T4 fill:#99ccff,stroke:#333
+    style B1 fill:#90ee90,stroke:#333
+    style B2 fill:#90ee90,stroke:#333
+    style B3 fill:#90ee90,stroke:#333
+    style B4 fill:#90ee90,stroke:#333
+    style TE fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
+    style M1 fill:#ffa64d,stroke:#333
+    style M2 fill:#ffa64d,stroke:#333
+    style M3 fill:#ffa64d,stroke:#333
+    style C1 fill:#ff9999,stroke:#333
+    style C2 fill:#ff9999,stroke:#333
+    style C3 fill:#ff9999,stroke:#333
+    style AI fill:#dda0dd,stroke:#333,stroke-dasharray: 5 5
+
+    linkStyle 0 stroke:#ff4d4d,stroke-width:3px
+    linkStyle 1 stroke:#4169E1,stroke-width:2px
+    linkStyle 2 stroke:#4169E1,stroke-width:2px
+    linkStyle 3 stroke:#4169E1,stroke-width:2px
+    linkStyle 4 stroke:#228B22,stroke-width:2px
+    linkStyle 5 stroke:#228B22,stroke-width:2px
+    linkStyle 6 stroke:#228B22,stroke-width:2px
+    linkStyle 7 stroke:#228B22,stroke-width:2px
+    linkStyle 8 stroke:#FF8C00,stroke-width:2px
+    linkStyle 9 stroke:#FF8C00,stroke-width:2px
+    linkStyle 10 stroke:#FF8C00,stroke-width:2px
+    linkStyle 11 stroke:#FF4500,stroke-width:2px,stroke-dasharray: 3 3
+    linkStyle 12 stroke:#FF4500,stroke-width:2px,stroke-dasharray: 3 3
+    linkStyle 13 stroke:#FF4500,stroke-width:2px,stroke-dasharray: 3 3
+    linkStyle 14 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
+    linkStyle 15 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
+    linkStyle 16 stroke:#9370DB,stroke-width:2px,stroke-dasharray: 3 3
+```
+
 ## References
 
 Khazaeeni, G., & Ahmadi, L. (2006). Risk management in mega-projects with the BOT approach. *Proceedings of the 2nd International Project Management Conference*.
