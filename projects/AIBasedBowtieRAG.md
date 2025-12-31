@@ -13,6 +13,52 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
+# AI-based Bowtie with RAG Engine Analysis
+
+In this case we use [Khazaeeni2006] in our AI-based Bowtie with RAG engine. Following notes used from [Khazaeeni2006] using RAG.
+
+## Output of RAG
+
+To validate the framework, we utilized comprehensive risk documentation from multiple BOT infrastructure projects in Iran. The input text contained detailed analysis of political, economic, and operational risks associated with these complex projects.
+
+### BOT Projects Under Analysis
+
+**Table: BOT Projects Underway in Iran**
+
+| Project Name              | Stage of Work            | Concession Holder Company             |
+| ------------------------- | ------------------------ | ------------------------------------- |
+| Isfahan South Power Plant | In Operation             | Isfahan South Power Plant Co. (MAPNA) |
+| Zanjan Power Plant        | Contract Signed          | MAPNA International & Quest (UAE)     |
+| Pars-e-Sar Power Plant    | Under Negotiation        | Consortium led by Edison              |
+| Aliabad Power Plant       | Under Negotiation        | OGER (Saudi Arabia)                   |
+| Tabriz Power Plant        | Under Negotiation        | ZENEL (Saudi Arabia)                  |
+| Shirvan Power Plant       | Under Negotiation        | Sumitomo (Japan)                      |
+| Zanjan Power Plants (4-2) | Feasibility Study - BOO* | -                                     |
+| Isfahan Power Plants (4)  | Feasibility Study - BOO* | -                                     |
+
+*BOO: Build-Own-Operate
+
+### Risk Documentation Analysis
+
+The risk documentation analyzed contained comprehensive information about various risk categories including political risks (regulatory changes), economic risks (inflation), construction delays, and market uncertainties. The text detailed specific risk mitigation strategies such as risk allocation frameworks, Take-or-pay agreements, and MIGA insurance.
+
+### AI-Generated Bowtie Components
+
+- **Hazard:** Project Failure / Financial Loss
+- **Top Event:** Disruption of Operational Continuity
+- **Threats:** Political Instability, Economic Inflation, Construction Delays, Regulatory Changes, Market Volatility
+- **Preventive Barriers:** Risk Allocation Framework, Take-or-pay Agreements, MIGA Insurance, Comprehensive Risk Assessment, Government Support Mechanisms
+- **Consequences:** Stakeholder Bankruptcy, Reputation Damage, Service Disruption, Financial Loss
+- **Mitigative Barriers:** Crisis Management Programs, Contract Modification Mechanisms, Insurance Coverage, Diversification Strategies
+
+### Visualization Analysis
+
+The system successfully mapped these entities into a Mermaid flowchart, correctly placing "Take-or-pay agreements" as a preventive barrier against "Economic risks" and "MIGA insurance" as a transference mechanism for political risks. The diagram demonstrated proper causal relationships and logical structure consistent with Bowtie construction best practices.
+
+---
+
+
+
 ```mermaid
 flowchart LR
     subgraph Hazard
@@ -171,3 +217,9 @@ flowchart LR
     style L4 fill:#e6e6fa,stroke:#333
     style L5 fill:#e6e6fa,stroke:#333
 ```
+## References
+
+Khazaeeni, G., & Ahmadi, L. (2006). Risk management in mega-projects with the BOT approach. *Proceedings of the 2nd International Project Management Conference*.
+
+
+
