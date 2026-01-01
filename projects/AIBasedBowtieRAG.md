@@ -736,5 +736,209 @@ flowchart LR
 This figure presents a comprehensive BowTie diagram illustrating the risk management framework for power industry development projects, specifically focusing on transmission and super distribution sectors. The diagram identifies the primary hazard of project failure and financial losses, with eight key threat categories including budget shortages, sanctions, poor contractor selection, unfavorable payment ratios, currency fluctuations, physical obstacles, equipment delays, and regulatory changes. The framework incorporates preventive barriers based on PMBOK standards, RBS implementation, P-I matrix assessment, and strategic planning, alongside mitigative measures such as risk prioritization, appropriate responses, and continuous monitoring. The integration of Digital Twin and AI technologies provides real-time monitoring, predictive analytics, and automated decision support, transforming traditional risk management into a proactive, data-driven process. The diagram effectively visualizes the complex interplay between risk factors and their potential consequences, including project delays, cost overruns, reduced quality, grid disruption, and resource waste.
 
 
+# Industrial BowTie Analysis: Risk Management of Power Distribution Network Reliability
 
+This research \cite{Ghasemi2017} investigates strategies and risk prioritization in the exploitation sector of Tehran Greater Electricity Distribution Company based on a survey of senior managers. We generate Bow-tie as shown in \ref{fig:figure4}.
+Utilizing SWOT analysis to identify strategies, key strategies include development of electrification, standardization of methods and processes, organizational development and leadership style, and operational agility. Subsequently, risks affecting the stability of electricity distribution and customer relations were prioritized using the Analytical Network Process (ANP). The top three prioritized risks are: failure to utilize updated technology, measurement device errors, and economic instability. Identified hazards include power interruption, instability in distribution, and failure of aging equipment and network. Primary causes/threats encompass equipment obsolescence, inadequate maintenance planning, insufficient financial resource allocation, economic sanctions, and political pressures. Preventive controls involve strategic planning based on SWOT, standardization of processes, implementation of integrated management systems, and development of research and technology. Mitigative controls include network reinforcement and modernization, operational agility, outsourcing, and improving measurement systems. Potential consequences are reduced power quality and reliability, increased financial loss, customer dissatisfaction, and environmental damage. Key technical keywords are: Project Risk Management, Risk Assessment, Power Distribution Network, Electrical Installations, Integrated Software Systems, Analytical Network Process (ANP), SWOT Analysis, Process Standardization.
+
+@article{Ghasemi2017,
+title={Strategic planning and risk analysis in the exploitation sector of Tehran Greater Electricity Distribution Company},
+author={Ghasemi, Allayar and Mehrmanesh, Hasan},
+journal={Energy Policy and Planning Research Journal},
+volume={3},
+number={8},
+pages={175--198},
+year={2017},
+publisher={Energy Policy and Planning Research}
+}
+
+
+```mermaid
+flowchart LR
+ subgraph Threats["Threats / Causes"]
+    direction TB
+        T1["Equipment Wear & Failure"]
+        T2["Measurement Faults & Theft"]
+        T3["Economic Shocks & Sanctions"]
+  end
+ subgraph PrevBarriers["Preventive Barriers"]
+    direction TB
+        PB1["Predictive Maintenance (PdM)"]
+        PB2["Spare Parts QC Standardization"]
+        PB3["Smart Metering (AMI) & Detection"]
+  end
+ subgraph MitBarriers["Mitigative Barriers"]
+    direction TB
+        MB1["Automated Fault Isolation (FLISR)"]
+        MB2["Rapid Dispatch & Operations"]
+        MB3["Crisis Management & Comms"]
+  end
+ subgraph Consequences["Consequences"]
+    direction TB
+        C1["Financial Loss & Revenue Drop"]
+        C2["Severe Customer Dissatisfaction"]
+        C3["Safety Risks & Equipment Damage"]
+  end
+    T1 -.-> PB1
+    T1 -. Failure Path .-> TE(("Widespread Power Instability / Blackout"))
+    T2 -.-> PB3
+    T2 -. Data Loss .-> TE
+    T3 -.-> PB2
+    T3 -. Budget Cut .-> TE
+    PB1 -- Reduces Failure Rate --> TE
+    PB2 -- Ensures Reliability --> TE
+    PB3 -- Ensures Visibility --> TE
+    TE --> MB1 & MB2 & MB3
+    TE -- Network Down --> C1
+    TE -- Service Outage --> C2
+    MB1 -- Minimizes Downtime --> C1
+    MB1 -- Restores Power --> C2
+    MB2 -- Rapid Repair --> C3
+    MB3 -- Reduces Panic --> C2
+
+     T1:::threat
+     T2:::threat
+     T3:::threat
+     PB1:::prevent
+     PB2:::prevent
+     PB3:::prevent
+     MB1:::mitigative
+     MB2:::mitigative
+     MB3:::mitigative
+     C1:::consequence
+     C2:::consequence
+     C3:::consequence
+     TE:::topEvent
+    classDef hazard fill:#d32f2f,stroke:#b71c1c,stroke-width:3px,color:#ffffff,font-weight:bold
+    classDef threat fill:#bbdefb,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    classDef prevent fill:#c8e6c9,stroke:#388e3c,stroke-width:2px,color:#1b5e20,stroke-dasharray: 5 5
+    classDef topEvent fill:#7b1fa2,stroke:#4a148c,stroke-width:4px,color:#ffffff,font-weight:bold,font-size:16px
+    classDef mitigative fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100,stroke-dasharray: 5 5
+    classDef consequence fill:#cfd8dc,stroke:#455a64,stroke-width:2px,color:#263238
+    classDef subgraphStyle fill:#fafafa,stroke:#e0e0e0,stroke-width:1px,color:#616161
+```
+
+### Digital Twin Layer Implementation
+The digital twin component includes real-time sensor integration for continuous data collection from the distribution network, physics-based modeling to provide accurate representation of network behavior, degradation prediction capabilities for forecasting equipment failure patterns, and scenario simulation functionality for testing different operational conditions. This integrated approach enables comprehensive monitoring and predictive analysis of power distribution systems, creating a virtual replica that mirrors the actual network while providing advanced analytical capabilities.
+
+### What-If Analysis Framework
+The what-if engine provides scenario definition through automated identification of critical risk scenarios, impact assessment by evaluating the consequences of various scenarios, barrier optimization by recommending appropriate control adjustments based on scenario analysis, and decision support through automated risk mitigation recommendations. This framework enables proactive risk management by simulating potential future events and their impacts, allowing for optimized preparation and response strategies before actual incidents occur.
+
+
+```mermaid
+flowchart LR
+ subgraph Threats["Threats / Causes"]
+    direction TB
+        T1["Equipment Wear & Failure"]
+        T2["Measurement Faults & Theft"]
+        T3["Economic Shocks & Sanctions"]
+        T4["Cyber Threats"]
+        T5["Extreme Weather Events"]
+  end
+ subgraph PrevBarriers["Preventive Barriers"]
+    direction TB
+        PB1["Predictive Maintenance (PdM)"]
+        PB2["Spare Parts QC Standardization"]
+        PB3["Smart Metering (AMI) & Detection"]
+        PB4["Digital Twin Monitoring"]
+  end
+ subgraph MitBarriers["Mitigative Barriers"]
+    direction TB
+        MB1["Automated Fault Isolation (FLISR)"]
+        MB2["Rapid Dispatch & Operations"]
+        MB3["Crisis Management & Comms"]
+        MB4["Network Reinforcement"]
+  end
+ subgraph Consequences["Consequences"]
+    direction TB
+        C1["Financial Loss & Revenue Drop"]
+        C2["Severe Customer Dissatisfaction"]
+        C3["Safety Risks & Equipment Damage"]
+        C4["Environmental Impact"]
+  end
+ subgraph DigitalTwin["Digital Twin & AI Layer"]
+    direction TB
+        DT1["Real-time Sensor Integration"]
+        DT2["Physics-based Digital Twin"]
+        DT3["Degradation Prediction Models"]
+        DT4["What-if Scenario Engine"]
+        AI1["Adaptive Barrier Optimization"]
+        AI2["Risk Prediction & Alerting"]
+  end
+    T1 -.-> PB1
+    T1 -. "Failure Path" .-> TE(("Widespread Power Instability / Blackout"))
+    T2 -.-> PB3
+    T2 -. "Data Loss" .-> TE
+    T3 -.-> PB2
+    T3 -. "Budget Cut" .-> TE
+    T4 -.-> PB4
+    T4 -. "Cyber Attack" .-> TE
+    T5 -.-> PB4
+    T5 -. "Weather Impact" .-> TE
+    PB1 -- "Reduces Failure Rate" --> TE
+    PB2 -- "Ensures Reliability" --> TE
+    PB3 -- "Ensures Visibility" --> TE
+    PB4 -- "Provides Early Warning" --> TE
+    TE --> MB1
+    TE --> MB2
+    TE --> MB3
+    TE --> MB4
+    TE -- "Network Down" --> C1
+    TE -- "Service Outage" --> C2
+    MB1 -- "Minimizes Downtime" --> C1
+    MB1 -- "Restores Power" --> C2
+    MB2 -- "Rapid Repair" --> C3
+    MB3 -- "Reduces Panic" --> C2
+    MB4 -- "Enhances Resilience" --> C4
+    DT1 --> PB1
+    DT1 --> PB3
+    DT1 --> PB4
+    DT2 --> AI1
+    DT2 --> AI2
+    DT3 --> AI1
+    DT4 --> AI2
+    AI1 -. "Optimizes" .-> PB1
+    AI1 -. "Optimizes" .-> PB2
+    AI1 -. "Optimizes" .-> PB3
+    AI1 -. "Optimizes" .-> PB4
+    AI2 -. "Triggers" .-> DT4
+    AI2 -. "Triggers" .-> MB1
+    AI2 -. "Triggers" .-> MB2
+    AI2 -. "Triggers" .-> MB3
+    AI2 -. "Triggers" .-> MB4
+
+     T1:::threat
+     T2:::threat
+     T3:::threat
+     T4:::threat
+     T5:::threat
+     PB1:::prevent
+     PB2:::prevent
+     PB3:::prevent
+     PB4:::prevent
+     MB1:::mitigative
+     MB2:::mitigative
+     MB3:::mitigative
+     MB4:::mitigative
+     C1:::consequence
+     C2:::consequence
+     C3:::consequence
+     C4:::consequence
+     TE:::topEvent
+     DT1:::digital
+     DT2:::digital
+     DT3:::digital
+     DT4:::digital
+     AI1:::ai
+     AI2:::ai
+    classDef hazard fill:#d32f2f,stroke:#b71c1c,stroke-width:3px,color:#ffffff,font-weight:bold
+    classDef threat fill:#bbdefb,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    classDef prevent fill:#c8e6c9,stroke:#388e3c,stroke-width:2px,color:#1b5e20,stroke-dasharray: 5 5
+    classDef topEvent fill:#7b1fa2,stroke:#4a148c,stroke-width:4px,color:#ffffff,font-weight:bold,font-size:16px
+    classDef mitigative fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100,stroke-dasharray: 5 5
+    classDef consequence fill:#cfd8dc,stroke:#455a64,stroke-width:2px,color:#263238
+    classDef digital fill:#e1bee7,stroke:#8e24aa,stroke-width:2px,color:#4a148c,stroke-dasharray: 5 5
+    classDef ai fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17,stroke-dasharray: 5 5
+    classDef subgraphStyle fill:#fafafa,stroke:#e0e0e0,stroke-width:1px,color:#616161
+```
 
