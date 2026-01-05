@@ -47,7 +47,7 @@ header:
 
 </iframe>
 
-
+## ویدئو پیاده سازی BERT در Google colab و سیستم Local جهت embeding
 <iframe src="https://www.aparat.com/video/video/embed/videohash/ikk00l5/vt/frame"
 
 
