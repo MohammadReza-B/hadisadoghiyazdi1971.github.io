@@ -107,3 +107,8 @@ header:
 </div>
 <a href="/teaching/circuiteffort/Edge_processing_in_smart_devices" style="text-decoration:underline; color:green;" target="_blank"><strong> edge computing </strong></a>
 
+<!--14-->
+<div class="english-text">
+<strong>زمین کردن </strong>
+</div>
+<a href="/teaching/circuiteffort/earthing" style="text-decoration:underline; color:green;" target="_blank"><strong> زمین کردن</strong></a>
