@@ -48,19 +48,29 @@ header:
 </div>
 <a href="/teaching/studenteffort/patterneffort/Text_Clustering_FAISS" style="text-decoration:underline; color:green;" target="_blank"><strong> خوشه‌بندی متن با ابزار FAISS</strong></a>
 
-
 <!--5-->
 <div class="english-text">
 <strong>Cross Vslidation</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/CrossValidation" style="text-decoration:underline; color:green;" target="_blank"><strong>اعتبارسنجی متقاطع Cross Vslidation </strong></a>
 
- <!--6-->
+<!--6-->
 <div class="english-text">
 <strong>پیاده‌سازی و تحلیل الگوریتم UniForCE</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/UniForCE_MinimalMistakes_Final" style="text-decoration:underline; color:green;" target="_blank"><strong> گزارش کامل پیاده‌سازی UniForCE (DeepSeek-derived)، شامل کد، توضیحات خط‌به‌خط، آزمایش‌ها و مقایسه با KMeans.</strong></a>
 
+<!--7-->
+<div class="english-text">
+<strong>BERT</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/BERT" style="text-decoration:underline; color:green;" target="_blank"><strong> بردار ساختن از کلمات به کمک روش BERT</strong></a>
+
+<!--8-->
+<div class="english-text">
+<strong>DPC-MK</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/DPC-MK" style="text-decoration:underline; color:green;" target="_blank"><strong>پیاده‌سازی و آزمایش الگوریتم DPC-MK</strong></a>
 
 <!--7-->
 <div class="english-text">
@@ -79,3 +89,27 @@ header:
 <strong>Agglomerative Methods</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/single_linkage_clustring" style="text-decoration:underline; color:green;" target="_blank"><strong>روش های تجمیعی در یادگیری ماشین</strong></a>
+
+<!--10-->
+<div class="english-text">
+<strong>ImageCluster</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/ImageCluster" style="text-decoration:underline; color:green;" target="_blank"><strong>خوشه بندی تصاویر</strong></a>
+<!--11-->
+<div class="english-text">
+<strong>Analysis of Variance of Cross-Validation Estimators of the
+Generalization Error</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/Analysis_of_Variance_of_Cross_Validation_Estimators_of_the_Generalization_Error" style="text-decoration:underline; color:green;" target="_blank"><strong>تحلیل تخمینگرهای واریانس اعتبارسنجی متقابل برای خطای تعمیم </strong></a>
+
+<!--12-->
+<div class="english-text">
+<strong>Transformer Loss Function</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/Transformer-LossFunc" style="text-decoration:underline; color:green;" target="_blank"><strong>ترنسفورمر و نقش توابع ضرر در یادگیری</strong></a>
+
+<!--13-->
+<div class="english-text">
+<strong> RAG project: Tourist Assistant</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/TOURIST_ASSISTANT" style="text-decoration:underline; color:green;" target="_blank"><strong>آموزش پیاده سازی پروژه RAG برای راهنمایی گردشگران</strong></a>

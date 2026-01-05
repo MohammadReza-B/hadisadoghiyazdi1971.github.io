@@ -39,7 +39,7 @@ header:
         allowFullScreen="true"
 
 
-        width="1027" height="632"
+        width="1027" height="530"
 
 
         style="max-width: 100%; border: none;">
