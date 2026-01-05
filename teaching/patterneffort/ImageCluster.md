@@ -3,7 +3,7 @@ layout: persian # یا single با کلاس rtl-layout
 classes: wide rtl-layout
 dir: rtl
 title: "خوشه بندی تصاویر"
-permalink: /teaching/studenteffort/patterneffort/ImageCluster/
+permalink: /teaching/studenteffort/patterneffort/image_clustering/
 author_profile: true
 
 header:
@@ -114,6 +114,33 @@ p.sinichi@gmail.com  </a>
 شبکه‌های عصبی کانولوشنی یا به اختصار (CNN) یکی از انواع مدل‌های یادگیری عمیق هستند که به‌طور خاص برای داده‌های تصویری طراحی شده‌اند. این شبکه‌ها از لایه‌های کانولوشنی برای یادگیری خودکار ویژگی‌های سلسله‌مراتبی )بزرگ به کوچک) استفاده می‌کنند. از لبه‌ها و الگوهای ساده گرفته تا اشکال و اجسام پیچیده‌تر. VGG16 یک معماری معروف از نوع CNN است که به دلیل سادگی و کارایی بالا شناخته می‌شود. این مدل از ۱۶ لایه با وزن‌های قابل یادگیری تشکیل شده و از فیلترهای کانولوشنی کوچک (۳×۳) استفاده می‌کند. VGG16 بر روی مجموعه‌داده‌ی بزرگ ImageNet که شامل میلیون ها تصویر روزمره از پیش آموزش داده شده است و به همین دلیل قادر است ویژگی‌های غنی و قابل تعمیم را از تصاویر جدید استخراج کند.
 
 در این پروژه، از VGG16 به‌عنوان استخراج‌کننده‌ی ویژگی‌ها (Feature Extractor) استفاده می‌شود. به‌جای استفاده از مدل برای طبقه‌بندی، خروجی لایه‌های کانولوشنی آن برای به‌دست‌آوردن بردار ویژگی هر تصویر به کار گرفته می‌شود. این بردارها مهم‌ترین ویژگی‌های بصری تصاویر را در بر می‌گیرند و مبنایی برای خوشه‌بندی داده‌ها فراهم می‌کنند.
+
+شبکه‌های کانولوشنی اساساً با «فیلترها / کرنل‌ها» کار می‌کنند. فیلتر یک ماتریس کوچک (مثلاً 
+3
+×
+3
+  یا 5×5) است که روی تصویر حرکت می‌کند و در هر موقعیت، با بخشی از تصویر ضرب داخلی انجام می‌دهد. خروجی این عملیات یک نقشه ویژگی (Feature Map) است که نشان می‌دهد «یک الگوی خاص» در کجای تصویر وجود دارد.
+
+
+ 
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/patterneffort/ImageCluster/image.png" alt="IPS1" style="width: 50%; height: 50%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+فیلتر های کانولوشنی
+</div>
+
+<br>
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/patterneffort/ImageCluster/image-1.png" alt="IPS1" style="width: 50%; height: 50%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+فرایند  استخراج ویژگی
+</div>
+
+<br>
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="/assets/patterneffort/ImageCluster/fx-image2.png" alt="IPS1" style="width: 50%; height: 50%; object-fit: contain;">
