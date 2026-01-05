@@ -115,6 +115,33 @@ p.sinichi@gmail.com  </a>
 
 در این پروژه، از VGG16 به‌عنوان استخراج‌کننده‌ی ویژگی‌ها (Feature Extractor) استفاده می‌شود. به‌جای استفاده از مدل برای طبقه‌بندی، خروجی لایه‌های کانولوشنی آن برای به‌دست‌آوردن بردار ویژگی هر تصویر به کار گرفته می‌شود. این بردارها مهم‌ترین ویژگی‌های بصری تصاویر را در بر می‌گیرند و مبنایی برای خوشه‌بندی داده‌ها فراهم می‌کنند.
 
+شبکه‌های کانولوشنی اساساً با «فیلترها / کرنل‌ها» کار می‌کنند. فیلتر یک ماتریس کوچک (مثلاً 
+3
+×
+3
+  یا 5×5) است که روی تصویر حرکت می‌کند و در هر موقعیت، با بخشی از تصویر ضرب داخلی انجام می‌دهد. خروجی این عملیات یک نقشه ویژگی (Feature Map) است که نشان می‌دهد «یک الگوی خاص» در کجای تصویر وجود دارد.
+
+
+ 
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/patterneffort/ImageCluster/image.png" alt="IPS1" style="width: 50%; height: 50%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+فیلتر های کانولوشنی
+</div>
+
+<br>
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/patterneffort/ImageCluster/image-1.png" alt="IPS1" style="width: 50%; height: 50%; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+فرایند  استخراج ویژگی
+</div>
+
+<br>
+
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="/assets/patterneffort/ImageCluster/fx-image2.png" alt="IPS1" style="width: 50%; height: 50%; object-fit: contain;">
 </div>
