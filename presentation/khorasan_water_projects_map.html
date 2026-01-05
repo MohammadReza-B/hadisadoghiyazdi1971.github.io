@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a1bd4d1df5e682dc126f4825d12e3d6b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+</head>
+<body>
+    
+    
+             <h3 align="center" dir="rtl" style="font-size:20px; background-color: white; padding: 10px; border-radius: 10px;">
+             <b>🗺️ نقشه هوشمند پروژه‌های آبی استان خراسان رضوی</b>
+             </h3>
+             
+    
+<div style="position: fixed; 
+            top: 10px; left: 10px; width: 220px; height: auto; 
+            background-color: white; border:2px solid grey; z-index:9999; 
+            font-size:14px; padding: 10px; border-radius: 10px;"
+            dir="rtl">
+            
+    <h4 style="text-align: center; margin-top: 0;">راهنمای نقشه</h4>
+    
+    <p><i class="fa fa-tint" style="color: green"></i> سدسازی - در حال اجرا</p>
+    <p><i class="fa fa-random" style="color: blue"></i> کانال - برنامه‌ریزی</p>
+    <p><i class="fa fa-road" style="color: green"></i> خط لوله - در حال اجرا</p>
+    <p><i class="fa fa-tree" style="color: gray"></i> آبخیزداری - اتمام یافته</p>
+    <p><i class="fa fa-wrench" style="color: red"></i> تعمیرات - متوقف</p>
+    <p><i class="fa fa-leaf" style="color: blue"></i> شبکه آبیاری - برنامه‌ریزی</p>
+    <p><i class="fa fa-history" style="color: green"></i> قنات - در حال اجرا</p>
+    <p><i class="fa fa-home" style="color: red"></i> شهرها</p>
+    
+    <hr>
+    <p><strong>رنگ‌ها:</strong></p>
+    <p>🟢 در حال اجرا</p>
+    <p>🔵 برنامه‌ریزی</p>
+    <p>🔴 متوقف</p>
+    <p>⚫ اتمام یافته</p>
+</div>
+    
+            <div class="folium-map" id="map_a1bd4d1df5e682dc126f4825d12e3d6b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a1bd4d1df5e682dc126f4825d12e3d6b = L.map(
+                "map_a1bd4d1df5e682dc126f4825d12e3d6b",
+                {
+                    center: [36.0, 59.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+
+            
+
+        
+    
+            var tile_layer_06681a60655c968132c504b4bddf39ee = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_06681a60655c968132c504b4bddf39ee.addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var marker_ac6f66c3f0aefbd8bda00189c381f98b = L.marker(
+                [36.3456, 59.5432],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_5db216960f585f55dbd64f7020c99068 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e408aeeb9277ef079f5d3ede00303f15 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_0a18b02395a597016a26ab7e26fecd35 = $(`<div id="html_0a18b02395a597016a26ab7e26fecd35" style="width: 100.0%; height: 100.0%;">     <div dir="rtl" style="font-family: Tahoma; text-align: right; width: 400px;">         <h4 style="color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 10px;">         احداث سد خاکی طرقبه         </h4>                  <div style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📋 اطلاعات کلی:</strong><br>             • شناسه: <strong>PRJ-001</strong><br>             • نوع: <strong>سدسازی</strong><br>             • وضعیت: <span style="color: green"><strong>در حال اجرا</strong></span><br>             • پیشرفت: <strong>45%</strong><br>             • اولویت: <strong>بالا</strong>         </div>                  <div style="background-color: #e8f4f8; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>💰 اطلاعات مالی و نیروی انسانی:</strong><br>             • بودجه: <strong>150,000,000,000 ریال</strong><br>             • تعداد نیرو: <strong>24 نفر</strong><br>             • شروع: <strong>2024-01-15</strong><br>             • پایان: <strong>2024-12-30</strong>         </div>                  <div style="background-color: #d4edda; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>✅ تاثیرات پروژه:</strong><br>             تأمین آب ۱۰۰۰ هکتار زمین کشاورزی         </div>                  <div style="background-color: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📝 شرح پروژه:</strong><br>             احداث سد خاکی به ارتفاع ۲۵ متر و حجم مخزن ۵۰۰ هزار متر مکعب در منطقه طرقبه         </div>                  <div style="background-color: #f8d7da; padding: 10px; border-radius: 5px;">             <strong>⚠️ چالش‌ها:</strong><br>             تأخیر در تحویل مصالح، کمبود نیروی متخصص         </div>                  <div style="margin-top: 15px; text-align: center;">             <button style="background-color: #2E86AB; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مشاهده جزئیات             </button>             <button style="background-color: #28a745; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 گزارش پیشرفت             </button>             <button style="background-color: #ffc107; color: black; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مدیریت منابع             </button>         </div>     </div>     </div>`)[0];
+                popup_e408aeeb9277ef079f5d3ede00303f15.setContent(html_0a18b02395a597016a26ab7e26fecd35);
+            
+        
+
+        marker_ac6f66c3f0aefbd8bda00189c381f98b.bindPopup(popup_e408aeeb9277ef079f5d3ede00303f15)
+        ;
+
+        
+    
+    
+            marker_ac6f66c3f0aefbd8bda00189c381f98b.bindTooltip(
+                `<div>
+                     📌 احداث سد خاکی طرقبه - 🎯 در حال اجرا - 📈 45%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ac6f66c3f0aefbd8bda00189c381f98b.setIcon(icon_5db216960f585f55dbd64f7020c99068);
+            
+    
+            var marker_1ef3f7fce7d5da1968956ce57f3c9268 = L.marker(
+                [36.214, 58.796],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_0d220f30e7aeae1314cc9c7a643f5b32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d56fe86a255d33415c1a05d44f019f1 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_ff30b1d8f97a1f243a49283b46b12611 = $(`<div id="html_ff30b1d8f97a1f243a49283b46b12611" style="width: 100.0%; height: 100.0%;">     <div dir="rtl" style="font-family: Tahoma; text-align: right; width: 400px;">         <h4 style="color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 10px;">         بازسازی کانال نیشابور         </h4>                  <div style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📋 اطلاعات کلی:</strong><br>             • شناسه: <strong>PRJ-002</strong><br>             • نوع: <strong>کانال</strong><br>             • وضعیت: <span style="color: blue"><strong>برنامه‌ریزی</strong></span><br>             • پیشرفت: <strong>10%</strong><br>             • اولویت: <strong>متوسط</strong>         </div>                  <div style="background-color: #e8f4f8; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>💰 اطلاعات مالی و نیروی انسانی:</strong><br>             • بودجه: <strong>80,000,000,000 ریال</strong><br>             • تعداد نیرو: <strong>15 نفر</strong><br>             • شروع: <strong>2024-03-01</strong><br>             • پایان: <strong>2024-08-30</strong>         </div>                  <div style="background-color: #d4edda; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>✅ تاثیرات پروژه:</strong><br>             بهبود راندمان آبیاری ۴۰ درصدی         </div>                  <div style="background-color: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📝 شرح پروژه:</strong><br>             بازسازی و نوسازی ۱۵ کیلومتر کانال آبیاری در منطقه نیشابور         </div>                  <div style="background-color: #f8d7da; padding: 10px; border-radius: 5px;">             <strong>⚠️ چالش‌ها:</strong><br>             هماهنگی با کشاورزان محلی، محدودیت بودجه         </div>                  <div style="margin-top: 15px; text-align: center;">             <button style="background-color: #2E86AB; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مشاهده جزئیات             </button>             <button style="background-color: #28a745; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 گزارش پیشرفت             </button>             <button style="background-color: #ffc107; color: black; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مدیریت منابع             </button>         </div>     </div>     </div>`)[0];
+                popup_9d56fe86a255d33415c1a05d44f019f1.setContent(html_ff30b1d8f97a1f243a49283b46b12611);
+            
+        
+
+        marker_1ef3f7fce7d5da1968956ce57f3c9268.bindPopup(popup_9d56fe86a255d33415c1a05d44f019f1)
+        ;
+
+        
+    
+    
+            marker_1ef3f7fce7d5da1968956ce57f3c9268.bindTooltip(
+                `<div>
+                     📌 بازسازی کانال نیشابور - 🎯 برنامه‌ریزی - 📈 10%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1ef3f7fce7d5da1968956ce57f3c9268.setIcon(icon_0d220f30e7aeae1314cc9c7a643f5b32);
+            
+    
+            var marker_9ec1e2db6677dd31d165ccafe9d97b1e = L.marker(
+                [36.28, 59.6],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_99bad46b31dcfc51866a5c89989387ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "road",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca073a28af8020d9915ff21e1a04763f = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_8d434b017cffb2ae56db0a83f1c644ed = $(`<div id="html_8d434b017cffb2ae56db0a83f1c644ed" style="width: 100.0%; height: 100.0%;">     <div dir="rtl" style="font-family: Tahoma; text-align: right; width: 400px;">         <h4 style="color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 10px;">         خط لوله انتقال آب مشهد         </h4>                  <div style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📋 اطلاعات کلی:</strong><br>             • شناسه: <strong>PRJ-003</strong><br>             • نوع: <strong>خط لوله</strong><br>             • وضعیت: <span style="color: green"><strong>در حال اجرا</strong></span><br>             • پیشرفت: <strong>75%</strong><br>             • اولویت: <strong>بالا</strong>         </div>                  <div style="background-color: #e8f4f8; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>💰 اطلاعات مالی و نیروی انسانی:</strong><br>             • بودجه: <strong>120,000,000,000 ریال</strong><br>             • تعداد نیرو: <strong>18 نفر</strong><br>             • شروع: <strong>2023-11-01</strong><br>             • پایان: <strong>2024-06-30</strong>         </div>                  <div style="background-color: #d4edda; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>✅ تاثیرات پروژه:</strong><br>             تأمین آب شرب ۵۰۰۰۰۰ نفر         </div>                  <div style="background-color: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📝 شرح پروژه:</strong><br>             احداث خط لوله فولادی به قطر ۸۰۰ میلیمتر برای انتقال آب به مشهد         </div>                  <div style="background-color: #f8d7da; padding: 10px; border-radius: 5px;">             <strong>⚠️ چالش‌ها:</strong><br>             عبور از مناطق مسکونی، تأمین لوله‌های با کیفیت         </div>                  <div style="margin-top: 15px; text-align: center;">             <button style="background-color: #2E86AB; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مشاهده جزئیات             </button>             <button style="background-color: #28a745; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 گزارش پیشرفت             </button>             <button style="background-color: #ffc107; color: black; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مدیریت منابع             </button>         </div>     </div>     </div>`)[0];
+                popup_ca073a28af8020d9915ff21e1a04763f.setContent(html_8d434b017cffb2ae56db0a83f1c644ed);
+            
+        
+
+        marker_9ec1e2db6677dd31d165ccafe9d97b1e.bindPopup(popup_ca073a28af8020d9915ff21e1a04763f)
+        ;
+
+        
+    
+    
+            marker_9ec1e2db6677dd31d165ccafe9d97b1e.bindTooltip(
+                `<div>
+                     📌 خط لوله انتقال آب مشهد - 🎯 در حال اجرا - 📈 75%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ec1e2db6677dd31d165ccafe9d97b1e.setIcon(icon_99bad46b31dcfc51866a5c89989387ad);
+            
+    
+            var marker_da12a279eb4a575d7ead49e0ffdeac73 = L.marker(
+                [36.215, 57.681],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_30d563406a2de039949cf87107b6d8f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c202e0e4def840861d6504ead5a8e277 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_4b16d9a39017e718f129e1b04beecfe9 = $(`<div id="html_4b16d9a39017e718f129e1b04beecfe9" style="width: 100.0%; height: 100.0%;">     <div dir="rtl" style="font-family: Tahoma; text-align: right; width: 400px;">         <h4 style="color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 10px;">         پروژه آبخیزداری سبزوار         </h4>                  <div style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📋 اطلاعات کلی:</strong><br>             • شناسه: <strong>PRJ-004</strong><br>             • نوع: <strong>آبخیزداری</strong><br>             • وضعیت: <span style="color: gray"><strong>اتمام یافته</strong></span><br>             • پیشرفت: <strong>100%</strong><br>             • اولویت: <strong>پایین</strong>         </div>                  <div style="background-color: #e8f4f8; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>💰 اطلاعات مالی و نیروی انسانی:</strong><br>             • بودجه: <strong>50,000,000,000 ریال</strong><br>             • تعداد نیرو: <strong>12 نفر</strong><br>             • شروع: <strong>2023-06-01</strong><br>             • پایان: <strong>2024-01-30</strong>         </div>                  <div style="background-color: #d4edda; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>✅ تاثیرات پروژه:</strong><br>             حفاظت از ۲۰۰۰ هکتار مرتع         </div>                  <div style="background-color: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📝 شرح پروژه:</strong><br>             پروژه آبخیزداری و حفاظت از منابع آب در دامنه‌های سبزوار         </div>                  <div style="background-color: #f8d7da; padding: 10px; border-radius: 5px;">             <strong>⚠️ چالش‌ها:</strong><br>             شرایط سخت جغرافیایی، محدودیت دسترسی         </div>                  <div style="margin-top: 15px; text-align: center;">             <button style="background-color: #2E86AB; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مشاهده جزئیات             </button>             <button style="background-color: #28a745; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 گزارش پیشرفت             </button>             <button style="background-color: #ffc107; color: black; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مدیریت منابع             </button>         </div>     </div>     </div>`)[0];
+                popup_c202e0e4def840861d6504ead5a8e277.setContent(html_4b16d9a39017e718f129e1b04beecfe9);
+            
+        
+
+        marker_da12a279eb4a575d7ead49e0ffdeac73.bindPopup(popup_c202e0e4def840861d6504ead5a8e277)
+        ;
+
+        
+    
+    
+            marker_da12a279eb4a575d7ead49e0ffdeac73.bindTooltip(
+                `<div>
+                     📌 پروژه آبخیزداری سبزوار - 🎯 اتمام یافته - 📈 100%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da12a279eb4a575d7ead49e0ffdeac73.setIcon(icon_30d563406a2de039949cf87107b6d8f4);
+            
+    
+            var marker_60dfc8d69394f36a5b377dfad03776b6 = L.marker(
+                [36.4567, 59.4321],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_03cbd9ab6bd378aeeb6744bc1c24e275 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_65ede9d979a69bd5102b50dcf3063402 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_7d1e669a195fb677f78e70ba2572e30d = $(`<div id="html_7d1e669a195fb677f78e70ba2572e30d" style="width: 100.0%; height: 100.0%;">     <div dir="rtl" style="font-family: Tahoma; text-align: right; width: 400px;">         <h4 style="color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 10px;">         تعمیرات سد کارده         </h4>                  <div style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📋 اطلاعات کلی:</strong><br>             • شناسه: <strong>PRJ-005</strong><br>             • نوع: <strong>تعمیرات</strong><br>             • وضعیت: <span style="color: red"><strong>متوقف</strong></span><br>             • پیشرفت: <strong>30%</strong><br>             • اولویت: <strong>متوسط</strong>         </div>                  <div style="background-color: #e8f4f8; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>💰 اطلاعات مالی و نیروی انسانی:</strong><br>             • بودجه: <strong>30,000,000,000 ریال</strong><br>             • تعداد نیرو: <strong>8 نفر</strong><br>             • شروع: <strong>2024-02-01</strong><br>             • پایان: <strong>2024-05-30</strong>         </div>                  <div style="background-color: #d4edda; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>✅ تاثیرات پروژه:</strong><br>             بازگشت بهره‌وری سد به ۸۵ درصد         </div>                  <div style="background-color: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📝 شرح پروژه:</strong><br>             تعمیرات اساسی و بهره‌برداری از سد کارده         </div>                  <div style="background-color: #f8d7da; padding: 10px; border-radius: 5px;">             <strong>⚠️ چالش‌ها:</strong><br>             فرسودگی تجهیزات، نیاز به بازسازی کامل         </div>                  <div style="margin-top: 15px; text-align: center;">             <button style="background-color: #2E86AB; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مشاهده جزئیات             </button>             <button style="background-color: #28a745; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 گزارش پیشرفت             </button>             <button style="background-color: #ffc107; color: black; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مدیریت منابع             </button>         </div>     </div>     </div>`)[0];
+                popup_65ede9d979a69bd5102b50dcf3063402.setContent(html_7d1e669a195fb677f78e70ba2572e30d);
+            
+        
+
+        marker_60dfc8d69394f36a5b377dfad03776b6.bindPopup(popup_65ede9d979a69bd5102b50dcf3063402)
+        ;
+
+        
+    
+    
+            marker_60dfc8d69394f36a5b377dfad03776b6.bindTooltip(
+                `<div>
+                     📌 تعمیرات سد کارده - 🎯 متوقف - 📈 30%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_60dfc8d69394f36a5b377dfad03776b6.setIcon(icon_03cbd9ab6bd378aeeb6744bc1c24e275);
+            
+    
+            var marker_79cea7cbf17d9149cb7d68d1c214608e = L.marker(
+                [37.1234, 60.3456],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_9595210abd7b27124daf04f61e804b82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e96fafa6e357e58fcbb231c9da90f3c = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_21387dffbc8027f85b44ca5f9f8f65ff = $(`<div id="html_21387dffbc8027f85b44ca5f9f8f65ff" style="width: 100.0%; height: 100.0%;">     <div dir="rtl" style="font-family: Tahoma; text-align: right; width: 400px;">         <h4 style="color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 10px;">         احداث سد دوستی         </h4>                  <div style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📋 اطلاعات کلی:</strong><br>             • شناسه: <strong>PRJ-006</strong><br>             • نوع: <strong>سدسازی</strong><br>             • وضعیت: <span style="color: green"><strong>در حال اجرا</strong></span><br>             • پیشرفت: <strong>60%</strong><br>             • اولویت: <strong>بالا</strong>         </div>                  <div style="background-color: #e8f4f8; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>💰 اطلاعات مالی و نیروی انسانی:</strong><br>             • بودجه: <strong>200,000,000,000 ریال</strong><br>             • تعداد نیرو: <strong>30 نفر</strong><br>             • شروع: <strong>2023-09-01</strong><br>             • پایان: <strong>2024-11-30</strong>         </div>                  <div style="background-color: #d4edda; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>✅ تاثیرات پروژه:</strong><br>             تأمین آب پایدار برای شرق استان         </div>                  <div style="background-color: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📝 شرح پروژه:</strong><br>             احداث سد دوستی بر روی رودخانه هریرود در مرز ایران و ترکمنستان         </div>                  <div style="background-color: #f8d7da; padding: 10px; border-radius: 5px;">             <strong>⚠️ چالش‌ها:</strong><br>             همکاری بین‌المللی، مسائل امنیتی مرزی         </div>                  <div style="margin-top: 15px; text-align: center;">             <button style="background-color: #2E86AB; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مشاهده جزئیات             </button>             <button style="background-color: #28a745; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 گزارش پیشرفت             </button>             <button style="background-color: #ffc107; color: black; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مدیریت منابع             </button>         </div>     </div>     </div>`)[0];
+                popup_0e96fafa6e357e58fcbb231c9da90f3c.setContent(html_21387dffbc8027f85b44ca5f9f8f65ff);
+            
+        
+
+        marker_79cea7cbf17d9149cb7d68d1c214608e.bindPopup(popup_0e96fafa6e357e58fcbb231c9da90f3c)
+        ;
+
+        
+    
+    
+            marker_79cea7cbf17d9149cb7d68d1c214608e.bindTooltip(
+                `<div>
+                     📌 احداث سد دوستی - 🎯 در حال اجرا - 📈 60%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79cea7cbf17d9149cb7d68d1c214608e.setIcon(icon_9595210abd7b27124daf04f61e804b82);
+            
+    
+            var marker_35847c21e1d0a6fea228d0df11f6316f = L.marker(
+                [35.65, 59.7],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_5bea4bb2c2e5705deae01ccf4dc30571 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f13dd826c523103a74bddf3ff4996ae0 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_79d0511130ee8380ddf9da6b77cd9338 = $(`<div id="html_79d0511130ee8380ddf9da6b77cd9338" style="width: 100.0%; height: 100.0%;">     <div dir="rtl" style="font-family: Tahoma; text-align: right; width: 400px;">         <h4 style="color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 10px;">         شبکه آبیاری فریمان         </h4>                  <div style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📋 اطلاعات کلی:</strong><br>             • شناسه: <strong>PRJ-007</strong><br>             • نوع: <strong>شبکه آبیاری</strong><br>             • وضعیت: <span style="color: blue"><strong>برنامه‌ریزی</strong></span><br>             • پیشرفت: <strong>5%</strong><br>             • اولویت: <strong>متوسط</strong>         </div>                  <div style="background-color: #e8f4f8; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>💰 اطلاعات مالی و نیروی انسانی:</strong><br>             • بودجه: <strong>60,000,000,000 ریال</strong><br>             • تعداد نیرو: <strong>10 نفر</strong><br>             • شروع: <strong>2024-04-01</strong><br>             • پایان: <strong>2024-10-30</strong>         </div>                  <div style="background-color: #d4edda; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>✅ تاثیرات پروژه:</strong><br>             صرفه‌جویی ۳۰ درصدی در مصرف آب         </div>                  <div style="background-color: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📝 شرح پروژه:</strong><br>             احداث شبکه آبیاری تحت فشار در دشت فریمان         </div>                  <div style="background-color: #f8d7da; padding: 10px; border-radius: 5px;">             <strong>⚠️ چالش‌ها:</strong><br>             تغییر الگوی کشت، آموزش بهره‌برداران         </div>                  <div style="margin-top: 15px; text-align: center;">             <button style="background-color: #2E86AB; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مشاهده جزئیات             </button>             <button style="background-color: #28a745; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 گزارش پیشرفت             </button>             <button style="background-color: #ffc107; color: black; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مدیریت منابع             </button>         </div>     </div>     </div>`)[0];
+                popup_f13dd826c523103a74bddf3ff4996ae0.setContent(html_79d0511130ee8380ddf9da6b77cd9338);
+            
+        
+
+        marker_35847c21e1d0a6fea228d0df11f6316f.bindPopup(popup_f13dd826c523103a74bddf3ff4996ae0)
+        ;
+
+        
+    
+    
+            marker_35847c21e1d0a6fea228d0df11f6316f.bindTooltip(
+                `<div>
+                     📌 شبکه آبیاری فریمان - 🎯 برنامه‌ریزی - 📈 5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_35847c21e1d0a6fea228d0df11f6316f.setIcon(icon_5bea4bb2c2e5705deae01ccf4dc30571);
+            
+    
+            var marker_e60fb91f3091430a17d43bbb1dad5d10 = L.marker(
+                [36.4, 59.3],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_a53ac5ce1c3d3b9869ac0d5e4ea866e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2e5531cce0ee9189aca13c38be99a85 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_4838f1a576a86cf7910b53702ab3894d = $(`<div id="html_4838f1a576a86cf7910b53702ab3894d" style="width: 100.0%; height: 100.0%;">     <div dir="rtl" style="font-family: Tahoma; text-align: right; width: 400px;">         <h4 style="color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 10px;">         آبرسانی به شاندیز         </h4>                  <div style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📋 اطلاعات کلی:</strong><br>             • شناسه: <strong>PRJ-008</strong><br>             • نوع: <strong>آبرسانی</strong><br>             • وضعیت: <span style="color: green"><strong>در حال اجرا</strong></span><br>             • پیشرفت: <strong>80%</strong><br>             • اولویت: <strong>بالا</strong>         </div>                  <div style="background-color: #e8f4f8; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>💰 اطلاعات مالی و نیروی انسانی:</strong><br>             • بودجه: <strong>40,000,000,000 ریال</strong><br>             • تعداد نیرو: <strong>14 نفر</strong><br>             • شروع: <strong>2023-12-01</strong><br>             • پایان: <strong>2024-08-30</strong>         </div>                  <div style="background-color: #d4edda; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>✅ تاثیرات پروژه:</strong><br>             تأمین آب شرب ۲۰۰۰۰ نفر         </div>                  <div style="background-color: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📝 شرح پروژه:</strong><br>             پروژه آبرسانی و تامین آب شرب منطقه شاندیز         </div>                  <div style="background-color: #f8d7da; padding: 10px; border-radius: 5px;">             <strong>⚠️ چالش‌ها:</strong><br>             افزایش جمعیت، محدودیت منابع آبی         </div>                  <div style="margin-top: 15px; text-align: center;">             <button style="background-color: #2E86AB; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مشاهده جزئیات             </button>             <button style="background-color: #28a745; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 گزارش پیشرفت             </button>             <button style="background-color: #ffc107; color: black; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مدیریت منابع             </button>         </div>     </div>     </div>`)[0];
+                popup_b2e5531cce0ee9189aca13c38be99a85.setContent(html_4838f1a576a86cf7910b53702ab3894d);
+            
+        
+
+        marker_e60fb91f3091430a17d43bbb1dad5d10.bindPopup(popup_b2e5531cce0ee9189aca13c38be99a85)
+        ;
+
+        
+    
+    
+            marker_e60fb91f3091430a17d43bbb1dad5d10.bindTooltip(
+                `<div>
+                     📌 آبرسانی به شاندیز - 🎯 در حال اجرا - 📈 80%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e60fb91f3091430a17d43bbb1dad5d10.setIcon(icon_a53ac5ce1c3d3b9869ac0d5e4ea866e0);
+            
+    
+            var marker_4e633afd691714af64009c1b8d76c559 = L.marker(
+                [36.55, 59.15],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_0a2e0938397f901e8eb3992e0db5e47a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5688c600a09d26ab2f1d760c4f08f380 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_4d942096c3ebe1ada782b25127ef1d18 = $(`<div id="html_4d942096c3ebe1ada782b25127ef1d18" style="width: 100.0%; height: 100.0%;">     <div dir="rtl" style="font-family: Tahoma; text-align: right; width: 400px;">         <h4 style="color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 10px;">         احداث سد مخزنی گلبهار         </h4>                  <div style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📋 اطلاعات کلی:</strong><br>             • شناسه: <strong>PRJ-009</strong><br>             • نوع: <strong>سدسازی</strong><br>             • وضعیت: <span style="color: green"><strong>در حال اجرا</strong></span><br>             • پیشرفت: <strong>55%</strong><br>             • اولویت: <strong>بالا</strong>         </div>                  <div style="background-color: #e8f4f8; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>💰 اطلاعات مالی و نیروی انسانی:</strong><br>             • بودجه: <strong>90,000,000,000 ریال</strong><br>             • تعداد نیرو: <strong>20 نفر</strong><br>             • شروع: <strong>2023-10-01</strong><br>             • پایان: <strong>2024-09-30</strong>         </div>                  <div style="background-color: #d4edda; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>✅ تاثیرات پروژه:</strong><br>             تأمین آب صنعتی و کشاورزی منطقه         </div>                  <div style="background-color: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📝 شرح پروژه:</strong><br>             احداث سد مخزنی گلبهار با ظرفیت ۲۰ میلیون متر مکعب         </div>                  <div style="background-color: #f8d7da; padding: 10px; border-radius: 5px;">             <strong>⚠️ چالش‌ها:</strong><br>             پیچیدگی‌های فنی ساخت سد مخزنی، تأمین مصالح         </div>                  <div style="margin-top: 15px; text-align: center;">             <button style="background-color: #2E86AB; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مشاهده جزئیات             </button>             <button style="background-color: #28a745; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 گزارش پیشرفت             </button>             <button style="background-color: #ffc107; color: black; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مدیریت منابع             </button>         </div>     </div>     </div>`)[0];
+                popup_5688c600a09d26ab2f1d760c4f08f380.setContent(html_4d942096c3ebe1ada782b25127ef1d18);
+            
+        
+
+        marker_4e633afd691714af64009c1b8d76c559.bindPopup(popup_5688c600a09d26ab2f1d760c4f08f380)
+        ;
+
+        
+    
+    
+            marker_4e633afd691714af64009c1b8d76c559.bindTooltip(
+                `<div>
+                     📌 احداث سد مخزنی گلبهار - 🎯 در حال اجرا - 📈 55%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4e633afd691714af64009c1b8d76c559.setIcon(icon_0a2e0938397f901e8eb3992e0db5e47a);
+            
+    
+            var marker_25a7eaa7be40d6c32de6d96e72234fac = L.marker(
+                [35.3, 59.2],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_693c693bd45278c018d0d64b0abe6921 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "history",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f103740f5818b6fcf196b1f81af708f = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_de5b443ae2e3cd90b705cde3006938ad = $(`<div id="html_de5b443ae2e3cd90b705cde3006938ad" style="width: 100.0%; height: 100.0%;">     <div dir="rtl" style="font-family: Tahoma; text-align: right; width: 400px;">         <h4 style="color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 10px;">         بازسازی قنات‌های تاریخی تربت         </h4>                  <div style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📋 اطلاعات کلی:</strong><br>             • شناسه: <strong>PRJ-010</strong><br>             • نوع: <strong>قنات</strong><br>             • وضعیت: <span style="color: green"><strong>در حال اجرا</strong></span><br>             • پیشرفت: <strong>70%</strong><br>             • اولویت: <strong>متوسط</strong>         </div>                  <div style="background-color: #e8f4f8; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>💰 اطلاعات مالی و نیروی انسانی:</strong><br>             • بودجه: <strong>35,000,000,000 ریال</strong><br>             • تعداد نیرو: <strong>8 نفر</strong><br>             • شروع: <strong>2024-01-01</strong><br>             • پایان: <strong>2024-07-30</strong>         </div>                  <div style="background-color: #d4edda; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>✅ تاثیرات پروژه:</strong><br>             احیای ۱۰۰۰ هکتار زمین کشاورزی         </div>                  <div style="background-color: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📝 شرح پروژه:</strong><br>             بازسازی و لایه‌رزی ۲۰ رشته قنات تاریخی در منطقه تربت حیدریه         </div>                  <div style="background-color: #f8d7da; padding: 10px; border-radius: 5px;">             <strong>⚠️ چالش‌ها:</strong><br>             حفظ اصالت تاریخی، مشکلات فنی در حفاری         </div>                  <div style="margin-top: 15px; text-align: center;">             <button style="background-color: #2E86AB; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مشاهده جزئیات             </button>             <button style="background-color: #28a745; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 گزارش پیشرفت             </button>             <button style="background-color: #ffc107; color: black; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مدیریت منابع             </button>         </div>     </div>     </div>`)[0];
+                popup_8f103740f5818b6fcf196b1f81af708f.setContent(html_de5b443ae2e3cd90b705cde3006938ad);
+            
+        
+
+        marker_25a7eaa7be40d6c32de6d96e72234fac.bindPopup(popup_8f103740f5818b6fcf196b1f81af708f)
+        ;
+
+        
+    
+    
+            marker_25a7eaa7be40d6c32de6d96e72234fac.bindTooltip(
+                `<div>
+                     📌 بازسازی قنات‌های تاریخی تربت - 🎯 در حال اجرا - 📈 70%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_25a7eaa7be40d6c32de6d96e72234fac.setIcon(icon_693c693bd45278c018d0d64b0abe6921);
+            
+    
+            var marker_66c405b60ffabac8f88a37602c300b00 = L.marker(
+                [35.25, 58.45],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_04738fc31ab49bd2b251fa35c826376e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_292d2b46ec83ac8be1972c18456e736f = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_c1309248f120cbac50c358f603a65bbe = $(`<div id="html_c1309248f120cbac50c358f603a65bbe" style="width: 100.0%; height: 100.0%;">     <div dir="rtl" style="font-family: Tahoma; text-align: right; width: 400px;">         <h4 style="color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 10px;">         سیستم آبیاری تحت فشار کاشمر         </h4>                  <div style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📋 اطلاعات کلی:</strong><br>             • شناسه: <strong>PRJ-011</strong><br>             • نوع: <strong>آبیاری تحت فشار</strong><br>             • وضعیت: <span style="color: blue"><strong>برنامه‌ریزی</strong></span><br>             • پیشرفت: <strong>15%</strong><br>             • اولویت: <strong>پایین</strong>         </div>                  <div style="background-color: #e8f4f8; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>💰 اطلاعات مالی و نیروی انسانی:</strong><br>             • بودجه: <strong>45,000,000,000 ریال</strong><br>             • تعداد نیرو: <strong>12 نفر</strong><br>             • شروع: <strong>2024-05-01</strong><br>             • پایان: <strong>2024-12-30</strong>         </div>                  <div style="background-color: #d4edda; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>✅ تاثیرات پروژه:</strong><br>             صرفه‌جویی ۵۰ درصدی در مصرف آب         </div>                  <div style="background-color: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px;">             <strong>📝 شرح پروژه:</strong><br>             اجرای سیستم آبیاری تحت فشار در ۵۰۰ هکتار از باغات کاشمر         </div>                  <div style="background-color: #f8d7da; padding: 10px; border-radius: 5px;">             <strong>⚠️ چالش‌ها:</strong><br>             مقاومت کشاورزان، هزینه بالای اجرا         </div>                  <div style="margin-top: 15px; text-align: center;">             <button style="background-color: #2E86AB; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مشاهده جزئیات             </button>             <button style="background-color: #28a745; color: white; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 گزارش پیشرفت             </button>             <button style="background-color: #ffc107; color: black; border: none; padding: 8px 15px; border-radius: 5px; margin: 2px;">                 مدیریت منابع             </button>         </div>     </div>     </div>`)[0];
+                popup_292d2b46ec83ac8be1972c18456e736f.setContent(html_c1309248f120cbac50c358f603a65bbe);
+            
+        
+
+        marker_66c405b60ffabac8f88a37602c300b00.bindPopup(popup_292d2b46ec83ac8be1972c18456e736f)
+        ;
+
+        
+    
+    
+            marker_66c405b60ffabac8f88a37602c300b00.bindTooltip(
+                `<div>
+                     📌 سیستم آبیاری تحت فشار کاشمر - 🎯 برنامه‌ریزی - 📈 15%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66c405b60ffabac8f88a37602c300b00.setIcon(icon_04738fc31ab49bd2b251fa35c826376e);
+            
+    
+            var marker_098bed56d5ee438cf3a424c844c13781 = L.marker(
+                [36.2605, 59.6168],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_77916d443fda72164c39baf5045f768c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3fe898530011bec61e3dc1cf429ccf2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c14647e72dae1aee7ffc002b4269ff4c = $(`<div id="html_c14647e72dae1aee7ffc002b4269ff4c" style="width: 100.0%; height: 100.0%;">         <div dir="rtl" style="font-family: Tahoma; text-align: right;">             <h4 style="color: #dc3545;">🏙️ مشهد</h4>             <hr>             <p>مرکز استان، جمعیت: ۳٫۵ میلیون نفر</p>             <div style="background-color: #f8f9fa; padding: 8px; border-radius: 5px;">                 <strong>موقعیت:</strong><br>                 عرض: 36.2605<br>                 طول: 59.6168             </div>         </div>         </div>`)[0];
+                popup_a3fe898530011bec61e3dc1cf429ccf2.setContent(html_c14647e72dae1aee7ffc002b4269ff4c);
+            
+        
+
+        marker_098bed56d5ee438cf3a424c844c13781.bindPopup(popup_a3fe898530011bec61e3dc1cf429ccf2)
+        ;
+
+        
+    
+    
+            marker_098bed56d5ee438cf3a424c844c13781.bindTooltip(
+                `<div>
+                     🏙️ مشهد
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_098bed56d5ee438cf3a424c844c13781.setIcon(icon_77916d443fda72164c39baf5045f768c);
+            
+    
+            var marker_c3c118e588a2d69176c79986e45b6fab = L.marker(
+                [36.214, 58.796],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_c4a025e1a261a247fcaa523f465a84ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee4ca56f18fb9d47912ad1debded0405 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23d437f11198f36721052b8c11eab61a = $(`<div id="html_23d437f11198f36721052b8c11eab61a" style="width: 100.0%; height: 100.0%;">         <div dir="rtl" style="font-family: Tahoma; text-align: right;">             <h4 style="color: #dc3545;">🏙️ نیشابور</h4>             <hr>             <p>شهر تاریخی، جمعیت: ۲۶۰ هزار نفر</p>             <div style="background-color: #f8f9fa; padding: 8px; border-radius: 5px;">                 <strong>موقعیت:</strong><br>                 عرض: 36.214<br>                 طول: 58.796             </div>         </div>         </div>`)[0];
+                popup_ee4ca56f18fb9d47912ad1debded0405.setContent(html_23d437f11198f36721052b8c11eab61a);
+            
+        
+
+        marker_c3c118e588a2d69176c79986e45b6fab.bindPopup(popup_ee4ca56f18fb9d47912ad1debded0405)
+        ;
+
+        
+    
+    
+            marker_c3c118e588a2d69176c79986e45b6fab.bindTooltip(
+                `<div>
+                     🏙️ نیشابور
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c3c118e588a2d69176c79986e45b6fab.setIcon(icon_c4a025e1a261a247fcaa523f465a84ff);
+            
+    
+            var marker_e41d4fc42b0c725c79c5c4861568c0ff = L.marker(
+                [36.215, 57.681],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_f47acf5949aa5ff0ea00f5ee6b217510 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c472252fe02fe011a5baa0019cafa574 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8dd040120fa87c4b804eea4df400395e = $(`<div id="html_8dd040120fa87c4b804eea4df400395e" style="width: 100.0%; height: 100.0%;">         <div dir="rtl" style="font-family: Tahoma; text-align: right;">             <h4 style="color: #dc3545;">🏙️ سبزوار</h4>             <hr>             <p>شهر علمی، جمعیت: ۲۴۰ هزار نفر</p>             <div style="background-color: #f8f9fa; padding: 8px; border-radius: 5px;">                 <strong>موقعیت:</strong><br>                 عرض: 36.215<br>                 طول: 57.681             </div>         </div>         </div>`)[0];
+                popup_c472252fe02fe011a5baa0019cafa574.setContent(html_8dd040120fa87c4b804eea4df400395e);
+            
+        
+
+        marker_e41d4fc42b0c725c79c5c4861568c0ff.bindPopup(popup_c472252fe02fe011a5baa0019cafa574)
+        ;
+
+        
+    
+    
+            marker_e41d4fc42b0c725c79c5c4861568c0ff.bindTooltip(
+                `<div>
+                     🏙️ سبزوار
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e41d4fc42b0c725c79c5c4861568c0ff.setIcon(icon_f47acf5949aa5ff0ea00f5ee6b217510);
+            
+    
+            var marker_b52759de9a1075497fcc495f063e2d17 = L.marker(
+                [35.273, 59.219],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_58d2a0d80da5f6e54b86c1d5214b8171 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba0b7c82ee25a4a53169e4b17d12d450 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70727c14484c251377e82db93eb4a580 = $(`<div id="html_70727c14484c251377e82db93eb4a580" style="width: 100.0%; height: 100.0%;">         <div dir="rtl" style="font-family: Tahoma; text-align: right;">             <h4 style="color: #dc3545;">🏙️ تربت حیدریه</h4>             <hr>             <p>شهر زعفران، جمعیت: ۱۴۰ هزار نفر</p>             <div style="background-color: #f8f9fa; padding: 8px; border-radius: 5px;">                 <strong>موقعیت:</strong><br>                 عرض: 35.273<br>                 طول: 59.219             </div>         </div>         </div>`)[0];
+                popup_ba0b7c82ee25a4a53169e4b17d12d450.setContent(html_70727c14484c251377e82db93eb4a580);
+            
+        
+
+        marker_b52759de9a1075497fcc495f063e2d17.bindPopup(popup_ba0b7c82ee25a4a53169e4b17d12d450)
+        ;
+
+        
+    
+    
+            marker_b52759de9a1075497fcc495f063e2d17.bindTooltip(
+                `<div>
+                     🏙️ تربت حیدریه
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b52759de9a1075497fcc495f063e2d17.setIcon(icon_58d2a0d80da5f6e54b86c1d5214b8171);
+            
+    
+            var marker_35175375f8350648e37064877bd8e3f2 = L.marker(
+                [37.106, 58.509],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_8b1d5bd7b706b41697fb91adafbe2fad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a85108b5c908b3f2553006d13e7202a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_527fd2984b62b8c866931c62bbd49118 = $(`<div id="html_527fd2984b62b8c866931c62bbd49118" style="width: 100.0%; height: 100.0%;">         <div dir="rtl" style="font-family: Tahoma; text-align: right;">             <h4 style="color: #dc3545;">🏙️ قوچان</h4>             <hr>             <p>شهر دامپروری، جمعیت: ۱۲۰ هزار نفر</p>             <div style="background-color: #f8f9fa; padding: 8px; border-radius: 5px;">                 <strong>موقعیت:</strong><br>                 عرض: 37.106<br>                 طول: 58.509             </div>         </div>         </div>`)[0];
+                popup_4a85108b5c908b3f2553006d13e7202a.setContent(html_527fd2984b62b8c866931c62bbd49118);
+            
+        
+
+        marker_35175375f8350648e37064877bd8e3f2.bindPopup(popup_4a85108b5c908b3f2553006d13e7202a)
+        ;
+
+        
+    
+    
+            marker_35175375f8350648e37064877bd8e3f2.bindTooltip(
+                `<div>
+                     🏙️ قوچان
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_35175375f8350648e37064877bd8e3f2.setIcon(icon_8b1d5bd7b706b41697fb91adafbe2fad);
+            
+    
+            var marker_f3e05ff1f7afc2c703dc9dabd7288ce2 = L.marker(
+                [35.65, 59.7],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_2e8f0ab0d9b5dd868e21304c4c9762c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cdf9abc83d61ebe338952e7f7c63e644 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33046488adcd6c9a0f75872a02528fd6 = $(`<div id="html_33046488adcd6c9a0f75872a02528fd6" style="width: 100.0%; height: 100.0%;">         <div dir="rtl" style="font-family: Tahoma; text-align: right;">             <h4 style="color: #dc3545;">🏙️ فریمان</h4>             <hr>             <p>شهر مرزی، جمعیت: ۸۰ هزار نفر</p>             <div style="background-color: #f8f9fa; padding: 8px; border-radius: 5px;">                 <strong>موقعیت:</strong><br>                 عرض: 35.65<br>                 طول: 59.7             </div>         </div>         </div>`)[0];
+                popup_cdf9abc83d61ebe338952e7f7c63e644.setContent(html_33046488adcd6c9a0f75872a02528fd6);
+            
+        
+
+        marker_f3e05ff1f7afc2c703dc9dabd7288ce2.bindPopup(popup_cdf9abc83d61ebe338952e7f7c63e644)
+        ;
+
+        
+    
+    
+            marker_f3e05ff1f7afc2c703dc9dabd7288ce2.bindTooltip(
+                `<div>
+                     🏙️ فریمان
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f3e05ff1f7afc2c703dc9dabd7288ce2.setIcon(icon_2e8f0ab0d9b5dd868e21304c4c9762c3);
+            
+    
+            var marker_90bbd111f9025f9a6eb9cbe22568ea41 = L.marker(
+                [36.4, 59.3],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_a47daf6da66346bb0fa74cad9e191140 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2776fd4734e8b94699debe2baaf1825 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_382e42ddcdc1295de81e9bae9d02fed5 = $(`<div id="html_382e42ddcdc1295de81e9bae9d02fed5" style="width: 100.0%; height: 100.0%;">         <div dir="rtl" style="font-family: Tahoma; text-align: right;">             <h4 style="color: #dc3545;">🏙️ شاندیز</h4>             <hr>             <p>منطقه ییلاقی، جمعیت: ۱۵ هزار نفر</p>             <div style="background-color: #f8f9fa; padding: 8px; border-radius: 5px;">                 <strong>موقعیت:</strong><br>                 عرض: 36.4<br>                 طول: 59.3             </div>         </div>         </div>`)[0];
+                popup_a2776fd4734e8b94699debe2baaf1825.setContent(html_382e42ddcdc1295de81e9bae9d02fed5);
+            
+        
+
+        marker_90bbd111f9025f9a6eb9cbe22568ea41.bindPopup(popup_a2776fd4734e8b94699debe2baaf1825)
+        ;
+
+        
+    
+    
+            marker_90bbd111f9025f9a6eb9cbe22568ea41.bindTooltip(
+                `<div>
+                     🏙️ شاندیز
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_90bbd111f9025f9a6eb9cbe22568ea41.setIcon(icon_a47daf6da66346bb0fa74cad9e191140);
+            
+    
+            var marker_35479bfdbb899c3830b6059654a666e1 = L.marker(
+                [35.25, 58.45],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_bd500f4219df0ff70bb8b8d928497484 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a90b45f5be1a66e88e9668a285d00995 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5132f1c952c2d074f8ecbac41f120ba5 = $(`<div id="html_5132f1c952c2d074f8ecbac41f120ba5" style="width: 100.0%; height: 100.0%;">         <div dir="rtl" style="font-family: Tahoma; text-align: right;">             <h4 style="color: #dc3545;">🏙️ کاشمر</h4>             <hr>             <p>شهر کشاورزی، جمعیت: ۱۰۰ هزار نفر</p>             <div style="background-color: #f8f9fa; padding: 8px; border-radius: 5px;">                 <strong>موقعیت:</strong><br>                 عرض: 35.25<br>                 طول: 58.45             </div>         </div>         </div>`)[0];
+                popup_a90b45f5be1a66e88e9668a285d00995.setContent(html_5132f1c952c2d074f8ecbac41f120ba5);
+            
+        
+
+        marker_35479bfdbb899c3830b6059654a666e1.bindPopup(popup_a90b45f5be1a66e88e9668a285d00995)
+        ;
+
+        
+    
+    
+            marker_35479bfdbb899c3830b6059654a666e1.bindTooltip(
+                `<div>
+                     🏙️ کاشمر
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_35479bfdbb899c3830b6059654a666e1.setIcon(icon_bd500f4219df0ff70bb8b8d928497484);
+            
+    
+            var marker_153c3827588aa5e743eccaae352ac647 = L.marker(
+                [36.55, 59.15],
+                {
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var icon_536ab6887b6f66c5bacc35c315dada7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf33138b3ec68f8bd909b27a28b5c9f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_487b5e820bf9bc80aed9cd9d6a6812dd = $(`<div id="html_487b5e820bf9bc80aed9cd9d6a6812dd" style="width: 100.0%; height: 100.0%;">         <div dir="rtl" style="font-family: Tahoma; text-align: right;">             <h4 style="color: #dc3545;">🏙️ گلبهار</h4>             <hr>             <p>شهر جدید، جمعیت: ۵۰ هزار نفر</p>             <div style="background-color: #f8f9fa; padding: 8px; border-radius: 5px;">                 <strong>موقعیت:</strong><br>                 عرض: 36.55<br>                 طول: 59.15             </div>         </div>         </div>`)[0];
+                popup_cf33138b3ec68f8bd909b27a28b5c9f3.setContent(html_487b5e820bf9bc80aed9cd9d6a6812dd);
+            
+        
+
+        marker_153c3827588aa5e743eccaae352ac647.bindPopup(popup_cf33138b3ec68f8bd909b27a28b5c9f3)
+        ;
+
+        
+    
+    
+            marker_153c3827588aa5e743eccaae352ac647.bindTooltip(
+                `<div>
+                     🏙️ گلبهار
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_153c3827588aa5e743eccaae352ac647.setIcon(icon_536ab6887b6f66c5bacc35c315dada7c);
+            
+    
+            var poly_line_ce6e0117f2fc0fa8104c5822645a9918 = L.polyline(
+                [[36.3456, 59.5432], [36.28, 59.6]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+        var popup_c1a3bb5b208f3d1ca23307b4403c5e35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17ebb2ca1775d192a7d3a31397800df0 = $(`<div id="html_17ebb2ca1775d192a7d3a31397800df0" style="width: 100.0%; height: 100.0%;"><div dir="rtl"><strong>📡 انتقال آب از سد طرقبه به مشهد</strong></div></div>`)[0];
+                popup_c1a3bb5b208f3d1ca23307b4403c5e35.setContent(html_17ebb2ca1775d192a7d3a31397800df0);
+            
+        
+
+        poly_line_ce6e0117f2fc0fa8104c5822645a9918.bindPopup(popup_c1a3bb5b208f3d1ca23307b4403c5e35)
+        ;
+
+        
+    
+    
+            poly_line_ce6e0117f2fc0fa8104c5822645a9918.bindTooltip(
+                `<div>
+                     انتقال آب از سد طرقبه به مشهد
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a1693d742a728784b4b13134bbdaf5c8 = L.polyline(
+                [[36.4567, 59.4321], [36.4, 59.3]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+        var popup_a7c66a5e7a2db1ddd9d42827bffab8ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_adacfa3c7c3d61b4c2f24b92a026f547 = $(`<div id="html_adacfa3c7c3d61b4c2f24b92a026f547" style="width: 100.0%; height: 100.0%;"><div dir="rtl"><strong>📡 آبرسانی از سد کارده به شاندیز</strong></div></div>`)[0];
+                popup_a7c66a5e7a2db1ddd9d42827bffab8ef.setContent(html_adacfa3c7c3d61b4c2f24b92a026f547);
+            
+        
+
+        poly_line_a1693d742a728784b4b13134bbdaf5c8.bindPopup(popup_a7c66a5e7a2db1ddd9d42827bffab8ef)
+        ;
+
+        
+    
+    
+            poly_line_a1693d742a728784b4b13134bbdaf5c8.bindTooltip(
+                `<div>
+                     آبرسانی از سد کارده به شاندیز
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_30ae5a0e402215650e11366a9487a368 = L.polyline(
+                [[37.1234, 60.3456], [36.2605, 59.6168]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+        var popup_2e0fd26420b089bd01f50d54a3d1c4fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_327028816876ec26d4ce30de71e213d7 = $(`<div id="html_327028816876ec26d4ce30de71e213d7" style="width: 100.0%; height: 100.0%;"><div dir="rtl"><strong>📡 خط لوله سد دوستی به مشهد</strong></div></div>`)[0];
+                popup_2e0fd26420b089bd01f50d54a3d1c4fd.setContent(html_327028816876ec26d4ce30de71e213d7);
+            
+        
+
+        poly_line_30ae5a0e402215650e11366a9487a368.bindPopup(popup_2e0fd26420b089bd01f50d54a3d1c4fd)
+        ;
+
+        
+    
+    
+            poly_line_30ae5a0e402215650e11366a9487a368.bindTooltip(
+                `<div>
+                     خط لوله سد دوستی به مشهد
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_8c6cc5721cb1947307d685e534411ef0 = L.polyline(
+                [[36.55, 59.15], [36.28, 59.6]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+        var popup_b42573f0a40872197007581d098ad516 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_140df03696df6976c8c4edd19d036e41 = $(`<div id="html_140df03696df6976c8c4edd19d036e41" style="width: 100.0%; height: 100.0%;"><div dir="rtl"><strong>📡 اتصال سد گلبهار به شبکه مشهد</strong></div></div>`)[0];
+                popup_b42573f0a40872197007581d098ad516.setContent(html_140df03696df6976c8c4edd19d036e41);
+            
+        
+
+        poly_line_8c6cc5721cb1947307d685e534411ef0.bindPopup(popup_b42573f0a40872197007581d098ad516)
+        ;
+
+        
+    
+    
+            poly_line_8c6cc5721cb1947307d685e534411ef0.bindTooltip(
+                `<div>
+                     اتصال سد گلبهار به شبکه مشهد
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ac61a09c15df8ae4527e0b0fb043a60d = L.polyline(
+                [[35.3, 59.2], [35.273, 59.219]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+        var popup_1baf8d72fb3729c7f54b183f1c22a5d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c690ef5cb239ef290674994729509c7 = $(`<div id="html_5c690ef5cb239ef290674994729509c7" style="width: 100.0%; height: 100.0%;"><div dir="rtl"><strong>📡 قنات‌های تاریخی به تربت حیدریه</strong></div></div>`)[0];
+                popup_1baf8d72fb3729c7f54b183f1c22a5d4.setContent(html_5c690ef5cb239ef290674994729509c7);
+            
+        
+
+        poly_line_ac61a09c15df8ae4527e0b0fb043a60d.bindPopup(popup_1baf8d72fb3729c7f54b183f1c22a5d4)
+        ;
+
+        
+    
+    
+            poly_line_ac61a09c15df8ae4527e0b0fb043a60d.bindTooltip(
+                `<div>
+                     قنات‌های تاریخی به تربت حیدریه
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_6d8107ff210ccd6d186b9150ca7a9a6b_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_06681a60655c968132c504b4bddf39ee,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_6d8107ff210ccd6d186b9150ca7a9a6b = L.control.layers(
+                layer_control_6d8107ff210ccd6d186b9150ca7a9a6b_layers.base_layers,
+                layer_control_6d8107ff210ccd6d186b9150ca7a9a6b_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+
+        
+    
+            var tile_layer_871fa2fe19c0d40beaa98f26733bcd8a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_b05a908473c5e8cc3f6e006e3de712e3 = new L.Control.MiniMap(
+                tile_layer_871fa2fe19c0d40beaa98f26733bcd8a,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": true,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_a1bd4d1df5e682dc126f4825d12e3d6b.addControl(mini_map_b05a908473c5e8cc3f6e006e3de712e3);
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_a1bd4d1df5e682dc126f4825d12e3d6b);
+        
+    
+            var measure_control_e3d612e3578c002509736e4db8011a8a = new L.Control.Measure(
+                {
+  "position": "topright",
+  "primaryLengthUnit": "meters",
+  "secondaryLengthUnit": "miles",
+  "primaryAreaUnit": "sqmeters",
+  "secondaryAreaUnit": "acres",
+});
+            map_a1bd4d1df5e682dc126f4825d12e3d6b.addControl(measure_control_e3d612e3578c002509736e4db8011a8a);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+</script>
+</html>

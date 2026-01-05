@@ -47,6 +47,22 @@ header:
 
 </iframe>
 
+## ویدئو پیاده سازی BERT در Google colab و سیستم Local جهت embeding
+<iframe src="https://www.aparat.com/video/video/embed/videohash/ikk00l5/vt/frame"
+
+
+        allowFullScreen="true"
+
+
+        width="1027" height="530"
+
+
+        style="max-width: 100%; border: none;">
+
+
+</iframe>
+
+
 ## مدل‌های زبانی
 
 چند سال پیش مربی یک کلاس برنامه و تفکر الگوریتمی بودم. در بین پروژه‌هایی که دانش‌آموزان انجام می‌دادن یک روز یکی از دانش‌آموزان کلاس ایده ساختن محصولی مشابه <a href="https://en.wikipedia.org/wiki/Cortana_\(virtual_assistant\" style="text-decoration:underline; color:green;" target="_blank">کورتانا</a> ویندوز پیش اومد.

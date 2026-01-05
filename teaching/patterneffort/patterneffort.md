@@ -107,3 +107,14 @@ Generalization Error</strong>
 <strong>Transformer Loss Function</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/Transformer-LossFunc" style="text-decoration:underline; color:green;" target="_blank"><strong>ترنسفورمر و نقش توابع ضرر در یادگیری</strong></a>
+
+<!--13-->
+<div class="english-text">
+<strong> RAG project: Tourist Assistant</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/TOURIST_ASSISTANT" style="text-decoration:underline; color:green;" target="_blank"><strong>آموزش پیاده سازی پروژه RAG برای راهنمایی گردشگران</strong></a>
+<!--14-->
+<div class="english-text">
+<strong> Unsupervised Text Classification </strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/unsupervised_text_classification" style="text-decoration:underline; color:green;" target="_blank"><strong> طقبه بندی متن ها بدون لیبل با مدل های زبانی</strong></a>

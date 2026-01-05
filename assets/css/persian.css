@@ -15,19 +15,48 @@ body {
 }
 
 /* Fix for navigation and other elements */
-nav, .breadcrumbs, .pagination, .footer {
+nav,
+.breadcrumbs,
+.pagination,
+.footer {
     direction: rtl;
     text-align: right;
 }
 
 /* Better line-height for Persian text */
-p, li, h1, h2, h3, h4, h5, h6 {
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     line-height: 1.8;
     font-weight: normal;
 }
 
 /* Fix list alignment */
-ul, ol {
+ul,
+ol {
     padding-right: 1.5em;
     padding-left: 0;
+}
+
+
+/* Fix Mermaid font specifically */
+.mermaid svg {
+    font-family: 'Vazir', 'Tanha', 'Shabnam', 'Segoe UI', Tahoma, sans-serif !important;
+}
+
+.mermaid svg text,
+.mermaid svg tspan,
+.mermaid svg foreignObject,
+.mermaid svg foreignObject div {
+    font-family: 'Vazir', 'Tanha', 'Shabnam', 'Segoe UI', Tahoma, sans-serif !important;
+}
+
+/* Force direction for Mermaid */
+.mermaid {
+    direction: rtl !important;
 }
