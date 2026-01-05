@@ -97,7 +97,7 @@ author-profile: true
 این موضوع باعث می‌شود در صورت بروز هرگونه نقص یا خرابی داخلی در دستگاه، انسان دچار برق‌گرفتگی نشود.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assests/circuiteffort/earthingimages/1.jpg" style="width: 300px; object-fit: contain;">
+    <img src="/assets/circuiteffort/earthingimages/1.jpg" style="width: 300px; object-fit: contain;">
     </div>در صورت بروز اتصال بدنه (مثلاً تماس سیم فاز با بدنه‌ی فلزی دستگاه)، اگر مسیر ارت استاندارد وجود نداشته باشد، بدنه می‌تواند برق‌دار شود و هنگام لمس دستگاه، بدن انسان به مسیر برگشت جریان خطا تبدیل می‌شود. این جریانِ عبوری از بدن می‌تواند باعث شوک الکتریکی و آسیب جدی یا حتی مرگ شود. وجود ارت با مقاومت کم، جریان خطا را از مسیر امن به زمین منتقل می‌کند و باعث می‌شود تجهیزات حفاظتی مانند فیوز/کلید محافظ‌جان (RCD) سریع‌تر عمل کرده و خطر برق‌گرفتگی کاهش یابد.
 <div class="caption" style="text-align: center; margin-top: 8px; direction: rtl;">
 
@@ -115,7 +115,7 @@ $$
 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assests/circuiteffort/earthingimages/2.png" style="width: 300px; object-fit: contain;">
+    <img src="/assets/circuiteffort/earthingimages/2.png" style="width: 300px; object-fit: contain;">
     </div>در تابلوها و تجهیزات صنعتی، سیم‌های ارت (سبز-زرد) به شینه یا بدنه فلزی متصل می‌شوند تا همه‌ی قسمت‌های فلزی در یک پتانسیل قرار بگیرند (هم‌بندی). این کار باعث می‌شود در رخداد اتصال بدنه یا نشتی، جریان خطا از یک مسیر کم‌امپدانس عبور کند و به جای آسیب‌زدن به تجهیزات یا ایجاد جرقه، سریعاً باعث قطع شدن مدار توسط حفاظت‌ها شود. همچنین ارت مناسب می‌تواند اثر نویز و اضافه‌ولتاژهای گذرا را کمتر کرده و پایداری عملکرد تجهیزات الکترونیکی را افزایش دهد.
 <div class="caption" style="text-align: center; margin-top: 8px; direction: rtl;">
 
@@ -133,7 +133,7 @@ $$
 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assests/circuiteffort/earthingimages/3.jpg" style="width: 300px; object-fit: contain;">
+    <img src="/assets/circuiteffort/earthingimages/3.jpg" style="width: 300px; object-fit: contain;">
     </div>در برخورد صاعقه، انرژی بسیار بزرگی وارد سازه می‌شود. وجود صاعقه‌گیر (Lightning Rod) و سیم نزولی، جریان صاعقه را به سمت سیستم ارت هدایت می‌کند تا انرژی آن به‌صورت کنترل‌شده در زمین تخلیه شود. اگر این مسیر استاندارد نباشد، جریان می‌تواند از مسیرهای ناخواسته داخل ساختمان عبور کرده و باعث آتش‌سوزی، آسیب سازه، تخریب تجهیزات برقی و ایجاد ولتاژهای خطرناک شود. ارتینگ مناسب، ریسک جرقه‌های جانبی (Side Flash) و خسارت‌های سنگین ناشی از صاعقه را به‌طور قابل توجهی کاهش می‌دهد.
 <div class="caption" style="text-align: center; margin-top: 8px; direction: rtl;">
 
@@ -151,7 +151,7 @@ $$
 در اطراف صفحه، لایه‌هایی از زغال‌چوب (charcoal) و نمک (salt) به‌صورت متناوب ریخته می‌شود تا رسانایی بین صفحه و خاک افزایش یابد.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assests/circuiteffort/earthingimages/4.png" style="width: 300px; object-fit: contain;">
+    <img src="/assets/circuiteffort/earthingimages/4.png" style="width: 300px; object-fit: contain;">
     </div>در روش ارت صفحه‌ای، یک صفحه فلزی (معمولاً مسی یا گالوانیزه) در عمق مناسب خاک دفن می‌شود و به هادی ارت متصل می‌گردد. اطراف صفحه با موادی مثل ذغال، نمک و ماسه پر می‌شود تا مقاومت ویژه خاک کاهش پیدا کند و تماس الکتریکی با زمین بهتر شود. همچنین با لوله‌ی آب‌ریز (Funnel/Pipe) رطوبت اطراف الکترود حفظ می‌شود، چون رطوبت یکی از عوامل اصلی کاهش مقاومت ارت است. این روش برای مکان‌هایی که خاک مقاومت بالایی دارد یا نیاز به ارت پایدارتر است، کاربرد زیادی دارد.
 <div class="caption" style="text-align: center; margin-top: 8px; direction: rtl;">
 
@@ -169,7 +169,7 @@ $$
 در میان تمامی روش‌ها، ارتینگ لوله‌ای (Pipe Earthing) رایج‌ترین و پرکاربردترین روش ارتینگ در تأسیسات خانگی و صنعتی به شمار می‌رود.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assests/circuiteffort/earthingimages/5.png" style="width: 300px; object-fit: contain;">
+    <img src="/assets/circuiteffort/earthingimages/5.png" style="width: 300px; object-fit: contain;">
     </div>
 یک لوله فلزی (معمولاً مسی یا گالوانیزه) به صورت عمودی در زمین کوبیده می‌شود تا به لایه‌های مرطوب‌تر خاک برسد و مسیر تخلیه جریان خطا فراهم شود. در تصویر، اتصال سیم ارت به میله با کلمپ مخصوص ارت انجام شده که باید محکم، بدون زنگ‌زدگی و با سطح تماس مناسب باشد.
 <div class="caption" style="text-align: center; margin-top: 8px; direction: rtl;">
@@ -186,7 +186,7 @@ $$
 ارتینگ میله‌ای به دلیل سادگی اجرا، هزینه‌ی پایین و کارایی مناسب، در سیستم‌های حفاظتی کوچک و شبکه‌های توزیع برق بسیار مورد استفاده قرار می‌گیرد.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assests/circuiteffort/earthingimages/6.jpg" style="width: 300px; object-fit: contain;">
+    <img src="/assets/circuiteffort/earthingimages/6.jpg" style="width: 300px; object-fit: contain;">
     </div>
 
 $$
@@ -216,7 +216,7 @@ $$
 اما در سیستم‌های مدرن، به‌دلیل احتمال تعویض یا قطع لوله‌های آب، این روش به‌صورت محدود و با احتیاط مورد استفاده قرار می‌گیرد.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assests/circuiteffort/earthingimages/7.jpg" style="width: 300px; object-fit: contain;">
+    <img src="/assets/circuiteffort/earthingimages/7.jpg" style="width: 300px; object-fit: contain;">
     </div>
 هادی ارت با کلمپ به لوله آب فلزی متصل می‌شود تا از مسیر لوله و تماس آن با زمین برای تخلیه جریان استفاده گردد. این روش فقط زمانی قابل قبول است که لوله‌کشی فلزی، پیوسته و دارای اتصال مطمئن به زمین باشد. با این حال، در بسیاری از ساختمان‌ها به دلیل استفاده از لوله‌های پلاستیکی یا اتصالات غیرپیوسته، اتکا به لوله آب به‌تنهایی مطمئن نیست. بنابراین معمولاً این اتصال بیشتر به‌عنوان هم‌بندی (Bonding) و هم‌پتانسیل‌سازی استفاده می‌شود تا اختلاف ولتاژ خطرناک بین لوله‌ها و بدنه تجهیزات کاهش یابد.
 <div class="caption" style="text-align: center; margin-top: 8px; direction: rtl;">
@@ -259,7 +259,7 @@ $$
 این ابزار برای اطمینان از اتصال صحیح دستبند یا Foot Strap به زمین استفاده می‌شود. این تستر معمولاً با یک سیگنال کوچک مقاومت بدن یا اتصال، سلامت اتصال را بررسی می‌کند و از خطر تخلیه الکترواستاتیک جلوگیری می‌کند.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assests/circuiteffort/earthingimages/8.png" style="width: 300px; object-fit: contain;">
+    <img src="/assets/circuiteffort/earthingimages/8.png" style="width: 300px; object-fit: contain;">
     </div>
 
 
@@ -285,7 +285,7 @@ $$
 این ابزار برای اتصال بردها یا سینی حامل بردها به زمین هنگام حمل یا جا به جایی قطعات حساس استفاده می‌شود. زنجیر باعث می‌شود بار الکترواستاتیک بدن یا تجهیزات به زمین منتقل شود و آسیبی به قطعات حساس وارد نشود.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assests/circuiteffort/earthingimages/9.png" style="width: 300px; object-fit: contain;">
+    <img src="/assets/circuiteffort/earthingimages/9.png" style="width: 300px; object-fit: contain;">
     </div>در تجهیزات متحرک (مثل ترولی‌ها، لیفتراک‌ها یا تانکرها)، به‌دلیل حرکت روی زمین و اصطکاک چرخ‌ها با سطح، الکتریسیته ساکن روی بدنه جمع می‌شود. اگر این بار الکتریکی تخلیه نشود، ممکن است هنگام تماس انسان یا نزدیک شدن به اجسام فلزی، جرقه (Spark) ایجاد شود که در محیط‌های حساس می‌تواند باعث آسیب به تجهیزات یا حتی خطر آتش‌سوزی شود. زنجیر ارت با ایجاد تماس پیوسته با زمین، بار ساکن را به‌صورت تدریجی تخلیه می‌کند و باعث کاهش اختلاف پتانسیل بدنه با زمین و افزایش ایمنی در محیط‌های صنعتی و قابل اشتعال می‌شود.
 <div class="caption" style="text-align: center; margin-top: 8px; direction: rtl;">
 
@@ -309,7 +309,7 @@ $$
 این دستبند برای زمین کردن بدن هنگام کار با قطعات حساس استفاده می‌شود. این دستبند بار الکترواستاتیک بدن را به زمین منتقل می‌کند و مانع آسیب به ICها و دیگر قطعات حساس می‌شود.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assests/circuiteffort/earthingimages/10.jpg" style="width: 300px; object-fit: contain;">
+    <img src="/assets/circuiteffort/earthingimages/10.jpg" style="width: 300px; object-fit: contain;">
     </div>
 در محیط‌های الکترونیکی و کار با بردها و قطعات حساس (مثل IC، میکروکنترلر و ماژول‌ها)، بدن انسان می‌تواند به دلیل اصطکاک لباس و حرکت، بار الکتریسیته ساکن جمع کند. این بار ممکن است هنگام لمس قطعات، به صورت یک تخلیه ناگهانی (ESD) منتقل شود و باعث خرابی یا آسیب پنهان در مدار شود. دستبند آنتی‌استاتیک با اتصال بدن به زمین (معمولاً از طریق گیره به میز یا نقطه ارت)، بار ساکن را به‌صورت کنترل‌شده تخلیه می‌کند و از آسیب به تجهیزات الکترونیکی جلوگیری می‌نماید.
 <div class="caption" style="text-align: center; margin-top: 8px; direction: rtl;">
@@ -323,7 +323,7 @@ $$
 مشابه دستبند است ولی برای زمانی که فرد ایستاده روی زمین صنعتی کار می‌کند استفاده می‌شود. این ابزار تضمین می‌کند که بدن کاربر همیشه به زمین متصل باشد و بار الکترواستاتیک تخلیه شود.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assests/circuiteffort/earthingimages/11.png" style="width: 300px; object-fit: contain;">
+    <img src="/assets/circuiteffort/earthingimages/11.png" style="width: 300px; object-fit: contain;">
     </div>
 در محیط‌هایی که افراد زیاد حرکت می‌کنند (مانند خطوط مونتاژ، کارخانه‌های الکترونیک و اتاق‌های تمیز)، الکتریسیته ساکن به‌طور مداوم روی بدن و کفش ایجاد می‌شود. بند پاشنه آنتی‌استاتیک با ایجاد تماس رسانا بین بدن، کفش و زمین (معمولاً همراه با کفپوش رسانا/آنتی‌استاتیک)، بار ساکن را هنگام راه رفتن تخلیه می‌کند. این ابزار باعث کاهش خطر جرقه‌های الکتروستاتیکی و جلوگیری از آسیب به قطعات حساس و همچنین افزایش ایمنی در محیط‌های قابل اشتعال می‌شود.
     <div class="caption" style="text-align: center; margin-top: 8px; direction: rtl;">
@@ -428,7 +428,7 @@ $$
 •	این باعث می‌شود کلیدهای حفاظتی یا فیوزها سریع مدار را قطع کنند و آسیب به مدار و انسان جلوگیری شود.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assests/circuiteffort/earthingimages/12.png" style="width: 300px; object-fit: contain;">
+    <img src="/assets/circuiteffort/earthingimages/12.png" style="width: 300px; object-fit: contain;">
     </div>
 در این حالت، به‌دلیل اتصال اتفاقی سیم فاز (Hot) به بدنه فلزی دستگاه، بدنه نسبت به زمین دارای ولتاژ می‌شود. چون مسیر مطمئنی برای تخلیه جریان به زمین وجود ندارد، بدنه در حالت برق‌دار باقی می‌ماند و هنگام تماس انسان با دستگاه، جریان از بدن به سمت زمین عبور می‌کند و خطر برق‌گرفتگی ایجاد می‌شود. وجود سیستم ارت استاندارد (اتصال بدنه به زمین) باعث می‌شود در چنین خطایی، جریان از مسیر کم‌مقاومت ارت عبور کند و فیوز/کلید محافظ‌جان سریعاً مدار را قطع کند؛ در نتیجه اختلاف ولتاژ خطرناک روی بدنه کاهش یافته و ایمنی افزایش می‌یابد.
    <div class="caption" style="text-align: center; margin-top: 8px; direction: rtl;">
@@ -492,7 +492,7 @@ $$
 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assests/circuiteffort/earthingimages/13.jpg" style="width: 300px; object-fit: contain;">
+    <img src="/assets/circuiteffort/earthingimages/13.jpg" style="width: 300px; object-fit: contain;">
     </div>
    <div class="caption" style="text-align: center; margin-top: 8px; direction: rtl;">
 
