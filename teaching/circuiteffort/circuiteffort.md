@@ -89,15 +89,21 @@ header:
 </div>
 <a href="/teaching/circuiteffort/DC_Motor_en_fixed_DC_Motor" style="text-decoration:underline; color:green;" target="_blank"><strong> موتورDC به انگلیسی</strong></a>
 
-<!--10-->
+<!--11-->
 <div class="english-text">
 <strong>stepper Motor (Latin)</strong>
 </div>
 <a href="/teaching/circuiteffort/stepper_motor" style="text-decoration:underline; color:green;" target="_blank"><strong> موتور پله ای</strong></a>
 
-<!--10-->
+<!--12-->
 <div class="english-text">
 <strong>فازور </strong>
 </div>
 <a href="/teaching/circuiteffort/phasors-guide" style="text-decoration:underline; color:green;" target="_blank"><strong> فازور </strong></a>
+
+<!--13-->
+<div class="english-text">
+<strong>edge computing </strong>
+</div>
+<a href="/teaching/circuiteffort/Edge_processing_in_smart_devices" style="text-decoration:underline; color:green;" target="_blank"><strong> edge computing </strong></a>
 
