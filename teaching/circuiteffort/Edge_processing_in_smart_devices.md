@@ -15,7 +15,6 @@ author-profile: true
 
 ##  فهرست مطالب
 
-<hr style="border: none; height: 2px; background-color: #1F8A8A ; margin-top: -16px" />
 
 <div dir="rtl">
     <ul style = "display:flex; flex-direction:column;">
@@ -74,7 +73,6 @@ author-profile: true
 
 ## اطلاعات نویسنده
 
-<hr style="border: none; height: 2px; background-color: #1F8A8A ; margin-top: -16px" />
 
 
 **نام :**  حسین جهانبانی فر
@@ -86,7 +84,6 @@ author-profile: true
 
 ## مقدمه
 
-<hr style="border: none; height: 2px; background-color: #1F8A8A ; margin-top: -16px" />
 
 
 در عصر دیجیتال امروز، حجم داده‌هایی که از حسگر‌ها، دوربین‌ها و سیستم‌های هوشمند تولید می‌شوند بسیار زیاد است. ارسال همه‌ی این داده‌ها به سرورهای مرکزی یا فضای ابری برای پردازش، هم هزینه‌بر است و هم باعث تأخیر در واکنش دستگاه‌ها می‌شود.
@@ -97,7 +94,6 @@ author-profile: true
 
 ## مفهوم پردازش لبه
 
-<hr style="border: none; height: 2px; background-color: #1F8A8A ; margin-top: -16px" />
 
 
 به زبان ساده، پردازش لبه (Edge Computing) به معماری‌ای گفته می‌شود که در آن داده‌ها به‌جای ارسال مستقیم به سرورهای مرکزی، در نزدیکی منبع تولید داده (مانند سنسورها یا دستگاه‌های هوشمند) پردازش می‌شوند. این ساختار باعث می‌شود اطلاعات قبل از رسیدن به مرکز داده، در همان نقطه یا نزدیک‌ترین node پردازش، تحلیل و بررسی شوند.
@@ -107,7 +103,6 @@ author-profile: true
 
 ## پردازش لبه چگونه کار می کند؟
 
-<hr style="border: none; height: 2px; background-color: #1F8A8A ; margin-top: -16px" />
 
  محاسبات لبه با ایجاد تغییر ساختاری در معماری شبکه، امکان پاسخ‌گویی سریع‌تر، کاهش مصرف پهنای باند و افزایش امنیت را فراهم می‌آورد و برای کاربردهای حساس به زمان و داده‌های بزرگ بسیار حیاتی است. در ادامه مراحل پردازش داده‌ها در این روش را بررسی می‌کنیم:
 
@@ -147,7 +142,6 @@ author-profile: true
 
 ## اجزای مختلف پردازش لبه
 
-<hr style="border: none; height: 2px; background-color: #1F8A8A ; margin-top: -16px" />
 
 ### دستگاه های لبه
 
@@ -182,7 +176,6 @@ author-profile: true
 
 ## مزایای پردازش لبه
 
-<hr style="border: none; height: 2px; background-color: #1F8A8A ; margin-top: -16px" />
 
 
 ### کاهش تاخیر
@@ -216,7 +209,6 @@ author-profile: true
 
 ## کاربردهای پردازش لبه
 
-<hr style="border: none; height: 2px; background-color: #1F8A8A ; margin-top: -16px" />
 
 
 ### اینترنت اشیا(IoT)
@@ -235,7 +227,6 @@ author-profile: true
 
 ## پردازش لبه در معماری سیستم های هوشمند
 
-<hr style="border: none; height: 2px; background-color: #1F8A8A ; margin-top: -16px" />
 
 ایده اصلی پردازش لبه این است که هر رویداد مهم—از لرزش غیرعادی یک موتور تا تغییر ناگهانی دما—در همان محل تشخیص داده شود. این فرآیند با ترکیب پردازش سیگنال، استخراج ویژگی، تشخیص آنومالی و انتقال فقط اطلاعات ضروری انجام می‌شود.
 
@@ -593,7 +584,6 @@ print(dt.status())
 
 ## نتیجه گیری
 
-<hr style="border: none; height: 2px; background-color: #1F8A8A ; margin-top: -16px" />
 
 
 پردازش لبه به عنوان یک فناوری کلیدی نقش مهمی در افزایش سرعت واکنش سیستم‌ها و بهینه‌سازی مصرف منابع شبکه ایفا می‌کند. با انجام پردازش نزدیک به منبع داده، این روش توانسته چالش‌های مربوط به تاخیر، پهنای باند و امنیت را تا حد زیادی کاهش دهد و راه‌حل‌های موثری برای کاربردهای حساس به زمان ارایه کند. 
@@ -601,7 +591,6 @@ print(dt.status())
 
 ## منابع
 
-<hr style="border: none; height: 2px; background-color: #1F8A8A ; margin-top: -16px" />
 
 
 <div style="direction: rtl; text-align: right; padding:10px 0; ">
